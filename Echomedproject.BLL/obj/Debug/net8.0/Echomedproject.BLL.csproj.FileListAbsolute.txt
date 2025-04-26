@@ -1,0 +1,15 @@
+C:\WebProjects\EckoMed\Echomedproject\Echomedproject.BLL\bin\Debug\net8.0\Echomedproject.BLL.deps.json
+C:\WebProjects\EckoMed\Echomedproject\Echomedproject.BLL\bin\Debug\net8.0\Echomedproject.BLL.dll
+C:\WebProjects\EckoMed\Echomedproject\Echomedproject.BLL\bin\Debug\net8.0\Echomedproject.BLL.pdb
+C:\WebProjects\EckoMed\Echomedproject\Echomedproject.BLL\bin\Debug\net8.0\Echomedproject.DAL.dll
+C:\WebProjects\EckoMed\Echomedproject\Echomedproject.BLL\bin\Debug\net8.0\Echomedproject.DAL.pdb
+C:\WebProjects\EckoMed\Echomedproject\Echomedproject.BLL\obj\Debug\net8.0\Echomedproject.BLL.csproj.AssemblyReference.cache
+C:\WebProjects\EckoMed\Echomedproject\Echomedproject.BLL\obj\Debug\net8.0\Echomedproject.BLL.GeneratedMSBuildEditorConfig.editorconfig
+C:\WebProjects\EckoMed\Echomedproject\Echomedproject.BLL\obj\Debug\net8.0\Echomedproject.BLL.AssemblyInfoInputs.cache
+C:\WebProjects\EckoMed\Echomedproject\Echomedproject.BLL\obj\Debug\net8.0\Echomedproject.BLL.AssemblyInfo.cs
+C:\WebProjects\EckoMed\Echomedproject\Echomedproject.BLL\obj\Debug\net8.0\Echomedproject.BLL.csproj.CoreCompileInputs.cache
+C:\WebProjects\EckoMed\Echomedproject\Echomedproject.BLL\obj\Debug\net8.0\Echomedp.F80598BA.Up2Date
+C:\WebProjects\EckoMed\Echomedproject\Echomedproject.BLL\obj\Debug\net8.0\Echomedproject.BLL.dll
+C:\WebProjects\EckoMed\Echomedproject\Echomedproject.BLL\obj\Debug\net8.0\refint\Echomedproject.BLL.dll
+C:\WebProjects\EckoMed\Echomedproject\Echomedproject.BLL\obj\Debug\net8.0\Echomedproject.BLL.pdb
+C:\WebProjects\EckoMed\Echomedproject\Echomedproject.BLL\obj\Debug\net8.0\ref\Echomedproject.BLL.dll

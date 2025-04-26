@@ -1,0 +1,14 @@
+C:\WebProjects\EckoMed\Echomedproject\Echomedproject.DAL\bin\Debug\net8.0\Echomedproject.DAL.deps.json
+C:\WebProjects\EckoMed\Echomedproject\Echomedproject.DAL\bin\Debug\net8.0\Echomedproject.DAL.dll
+C:\WebProjects\EckoMed\Echomedproject\Echomedproject.DAL\bin\Debug\net8.0\Echomedproject.DAL.pdb
+C:\WebProjects\EckoMed\Echomedproject\Echomedproject.DAL\obj\Debug\net8.0\Echomedproject.DAL.csproj.AssemblyReference.cache
+C:\WebProjects\EckoMed\Echomedproject\Echomedproject.DAL\obj\Debug\net8.0\Echomedproject.DAL.GeneratedMSBuildEditorConfig.editorconfig
+C:\WebProjects\EckoMed\Echomedproject\Echomedproject.DAL\obj\Debug\net8.0\Echomedproject.DAL.AssemblyInfoInputs.cache
+C:\WebProjects\EckoMed\Echomedproject\Echomedproject.DAL\obj\Debug\net8.0\Echomedproject.DAL.AssemblyInfo.cs
+C:\WebProjects\EckoMed\Echomedproject\Echomedproject.DAL\obj\Debug\net8.0\Echomedproject.DAL.csproj.CoreCompileInputs.cache
+C:\WebProjects\EckoMed\Echomedproject\Echomedproject.DAL\obj\Debug\net8.0\Echomedproject.DAL.dll
+C:\WebProjects\EckoMed\Echomedproject\Echomedproject.DAL\obj\Debug\net8.0\refint\Echomedproject.DAL.dll
+C:\WebProjects\EckoMed\Echomedproject\Echomedproject.DAL\obj\Debug\net8.0\Echomedproject.DAL.pdb
+C:\WebProjects\EckoMed\Echomedproject\Echomedproject.DAL\obj\Debug\net8.0\ref\Echomedproject.DAL.dll
+C:\WebProjects\EckoMed\Echomedproject\Echomedproject.DAL\bin\Debug\net8.0\Echomedproject.DAL.runtimeconfig.json
+C:\WebProjects\EckoMed\Echomedproject\Echomedproject.DAL\obj\Debug\net8.0\Echomedproject.DAL.genruntimeconfig.cache
