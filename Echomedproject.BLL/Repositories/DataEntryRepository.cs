@@ -9,7 +9,7 @@ using Echomedproject.DAL.Models;
 
 namespace Echomedproject.BLL.Repositories
 {
-    internal class DataEntryRepository : IDataEntryRepository
+    public class DataEntryRepository : IDataEntryRepository
     {
         private EckomedDbContext dbContext;
 

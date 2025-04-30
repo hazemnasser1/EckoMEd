@@ -7,7 +7,7 @@ using Echomedproject.DAL.Models;
 
 namespace Echomedproject.BLL.Interfaces
 {
-    internal interface IInvoiceRepository
+    public interface IInvoiceRepository
     {
         IEnumerable<Invoice> GetAll();
 

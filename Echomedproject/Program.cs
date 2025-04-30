@@ -1,3 +1,5 @@
+using Echomedproject.BLL.Interfaces;
+using Echomedproject.BLL.Repositories;
 using Echomedproject.DAL.Contexts;
 using Microsoft.EntityFrameworkCore;
 
@@ -16,6 +18,7 @@ namespace Echomedproject
 
                 options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
             });
+            builder.Services.AddScoped<IPatientRepository, PatientRepository>();
 
             var app = builder.Build();
 

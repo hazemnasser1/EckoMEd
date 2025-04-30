@@ -7,7 +7,7 @@ using Echomedproject.DAL.Models;
 
 namespace Echomedproject.BLL.Interfaces
 {
-    internal interface IScansRepository
+    public interface IScansRepository
     {
         IEnumerable<Scans> GetAll();
 

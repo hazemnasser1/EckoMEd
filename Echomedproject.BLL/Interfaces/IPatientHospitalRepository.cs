@@ -7,7 +7,7 @@ using Echomedproject.DAL.Models;
 
 namespace Echomedproject.BLL.Interfaces
 {
-    internal interface IPatientHospitalRepository
+    public interface IPatientHospitalRepository
     {
         IEnumerable<PatientHospital> GetAll();
 

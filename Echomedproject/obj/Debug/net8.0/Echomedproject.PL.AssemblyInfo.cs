@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Echomedproject.PL")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+959f39e6e9bac6a2ecd673fda6e1d987101ee496")]
 [assembly: System.Reflection.AssemblyProductAttribute("Echomedproject.PL")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Echomedproject.PL")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

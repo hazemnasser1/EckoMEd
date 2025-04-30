@@ -7,7 +7,7 @@ using Echomedproject.DAL.Models;
 
 namespace Echomedproject.BLL.Interfaces
 {
-    internal interface ILabTestRepository
+    public interface ILabTestRepository
     {
         IEnumerable<LabTest> GetAll();
 
