@@ -9,41 +9,12 @@ using Echomedproject.DAL.Models;
 
 namespace Echomedproject.BLL.Repositories
 {
-    public class DataEntryRepository : IDataEntryRepository
+    public class DataEntryRepository : GenericRepository<DataEntry>, IDataEntryRepository
     {
-        private EckomedDbContext dbContext;
+        
 
-        public DataEntryRepository(EckomedDbContext dbcontext)
-        {
-            this.dbContext = dbcontext;
-        }
-        public int add(DataEntry DataEntry)
-        {
-            dbContext.dataEntry.Add(DataEntry);
-            return dbContext.SaveChanges();
-
-        }
-
-        public int delete(DataEntry DataEntry)
-        {
-           dbContext.dataEntry.Remove(DataEntry);
-            return dbContext.SaveChanges();
-        }
-
-        public DataEntry Get(int id)
-        {
-            return dbContext.dataEntry.Where(d => d.Id == id).FirstOrDefault();
-        }
-
-        public IEnumerable<DataEntry> GetAll()
-        {
-            return dbContext.dataEntry.ToList();
-        }
-
-        public int update(DataEntry DataEntry)
-        {
-            dbContext.dataEntry.Update(DataEntry);
-            return dbContext.SaveChanges();
-        }
+        public DataEntryRepository(EckomedDbContext dbcontext): base(dbcontext) { }
+        
+        
     }
 }

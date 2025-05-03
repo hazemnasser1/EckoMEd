@@ -9,40 +9,10 @@ using Echomedproject.DAL.Models;
 
 namespace Echomedproject.BLL.Repositories
 {
-    public class PatientHospitalRepository : IPatientHospitalRepository
+    public class PatientHospitalRepository :GenericRepository<PatientHospital>, IPatientHospitalRepository
     {
-        private EckomedDbContext dbContext;
 
-        public PatientHospitalRepository(EckomedDbContext dbcontext)
-        {
-            this.dbContext = dbcontext;
-        }
-        public int add(PatientHospital PatientHospital)
-        {
-           dbContext.patientHospital.Add(PatientHospital);
-            return dbContext.SaveChanges();
-        }
-
-        public int delete(PatientHospital PatientHospital)
-        {
-            dbContext.patientHospital.Remove(PatientHospital);
-            return dbContext.SaveChanges();
-        }
-
-        public PatientHospital Get(int id)
-        {
-            return dbContext.patientHospital.Where(d => d.Id == id).FirstOrDefault();
-        }
-
-        public IEnumerable<PatientHospital> GetAll()
-        {
-            return dbContext.patientHospital.ToList();
-        }
-
-        public int update(PatientHospital PatientHospital)
-        {
-            dbContext.patientHospital.Update(PatientHospital);
-            return dbContext.SaveChanges();
-        }
+        public PatientHospitalRepository(EckomedDbContext dbcontext) : base(dbcontext) { }
+       
     }
 }

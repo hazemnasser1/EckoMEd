@@ -7,15 +7,8 @@ using Echomedproject.DAL.Models;
 
 namespace Echomedproject.BLL.Interfaces
 {
-    public interface IPrescriptionRepository
+    public interface IPrescriptionRepository: IGenericRepository<prescription>
     {
-        IEnumerable<prescription> GetAll();
 
-        prescription Get(int id);
-
-        int add(prescription prescription);
-
-        int update(prescription prescription);
-        int delete(prescription prescription);
     }
 }

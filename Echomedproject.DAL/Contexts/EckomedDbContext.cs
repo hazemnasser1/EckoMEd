@@ -4,11 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Echomedproject.DAL.Models;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
 namespace Echomedproject.DAL.Contexts
 {
-    public class EckomedDbContext:DbContext
+    public class EckomedDbContext:IdentityDbContext
     {
 
         public EckomedDbContext(DbContextOptions<EckomedDbContext>options): base (options){}
@@ -20,6 +22,7 @@ namespace Echomedproject.DAL.Contexts
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            base.OnModelCreating(modelBuilder);
             modelBuilder.Entity<Room>()
                 .HasOne(r => r.Hospital)
                 .WithMany(h => h.Rooms)
@@ -48,5 +51,6 @@ namespace Echomedproject.DAL.Contexts
 
         public DbSet<AppUsers> Users { get; set; } 
         public DbSet<PatientHospital> patientHospital { get; set; }
+        public DbSet<Users> Appusers { get; set; }
     }
 }

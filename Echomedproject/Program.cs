@@ -1,6 +1,8 @@
 using Echomedproject.BLL.Interfaces;
 using Echomedproject.BLL.Repositories;
 using Echomedproject.DAL.Contexts;
+using Echomedproject.DAL.Models;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 
 namespace Echomedproject
@@ -18,7 +20,19 @@ namespace Echomedproject
 
                 options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
             });
-            builder.Services.AddScoped<IPatientRepository, PatientRepository>();
+            builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
+            builder.Services.AddScoped<IEmailSender, EmailSender>();
+
+            builder.Services.AddIdentity<Users, IdentityRole>(options =>
+            {
+                options.User.RequireUniqueEmail = true;
+            })
+                .AddEntityFrameworkStores<EckomedDbContext>()
+                .AddDefaultTokenProviders();
+            //builder.Services.AddScoped<UserManager<Users>>();
+            //builder.Services.AddScoped<SignInManager<Users>>();
+            //builder.Services.AddScoped<RoleManager<IdentityRole>>();
+            builder.Services.AddAuthentication();
 
             var app = builder.Build();
 

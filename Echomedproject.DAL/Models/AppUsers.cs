@@ -18,7 +18,7 @@ namespace Echomedproject.DAL.Models
         public string? FirstName { get; set; }
 
         [StringLength(50, ErrorMessage = "Last name cannot be longer than 50 characters")]
-        public int? LastName { get; set; }
+        public string? LastName { get; set; }
 
         [Phone(ErrorMessage = "Invalid phone number")]
         public string? PhoneNum { get; set; }
@@ -37,10 +37,10 @@ namespace Echomedproject.DAL.Models
         public int Age { get; set; }
 
         [DataType(DataType.Date)]
-        public string? DateOfBirth { get; set; }
+        public DateTime? DateOfBirth { get; set; }
 
-        [StringLength(100, ErrorMessage = "Address cannot be longer than 100 characters")]
-        public string? Address { get; set; }
+        [StringLength(100, ErrorMessage = "street cannot be longer than 100 characters")]
+        public string? street { get; set; }
 
         [StringLength(50, ErrorMessage = "City cannot be longer than 50 characters")]
         public string? City { get; set; }

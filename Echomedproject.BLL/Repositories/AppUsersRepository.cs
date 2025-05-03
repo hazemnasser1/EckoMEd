@@ -9,42 +9,13 @@ using Echomedproject.DAL.Models;
 
 namespace Echomedproject.BLL.Repositories
 {
-    public class AppUsersRepository : IAppUsersRepository
+    public class AppUsersRepository : GenericRepository<AppUsers>, IAppUsersRepository
     {
-        private EckomedDbContext dbContext;
 
-        public AppUsersRepository(EckomedDbContext dbcontext)
-        {
-            this.dbContext = dbcontext;
-        }
-        public int add(AppUsers user)
-        {
-            dbContext.Users.Add(user);
-            return dbContext.SaveChanges();
-        }
-
-        public int delete(AppUsers AppUsers)
+        public AppUsersRepository(EckomedDbContext dbcontext) : base(dbcontext)
         {
             
-            dbContext.Users.Remove(AppUsers);
-            return dbContext.SaveChanges(); 
         }
-
-        public AppUsers Get(int id)
-        {
-
-            return dbContext.Users.Where(d => d.Id == id).FirstOrDefault();
-        }
-
-        public IEnumerable<AppUsers> GetAll()
-        {
-            return dbContext.Users.ToList();
-        }
-
-        public int update(AppUsers user)
-        {
-            dbContext.Users.Update(user);
-            return dbContext.SaveChanges();
-        }
+        
     }
 }

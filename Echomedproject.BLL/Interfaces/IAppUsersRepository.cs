@@ -7,16 +7,8 @@ using Echomedproject.DAL.Models;
 
 namespace Echomedproject.BLL.Interfaces
 {
-    public interface IAppUsersRepository
+    public interface IAppUsersRepository:IGenericRepository<AppUsers>
     {
-        IEnumerable<AppUsers> GetAll();
-
-        AppUsers Get(int id);
-
-        int add (AppUsers user);
-
-        int update (AppUsers user);
-        int delete (AppUsers AppUsers);
-
+        
     }
 }

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "hdgVbH8vI45hiLs1so5KOEek75eYn3KOj2jGM7A6RUA=",
+  "Hash": "drYfmLuqGQNmbXLIGhktnu7wOtbMWbnIN7E+zASzaDM=",
   "Source": "Echomedproject.PL",
   "BasePath": "_content/Echomedproject.PL",
   "Mode": "Default",
@@ -57,6 +57,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\Echomedproject.PL.bundle.scp.css"
+    },
+    {
+      "Identity": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\css\\Account\\_register.css",
+      "SourceId": "Echomedproject.PL",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\",
+      "BasePath": "_content/Echomedproject.PL",
+      "RelativePath": "css/Account/_register#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "ycs8utqj7p",
+      "Integrity": "khPdMq79tHI7WQuowp8uJEbQVHbZCMRb6POxttbCkwU=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\Account\\_register.css"
     },
     {
       "Identity": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\css\\site.css",
@@ -1320,6 +1341,88 @@
     }
   ],
   "Endpoints": [
+    {
+      "Route": "css/Account/_register.css",
+      "AssetFile": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\css\\Account\\_register.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "16376"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"khPdMq79tHI7WQuowp8uJEbQVHbZCMRb6POxttbCkwU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 01 May 2025 15:29:30 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-khPdMq79tHI7WQuowp8uJEbQVHbZCMRb6POxttbCkwU="
+        }
+      ]
+    },
+    {
+      "Route": "css/Account/_register.ycs8utqj7p.css",
+      "AssetFile": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\css\\Account\\_register.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "16376"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"khPdMq79tHI7WQuowp8uJEbQVHbZCMRb6POxttbCkwU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 01 May 2025 15:29:30 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ycs8utqj7p"
+        },
+        {
+          "Name": "label",
+          "Value": "css/Account/_register.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-khPdMq79tHI7WQuowp8uJEbQVHbZCMRb6POxttbCkwU="
+        }
+      ]
+    },
     {
       "Route": "css/site.c2tiyv64ts.css",
       "AssetFile": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\css\\site.css",

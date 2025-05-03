@@ -13,3 +13,4 @@ C:\WebProjects\EckoMed\Echomedproject\Echomedproject.BLL\obj\Debug\net8.0\Echome
 C:\WebProjects\EckoMed\Echomedproject\Echomedproject.BLL\obj\Debug\net8.0\refint\Echomedproject.BLL.dll
 C:\WebProjects\EckoMed\Echomedproject\Echomedproject.BLL\obj\Debug\net8.0\Echomedproject.BLL.pdb
 C:\WebProjects\EckoMed\Echomedproject\Echomedproject.BLL\obj\Debug\net8.0\ref\Echomedproject.BLL.dll
+C:\WebProjects\EckoMed\Echomedproject\Echomedproject.BLL\obj\Debug\net8.0\Echomedproject.BLL.sourcelink.json

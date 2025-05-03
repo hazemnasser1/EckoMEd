@@ -7,15 +7,8 @@ using Echomedproject.DAL.Models;
 
 namespace Echomedproject.BLL.Interfaces
 {
-    public interface IHospitalsRepository
+    public interface IHospitalsRepository: IGenericRepository<Hospitals>
     {
-        IEnumerable<Hospitals> GetAll();
 
-        Hospitals Get(int id);
-
-        int add(Hospitals hospital);
-
-        int update(Hospitals hospitals);
-        int delete(Hospitals Hospitals);
     }
 }
