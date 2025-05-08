@@ -1,0 +1,1 @@
+import{Ma as o,Na as a,Ua as r,za as n}from"./chunk-TTRU3IZV.js";import"./chunk-4CLCTAJ7.js";var s=class t{static \u0275fac=function(e){return new(e||t)};static \u0275cmp=n({type:t,selectors:[["app-dentrydashboard"]],decls:2,vars:0,template:function(e,p){e&1&&(o(0,"p"),r(1,"dentrydashboard works!"),a())},encapsulation:2})};export{s as DentrydashboardComponent};

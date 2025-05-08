@@ -1,0 +1,1 @@
+import{Ma as a,Na as n,Ua as s,za as t}from"./chunk-TTRU3IZV.js";import"./chunk-4CLCTAJ7.js";var p=class o{static \u0275fac=function(e){return new(e||o)};static \u0275cmp=t({type:o,selectors:[["app-pdashboard"]],decls:2,vars:0,template:function(e,r){e&1&&(a(0,"p"),s(1,"pdashboard works!"),n())},encapsulation:2})};export{p as PdashboardComponent};

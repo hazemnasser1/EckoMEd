@@ -1,0 +1,1 @@
+import{Ma as s,Na as n,Ua as p,za as t}from"./chunk-TTRU3IZV.js";import"./chunk-4CLCTAJ7.js";var a=class o{static \u0275fac=function(e){return new(e||o)};static \u0275cmp=t({type:o,selectors:[["app-forgotpass"]],decls:2,vars:0,template:function(e,i){e&1&&(s(0,"p"),p(1,"forgotpass works!"),n())},encapsulation:2})};export{a as ForgotpassComponent};

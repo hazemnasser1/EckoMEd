@@ -1,0 +1,1 @@
+import{Ma as o,Na as a,Ua as i,za as n}from"./chunk-TTRU3IZV.js";import"./chunk-4CLCTAJ7.js";var p=class t{static \u0275fac=function(e){return new(e||t)};static \u0275cmp=n({type:t,selectors:[["app-departmentinteraction"]],decls:2,vars:0,template:function(e,m){e&1&&(o(0,"p"),i(1,"departmentinteraction works!"),a())},encapsulation:2})};export{p as DepartmentinteractionComponent};

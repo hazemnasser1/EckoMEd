@@ -1,0 +1,1 @@
+import{Ma as s,Na as o,Ua as i,za as n}from"./chunk-TTRU3IZV.js";import"./chunk-4CLCTAJ7.js";var p=class t{static \u0275fac=function(e){return new(e||t)};static \u0275cmp=n({type:t,selectors:[["app-settings"]],decls:2,vars:0,template:function(e,m){e&1&&(s(0,"p"),i(1,"settings works!"),o())},encapsulation:2})};export{p as SettingsComponent};

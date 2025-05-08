@@ -1,0 +1,1 @@
+import{Ma as p,Na as o,Ua as r,za as n}from"./chunk-TTRU3IZV.js";import"./chunk-4CLCTAJ7.js";var a=class t{static \u0275fac=function(e){return new(e||t)};static \u0275cmp=n({type:t,selectors:[["app-help-center"]],decls:2,vars:0,template:function(e,l){e&1&&(p(0,"p"),r(1,"help-center works!"),o())},encapsulation:2})};export{a as HelpCenterComponent};

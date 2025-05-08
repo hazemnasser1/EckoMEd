@@ -1,0 +1,1 @@
+import{Ma as a,Na as p,Ua as o,za as n}from"./chunk-TTRU3IZV.js";import"./chunk-4CLCTAJ7.js";var i=class t{static \u0275fac=function(e){return new(e||t)};static \u0275cmp=n({type:t,selectors:[["app-addpatient"]],decls:2,vars:0,template:function(e,s){e&1&&(a(0,"p"),o(1,"addpatient works!"),p())},encapsulation:2})};export{i as AddpatientComponent};

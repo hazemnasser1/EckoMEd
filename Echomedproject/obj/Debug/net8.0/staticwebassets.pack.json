@@ -5,248 +5,184 @@
       "PackagePath": "staticwebassets\\Echomedproject.PL.4wtfmfahxu.bundle.scp.css"
     },
     {
-      "Id": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\css\\Account\\_register.css",
-      "PackagePath": "staticwebassets\\css\\Account\\_register.css"
+      "Id": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\addpatient\\index.html",
+      "PackagePath": "staticwebassets\\addpatient\\index.html"
     },
     {
-      "Id": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\css\\site.css",
-      "PackagePath": "staticwebassets\\css\\site.css"
+      "Id": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\chunk-36DHGN26.js",
+      "PackagePath": "staticwebassets\\chunk-36DHGN26.js"
+    },
+    {
+      "Id": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\chunk-3KRC4POV.js",
+      "PackagePath": "staticwebassets\\chunk-3KRC4POV.js"
+    },
+    {
+      "Id": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\chunk-3SUSXB7T.js",
+      "PackagePath": "staticwebassets\\chunk-3SUSXB7T.js"
+    },
+    {
+      "Id": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\chunk-4CLCTAJ7.js",
+      "PackagePath": "staticwebassets\\chunk-4CLCTAJ7.js"
+    },
+    {
+      "Id": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\chunk-7RCTICBW.js",
+      "PackagePath": "staticwebassets\\chunk-7RCTICBW.js"
+    },
+    {
+      "Id": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\chunk-BHPVUBXV.js",
+      "PackagePath": "staticwebassets\\chunk-BHPVUBXV.js"
+    },
+    {
+      "Id": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\chunk-EOTVTNHS.js",
+      "PackagePath": "staticwebassets\\chunk-EOTVTNHS.js"
+    },
+    {
+      "Id": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\chunk-GPWZTE3X.js",
+      "PackagePath": "staticwebassets\\chunk-GPWZTE3X.js"
+    },
+    {
+      "Id": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\chunk-KNY6ZLYI.js",
+      "PackagePath": "staticwebassets\\chunk-KNY6ZLYI.js"
+    },
+    {
+      "Id": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\chunk-MHGSWFGQ.js",
+      "PackagePath": "staticwebassets\\chunk-MHGSWFGQ.js"
+    },
+    {
+      "Id": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\chunk-OCY3VBE2.js",
+      "PackagePath": "staticwebassets\\chunk-OCY3VBE2.js"
+    },
+    {
+      "Id": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\chunk-RVH3QIVL.js",
+      "PackagePath": "staticwebassets\\chunk-RVH3QIVL.js"
+    },
+    {
+      "Id": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\chunk-SK3IIKGT.js",
+      "PackagePath": "staticwebassets\\chunk-SK3IIKGT.js"
+    },
+    {
+      "Id": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\chunk-T4OOCQMQ.js",
+      "PackagePath": "staticwebassets\\chunk-T4OOCQMQ.js"
+    },
+    {
+      "Id": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\chunk-TTRU3IZV.js",
+      "PackagePath": "staticwebassets\\chunk-TTRU3IZV.js"
+    },
+    {
+      "Id": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\chunk-UPW7ICKM.js",
+      "PackagePath": "staticwebassets\\chunk-UPW7ICKM.js"
+    },
+    {
+      "Id": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\chunk-URTWFCQV.js",
+      "PackagePath": "staticwebassets\\chunk-URTWFCQV.js"
+    },
+    {
+      "Id": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\dEntrydashboard\\index.html",
+      "PackagePath": "staticwebassets\\dEntrydashboard\\index.html"
+    },
+    {
+      "Id": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\dentryprofile\\index.html",
+      "PackagePath": "staticwebassets\\dentryprofile\\index.html"
+    },
+    {
+      "Id": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\departmentinteraction\\index.html",
+      "PackagePath": "staticwebassets\\departmentinteraction\\index.html"
     },
     {
       "Id": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
-      "Id": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\js\\site.js",
-      "PackagePath": "staticwebassets\\js\\site.js"
+      "Id": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\forgotpass\\index.html",
+      "PackagePath": "staticwebassets\\forgotpass\\index.html"
     },
     {
-      "Id": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\lib\\bootstrap\\LICENSE",
-      "PackagePath": "staticwebassets\\lib\\bootstrap"
+      "Id": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\helpCenter\\index.html",
+      "PackagePath": "staticwebassets\\helpCenter\\index.html"
     },
     {
-      "Id": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+      "Id": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\images\\clay-banks-cEzMOp5FtV4-unsplash.jpg",
+      "PackagePath": "staticwebassets\\images\\clay-banks-cEzMOp5FtV4-unsplash.jpg"
     },
     {
-      "Id": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+      "Id": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\images\\photo-1505751172876-fa1923c5c528-unsplash.jpeg",
+      "PackagePath": "staticwebassets\\images\\photo-1505751172876-fa1923c5c528-unsplash.jpeg"
     },
     {
-      "Id": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+      "Id": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\index.html",
+      "PackagePath": "staticwebassets\\index.html"
     },
     {
-      "Id": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+      "Id": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\login\\index.html",
+      "PackagePath": "staticwebassets\\login\\index.html"
     },
     {
-      "Id": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+      "Id": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\main-WN37WLIW.js",
+      "PackagePath": "staticwebassets\\main-WN37WLIW.js"
     },
     {
-      "Id": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+      "Id": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\media\\fa-brands-400-Q3XCMWHQ.woff2",
+      "PackagePath": "staticwebassets\\media\\fa-brands-400-Q3XCMWHQ.woff2"
     },
     {
-      "Id": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+      "Id": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\media\\fa-brands-400-R2XQZCET.ttf",
+      "PackagePath": "staticwebassets\\media\\fa-brands-400-R2XQZCET.ttf"
     },
     {
-      "Id": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+      "Id": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\media\\fa-regular-400-QSNYFYRT.woff2",
+      "PackagePath": "staticwebassets\\media\\fa-regular-400-QSNYFYRT.woff2"
     },
     {
-      "Id": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+      "Id": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\media\\fa-regular-400-XUOPSR7E.ttf",
+      "PackagePath": "staticwebassets\\media\\fa-regular-400-XUOPSR7E.ttf"
     },
     {
-      "Id": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+      "Id": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\media\\fa-solid-900-5ZUYHGA7.woff2",
+      "PackagePath": "staticwebassets\\media\\fa-solid-900-5ZUYHGA7.woff2"
     },
     {
-      "Id": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+      "Id": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\media\\fa-solid-900-PJNKLK6W.ttf",
+      "PackagePath": "staticwebassets\\media\\fa-solid-900-PJNKLK6W.ttf"
     },
     {
-      "Id": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+      "Id": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\media\\fa-v4compatibility-LFEHZI6Y.woff2",
+      "PackagePath": "staticwebassets\\media\\fa-v4compatibility-LFEHZI6Y.woff2"
     },
     {
-      "Id": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+      "Id": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\media\\fa-v4compatibility-YY67RJWG.ttf",
+      "PackagePath": "staticwebassets\\media\\fa-v4compatibility-YY67RJWG.ttf"
     },
     {
-      "Id": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+      "Id": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\myvisits\\index.html",
+      "PackagePath": "staticwebassets\\myvisits\\index.html"
     },
     {
-      "Id": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+      "Id": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\patientdashboard\\index.html",
+      "PackagePath": "staticwebassets\\patientdashboard\\index.html"
     },
     {
-      "Id": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+      "Id": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\patientprofile\\index.html",
+      "PackagePath": "staticwebassets\\patientprofile\\index.html"
     },
     {
-      "Id": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+      "Id": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\polyfills-FFHMD2TL.js",
+      "PackagePath": "staticwebassets\\polyfills-FFHMD2TL.js"
     },
     {
-      "Id": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+      "Id": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\register\\index.html",
+      "PackagePath": "staticwebassets\\register\\index.html"
     },
     {
-      "Id": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+      "Id": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\scripts-TZWH235K.js",
+      "PackagePath": "staticwebassets\\scripts-TZWH235K.js"
     },
     {
-      "Id": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+      "Id": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\settings\\index.html",
+      "PackagePath": "staticwebassets\\settings\\index.html"
     },
     {
-      "Id": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
-    },
-    {
-      "Id": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
-    },
-    {
-      "Id": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
-    },
-    {
-      "Id": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
-    },
-    {
-      "Id": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
-    },
-    {
-      "Id": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
-    },
-    {
-      "Id": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
-    },
-    {
-      "Id": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
-    },
-    {
-      "Id": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
-    },
-    {
-      "Id": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
-    },
-    {
-      "Id": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
-    },
-    {
-      "Id": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
-    },
-    {
-      "Id": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
-    },
-    {
-      "Id": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
-    },
-    {
-      "Id": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
-    },
-    {
-      "Id": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
-    },
-    {
-      "Id": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
-    },
-    {
-      "Id": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
-    },
-    {
-      "Id": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
-    },
-    {
-      "Id": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
-    },
-    {
-      "Id": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
-    },
-    {
-      "Id": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
-    },
-    {
-      "Id": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
-    },
-    {
-      "Id": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
-      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
-    },
-    {
-      "Id": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
-      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
-    },
-    {
-      "Id": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
-      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
-    },
-    {
-      "Id": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
-      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
-    },
-    {
-      "Id": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
-      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
-    },
-    {
-      "Id": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
-      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
-    },
-    {
-      "Id": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
-      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
-    },
-    {
-      "Id": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
-      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
-    },
-    {
-      "Id": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
-      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
-    },
-    {
-      "Id": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\lib\\jquery\\LICENSE.txt",
-      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
-    },
-    {
-      "Id": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\lib\\jquery\\dist\\jquery.js",
-      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
-    },
-    {
-      "Id": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
-      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
-    },
-    {
-      "Id": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
-      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+      "Id": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\styles-3FZXZ3OF.css",
+      "PackagePath": "staticwebassets\\styles-3FZXZ3OF.css"
     },
     {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.Echomedproject.PL.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",

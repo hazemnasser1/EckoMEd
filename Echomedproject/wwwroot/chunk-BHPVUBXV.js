@@ -1,0 +1,1 @@
+import{Ma as i,Na as n,Ua as o,za as s}from"./chunk-TTRU3IZV.js";import"./chunk-4CLCTAJ7.js";var m=class t{static \u0275fac=function(e){return new(e||t)};static \u0275cmp=s({type:t,selectors:[["app-myvisits"]],decls:2,vars:0,template:function(e,a){e&1&&(i(0,"p"),o(1,"myvisits works!"),n())},encapsulation:2})};export{m as MyvisitsComponent};

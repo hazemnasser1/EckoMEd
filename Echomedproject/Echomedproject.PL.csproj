@@ -23,4 +23,9 @@
     <Folder Include="wwwroot\files\images\" />
   </ItemGroup>
 
+	<Target Name="BuildClientApp" AfterTargets="Build">
+		<Exec Command="npm install" WorkingDirectory="ClientApp" />
+		<Exec Command="npm run build -- --output-path=wwwroot --configuration production" WorkingDirectory="ClientApp" />
+	</Target>
+
 </Project>
