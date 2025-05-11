@@ -2906,24 +2906,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\hazem\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\Hatem\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject.BLL\\Echomedproject.BLL.csproj",
+      "projectUniqueName": "C:\\Users\\Hatem\\OneDrive\\Documents\\GitHub\\EckoMEd\\Echomedproject.BLL\\Echomedproject.BLL.csproj",
       "projectName": "Echomedproject.BLL",
-      "projectPath": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject.BLL\\Echomedproject.BLL.csproj",
-      "packagesPath": "C:\\Users\\hazem\\.nuget\\packages\\",
-      "outputPath": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject.BLL\\obj\\",
+      "projectPath": "C:\\Users\\Hatem\\OneDrive\\Documents\\GitHub\\EckoMEd\\Echomedproject.BLL\\Echomedproject.BLL.csproj",
+      "packagesPath": "C:\\Users\\Hatem\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Hatem\\OneDrive\\Documents\\GitHub\\EckoMEd\\Echomedproject.BLL\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\hazem\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\Hatem\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -2937,8 +2932,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject.DAL\\Echomedproject.DAL.csproj": {
-              "projectPath": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject.DAL\\Echomedproject.DAL.csproj"
+            "C:\\Users\\Hatem\\OneDrive\\Documents\\GitHub\\EckoMEd\\Echomedproject.DAL\\Echomedproject.DAL.csproj": {
+              "projectPath": "C:\\Users\\Hatem\\OneDrive\\Documents\\GitHub\\EckoMEd\\Echomedproject.DAL\\Echomedproject.DAL.csproj"
             }
           }
         }
@@ -2951,9 +2946,8 @@
       "restoreAuditProperties": {
         "enableAudit": "true",
         "auditLevel": "low",
-        "auditMode": "all"
-      },
-      "SdkAnalysisLevel": "9.0.100"
+        "auditMode": "direct"
+      }
     },
     "frameworks": {
       "net8.0": {
@@ -2974,7 +2968,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.100/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.408/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
