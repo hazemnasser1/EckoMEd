@@ -9,6 +9,12 @@ namespace Echomedproject.BLL.Interfaces
 {
     public interface IAppUsersRepository:IGenericRepository<AppUsers>
     {
-        
+        public AppUsers getUserbyEmail(string email);
+
+        public AppUsers? getUserWithRecordDetails(string email);
+
+        public Records? GetRecord(int Id);
+       
+      
     }
 }

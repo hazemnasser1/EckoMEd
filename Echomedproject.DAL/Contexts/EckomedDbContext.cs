@@ -52,5 +52,17 @@ namespace Echomedproject.DAL.Contexts
         public DbSet<AppUsers> Users { get; set; } 
         public DbSet<PatientHospital> patientHospital { get; set; }
         public DbSet<Users> Appusers { get; set; }
+        public DbSet<Medicine> Midicine { get; set; }
+
+        public DbSet<Charge> Charge { get; set; }
+        public DbSet<Insurance> Insurances { get; set; }
+        public DbSet<Advertisement> Advertisements { get; set; }
+
+        public DbSet<Pharmacy> pharmacies { get; set; }
+        public DbSet<Notification> notifications { get; set; }
+
+        public DbSet<PharmacyAcc> pharmacyAccs { get; set; }
+
+
     }
 }

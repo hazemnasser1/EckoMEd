@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Echomedproject.DAL")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ec92ebec5a756f0358601de0356915cba1d871e3")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+af5277754af26fd1d450ba4cdeb54c6fb31125b4")]
 [assembly: System.Reflection.AssemblyProductAttribute("Echomedproject.DAL")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Echomedproject.DAL")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

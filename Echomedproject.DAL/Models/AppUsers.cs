@@ -47,10 +47,43 @@ namespace Echomedproject.DAL.Models
 
         [StringLength(50, ErrorMessage = "Country cannot be longer than 50 characters")]
         public string? Country { get; set; }
+        public string CardNumber { get; set; }
 
+        [ValidInsurance]
+        public string? Insurance { get; set; }
+        public string ExpirationDate { get; set; }
+
+        public int CVC { get; set; }
 
         public ICollection<Records> Records { get; set; } = new List<Records>();
 
+        public List<Notification>? notifications { get; set; }
 
+
+
+
+    }
+
+
+    public class ValidInsuranceAttribute : ValidationAttribute
+    {
+        private static readonly HashSet<string> _validInsurances = new HashSet<string>(StringComparer.OrdinalIgnoreCase)
+    {
+        "CairoCare", "MisrHealth", "NileSecure", "Takaful Egypt", "Al Hayah", "GlobalMed Cairo",
+        "HealthNet Egypt", "LifeSecure", "Delta Insurance", "SahhaCare", "SmartHealth", "ShifaPlan"
+    };
+
+        protected override ValidationResult IsValid(object value, ValidationContext validationContext)
+        {
+            var insurance = value as string;
+
+            if (string.IsNullOrWhiteSpace(insurance))
+                return ValidationResult.Success; // Optional field — skip validation if empty
+
+            if (_validInsurances.Contains(insurance.Trim()))
+                return ValidationResult.Success;
+
+            return new ValidationResult("Invalid insurance value. Please select a supported insurance provider.");
+        }
     }
 }

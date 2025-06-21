@@ -25,6 +25,8 @@ namespace Echomedproject.DAL.Models
 
         // Foreign key to the Hospital (if departments are tied to a specific hospital)
         public int HospitalID { get; set; }
+
+        public double? budget { get; set; }
         public ICollection<Room> Rooms { get; set; } = new List<Room>();
 
         // Navigation property to the Hospital

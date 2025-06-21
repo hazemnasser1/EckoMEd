@@ -9,5 +9,7 @@ namespace Echomedproject.BLL.Interfaces
 {
     public interface IUsersRepository: IGenericRepository<Users>
     {
+
+       
     }
 }

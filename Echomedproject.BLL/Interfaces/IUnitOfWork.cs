@@ -21,6 +21,10 @@ namespace Echomedproject.BLL.Interfaces
         IRoomRepository roomRepository { get; set; }
         IScansRepository scansRepository { get; set; }
         IUsersRepository usersRepository { get; set; }
+        IAdverismentRepository adverismentRepository { get; set; }
+        IPharamacyRepository pharamacyRepository { get; set; }
+        IPharmacyAccRepository pharmacyAccRepository { get; set; }
+        INotificationRepository notificationRepository { get; set; }
 
         int Complete();
 

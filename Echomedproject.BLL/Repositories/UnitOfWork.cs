@@ -26,6 +26,10 @@ namespace Echomedproject.BLL.Repositories
         public IRoomRepository roomRepository { get; set; }
         public IScansRepository scansRepository { get ; set ; }
         public IUsersRepository usersRepository { get; set; }
+        public IAdverismentRepository adverismentRepository { get; set; }
+        public IPharamacyRepository pharamacyRepository { get; set; }
+        public IPharmacyAccRepository pharmacyAccRepository { get; set; }
+        public INotificationRepository notificationRepository { get; set; }
 
         public UnitOfWork(EckomedDbContext dbContext)
         {
@@ -42,6 +46,11 @@ namespace Echomedproject.BLL.Repositories
             roomRepository = new RoomRepository(dbContext);
             scansRepository = new ScansRepository(dbContext);
             usersRepository=new UserRepository(dbContext);
+            adverismentRepository=new AdvertisementRepository(dbContext);
+            notificationRepository=new NotificationRepository(dbContext);
+            pharamacyRepository= new PharmacyRepository(dbContext);
+            notificationRepository= new NotificationRepository(dbContext);
+            pharmacyAccRepository= new PharmacyAccRepository(dbContext);
 
             this.dbContext = dbContext;
 

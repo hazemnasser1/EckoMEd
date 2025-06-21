@@ -9,6 +9,7 @@ namespace Echomedproject.DAL.Models
     public class prescription
     {
         public int Id { get; set; }
-        public ICollection<string> medicines { get; set; } = new List<string>();
+        public List<Medicine> medicines { get; set; }
+       
     }
 }

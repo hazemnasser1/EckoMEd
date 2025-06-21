@@ -49,7 +49,7 @@ namespace Echomedproject.PL.ViewModels
         public string country { get; set; }
 
         [Display(Name = "Profile Picture")]
-        public string profilePic{ get; set; }
+        public IFormFile? profilePicture{ get; set; }
 
         [Required(ErrorMessage = "Password is required.")]
         [DataType(DataType.Password)]
@@ -63,5 +63,7 @@ namespace Echomedproject.PL.ViewModels
         [Compare("password", ErrorMessage = "Passwords do not match.")]
         [Display(Name = "Confirm Password")]
         public string confirmPassword { get; set; }
+
+
     }
 }

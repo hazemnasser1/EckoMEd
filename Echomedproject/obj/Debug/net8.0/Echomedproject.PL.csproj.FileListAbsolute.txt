@@ -268,11 +268,9 @@ C:\WebProjects\EckoMed\Echomedproject\Echomedproject\bin\Debug\net8.0\runtimes\w
 C:\WebProjects\EckoMed\Echomedproject\Echomedproject\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Drawing.Common.dll
 C:\WebProjects\EckoMed\Echomedproject\Echomedproject\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Security.Cryptography.ProtectedData.dll
 C:\WebProjects\EckoMed\Echomedproject\Echomedproject\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Windows.Extensions.dll
-C:\WebProjects\EckoMed\Echomedproject\Echomedproject\bin\Debug\net8.0\ClientApp\angular.json
 C:\WebProjects\EckoMed\Echomedproject\Echomedproject\bin\Debug\net8.0\ClientApp\package-lock.json
+C:\WebProjects\EckoMed\Echomedproject\Echomedproject\bin\Debug\net8.0\ClientApp\angular.json
 C:\WebProjects\EckoMed\Echomedproject\Echomedproject\bin\Debug\net8.0\ClientApp\package.json
 C:\WebProjects\EckoMed\Echomedproject\Echomedproject\bin\Debug\net8.0\ClientApp\tsconfig.app.json
 C:\WebProjects\EckoMed\Echomedproject\Echomedproject\bin\Debug\net8.0\ClientApp\tsconfig.json
 C:\WebProjects\EckoMed\Echomedproject\Echomedproject\bin\Debug\net8.0\ClientApp\tsconfig.spec.json
-C:\WebProjects\EckoMed\Echomedproject\Echomedproject\bin\Debug\net8.0\ClientApp\dist\eckomed\prerendered-routes.json
-C:\WebProjects\EckoMed\Echomedproject\Echomedproject\bin\Debug\net8.0\ClientApp\wwwroot\prerendered-routes.json

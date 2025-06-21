@@ -22,6 +22,31 @@ namespace Echomedproject.DAL.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
+            modelBuilder.Entity("Echomedproject.DAL.Models.Advertisement", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Description")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("ImagePath")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Title")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Advertisements");
+                });
+
             modelBuilder.Entity("Echomedproject.DAL.Models.AppUsers", b =>
                 {
                     b.Property<int>("Id")
@@ -32,6 +57,13 @@ namespace Echomedproject.DAL.Migrations
 
                     b.Property<int>("Age")
                         .HasColumnType("int");
+
+                    b.Property<int>("CVC")
+                        .HasColumnType("int");
+
+                    b.Property<string>("CardNumber")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("City")
                         .HasMaxLength(50)
@@ -47,6 +79,10 @@ namespace Echomedproject.DAL.Migrations
                     b.Property<string>("Email")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("ExpirationDate")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("FirstName")
                         .IsRequired()
                         .HasMaxLength(50)
@@ -55,6 +91,9 @@ namespace Echomedproject.DAL.Migrations
                     b.Property<string>("Gender")
                         .HasMaxLength(10)
                         .HasColumnType("nvarchar(10)");
+
+                    b.Property<string>("Insurance")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("LastName")
                         .HasMaxLength(50)
@@ -75,6 +114,31 @@ namespace Echomedproject.DAL.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Users");
+                });
+
+            modelBuilder.Entity("Echomedproject.DAL.Models.Charge", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int?>("InvoiceId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<double>("Price")
+                        .HasColumnType("float");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("InvoiceId");
+
+                    b.ToTable("Charge");
                 });
 
             modelBuilder.Entity("Echomedproject.DAL.Models.DataEntry", b =>
@@ -143,6 +207,9 @@ namespace Echomedproject.DAL.Migrations
                     b.Property<int>("TotalPatients")
                         .HasColumnType("int");
 
+                    b.Property<double?>("budget")
+                        .HasColumnType("float");
+
                     b.HasKey("Id");
 
                     b.HasIndex("DataEntryId");
@@ -188,6 +255,12 @@ namespace Echomedproject.DAL.Migrations
                     b.Property<int>("ICUBeds")
                         .HasColumnType("int");
 
+                    b.Property<double?>("Latitude")
+                        .HasColumnType("float");
+
+                    b.Property<double?>("Longitude")
+                        .HasColumnType("float");
+
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasMaxLength(100)
@@ -221,7 +294,7 @@ namespace Echomedproject.DAL.Migrations
                     b.ToTable("hospitals");
                 });
 
-            modelBuilder.Entity("Echomedproject.DAL.Models.Invoice", b =>
+            modelBuilder.Entity("Echomedproject.DAL.Models.Insurance", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -231,7 +304,35 @@ namespace Echomedproject.DAL.Migrations
 
                     b.Property<string>("Name")
                         .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Insurances");
+                });
+
+            modelBuilder.Entity("Echomedproject.DAL.Models.Invoice", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("DoctorName")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("PatientName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<double>("Total")
+                        .HasColumnType("float");
+
+                    b.Property<DateTime>("created")
+                        .HasColumnType("datetime2");
 
                     b.HasKey("Id");
 
@@ -253,6 +354,86 @@ namespace Echomedproject.DAL.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("labTests");
+                });
+
+            modelBuilder.Entity("Echomedproject.DAL.Models.Medicine", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("DoctorNotes")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Dosage")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Duration")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime?>("MedDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("frequency")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int?>("prescriptionId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("prescriptionId");
+
+                    b.ToTable("Midicine");
+                });
+
+            modelBuilder.Entity("Echomedproject.DAL.Models.Notification", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int?>("AppUsersId")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("DateTime")
+                        .HasColumnType("datetime2");
+
+                    b.Property<bool?>("IsExist")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("MedicineName")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int?>("PharmacyAccId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("PharmacyID")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("UserName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("AppUsersId");
+
+                    b.HasIndex("PharmacyAccId");
+
+                    b.ToTable("notifications");
                 });
 
             modelBuilder.Entity("Echomedproject.DAL.Models.PatientHospital", b =>
@@ -331,6 +512,83 @@ namespace Echomedproject.DAL.Migrations
                     b.ToTable("Patients");
                 });
 
+            modelBuilder.Entity("Echomedproject.DAL.Models.Pharmacy", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("City")
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
+
+                    b.Property<string>("Country")
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
+
+                    b.Property<string>("Identifier")
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
+
+                    b.Property<double?>("Latitude")
+                        .HasColumnType("float");
+
+                    b.Property<double?>("Longitude")
+                        .HasColumnType("float");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
+
+                    b.Property<string>("State")
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("pharmacies");
+                });
+
+            modelBuilder.Entity("Echomedproject.DAL.Models.PharmacyAcc", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Email")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("EntryDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int?>("PharmacyId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("PhoneNumber")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Username")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("PharmacyId");
+
+                    b.ToTable("pharmacyAccs");
+                });
+
             modelBuilder.Entity("Echomedproject.DAL.Models.Records", b =>
                 {
                     b.Property<int>("Id")
@@ -342,21 +600,29 @@ namespace Echomedproject.DAL.Migrations
                     b.Property<int?>("AppUsersId")
                         .HasColumnType("int");
 
-                    b.Property<int>("InvoiceId")
-                        .HasColumnType("int");
-
-                    b.Property<int>("LabTestId")
-                        .HasColumnType("int");
-
-                    b.Property<string>("Name")
+                    b.Property<string>("Department")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("ScanId")
+                    b.Property<string>("DoctorName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("HospitalName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int?>("InvoiceId")
+                        .HasColumnType("int");
+
+                    b.Property<int?>("LabTestId")
                         .HasColumnType("int");
 
                     b.Property<int>("prescriptionId")
                         .HasColumnType("int");
+
+                    b.Property<DateTime>("visitDate")
+                        .HasColumnType("datetime2");
 
                     b.HasKey("Id");
 
@@ -365,8 +631,6 @@ namespace Echomedproject.DAL.Migrations
                     b.HasIndex("InvoiceId");
 
                     b.HasIndex("LabTestId");
-
-                    b.HasIndex("ScanId");
 
                     b.HasIndex("prescriptionId");
 
@@ -397,11 +661,26 @@ namespace Echomedproject.DAL.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<string>("Name")
+                    b.Property<DateTime?>("Date")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Description")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("ImagePath")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int?>("RecordsId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Type")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("RecordsId");
 
                     b.ToTable("Scans");
                 });
@@ -414,13 +693,24 @@ namespace Echomedproject.DAL.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<string>("medicines")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
                     b.HasKey("Id");
 
                     b.ToTable("prescriptions");
+                });
+
+            modelBuilder.Entity("HospitalsInsurance", b =>
+                {
+                    b.Property<int>("AcceptedInsurancesId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("HospitalsId")
+                        .HasColumnType("int");
+
+                    b.HasKey("AcceptedInsurancesId", "HospitalsId");
+
+                    b.HasIndex("HospitalsId");
+
+                    b.ToTable("HospitalsInsurance");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole", b =>
@@ -666,6 +956,13 @@ namespace Echomedproject.DAL.Migrations
                     b.HasDiscriminator().HasValue("Users");
                 });
 
+            modelBuilder.Entity("Echomedproject.DAL.Models.Charge", b =>
+                {
+                    b.HasOne("Echomedproject.DAL.Models.Invoice", null)
+                        .WithMany("Charges")
+                        .HasForeignKey("InvoiceId");
+                });
+
             modelBuilder.Entity("Echomedproject.DAL.Models.DataEntry", b =>
                 {
                     b.HasOne("Echomedproject.DAL.Models.Hospitals", "Hospital")
@@ -692,11 +989,38 @@ namespace Echomedproject.DAL.Migrations
                     b.Navigation("Hospital");
                 });
 
+            modelBuilder.Entity("Echomedproject.DAL.Models.Medicine", b =>
+                {
+                    b.HasOne("Echomedproject.DAL.Models.prescription", null)
+                        .WithMany("medicines")
+                        .HasForeignKey("prescriptionId");
+                });
+
+            modelBuilder.Entity("Echomedproject.DAL.Models.Notification", b =>
+                {
+                    b.HasOne("Echomedproject.DAL.Models.AppUsers", null)
+                        .WithMany("notifications")
+                        .HasForeignKey("AppUsersId");
+
+                    b.HasOne("Echomedproject.DAL.Models.PharmacyAcc", null)
+                        .WithMany("Notifications")
+                        .HasForeignKey("PharmacyAccId");
+                });
+
             modelBuilder.Entity("Echomedproject.DAL.Models.Patients", b =>
                 {
                     b.HasOne("Echomedproject.DAL.Models.Hospitals", null)
                         .WithMany("Patients")
                         .HasForeignKey("HospitalsId");
+                });
+
+            modelBuilder.Entity("Echomedproject.DAL.Models.PharmacyAcc", b =>
+                {
+                    b.HasOne("Echomedproject.DAL.Models.Pharmacy", "Pharmacy")
+                        .WithMany()
+                        .HasForeignKey("PharmacyId");
+
+                    b.Navigation("Pharmacy");
                 });
 
             modelBuilder.Entity("Echomedproject.DAL.Models.Records", b =>
@@ -707,21 +1031,11 @@ namespace Echomedproject.DAL.Migrations
 
                     b.HasOne("Echomedproject.DAL.Models.Invoice", "Invoice")
                         .WithMany()
-                        .HasForeignKey("InvoiceId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .HasForeignKey("InvoiceId");
 
                     b.HasOne("Echomedproject.DAL.Models.LabTest", "LabTest")
                         .WithMany()
-                        .HasForeignKey("LabTestId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("Echomedproject.DAL.Models.Scans", "Scan")
-                        .WithMany()
-                        .HasForeignKey("ScanId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .HasForeignKey("LabTestId");
 
                     b.HasOne("Echomedproject.DAL.Models.prescription", "prescription")
                         .WithMany()
@@ -732,8 +1046,6 @@ namespace Echomedproject.DAL.Migrations
                     b.Navigation("Invoice");
 
                     b.Navigation("LabTest");
-
-                    b.Navigation("Scan");
 
                     b.Navigation("prescription");
                 });
@@ -755,6 +1067,28 @@ namespace Echomedproject.DAL.Migrations
                     b.Navigation("Department");
 
                     b.Navigation("Hospital");
+                });
+
+            modelBuilder.Entity("Echomedproject.DAL.Models.Scans", b =>
+                {
+                    b.HasOne("Echomedproject.DAL.Models.Records", null)
+                        .WithMany("Scans")
+                        .HasForeignKey("RecordsId");
+                });
+
+            modelBuilder.Entity("HospitalsInsurance", b =>
+                {
+                    b.HasOne("Echomedproject.DAL.Models.Insurance", null)
+                        .WithMany()
+                        .HasForeignKey("AcceptedInsurancesId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("Echomedproject.DAL.Models.Hospitals", null)
+                        .WithMany()
+                        .HasForeignKey("HospitalsId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
@@ -811,6 +1145,8 @@ namespace Echomedproject.DAL.Migrations
             modelBuilder.Entity("Echomedproject.DAL.Models.AppUsers", b =>
                 {
                     b.Navigation("Records");
+
+                    b.Navigation("notifications");
                 });
 
             modelBuilder.Entity("Echomedproject.DAL.Models.DataEntry", b =>
@@ -830,6 +1166,26 @@ namespace Echomedproject.DAL.Migrations
                     b.Navigation("Patients");
 
                     b.Navigation("Rooms");
+                });
+
+            modelBuilder.Entity("Echomedproject.DAL.Models.Invoice", b =>
+                {
+                    b.Navigation("Charges");
+                });
+
+            modelBuilder.Entity("Echomedproject.DAL.Models.PharmacyAcc", b =>
+                {
+                    b.Navigation("Notifications");
+                });
+
+            modelBuilder.Entity("Echomedproject.DAL.Models.Records", b =>
+                {
+                    b.Navigation("Scans");
+                });
+
+            modelBuilder.Entity("Echomedproject.DAL.Models.prescription", b =>
+                {
+                    b.Navigation("medicines");
                 });
 #pragma warning restore 612, 618
         }

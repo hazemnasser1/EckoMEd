@@ -11,13 +11,17 @@ namespace Echomedproject.DAL.Models
     {
         [Key]
         public int Id { get; set; }
-        public string Name { get; set; }
-        public LabTest LabTest { get; set; }
+        public string Department { get; set; }
+        public string DoctorName { get; set; }
 
-        public Scans Scan { get; set; }
+        public DateTime visitDate { get; set; }
+        public string HospitalName { get; set; }
+        public LabTest? LabTest { get; set; }
+
+        public List<Scans> Scans { get; set; }
 
         public prescription prescription { get; set; }
 
-       public Invoice Invoice { get; set; }
+       public Invoice? Invoice { get; set; }
     }
 }

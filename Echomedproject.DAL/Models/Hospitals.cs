@@ -57,9 +57,20 @@ namespace Echomedproject.DAL.Models
 
         [Range(0, int.MaxValue, ErrorMessage = "Emergency rooms must be a positive number")]
         public int EmergencyRooms { get; set; }
+
+        // Geographical coordinates
+        public double? Latitude { get; set; }
+        public double? Longitude { get; set; }
+
+        // Accepted insurances - simple list of insurance provider names
+        public ICollection<Insurance> AcceptedInsurances { get; set; } = new List<Insurance>();
+
         public ICollection<Departments> Departments { get; set; } = new List<Departments>();
-        public int DateEntryId { get; set; }   
+
+        public int DateEntryId { get; set; }
+
         public ICollection<Room> Rooms { get; set; } = new List<Room>();
+
         public ICollection<Patients> Patients { get; set; } = new HashSet<Patients>();
     }
 }
