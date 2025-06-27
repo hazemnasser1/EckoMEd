@@ -14,7 +14,10 @@ namespace Echomedproject.BLL.Interfaces
         public AppUsers? getUserWithRecordDetails(string email);
 
         public Records? GetRecord(int Id);
-       
-      
+        public AppUsers? getUserWithRecordDetailsbyId(string Id);
+
+
+
+
     }
 }

@@ -12,5 +12,12 @@ namespace Echomedproject.DAL.Models
         [Key]
         public int Id { get; set; }
         public String Name { get; set; }
+        public string Type { get; set; }
+
+        public string Notes { get; set; }
+        public DateTime Date { get; set; }
+
+        public string ImagePath { get; set; }
+        
     }
 }

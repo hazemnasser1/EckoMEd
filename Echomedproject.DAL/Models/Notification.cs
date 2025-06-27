@@ -9,19 +9,18 @@ namespace Echomedproject.DAL.Models
 {
     public class Notification
     {
-
         [Key]
         public int Id { get; set; }
 
-        public string? MedicineName { get; set; }
+        public string PharmacyName { get; set; }
 
-        public bool? IsExist { get; set; }
+        public string? Text { get; set; }
 
-        public DateTime DateTime { get; set; }
-       
-        public string UserName { get; set; }
-        public string? PharmacyID { get; set; }
+        public DateTime CreatedAt { get; set; } = DateTime.Now;
 
+        public bool IsRead { get; set; } = false;
 
+        public string? Type { get; set; } // optional: e.g., "RequestStatus", "SystemAlert"
     }
+
 }

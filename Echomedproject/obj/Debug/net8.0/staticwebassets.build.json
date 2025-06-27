@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "gg/7Ufiv4xW1cUI586AGaCEj2uuaINSJu+BX8iPP31Y=",
+  "Hash": "MypDMoV1RVKtd9fJA9kgh1VGPTnbJHZSKFKxIRZHbH0=",
   "Source": "Echomedproject.PL",
   "BasePath": "_content/Echomedproject.PL",
   "Mode": "Default",
@@ -647,12 +647,12 @@
       "OriginalItemSpec": "wwwroot\\files\\advertisementImages\\hospital6.png"
     },
     {
-      "Identity": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\files\\ScanImage\\0d7848fc-b7ed-4ac0-89a1-7020273b78fbdefault.png",
+      "Identity": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\files\\ScanImages\\0d7848fc-b7ed-4ac0-89a1-7020273b78fbdefault.png",
       "SourceId": "Echomedproject.PL",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\",
       "BasePath": "_content/Echomedproject.PL",
-      "RelativePath": "files/ScanImage/0d7848fc-b7ed-4ac0-89a1-7020273b78fbdefault#[.{fingerprint}]?.png",
+      "RelativePath": "files/ScanImages/0d7848fc-b7ed-4ac0-89a1-7020273b78fbdefault#[.{fingerprint}]?.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -665,15 +665,15 @@
       "Integrity": "k7MYfEkbR1I3ux90mpKAU9AeG7o0qmzz8VXyRC96Qmw=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\files\\ScanImage\\0d7848fc-b7ed-4ac0-89a1-7020273b78fbdefault.png"
+      "OriginalItemSpec": "wwwroot\\files\\ScanImages\\0d7848fc-b7ed-4ac0-89a1-7020273b78fbdefault.png"
     },
     {
-      "Identity": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\files\\ScanImage\\352e2161-6053-498e-8017-4aea360a53b9default.png",
+      "Identity": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\files\\ScanImages\\352e2161-6053-498e-8017-4aea360a53b9default.png",
       "SourceId": "Echomedproject.PL",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\",
       "BasePath": "_content/Echomedproject.PL",
-      "RelativePath": "files/ScanImage/352e2161-6053-498e-8017-4aea360a53b9default#[.{fingerprint}]?.png",
+      "RelativePath": "files/ScanImages/352e2161-6053-498e-8017-4aea360a53b9default#[.{fingerprint}]?.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -686,15 +686,15 @@
       "Integrity": "k7MYfEkbR1I3ux90mpKAU9AeG7o0qmzz8VXyRC96Qmw=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\files\\ScanImage\\352e2161-6053-498e-8017-4aea360a53b9default.png"
+      "OriginalItemSpec": "wwwroot\\files\\ScanImages\\352e2161-6053-498e-8017-4aea360a53b9default.png"
     },
     {
-      "Identity": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\files\\ScanImage\\43f69689-6b73-4e82-b546-1876a54dbcd7default.png",
+      "Identity": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\files\\ScanImages\\43f69689-6b73-4e82-b546-1876a54dbcd7default.png",
       "SourceId": "Echomedproject.PL",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\",
       "BasePath": "_content/Echomedproject.PL",
-      "RelativePath": "files/ScanImage/43f69689-6b73-4e82-b546-1876a54dbcd7default#[.{fingerprint}]?.png",
+      "RelativePath": "files/ScanImages/43f69689-6b73-4e82-b546-1876a54dbcd7default#[.{fingerprint}]?.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -707,15 +707,15 @@
       "Integrity": "k7MYfEkbR1I3ux90mpKAU9AeG7o0qmzz8VXyRC96Qmw=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\files\\ScanImage\\43f69689-6b73-4e82-b546-1876a54dbcd7default.png"
+      "OriginalItemSpec": "wwwroot\\files\\ScanImages\\43f69689-6b73-4e82-b546-1876a54dbcd7default.png"
     },
     {
-      "Identity": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\files\\ScanImage\\74fe4893-7b2d-4ce7-af64-dec8a5960935default.png",
+      "Identity": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\files\\ScanImages\\74fe4893-7b2d-4ce7-af64-dec8a5960935default.png",
       "SourceId": "Echomedproject.PL",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\",
       "BasePath": "_content/Echomedproject.PL",
-      "RelativePath": "files/ScanImage/74fe4893-7b2d-4ce7-af64-dec8a5960935default#[.{fingerprint}]?.png",
+      "RelativePath": "files/ScanImages/74fe4893-7b2d-4ce7-af64-dec8a5960935default#[.{fingerprint}]?.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -728,15 +728,15 @@
       "Integrity": "k7MYfEkbR1I3ux90mpKAU9AeG7o0qmzz8VXyRC96Qmw=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\files\\ScanImage\\74fe4893-7b2d-4ce7-af64-dec8a5960935default.png"
+      "OriginalItemSpec": "wwwroot\\files\\ScanImages\\74fe4893-7b2d-4ce7-af64-dec8a5960935default.png"
     },
     {
-      "Identity": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\files\\ScanImage\\93ee4c30-bd11-4298-8ce9-b0f6b7f11c10default.png",
+      "Identity": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\files\\ScanImages\\93ee4c30-bd11-4298-8ce9-b0f6b7f11c10default.png",
       "SourceId": "Echomedproject.PL",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\",
       "BasePath": "_content/Echomedproject.PL",
-      "RelativePath": "files/ScanImage/93ee4c30-bd11-4298-8ce9-b0f6b7f11c10default#[.{fingerprint}]?.png",
+      "RelativePath": "files/ScanImages/93ee4c30-bd11-4298-8ce9-b0f6b7f11c10default#[.{fingerprint}]?.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -749,15 +749,15 @@
       "Integrity": "k7MYfEkbR1I3ux90mpKAU9AeG7o0qmzz8VXyRC96Qmw=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\files\\ScanImage\\93ee4c30-bd11-4298-8ce9-b0f6b7f11c10default.png"
+      "OriginalItemSpec": "wwwroot\\files\\ScanImages\\93ee4c30-bd11-4298-8ce9-b0f6b7f11c10default.png"
     },
     {
-      "Identity": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\files\\ScanImage\\9e1b894a-f181-4a2f-a281-5a1d87aab7e4default.png",
+      "Identity": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\files\\ScanImages\\9e1b894a-f181-4a2f-a281-5a1d87aab7e4default.png",
       "SourceId": "Echomedproject.PL",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\",
       "BasePath": "_content/Echomedproject.PL",
-      "RelativePath": "files/ScanImage/9e1b894a-f181-4a2f-a281-5a1d87aab7e4default#[.{fingerprint}]?.png",
+      "RelativePath": "files/ScanImages/9e1b894a-f181-4a2f-a281-5a1d87aab7e4default#[.{fingerprint}]?.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -770,15 +770,15 @@
       "Integrity": "k7MYfEkbR1I3ux90mpKAU9AeG7o0qmzz8VXyRC96Qmw=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\files\\ScanImage\\9e1b894a-f181-4a2f-a281-5a1d87aab7e4default.png"
+      "OriginalItemSpec": "wwwroot\\files\\ScanImages\\9e1b894a-f181-4a2f-a281-5a1d87aab7e4default.png"
     },
     {
-      "Identity": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\files\\ScanImage\\b10d72d3-2cef-4f85-9d58-96c57070dd80default.png",
+      "Identity": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\files\\ScanImages\\b10d72d3-2cef-4f85-9d58-96c57070dd80default.png",
       "SourceId": "Echomedproject.PL",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\",
       "BasePath": "_content/Echomedproject.PL",
-      "RelativePath": "files/ScanImage/b10d72d3-2cef-4f85-9d58-96c57070dd80default#[.{fingerprint}]?.png",
+      "RelativePath": "files/ScanImages/b10d72d3-2cef-4f85-9d58-96c57070dd80default#[.{fingerprint}]?.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -791,7 +791,7 @@
       "Integrity": "k7MYfEkbR1I3ux90mpKAU9AeG7o0qmzz8VXyRC96Qmw=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\files\\ScanImage\\b10d72d3-2cef-4f85-9d58-96c57070dd80default.png"
+      "OriginalItemSpec": "wwwroot\\files\\ScanImages\\b10d72d3-2cef-4f85-9d58-96c57070dd80default.png"
     },
     {
       "Identity": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\files\\userImages\\3bce0256-a767-49e7-abcb-636da15dd746default.png",
@@ -3823,8 +3823,8 @@
       ]
     },
     {
-      "Route": "files/ScanImage/0d7848fc-b7ed-4ac0-89a1-7020273b78fbdefault.png",
-      "AssetFile": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\files\\ScanImage\\0d7848fc-b7ed-4ac0-89a1-7020273b78fbdefault.png",
+      "Route": "files/ScanImages/0d7848fc-b7ed-4ac0-89a1-7020273b78fbdefault.png",
+      "AssetFile": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\files\\ScanImages\\0d7848fc-b7ed-4ac0-89a1-7020273b78fbdefault.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3860,8 +3860,8 @@
       ]
     },
     {
-      "Route": "files/ScanImage/0d7848fc-b7ed-4ac0-89a1-7020273b78fbdefault.z0zh4t1na0.png",
-      "AssetFile": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\files\\ScanImage\\0d7848fc-b7ed-4ac0-89a1-7020273b78fbdefault.png",
+      "Route": "files/ScanImages/0d7848fc-b7ed-4ac0-89a1-7020273b78fbdefault.z0zh4t1na0.png",
+      "AssetFile": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\files\\ScanImages\\0d7848fc-b7ed-4ac0-89a1-7020273b78fbdefault.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3896,7 +3896,7 @@
         },
         {
           "Name": "label",
-          "Value": "files/ScanImage/0d7848fc-b7ed-4ac0-89a1-7020273b78fbdefault.png"
+          "Value": "files/ScanImages/0d7848fc-b7ed-4ac0-89a1-7020273b78fbdefault.png"
         },
         {
           "Name": "integrity",
@@ -3905,8 +3905,8 @@
       ]
     },
     {
-      "Route": "files/ScanImage/352e2161-6053-498e-8017-4aea360a53b9default.png",
-      "AssetFile": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\files\\ScanImage\\352e2161-6053-498e-8017-4aea360a53b9default.png",
+      "Route": "files/ScanImages/352e2161-6053-498e-8017-4aea360a53b9default.png",
+      "AssetFile": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\files\\ScanImages\\352e2161-6053-498e-8017-4aea360a53b9default.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3942,8 +3942,8 @@
       ]
     },
     {
-      "Route": "files/ScanImage/352e2161-6053-498e-8017-4aea360a53b9default.z0zh4t1na0.png",
-      "AssetFile": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\files\\ScanImage\\352e2161-6053-498e-8017-4aea360a53b9default.png",
+      "Route": "files/ScanImages/352e2161-6053-498e-8017-4aea360a53b9default.z0zh4t1na0.png",
+      "AssetFile": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\files\\ScanImages\\352e2161-6053-498e-8017-4aea360a53b9default.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3978,7 +3978,7 @@
         },
         {
           "Name": "label",
-          "Value": "files/ScanImage/352e2161-6053-498e-8017-4aea360a53b9default.png"
+          "Value": "files/ScanImages/352e2161-6053-498e-8017-4aea360a53b9default.png"
         },
         {
           "Name": "integrity",
@@ -3987,8 +3987,8 @@
       ]
     },
     {
-      "Route": "files/ScanImage/43f69689-6b73-4e82-b546-1876a54dbcd7default.png",
-      "AssetFile": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\files\\ScanImage\\43f69689-6b73-4e82-b546-1876a54dbcd7default.png",
+      "Route": "files/ScanImages/43f69689-6b73-4e82-b546-1876a54dbcd7default.png",
+      "AssetFile": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\files\\ScanImages\\43f69689-6b73-4e82-b546-1876a54dbcd7default.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4024,8 +4024,8 @@
       ]
     },
     {
-      "Route": "files/ScanImage/43f69689-6b73-4e82-b546-1876a54dbcd7default.z0zh4t1na0.png",
-      "AssetFile": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\files\\ScanImage\\43f69689-6b73-4e82-b546-1876a54dbcd7default.png",
+      "Route": "files/ScanImages/43f69689-6b73-4e82-b546-1876a54dbcd7default.z0zh4t1na0.png",
+      "AssetFile": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\files\\ScanImages\\43f69689-6b73-4e82-b546-1876a54dbcd7default.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4060,7 +4060,7 @@
         },
         {
           "Name": "label",
-          "Value": "files/ScanImage/43f69689-6b73-4e82-b546-1876a54dbcd7default.png"
+          "Value": "files/ScanImages/43f69689-6b73-4e82-b546-1876a54dbcd7default.png"
         },
         {
           "Name": "integrity",
@@ -4069,8 +4069,8 @@
       ]
     },
     {
-      "Route": "files/ScanImage/74fe4893-7b2d-4ce7-af64-dec8a5960935default.png",
-      "AssetFile": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\files\\ScanImage\\74fe4893-7b2d-4ce7-af64-dec8a5960935default.png",
+      "Route": "files/ScanImages/74fe4893-7b2d-4ce7-af64-dec8a5960935default.png",
+      "AssetFile": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\files\\ScanImages\\74fe4893-7b2d-4ce7-af64-dec8a5960935default.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4106,8 +4106,8 @@
       ]
     },
     {
-      "Route": "files/ScanImage/74fe4893-7b2d-4ce7-af64-dec8a5960935default.z0zh4t1na0.png",
-      "AssetFile": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\files\\ScanImage\\74fe4893-7b2d-4ce7-af64-dec8a5960935default.png",
+      "Route": "files/ScanImages/74fe4893-7b2d-4ce7-af64-dec8a5960935default.z0zh4t1na0.png",
+      "AssetFile": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\files\\ScanImages\\74fe4893-7b2d-4ce7-af64-dec8a5960935default.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4142,7 +4142,7 @@
         },
         {
           "Name": "label",
-          "Value": "files/ScanImage/74fe4893-7b2d-4ce7-af64-dec8a5960935default.png"
+          "Value": "files/ScanImages/74fe4893-7b2d-4ce7-af64-dec8a5960935default.png"
         },
         {
           "Name": "integrity",
@@ -4151,8 +4151,8 @@
       ]
     },
     {
-      "Route": "files/ScanImage/93ee4c30-bd11-4298-8ce9-b0f6b7f11c10default.png",
-      "AssetFile": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\files\\ScanImage\\93ee4c30-bd11-4298-8ce9-b0f6b7f11c10default.png",
+      "Route": "files/ScanImages/93ee4c30-bd11-4298-8ce9-b0f6b7f11c10default.png",
+      "AssetFile": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\files\\ScanImages\\93ee4c30-bd11-4298-8ce9-b0f6b7f11c10default.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4188,8 +4188,8 @@
       ]
     },
     {
-      "Route": "files/ScanImage/93ee4c30-bd11-4298-8ce9-b0f6b7f11c10default.z0zh4t1na0.png",
-      "AssetFile": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\files\\ScanImage\\93ee4c30-bd11-4298-8ce9-b0f6b7f11c10default.png",
+      "Route": "files/ScanImages/93ee4c30-bd11-4298-8ce9-b0f6b7f11c10default.z0zh4t1na0.png",
+      "AssetFile": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\files\\ScanImages\\93ee4c30-bd11-4298-8ce9-b0f6b7f11c10default.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4224,7 +4224,7 @@
         },
         {
           "Name": "label",
-          "Value": "files/ScanImage/93ee4c30-bd11-4298-8ce9-b0f6b7f11c10default.png"
+          "Value": "files/ScanImages/93ee4c30-bd11-4298-8ce9-b0f6b7f11c10default.png"
         },
         {
           "Name": "integrity",
@@ -4233,8 +4233,8 @@
       ]
     },
     {
-      "Route": "files/ScanImage/9e1b894a-f181-4a2f-a281-5a1d87aab7e4default.png",
-      "AssetFile": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\files\\ScanImage\\9e1b894a-f181-4a2f-a281-5a1d87aab7e4default.png",
+      "Route": "files/ScanImages/9e1b894a-f181-4a2f-a281-5a1d87aab7e4default.png",
+      "AssetFile": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\files\\ScanImages\\9e1b894a-f181-4a2f-a281-5a1d87aab7e4default.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4270,8 +4270,8 @@
       ]
     },
     {
-      "Route": "files/ScanImage/9e1b894a-f181-4a2f-a281-5a1d87aab7e4default.z0zh4t1na0.png",
-      "AssetFile": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\files\\ScanImage\\9e1b894a-f181-4a2f-a281-5a1d87aab7e4default.png",
+      "Route": "files/ScanImages/9e1b894a-f181-4a2f-a281-5a1d87aab7e4default.z0zh4t1na0.png",
+      "AssetFile": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\files\\ScanImages\\9e1b894a-f181-4a2f-a281-5a1d87aab7e4default.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4306,7 +4306,7 @@
         },
         {
           "Name": "label",
-          "Value": "files/ScanImage/9e1b894a-f181-4a2f-a281-5a1d87aab7e4default.png"
+          "Value": "files/ScanImages/9e1b894a-f181-4a2f-a281-5a1d87aab7e4default.png"
         },
         {
           "Name": "integrity",
@@ -4315,8 +4315,8 @@
       ]
     },
     {
-      "Route": "files/ScanImage/b10d72d3-2cef-4f85-9d58-96c57070dd80default.png",
-      "AssetFile": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\files\\ScanImage\\b10d72d3-2cef-4f85-9d58-96c57070dd80default.png",
+      "Route": "files/ScanImages/b10d72d3-2cef-4f85-9d58-96c57070dd80default.png",
+      "AssetFile": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\files\\ScanImages\\b10d72d3-2cef-4f85-9d58-96c57070dd80default.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4352,8 +4352,8 @@
       ]
     },
     {
-      "Route": "files/ScanImage/b10d72d3-2cef-4f85-9d58-96c57070dd80default.z0zh4t1na0.png",
-      "AssetFile": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\files\\ScanImage\\b10d72d3-2cef-4f85-9d58-96c57070dd80default.png",
+      "Route": "files/ScanImages/b10d72d3-2cef-4f85-9d58-96c57070dd80default.z0zh4t1na0.png",
+      "AssetFile": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\files\\ScanImages\\b10d72d3-2cef-4f85-9d58-96c57070dd80default.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4388,7 +4388,7 @@
         },
         {
           "Name": "label",
-          "Value": "files/ScanImage/b10d72d3-2cef-4f85-9d58-96c57070dd80default.png"
+          "Value": "files/ScanImages/b10d72d3-2cef-4f85-9d58-96c57070dd80default.png"
         },
         {
           "Name": "integrity",

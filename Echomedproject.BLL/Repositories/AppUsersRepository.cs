@@ -42,6 +42,23 @@ namespace Echomedproject.BLL.Repositories
             return user;
         }
 
+        public AppUsers? getUserWithRecordDetailsbyId(string Id)
+        {
+
+            var user = dbContext.Users
+                .Include(u => u.Records)
+                    .ThenInclude(r => r.prescription)
+                .Include(u => u.Records)
+                    .ThenInclude(r => r.Invoice)
+                .Include(u => u.Records)
+                    .ThenInclude(r => r.Scans)
+                .Include(u => u.notifications)
+                .FirstOrDefault(u => u.UserName == Id);
+
+
+            return user;
+        }
+
         public Records? GetRecord(int id)
         {
             return dbContext.Records

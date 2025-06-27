@@ -21,7 +21,7 @@ namespace Echomedproject.BLL.Repositories
         {
 
             var user = dbContext.pharmacyAccs
-                .Include(u => u.Notifications)
+                .Include(u => u.Requests)
                 .FirstOrDefault(u => u.Username == pharmacyID);
 
 

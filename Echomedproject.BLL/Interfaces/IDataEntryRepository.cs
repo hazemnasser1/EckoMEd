@@ -9,6 +9,6 @@ namespace Echomedproject.BLL.Interfaces
 {
     public interface IDataEntryRepository :IGenericRepository<DataEntry>
     {
-
+        public DataEntry getDataEntryWithDetails(string email);
     }
 }

@@ -71,7 +71,7 @@ namespace Echomedproject.PL.Controllers
             {
                 firstName = appUser.FirstName,
                 lastName = appUser.LastName,
-                image = appUser.imagePath,
+                image = DocumentSetting.GetBase64Image(appUser.imagePath,"userImage"),
                 insurance = user.Insurance
             });
         }
@@ -152,9 +152,9 @@ namespace Echomedproject.PL.Controllers
         //    string query = @"
         //[out:json][timeout:30];
         //(
-        //  node[""amenity""=""pharmacy""](29.9,30.9,30.1,31.3);
-        //  way[""amenity""=""pharmacy""](29.9,30.9,30.1,31.3);
-        //  relation[""amenity""=""pharmacy""](29.9,30.9,30.1,31.3);
+        //  node[""amenity""=""Hospitals""](29.9,30.9,30.1,31.3);
+        //  way[""amenity""=""Hospitals""](29.9,30.9,30.1,31.3);
+        //  relation[""amenity""=""Hospitals""](29.9,30.9,30.1,31.3);
         //);
         //out center;
         //";
@@ -660,18 +660,20 @@ namespace Echomedproject.PL.Controllers
             if (pharmacyAcc == null)
                 return NotFound("Pharmacy not found.");
 
-            var notification = new Notification
+            var req = new Request
             {
                 MedicineName = request.MedicineName.Trim(),
-                UserName = user.Email,
-                DateTime = DateTime.UtcNow,
-                PharmacyID = request.PharmacyId,
-                IsExist = null
+                AppUser = user,
+                SentAt = DateTime.UtcNow,
+                pharmacyAcc = pharmacyAcc,
+                qty = request.qty,
+                state="pending",
+                ClosedAt = null,
             };
 
-            pharmacyAcc.Notifications ??= new List<Notification>();
+            pharmacyAcc.Requests ??= new List<Request>();
 
-            pharmacyAcc.Notifications.Add(notification);
+            pharmacyAcc.Requests.Add(req);
 
             unitOfWork.Complete();
             return Ok("Request sent successfully.");
@@ -685,24 +687,117 @@ namespace Echomedproject.PL.Controllers
             var email = currentUser?.FindFirst(ClaimTypes.Email)?.Value;
 
             if (string.IsNullOrEmpty(email))
-                return Unauthorized("User email not found.");
-
-            var userId = email.Split('@')[0];
+                return Unauthorized(new { message = "User email not found." });
 
             var user = unitOfWork.appUsersRepository.getUserWithRecordDetails(email);
-
             if (user == null)
-                return NotFound("Pharmacy account not found.");
+                return NotFound(new { message = "User account not found." });
 
+            var notifications = user.notifications;
 
-
-            if (user.notifications == null || !user.notifications.Any())
+            if (notifications == null || !notifications.Any())
             {
-                return Ok(new { message = "No notifications found." });
+                return Ok(new
+                {
+                    message = "No notifications found.",
+                    total = 0,
+                    unread = 0,
+                    notifications = new List<object>()
+                });
             }
 
-            return Ok(user.notifications);
+            var result = notifications
+                .OrderByDescending(n => n.CreatedAt)
+                .Select(n => new
+                {
+                    n.Id,
+                    n.Text,
+                    n.CreatedAt,
+                    n.IsRead,
+                    n.Type
+                }).ToList();
+
+            var unreadCount = notifications.Count(n => !n.IsRead);
+
+            return Ok(new
+            {
+                total = result.Count,
+                unread = unreadCount,
+                notifications = result
+            });
         }
+        [Authorize("User")]
+        [HttpPost("Mark-notification-as-read")]
+        public async Task<IActionResult> MarkNotificationAsRead([FromBody]int id)
+        {
+            var currentUser = _httpContextAccessor?.HttpContext?.User;
+            var email = currentUser?.FindFirst(ClaimTypes.Email)?.Value;
+
+            if (string.IsNullOrEmpty(email))
+                return Unauthorized(new { message = "User email not found." });
+
+            var user = unitOfWork.appUsersRepository.getUserWithRecordDetails(email);
+            if (user == null)
+                return NotFound(new { message = "User account not found." });
+
+            var notification = user.notifications?.FirstOrDefault(n => n.Id == id);
+            if (notification == null)
+                return NotFound(new { message = "Notification not found." });
+
+            // Mark as read (if not already)
+            if (!notification.IsRead)
+            {
+                notification.IsRead = true;
+                unitOfWork.Complete(); // or await unitOfWork.CompleteAsync();
+            }
+
+            // Return full notification details
+            return Ok(new
+            {
+                notification.Id,
+                notification.Text,
+                notification.CreatedAt,
+                notification.IsRead,
+                notification.Type,
+                notification.PharmacyName,
+                DisplayMessage = $"Notification from {notification.PharmacyName ?? "Hospital"} on {notification.CreatedAt:yyyy-MM-dd}"
+            });
+        }
+
+        [Authorize("User")]
+        [HttpPost("Mark-all-notifications-as-read")]
+        public async Task<IActionResult> MarkAllNotificationsAsRead()
+        {
+            var currentUser = _httpContextAccessor?.HttpContext?.User;
+            var email = currentUser?.FindFirst(ClaimTypes.Email)?.Value;
+
+            if (string.IsNullOrEmpty(email))
+                return Unauthorized(new { message = "User email not found." });
+
+            var user = unitOfWork.appUsersRepository.getUserWithRecordDetails(email);
+            if (user == null)
+                return NotFound(new { message = "User account not found." });
+
+            var unreadNotifications = user.notifications?.Where(n => !n.IsRead).ToList();
+            if (unreadNotifications == null || !unreadNotifications.Any())
+            {
+                return Ok(new { message = "No unread notifications." });
+            }
+
+            foreach (var notification in unreadNotifications)
+            {
+                notification.IsRead = true;
+            }
+
+            unitOfWork.Complete(); // or await unitOfWork.CompleteAsync();
+
+            return Ok(new
+            {
+                message = $"Marked {unreadNotifications.Count} notification(s) as read."
+            });
+        }
+
+
 
 
     }

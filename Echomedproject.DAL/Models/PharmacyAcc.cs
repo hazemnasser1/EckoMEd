@@ -22,8 +22,8 @@ namespace Echomedproject.DAL.Models
         public DateTime EntryDate { get; set; }
 
         public Pharmacy? Pharmacy { get; set; }
-        public List<Notification>? Notifications { get; set; }
-
+        public List<Request>? Requests { get; set; }
+        
         
     }
 }

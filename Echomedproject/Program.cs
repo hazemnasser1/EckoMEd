@@ -51,52 +51,44 @@ public class Program
         .AddDefaultTokenProviders();
 
         // Authentication configuration
-        builder.Services.AddAuthentication(options =>
+        builder.Services.ConfigureApplicationCookie(options =>
         {
-            options.DefaultScheme = "MyCookieAuth";
-            //options.DefaultAuthenticateScheme = "MyCookieAuth";
-            //options.DefaultChallengeScheme = "MyCookieAuth"; // ✅ This is the critical part
-        })
-.AddCookie("MyCookieAuth", options =>
-{
-    options.Cookie.Name = "MyAppAuthCookie";
-    options.Cookie.HttpOnly = true;
-    options.Cookie.SameSite = SameSiteMode.Lax;
-    options.Cookie.SecurePolicy = CookieSecurePolicy.None;
+            options.Cookie.Name = "MyAppAuthCookie";
+            options.Cookie.HttpOnly = true;
+            options.Cookie.SameSite = SameSiteMode.Lax;
+            options.Cookie.SecurePolicy = CookieSecurePolicy.None;
 
-    options.ExpireTimeSpan = TimeSpan.FromDays(7);
-    options.SlidingExpiration = true;
+            options.LoginPath = "/api/account/userlogin";
+            options.LogoutPath = "/api/account/logout";
+            options.AccessDeniedPath = "/api/account/access-denied";
 
-    options.LoginPath = "/api/account/userlogin";
-    options.LogoutPath = "/api/account/logout";
-    options.AccessDeniedPath = "/api/account/access-denied";
+            options.ExpireTimeSpan = TimeSpan.FromDays(7);
+            options.SlidingExpiration = true;
 
-    // ✅ Replace this part
-    options.Events.OnRedirectToLogin = context =>
-    {
-        if (context.Request.Path.StartsWithSegments("/api"))
-        {
-            // 🔁 Redirect to access-denied if unauthenticated
-            context.Response.Redirect("/api/account/access-denied");
-            return Task.CompletedTask;
-        }
+            // 🔐 Override default redirect behavior for APIs
+            options.Events.OnRedirectToLogin = context =>
+            {
+                if (context.Request.Path.StartsWithSegments("/api"))
+                {
+                    context.Response.StatusCode = StatusCodes.Status401Unauthorized;
+                    return Task.CompletedTask;
+                }
+                context.Response.Redirect(context.RedirectUri);
+                return Task.CompletedTask;
+            };
 
-        context.Response.Redirect(context.RedirectUri);
-        return Task.CompletedTask;
-    };
+            options.Events.OnRedirectToAccessDenied = context =>
+            {
+                if (context.Request.Path.StartsWithSegments("/api"))
+                {
+                    context.Response.StatusCode = StatusCodes.Status403Forbidden;
+                    return Task.CompletedTask;
+                }
+                context.Response.Redirect(context.RedirectUri);
+                return Task.CompletedTask;
+            };
+        });
 
-    options.Events.OnRedirectToAccessDenied = context =>
-    {
-        if (context.Request.Path.StartsWithSegments("/api"))
-        {
-            context.Response.StatusCode = StatusCodes.Status403Forbidden;
-            return Task.CompletedTask;
-        }
-
-        context.Response.Redirect(context.RedirectUri);
-        return Task.CompletedTask;
-    };
-});
 
 
 
@@ -111,7 +103,7 @@ public class Program
         });
 
 
-
+        builder.Services.AddEndpointsApiExplorer();
         var app = builder.Build();
 
         // Initialize roles

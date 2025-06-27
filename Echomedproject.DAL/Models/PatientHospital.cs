@@ -12,11 +12,13 @@ namespace Echomedproject.DAL.Models
         [Key]
         public int Id { get; set; }
 
-        public int PatientId { get; set; }
+        public string PatientId { get; set; }
         public int HospitalId { get; set; }
-        public bool IsAdmitted { get; set; }
+        public string Department { get; set; }
+        public string State { get; set; }
 
-        [Required]
+        public Records record { get; set; }
+
         public DateTime EntryDate { get; set; }
 
         public DateTime? LeaveDate { get; set; }

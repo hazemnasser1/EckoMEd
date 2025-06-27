@@ -16,11 +16,12 @@ namespace Echomedproject.DAL.Models
 
         public DateTime visitDate { get; set; }
         public string HospitalName { get; set; }
-        public LabTest? LabTest { get; set; }
+        public List<LabTest>? LabTests { get; set; }
+        public List<Note>? notes { get; set; }
 
-        public List<Scans> Scans { get; set; }
+        public List<Scans>? Scans { get; set; }
 
-        public prescription prescription { get; set; }
+        public prescription? prescription { get; set; }
 
        public Invoice? Invoice { get; set; }
     }

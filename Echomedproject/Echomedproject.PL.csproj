@@ -22,7 +22,8 @@
   <ItemGroup>
     <Folder Include="Services\" />
     <Folder Include="wwwroot\files\advertisementImages\" />
-    <Folder Include="wwwroot\files\ScanImage\" />
+    <Folder Include="wwwroot\files\TestImages\" />
+    <Folder Include="wwwroot\files\ScanImages\" />
     <Folder Include="wwwroot\files\userImages\" />
   </ItemGroup>
 

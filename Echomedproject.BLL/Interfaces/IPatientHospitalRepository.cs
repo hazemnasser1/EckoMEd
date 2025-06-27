@@ -9,6 +9,6 @@ namespace Echomedproject.BLL.Interfaces
 {
     public interface IPatientHospitalRepository : IGenericRepository<PatientHospital>
     {
-
+        public PatientHospital GetPatientHospitalwithIDs(int hospitalID, string userID);
     }
 }

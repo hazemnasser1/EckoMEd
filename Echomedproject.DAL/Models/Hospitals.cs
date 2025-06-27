@@ -71,6 +71,6 @@ namespace Echomedproject.DAL.Models
 
         public ICollection<Room> Rooms { get; set; } = new List<Room>();
 
-        public ICollection<Patients> Patients { get; set; } = new HashSet<Patients>();
+        public ICollection<AppUsers> Patients { get; set; } = new List<AppUsers>();
     }
 }

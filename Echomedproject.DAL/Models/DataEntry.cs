@@ -32,7 +32,6 @@ namespace Echomedproject.DAL.Models
         public Hospitals Hospital { get; set; }
 
 
-        // Dictionary to store the number of patients in each department
         public ICollection<Departments> Departments { get; set; } = new List<Departments>();
         
     }

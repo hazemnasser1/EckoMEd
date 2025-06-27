@@ -32,6 +32,22 @@
   },
   {
     "ContainingType": "Echomedproject.PL.Controllers.AccountController",
+    "Method": "DataEntryLogin",
+    "RelativePath": "api/Account/dataentrylogin",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "Echomedproject.PL.ViewModels.LoginViewModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Echomedproject.PL.Controllers.AccountController",
     "Method": "ForgotPassword",
     "RelativePath": "api/Account/forgot-password",
     "HttpMethod": "POST",
@@ -64,6 +80,22 @@
     "IsController": true,
     "Order": 0,
     "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Echomedproject.PL.Controllers.AccountController",
+    "Method": "PharmacyLogin",
+    "RelativePath": "api/Account/pharmacylogin",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "Echomedproject.PL.ViewModels.LoginViewModel",
+        "IsRequired": true
+      }
+    ],
     "ReturnTypes": []
   },
   {
@@ -231,6 +263,115 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "Echomedproject.PL.Controllers.DataEntryController",
+    "Method": "Capacity",
+    "RelativePath": "api/DataEntry/Capacity",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Echomedproject.PL.Controllers.DataEntryController",
+    "Method": "FetchData",
+    "RelativePath": "api/DataEntry/FetchData",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Id",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Echomedproject.PL.Controllers.PharmacyController",
+    "Method": "ApproveRequest",
+    "RelativePath": "api/Pharmacy/Approve-request/{id}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "id",
+        "Type": "",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Echomedproject.PL.Controllers.PharmacyController",
+    "Method": "Closed_requests",
+    "RelativePath": "api/Pharmacy/Closed-requests",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Echomedproject.PL.Controllers.PharmacyController",
+    "Method": "Pending_requests",
+    "RelativePath": "api/Pharmacy/Pending-requests",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Echomedproject.PL.Controllers.PharmacyController",
+    "Method": "RejectRequest",
+    "RelativePath": "api/Pharmacy/Reject-request/{id}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "id",
+        "Type": "",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Echomedproject.PL.Controllers.PharmacyController",
+    "Method": "ToggleResponse",
+    "RelativePath": "api/Pharmacy/Toggle-response/{id}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "id",
+        "Type": "",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "Echomedproject.PL.Controllers.UserController",
     "Method": "CardDetails",
     "RelativePath": "api/User/CardData",
@@ -336,6 +477,58 @@
         "IsRequired": false
       }
     ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Echomedproject.PL.Controllers.UserController",
+    "Method": "MarkAllNotificationsAsRead",
+    "RelativePath": "api/User/Mark-all-notifications-as-read",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Echomedproject.PL.Controllers.UserController",
+    "Method": "MarkNotificationAsRead",
+    "RelativePath": "api/User/Mark-notification-as-read/{id}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Echomedproject.PL.Controllers.UserController",
+    "Method": "MedicineRequest",
+    "RelativePath": "api/User/medicine-request",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "Echomedproject.PL.ViewModels.MedicineRequestDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Echomedproject.PL.Controllers.UserController",
+    "Method": "Notifications",
+    "RelativePath": "api/User/Notifications",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
     "ReturnTypes": []
   },
   {

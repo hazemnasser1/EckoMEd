@@ -39,13 +39,34 @@ namespace Echomedproject.PL.Controllers
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);
 
+            // Generate date prefix (yyMMdd)
+            var datePrefix = DateTime.Today.ToString("yyMMdd"); // e.g., "250925"
+
+            // Fetch latest user with matching date prefix
+            var lastUser = unitOfWork.appUsersRepository
+                .GetAll()
+                .Where(u => u.UserName.StartsWith(datePrefix))
+                .OrderByDescending(u => u.UserName)
+                .FirstOrDefault();
+
+            int nextNumber = 1;
+            if (lastUser != null && lastUser.UserName.Length >= 11)
+            {
+                var lastNumberPart = lastUser.UserName.Substring(6); // "00001"
+                if (int.TryParse(lastNumberPart, out int parsed))
+                    nextNumber = parsed + 1;
+            }
+
+            var generatedUserName = $"{datePrefix}{nextNumber.ToString("D5")}"; // e.g., 25092500001
+
+            // Create Identity User
             var user = new Users
             {
                 FirstName = model.firstName,
                 LastName = model.lastName,
                 Gender = model.gender,
                 DateOBirth = model.dateOfBirth,
-                UserName = model.username,
+                UserName = generatedUserName,
                 PhoneNumber = model.phoneNumber,
                 Email = model.email,
                 city = model.city,
@@ -64,27 +85,28 @@ namespace Echomedproject.PL.Controllers
                 LastName = model.lastName,
                 Gender = model.gender,
                 DateOfBirth = model.dateOfBirth,
-                UserName = model.username,
+                UserName = generatedUserName,
                 PhoneNum = model.phoneNumber,
                 Email = model.email,
                 City = model.city,
                 street = model.street,
                 Country = model.country,
-                CardNumber="#",
-                CVC=0,
-                ExpirationDate="#"
-
+                CardNumber = "#",
+                CVC = 0,
+                ExpirationDate = "#"
             };
+
             unitOfWork.appUsersRepository.add(appuser);
 
-            //Upload image
+            // Upload profile image
             if (model.profilePicture != null)
             {
                 string imagePath = DocumentSetting.UploadImage(model.profilePicture, "userImages");
                 user.imagePath = imagePath;
                 await userManager.UpdateAsync(user);
-                await userManager.AddToRoleAsync(user, "User");
             }
+
+            await userManager.AddToRoleAsync(user, "User");
 
             // Email confirmation
             var token = await userManager.GenerateEmailConfirmationTokenAsync(user);
@@ -96,8 +118,13 @@ namespace Echomedproject.PL.Controllers
 
             unitOfWork.Complete();
 
-            return Ok(new { message = "Registration successful. Please check your email to confirm your account." });
+            return Ok(new
+            {
+                message = "Registration successful. Please check your email to confirm your account.",
+                userName = generatedUserName
+            });
         }
+
 
         //[HttpPost("DataEntry-register")]
         //public async Task<IActionResult> Data_Register([FromForm] RegisterViewModel model)
@@ -183,8 +210,7 @@ namespace Echomedproject.PL.Controllers
 
         }
 
-        [HttpPost("userlogin")]
-        public async Task<IActionResult> UserLogin([FromBody] LoginViewModel model)
+        private async Task<IActionResult> RoleLogin(LoginViewModel model, string expectedRole)
         {
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);
@@ -193,30 +219,44 @@ namespace Echomedproject.PL.Controllers
             if (user == null)
                 return Unauthorized("Invalid email or password.");
 
-            // Check if email is confirmed
             if (!await userManager.IsEmailConfirmedAsync(user))
                 return Unauthorized("Please confirm your email before logging in.");
 
-            // Check if account is locked out
             if (await userManager.IsLockedOutAsync(user))
                 return Unauthorized("Your account is locked. Please try again later or contact support.");
 
-            // Check password manually
             var passwordValid = await userManager.CheckPasswordAsync(user, model.password);
             if (!passwordValid)
                 return Unauthorized("Incorrect password.");
 
-            // ✅ Check if user has the specified role
-            if (!await userManager.IsInRoleAsync(user, model.role))
-                return Unauthorized($"Access denied.");
+            if (!await userManager.IsInRoleAsync(user, expectedRole))
+                return Unauthorized($"Access denied. You are not a {expectedRole}.");
 
-            // Proceed with login
             var result = await signInManager.PasswordSignInAsync(user, model.password, isPersistent: model.rememberMe, lockoutOnFailure: true);
             if (!result.Succeeded)
                 return Unauthorized("Invalid login attempt.");
 
-            return Ok(new { message = "Login successful." });
+            return Ok(new { message = $"{expectedRole} login successful." });
         }
+
+        [HttpPost("userlogin")]
+        public async Task<IActionResult> UserLogin([FromBody] LoginViewModel model)
+        {
+            return await RoleLogin(model, "User");
+        }
+
+        [HttpPost("dataentrylogin")]
+        public async Task<IActionResult> DataEntryLogin([FromBody] LoginViewModel model)
+        {
+            return await RoleLogin(model, "DataEntry");
+        }
+
+        [HttpPost("pharmacylogin")]
+        public async Task<IActionResult> PharmacyLogin([FromBody] LoginViewModel model)
+        {
+            return await RoleLogin(model, "Pharmacy");
+        }
+
 
 
         [Authorize]

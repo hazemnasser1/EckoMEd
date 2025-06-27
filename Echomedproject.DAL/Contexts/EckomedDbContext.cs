@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Echomedproject.DAL.Migrations;
 using Echomedproject.DAL.Models;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
@@ -59,9 +60,12 @@ namespace Echomedproject.DAL.Contexts
         public DbSet<Advertisement> Advertisements { get; set; }
 
         public DbSet<Pharmacy> pharmacies { get; set; }
-        public DbSet<Notification> notifications { get; set; }
+        public DbSet<Notification> Notifications { get; set; }
 
         public DbSet<PharmacyAcc> pharmacyAccs { get; set; }
+
+        public DbSet<Request> requests { get; set; }
+        public DbSet <Note> notes { get; set; }
 
 
     }
