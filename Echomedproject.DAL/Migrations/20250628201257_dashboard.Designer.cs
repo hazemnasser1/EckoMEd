@@ -4,6 +4,7 @@ using Echomedproject.DAL.Contexts;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Echomedproject.DAL.Migrations
 {
     [DbContext(typeof(EckomedDbContext))]
-    partial class EckomedDbContextModelSnapshot : ModelSnapshot
+    [Migration("20250628201257_dashboard")]
+    partial class dashboard
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -211,9 +214,6 @@ namespace Echomedproject.DAL.Migrations
                         .IsRequired()
                         .HasMaxLength(100)
                         .HasColumnType("nvarchar(100)");
-
-                    b.Property<int>("NomOfDoctors")
-                        .HasColumnType("int");
 
                     b.Property<int>("TotalPatients")
                         .HasColumnType("int");

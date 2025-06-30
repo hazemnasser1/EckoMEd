@@ -22,10 +22,13 @@ namespace Echomedproject.BLL.Repositories
         public DataEntry getDataEntryWithDetails(string email)
         {
             var user = dbContext.dataEntry
-                .Include(u => u.Departments) // Include related departments
-                .FirstOrDefault(u => u.Email == email); // Search by email
+                .Include(u => u.Departments) // Direct departments of the data entry (if any)
+                .Include(u => u.Hospital)    // Include the related Hospital
+                    .ThenInclude(h => h.Departments) // Include Departments of the Hospital
+                .FirstOrDefault(u => u.Email == email);
 
             return user;
         }
+
     }
 }

@@ -208,6 +208,48 @@
   },
   {
     "ContainingType": "Echomedproject.PL.Controllers.DataEntryController",
+    "Method": "DataEntryprofile",
+    "RelativePath": "api/DataEntry",
+    "HttpMethod": "",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Echomedproject.PL.Controllers.DataEntryController",
+    "Method": "AddMedicine",
+    "RelativePath": "api/DataEntry/Add-medicine",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "addMedicineViewModel",
+        "Type": "Echomedproject.PL.ViewModels.AddMedicineViewModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Echomedproject.PL.Controllers.DataEntryController",
+    "Method": "addnote",
+    "RelativePath": "api/DataEntry/Add-Note",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "addNoteViewModel",
+        "Type": "Echomedproject.PL.ViewModels.AddNoteViewModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Echomedproject.PL.Controllers.DataEntryController",
     "Method": "add_record",
     "RelativePath": "api/DataEntry/add-record",
     "HttpMethod": "POST",
@@ -264,8 +306,188 @@
   },
   {
     "ContainingType": "Echomedproject.PL.Controllers.DataEntryController",
+    "Method": "addscan",
+    "RelativePath": "api/DataEntry/Add-Scan",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "PatientID",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "ScanType",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "ScanPart",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Note",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Date",
+        "Type": "System.Nullable\u00601[[System.DateTime, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "Image",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Echomedproject.PL.Controllers.DataEntryController",
+    "Method": "addTest",
+    "RelativePath": "api/DataEntry/Add-Test",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "PatientID",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "TestName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "TestType",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Note",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Date",
+        "Type": "System.Nullable\u00601[[System.DateTime, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      },
+      {
+        "Name": "Image",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Echomedproject.PL.Controllers.DataEntryController",
+    "Method": "AddPatient",
+    "RelativePath": "api/DataEntry/AddPatient",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "addPatientViewModel",
+        "Type": "Echomedproject.PL.ViewModels.AddPatientViewModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Echomedproject.PL.Controllers.DataEntryController",
     "Method": "Capacity",
     "RelativePath": "api/DataEntry/Capacity",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Echomedproject.PL.Controllers.DataEntryController",
+    "Method": "CheckOut",
+    "RelativePath": "api/DataEntry/CheckOut",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Id",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Echomedproject.PL.Controllers.DataEntryController",
+    "Method": "DashboardMonthly",
+    "RelativePath": "api/DataEntry/DashboardMonthly",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Echomedproject.PL.Controllers.DataEntryController",
+    "Method": "DashboardMonthlyGender",
+    "RelativePath": "api/DataEntry/DashboardMonthlyGender",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Echomedproject.PL.Controllers.DataEntryController",
+    "Method": "DashboardWeakly",
+    "RelativePath": "api/DataEntry/DashboardWeakly",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Echomedproject.PL.Controllers.DataEntryController",
+    "Method": "DashboardWeeklyGender",
+    "RelativePath": "api/DataEntry/DashboardWeeklyGender",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Echomedproject.PL.Controllers.DataEntryController",
+    "Method": "DepartmentPatients",
+    "RelativePath": "api/DataEntry/DepartmentPatients",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Department",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Echomedproject.PL.Controllers.DataEntryController",
+    "Method": "Departments",
+    "RelativePath": "api/DataEntry/Departments",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -289,9 +511,121 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "Echomedproject.PL.Controllers.DataEntryController",
+    "Method": "LabTests",
+    "RelativePath": "api/DataEntry/LabTests",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Id",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Echomedproject.PL.Controllers.DataEntryController",
+    "Method": "Medicinces",
+    "RelativePath": "api/DataEntry/Medicines",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Id",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Echomedproject.PL.Controllers.DataEntryController",
+    "Method": "Notes",
+    "RelativePath": "api/DataEntry/Notes",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Id",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Echomedproject.PL.Controllers.DataEntryController",
+    "Method": "PatientData",
+    "RelativePath": "api/DataEntry/PatientData",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Id",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Echomedproject.PL.Controllers.DataEntryController",
+    "Method": "Scans",
+    "RelativePath": "api/DataEntry/Scans",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Id",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Echomedproject.PL.Controllers.DataEntryController",
+    "Method": "UpdateCapacity",
+    "RelativePath": "api/DataEntry/UpdateCapacity",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "Echomedproject.PL.ViewModels.CapacityViewModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Echomedproject.PL.Controllers.DataEntryController",
+    "Method": "UpdateDataEntryProfile",
+    "RelativePath": "api/DataEntry/UpdateDataEntryProfile",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "UpdateDataEntryProfileViewModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "Echomedproject.PL.Controllers.PharmacyController",
     "Method": "ApproveRequest",
-    "RelativePath": "api/Pharmacy/Approve-request/{id}",
+    "RelativePath": "api/Pharmacy/Approve-request",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -300,10 +634,21 @@
         "Name": "id",
         "Type": "System.Int32",
         "IsRequired": true
-      },
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Echomedproject.PL.Controllers.PharmacyController",
+    "Method": "ApproveRequests",
+    "RelativePath": "api/Pharmacy/Approve-requests",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
       {
-        "Name": "id",
-        "Type": "",
+        "Name": "ids",
+        "Type": "System.Collections.Generic.List\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
         "IsRequired": true
       }
     ],
@@ -332,7 +677,7 @@
   {
     "ContainingType": "Echomedproject.PL.Controllers.PharmacyController",
     "Method": "RejectRequest",
-    "RelativePath": "api/Pharmacy/Reject-request/{id}",
+    "RelativePath": "api/Pharmacy/Reject-request",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -341,10 +686,21 @@
         "Name": "id",
         "Type": "System.Int32",
         "IsRequired": true
-      },
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Echomedproject.PL.Controllers.PharmacyController",
+    "Method": "RejectRequests",
+    "RelativePath": "api/Pharmacy/Reject-requests",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
       {
-        "Name": "id",
-        "Type": "",
+        "Name": "ids",
+        "Type": "System.Collections.Generic.List\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
         "IsRequired": true
       }
     ],
@@ -353,7 +709,7 @@
   {
     "ContainingType": "Echomedproject.PL.Controllers.PharmacyController",
     "Method": "ToggleResponse",
-    "RelativePath": "api/Pharmacy/Toggle-response/{id}",
+    "RelativePath": "api/Pharmacy/Toggle-response",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -361,11 +717,6 @@
       {
         "Name": "id",
         "Type": "System.Int32",
-        "IsRequired": true
-      },
-      {
-        "Name": "id",
-        "Type": "",
         "IsRequired": true
       }
     ],
@@ -481,6 +832,22 @@
   },
   {
     "ContainingType": "Echomedproject.PL.Controllers.UserController",
+    "Method": "get_labtests",
+    "RelativePath": "api/User/labtests",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Echomedproject.PL.Controllers.UserController",
     "Method": "MarkAllNotificationsAsRead",
     "RelativePath": "api/User/Mark-all-notifications-as-read",
     "HttpMethod": "POST",
@@ -492,7 +859,7 @@
   {
     "ContainingType": "Echomedproject.PL.Controllers.UserController",
     "Method": "MarkNotificationAsRead",
-    "RelativePath": "api/User/Mark-notification-as-read/{id}",
+    "RelativePath": "api/User/Mark-notification-as-read",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -601,6 +968,16 @@
   },
   {
     "ContainingType": "Echomedproject.PL.Controllers.UserController",
+    "Method": "RemoveInsurance",
+    "RelativePath": "api/User/RemoveInsurance",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Echomedproject.PL.Controllers.UserController",
     "Method": "get_scans",
     "RelativePath": "api/User/scans",
     "HttpMethod": "GET",
@@ -610,6 +987,47 @@
       {
         "Name": "Id",
         "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Echomedproject.PL.Controllers.UserController",
+    "Method": "UpdateProfileImage",
+    "RelativePath": "api/User/UpdateProfileImage",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "ContentType",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "ContentDisposition",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Headers",
+        "Type": "Microsoft.AspNetCore.Http.IHeaderDictionary",
+        "IsRequired": false
+      },
+      {
+        "Name": "Length",
+        "Type": "System.Int64",
+        "IsRequired": false
+      },
+      {
+        "Name": "Name",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "FileName",
+        "Type": "System.String",
         "IsRequired": false
       }
     ],

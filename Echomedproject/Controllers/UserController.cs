@@ -75,6 +75,42 @@ namespace Echomedproject.PL.Controllers
                 insurance = user.Insurance
             });
         }
+
+        [Authorize]
+        [HttpPost("UpdateProfileImage")]
+        public async Task<IActionResult> UpdateProfileImage([FromForm] IFormFile file)
+        {
+            if (file == null || file.Length == 0)
+                return BadRequest("Image file is required.");
+
+            var currentUser = _httpContextAccessor?.HttpContext?.User;
+            var email = currentUser?.FindFirst(ClaimTypes.Email)?.Value;
+
+            if (string.IsNullOrEmpty(email))
+                return Unauthorized("User email not found.");
+
+            var appUser = await userManager.FindByEmailAsync(email);
+            if (appUser == null)
+                return NotFound("User not found.");
+
+            // Upload image
+            var fileName = DocumentSetting.UploadImage(file, "userImage");
+
+            // Update user's image path
+            appUser.imagePath = fileName;
+
+            var result = await userManager.UpdateAsync(appUser);
+            if (!result.Succeeded)
+                return BadRequest("Failed to update profile image.");
+
+            return Ok(new
+            {
+                message = "Profile image updated successfully.",
+                base64Image = DocumentSetting.GetBase64Image(fileName, "userImage")
+            });
+        }
+
+
         [Authorize]
         [HttpPost("Profile")]
         public async Task<IActionResult> EditProfile([FromBody] EditViewModel editViewModel)
@@ -145,6 +181,25 @@ namespace Echomedproject.PL.Controllers
             return Ok("Insurance updated successfully.");
         }
 
+        [HttpPost("RemoveInsurance")]
+        [Authorize]
+        public async Task<IActionResult> RemoveInsurance()
+        {
+            var currentUser = _httpContextAccessor?.HttpContext?.User;
+            var email = currentUser?.FindFirst(ClaimTypes.Email)?.Value;
+
+            if (string.IsNullOrEmpty(email))
+                return Unauthorized();
+
+            AppUsers user = unitOfWork.appUsersRepository.getUserbyEmail(email);
+            if (user == null)
+                return NotFound("User not found.");
+
+            user.Insurance = null; // or use: string.Empty;
+            unitOfWork.Complete();
+
+            return Ok("Insurance removed successfully.");
+        }
 
         //[HttpGet("Get-Hospitals")]
         //public async Task<IActionResult> Hospital_filll()
@@ -403,11 +458,16 @@ namespace Echomedproject.PL.Controllers
                     if (distance > maxDistance.Value)
                         continue;
                 }
-
+                int WaitingPatients = matchingDept.TotalPatients - matchingDept.NomOfDoctors;
+                int lowerTimeRange = WaitingPatients * 20;
+                int upperTimeRange= WaitingPatients * 30;
                 results.Add(new SearchResultViewModel
                 {
                     HospitalName = hospital.Name,
                     Distance = distance,
+                    TotalPatients=matchingDept.TotalPatients,
+                    lowerRange = lowerTimeRange,
+                    upperRange=upperTimeRange,
                     Budget = matchingDept?.budget ?? 0,
                     Department = matchingDept?.Name,
                     Insurance = !string.IsNullOrEmpty(insurance) &&
@@ -587,6 +647,39 @@ namespace Echomedproject.PL.Controllers
             return Ok(scans);
         }
 
+        [Authorize]
+        [HttpGet("labtests")]
+        public async Task<IActionResult> get_labtests(int Id)
+        {
+            var currentUser = _httpContextAccessor?.HttpContext?.User;
+            var email = currentUser?.FindFirst(ClaimTypes.Email)?.Value;
+
+            if (string.IsNullOrEmpty(email))
+                return Unauthorized("User email not found in token.");
+
+            var appUser = await userManager.GetUserAsync(currentUser);
+            if (appUser == null)
+                return NotFound("User not found.");
+
+            var user = unitOfWork.appUsersRepository.getUserWithRecordDetails(email);
+            if (user == null)
+                return NotFound("User not found in repository.");
+
+            var record = unitOfWork.appUsersRepository.GetRecord(Id);
+            if (record == null)
+                return NotFound("Record not found.");
+
+            var labTests = record.LabTests.Select(l => new
+            {
+                l.Name,
+                l.Type,
+                l.Notes,
+                l.Date,
+                ImageBase64 = DocumentSetting.GetBase64Image(l.ImagePath, "TestImages") 
+            });
+
+            return Ok(labTests);
+        }
 
 
         [Authorize]
@@ -610,7 +703,8 @@ namespace Echomedproject.PL.Controllers
 
             foreach (var pharmacy in pharmacies)
             {
-
+                var pharmacyAcc = unitOfWork.pharmacyAccRepository.getpharmacyaccWithDetails(pharmacy.Identifier);
+                
                 double distance = 0;
                 if (userLat > 0 && userLng > 0)
                 {
@@ -627,7 +721,9 @@ namespace Echomedproject.PL.Controllers
                 {
                     Name = pharmacy.Name,
                     Distance = distance,
-                    pharmacyID = pharmacy.Identifier
+                    pharmacyID = pharmacy.Identifier,
+                    phonenumber = pharmacyAcc.PhoneNumber
+
 
                 });
             }

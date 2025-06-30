@@ -13,5 +13,7 @@ namespace Echomedproject.PL.ViewModels
         [Range(0, double.MaxValue, ErrorMessage = "Distance must be a non-negative number.")]
         public double Distance { get; set; }
 
+        public string phonenumber {  get; set; }
+
     }
 }

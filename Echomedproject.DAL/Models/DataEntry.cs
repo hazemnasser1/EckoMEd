@@ -26,6 +26,8 @@ namespace Echomedproject.DAL.Models
         [Range(0, int.MaxValue, ErrorMessage = "Total patients must be a positive number")]
         public int TotalPatients { get; set; }
 
+        public int? LabTestCount { get; set; }
+
         public int HospitalID { get; set; }
 
         // Navigation property to Hospital

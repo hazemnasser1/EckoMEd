@@ -18,6 +18,11 @@ namespace Echomedproject.PL.ViewModels
         [StringLength(100, ErrorMessage = "Department cannot be longer than 100 characters.")]
         public string Department { get; set; }
 
+        public int TotalPatients { get; set; }
+
+        public int lowerRange { get; set; }
+        public int upperRange { get; set; }
+
         public bool Insurance { get; set; }
     }
 }

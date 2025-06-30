@@ -1,7 +1,0 @@
-C:\WebProjects\EckoMed\Echomedproject\Echomedproject\wwwroot\files\ScanImage\0d7848fc-b7ed-4ac0-89a1-7020273b78fbdefault.png
-C:\WebProjects\EckoMed\Echomedproject\Echomedproject\wwwroot\files\ScanImage\352e2161-6053-498e-8017-4aea360a53b9default.png
-C:\WebProjects\EckoMed\Echomedproject\Echomedproject\wwwroot\files\ScanImage\43f69689-6b73-4e82-b546-1876a54dbcd7default.png
-C:\WebProjects\EckoMed\Echomedproject\Echomedproject\wwwroot\files\ScanImage\74fe4893-7b2d-4ce7-af64-dec8a5960935default.png
-C:\WebProjects\EckoMed\Echomedproject\Echomedproject\wwwroot\files\ScanImage\93ee4c30-bd11-4298-8ce9-b0f6b7f11c10default.png
-C:\WebProjects\EckoMed\Echomedproject\Echomedproject\wwwroot\files\ScanImage\9e1b894a-f181-4a2f-a281-5a1d87aab7e4default.png
-C:\WebProjects\EckoMed\Echomedproject\Echomedproject\wwwroot\files\ScanImage\b10d72d3-2cef-4f85-9d58-96c57070dd80default.png

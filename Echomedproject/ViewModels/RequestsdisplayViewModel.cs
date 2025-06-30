@@ -30,5 +30,7 @@ namespace Echomedproject.PL.ViewModels
         [Phone(ErrorMessage = "Invalid phone number.")]
         [StringLength(20, ErrorMessage = "Phone number can't be longer than 20 digits.")]
         public string phoneNum { get; set; }
+
+        public DateTime? DateTime { get; set; }
     }
 }

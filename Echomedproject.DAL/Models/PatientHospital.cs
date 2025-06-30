@@ -12,7 +12,13 @@ namespace Echomedproject.DAL.Models
         [Key]
         public int Id { get; set; }
 
+        public DateTime? DateOfbirth { get; set; }
+
         public string PatientId { get; set; }
+        public string? patientName { get; set; }
+
+        public string? Gender { get; set; }
+
         public int HospitalId { get; set; }
         public string Department { get; set; }
         public string State { get; set; }

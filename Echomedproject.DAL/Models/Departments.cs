@@ -20,6 +20,8 @@ namespace Echomedproject.DAL.Models
         [StringLength(500, ErrorMessage = "Description cannot be longer than 500 characters")]
         public string Description { get; set; }
 
+        public int NomOfDoctors { get; set; }
+
         [Range(0, int.MaxValue, ErrorMessage = "Capacity must be a positive number")]
         public int Capacity { get; set; } // Maximum number of patients the department can handle
 
