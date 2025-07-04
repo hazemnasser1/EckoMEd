@@ -14,10 +14,6 @@ namespace Echomedproject.PL.ViewModels
         [RegularExpression(@"^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[\W_]).{8,20}$",
            ErrorMessage = "Password must include uppercase, lowercase, number, and special character.")]
         public string password { get; set; }
-
-        [Required(ErrorMessage = "Role is required.")]
-        [RegularExpression("^(User|DataEntry)$", ErrorMessage = "Not a Valid Role.")]
-        public string role { get; set; }
         public bool rememberMe { get; set; }
     }
 }

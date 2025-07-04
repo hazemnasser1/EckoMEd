@@ -24,5 +24,9 @@ namespace Echomedproject.PL.ViewModels
         public int upperRange { get; set; }
 
         public bool Insurance { get; set; }
+
+        public double? longitude { get; set; }
+
+        public double? latitude { get; set; }
     }
 }

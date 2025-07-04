@@ -23,9 +23,11 @@ namespace Echomedproject.BLL.Repositories
         public async Task<List<Hospitals>> GetAllHospitalsWithDetailsAsync()
         {
             return await dbContext.hospitals
-                .Include(h => h.Departments)
-                .Include(h => h.AcceptedInsurances)
-                .ToListAsync();
+       .AsNoTracking()
+       .Include(h => h.Departments)
+       .Include(h => h.AcceptedInsurances)
+       .ToListAsync();
+
         }
         public async Task<Hospitals?> FindAsync(Expression<Func<Hospitals, bool>> predicate)
         {

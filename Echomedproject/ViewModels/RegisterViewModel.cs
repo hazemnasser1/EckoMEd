@@ -28,9 +28,6 @@ namespace Echomedproject.PL.ViewModels
         [RegularExpression(@"^(\+20|0)?1[0125][0-9]{8}$", ErrorMessage = "Phone number must be a valid Egyptian number.")]
         public string phoneNumber { get; set; }
 
-        [Required(ErrorMessage = "Username is required.")]
-        [StringLength(30, MinimumLength = 4, ErrorMessage = "Username must be between 4 and 30 characters.")]
-        public string username { get; set; }
 
         [Required(ErrorMessage = "Email address is required.")]
         [RegularExpression(@"^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$", ErrorMessage = "Invalid email address format.")]

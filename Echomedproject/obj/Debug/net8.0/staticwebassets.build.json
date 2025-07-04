@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "MypDMoV1RVKtd9fJA9kgh1VGPTnbJHZSKFKxIRZHbH0=",
+  "Hash": "Ta8b4KXRR7SF9Acx34uk1DMZF/cY155Jz9xxBZErb/I=",
   "Source": "Echomedproject.PL",
   "BasePath": "_content/Echomedproject.PL",
   "Mode": "Default",
@@ -521,12 +521,12 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
-      "Identity": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\files\\advertisementImages\\hospital1.png",
+      "Identity": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\files\\advertisementImages\\hospital1.jpg",
       "SourceId": "Echomedproject.PL",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\",
       "BasePath": "_content/Echomedproject.PL",
-      "RelativePath": "files/advertisementImages/hospital1#[.{fingerprint}]?.png",
+      "RelativePath": "files/advertisementImages/hospital1#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -539,15 +539,15 @@
       "Integrity": "u0KWcfjKixBNc92stE9aZd+cWeBDcFWuNYDI+qDrnzI=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\files\\advertisementImages\\hospital1.png"
+      "OriginalItemSpec": "wwwroot\\files\\advertisementImages\\hospital1.jpg"
     },
     {
-      "Identity": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\files\\advertisementImages\\hospital2.png",
+      "Identity": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\files\\advertisementImages\\hospital2.jpg",
       "SourceId": "Echomedproject.PL",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\",
       "BasePath": "_content/Echomedproject.PL",
-      "RelativePath": "files/advertisementImages/hospital2#[.{fingerprint}]?.png",
+      "RelativePath": "files/advertisementImages/hospital2#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -560,7 +560,7 @@
       "Integrity": "blNVCxEtJO6Lsxe8vPo49OfFlr4odylvCoO4Zu9CVmM=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\files\\advertisementImages\\hospital2.png"
+      "OriginalItemSpec": "wwwroot\\files\\advertisementImages\\hospital2.jpg"
     },
     {
       "Identity": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\files\\advertisementImages\\hospital3.png",
@@ -626,12 +626,12 @@
       "OriginalItemSpec": "wwwroot\\files\\advertisementImages\\hospital5.png"
     },
     {
-      "Identity": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\files\\advertisementImages\\hospital6.png",
+      "Identity": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\files\\advertisementImages\\hospital6.jpg",
       "SourceId": "Echomedproject.PL",
       "SourceType": "Discovered",
       "ContentRoot": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\",
       "BasePath": "_content/Echomedproject.PL",
-      "RelativePath": "files/advertisementImages/hospital6#[.{fingerprint}]?.png",
+      "RelativePath": "files/advertisementImages/hospital6#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -644,7 +644,28 @@
       "Integrity": "yYiBbQYu3N5S+MpQZXfgYKH+Qe+lU0JhEkz7iE2CP0g=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\files\\advertisementImages\\hospital6.png"
+      "OriginalItemSpec": "wwwroot\\files\\advertisementImages\\hospital6.jpg"
+    },
+    {
+      "Identity": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\files\\ScanImages\\0c484b75-edda-4a87-806c-fed332007bd6Screenshot 2024-11-17 225349.png",
+      "SourceId": "Echomedproject.PL",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\",
+      "BasePath": "_content/Echomedproject.PL",
+      "RelativePath": "files/ScanImages/0c484b75-edda-4a87-806c-fed332007bd6Screenshot 2024-11-17 225349#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "u2hbp174xm",
+      "Integrity": "ygdhSbTXx96Eg9hzJzBysZRvmY0dbMl1b8JtnWDW3oE=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\files\\ScanImages\\0c484b75-edda-4a87-806c-fed332007bd6Screenshot 2024-11-17 225349.png"
     },
     {
       "Identity": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\files\\ScanImages\\0d7848fc-b7ed-4ac0-89a1-7020273b78fbdefault.png",
@@ -666,6 +687,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\files\\ScanImages\\0d7848fc-b7ed-4ac0-89a1-7020273b78fbdefault.png"
+    },
+    {
+      "Identity": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\files\\ScanImages\\0def7bd5-8d9c-40e9-9a99-49bc1c1166b2Screenshot 2024-11-17 222231.png",
+      "SourceId": "Echomedproject.PL",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\",
+      "BasePath": "_content/Echomedproject.PL",
+      "RelativePath": "files/ScanImages/0def7bd5-8d9c-40e9-9a99-49bc1c1166b2Screenshot 2024-11-17 222231#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "zwwwkwkr4k",
+      "Integrity": "XX3hC7qcpbqCDg9hyb5VFmJhlinWEl3+LQ4JrYJRpDk=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\files\\ScanImages\\0def7bd5-8d9c-40e9-9a99-49bc1c1166b2Screenshot 2024-11-17 222231.png"
     },
     {
       "Identity": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\files\\ScanImages\\352e2161-6053-498e-8017-4aea360a53b9default.png",
@@ -710,6 +752,48 @@
       "OriginalItemSpec": "wwwroot\\files\\ScanImages\\43f69689-6b73-4e82-b546-1876a54dbcd7default.png"
     },
     {
+      "Identity": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\files\\ScanImages\\6208b847-398b-4549-9c77-c31ea5725c66Screenshot 2024-11-17 224252.png",
+      "SourceId": "Echomedproject.PL",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\",
+      "BasePath": "_content/Echomedproject.PL",
+      "RelativePath": "files/ScanImages/6208b847-398b-4549-9c77-c31ea5725c66Screenshot 2024-11-17 224252#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "vxnbdgff3z",
+      "Integrity": "DZXprLpYXnqnXCOKnv8E9fUmPiLB/h00slqj4qMTFe0=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\files\\ScanImages\\6208b847-398b-4549-9c77-c31ea5725c66Screenshot 2024-11-17 224252.png"
+    },
+    {
+      "Identity": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\files\\ScanImages\\6a2cb212-53d7-4c21-93a4-4093050ece2dScreenshot 2024-11-17 224252.png",
+      "SourceId": "Echomedproject.PL",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\",
+      "BasePath": "_content/Echomedproject.PL",
+      "RelativePath": "files/ScanImages/6a2cb212-53d7-4c21-93a4-4093050ece2dScreenshot 2024-11-17 224252#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "vxnbdgff3z",
+      "Integrity": "DZXprLpYXnqnXCOKnv8E9fUmPiLB/h00slqj4qMTFe0=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\files\\ScanImages\\6a2cb212-53d7-4c21-93a4-4093050ece2dScreenshot 2024-11-17 224252.png"
+    },
+    {
       "Identity": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\files\\ScanImages\\74fe4893-7b2d-4ce7-af64-dec8a5960935default.png",
       "SourceId": "Echomedproject.PL",
       "SourceType": "Discovered",
@@ -729,6 +813,69 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\files\\ScanImages\\74fe4893-7b2d-4ce7-af64-dec8a5960935default.png"
+    },
+    {
+      "Identity": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\files\\ScanImages\\7efc938a-2d56-4d94-a16a-e8fc20c23a6fScreenshot 2024-11-17 225349.png",
+      "SourceId": "Echomedproject.PL",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\",
+      "BasePath": "_content/Echomedproject.PL",
+      "RelativePath": "files/ScanImages/7efc938a-2d56-4d94-a16a-e8fc20c23a6fScreenshot 2024-11-17 225349#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "u2hbp174xm",
+      "Integrity": "ygdhSbTXx96Eg9hzJzBysZRvmY0dbMl1b8JtnWDW3oE=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\files\\ScanImages\\7efc938a-2d56-4d94-a16a-e8fc20c23a6fScreenshot 2024-11-17 225349.png"
+    },
+    {
+      "Identity": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\files\\ScanImages\\84775b5e-59ee-47c7-96a9-823b7bf644e7Screenshot 2024-11-23 233002.png",
+      "SourceId": "Echomedproject.PL",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\",
+      "BasePath": "_content/Echomedproject.PL",
+      "RelativePath": "files/ScanImages/84775b5e-59ee-47c7-96a9-823b7bf644e7Screenshot 2024-11-23 233002#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "2wymocnhvw",
+      "Integrity": "3i0N3WJ7mMmmlfjwbaGoxxJe61NjupdzqcBGBEulySs=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\files\\ScanImages\\84775b5e-59ee-47c7-96a9-823b7bf644e7Screenshot 2024-11-23 233002.png"
+    },
+    {
+      "Identity": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\files\\ScanImages\\8b84ed4d-23b6-40b4-8a5d-3a877681e5d7Screenshot 2024-11-28 030637.png",
+      "SourceId": "Echomedproject.PL",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\",
+      "BasePath": "_content/Echomedproject.PL",
+      "RelativePath": "files/ScanImages/8b84ed4d-23b6-40b4-8a5d-3a877681e5d7Screenshot 2024-11-28 030637#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "i7ajnr9jjj",
+      "Integrity": "kjKQ9hu7t/n4f4BOAgG+10hULJjTy/cqVFvaEwmH0zc=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\files\\ScanImages\\8b84ed4d-23b6-40b4-8a5d-3a877681e5d7Screenshot 2024-11-28 030637.png"
     },
     {
       "Identity": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\files\\ScanImages\\93ee4c30-bd11-4298-8ce9-b0f6b7f11c10default.png",
@@ -794,6 +941,300 @@
       "OriginalItemSpec": "wwwroot\\files\\ScanImages\\b10d72d3-2cef-4f85-9d58-96c57070dd80default.png"
     },
     {
+      "Identity": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\files\\ScanImages\\b1c23780-bf97-4c9d-a62c-2fe96e7d634cScreenshot 2024-11-17 224341.png",
+      "SourceId": "Echomedproject.PL",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\",
+      "BasePath": "_content/Echomedproject.PL",
+      "RelativePath": "files/ScanImages/b1c23780-bf97-4c9d-a62c-2fe96e7d634cScreenshot 2024-11-17 224341#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "j59dw26clb",
+      "Integrity": "lzeZYM8zrMMKoUuyASQp/iEwTATu98zJZskNIpaD1ws=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\files\\ScanImages\\b1c23780-bf97-4c9d-a62c-2fe96e7d634cScreenshot 2024-11-17 224341.png"
+    },
+    {
+      "Identity": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\files\\ScanImages\\b5ae770d-18e5-481e-8e00-7937a20a6ff0Screenshot 2024-11-23 231828.png",
+      "SourceId": "Echomedproject.PL",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\",
+      "BasePath": "_content/Echomedproject.PL",
+      "RelativePath": "files/ScanImages/b5ae770d-18e5-481e-8e00-7937a20a6ff0Screenshot 2024-11-23 231828#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "p395qndnpn",
+      "Integrity": "VWMTxNKhhRoFLy2f9HaZes6T7kDZpu/qilAQk00VaK4=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\files\\ScanImages\\b5ae770d-18e5-481e-8e00-7937a20a6ff0Screenshot 2024-11-23 231828.png"
+    },
+    {
+      "Identity": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\files\\ScanImages\\b67dbfe2-d2a8-4c5b-a75e-656476fcaa38Screenshot 2024-11-23 233002.png",
+      "SourceId": "Echomedproject.PL",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\",
+      "BasePath": "_content/Echomedproject.PL",
+      "RelativePath": "files/ScanImages/b67dbfe2-d2a8-4c5b-a75e-656476fcaa38Screenshot 2024-11-23 233002#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "2wymocnhvw",
+      "Integrity": "3i0N3WJ7mMmmlfjwbaGoxxJe61NjupdzqcBGBEulySs=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\files\\ScanImages\\b67dbfe2-d2a8-4c5b-a75e-656476fcaa38Screenshot 2024-11-23 233002.png"
+    },
+    {
+      "Identity": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\files\\ScanImages\\b77da050-6dc7-4eba-a811-68cd9866222bScreenshot 2024-11-17 225300.png",
+      "SourceId": "Echomedproject.PL",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\",
+      "BasePath": "_content/Echomedproject.PL",
+      "RelativePath": "files/ScanImages/b77da050-6dc7-4eba-a811-68cd9866222bScreenshot 2024-11-17 225300#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "7r9m82jaas",
+      "Integrity": "HSVHkm9C233wbAOoPjmeAw4kGWp4YpyUc6JNOC2T6TE=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\files\\ScanImages\\b77da050-6dc7-4eba-a811-68cd9866222bScreenshot 2024-11-17 225300.png"
+    },
+    {
+      "Identity": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\files\\ScanImages\\be3c061c-cf7c-4cd2-8e47-c642e58f71a8Screenshot 2024-11-17 224341.png",
+      "SourceId": "Echomedproject.PL",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\",
+      "BasePath": "_content/Echomedproject.PL",
+      "RelativePath": "files/ScanImages/be3c061c-cf7c-4cd2-8e47-c642e58f71a8Screenshot 2024-11-17 224341#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "j59dw26clb",
+      "Integrity": "lzeZYM8zrMMKoUuyASQp/iEwTATu98zJZskNIpaD1ws=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\files\\ScanImages\\be3c061c-cf7c-4cd2-8e47-c642e58f71a8Screenshot 2024-11-17 224341.png"
+    },
+    {
+      "Identity": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\files\\ScanImages\\df2095af-845a-41a0-9dc6-f37f84e8a35dScreenshot 2024-11-17 225300.png",
+      "SourceId": "Echomedproject.PL",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\",
+      "BasePath": "_content/Echomedproject.PL",
+      "RelativePath": "files/ScanImages/df2095af-845a-41a0-9dc6-f37f84e8a35dScreenshot 2024-11-17 225300#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "7r9m82jaas",
+      "Integrity": "HSVHkm9C233wbAOoPjmeAw4kGWp4YpyUc6JNOC2T6TE=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\files\\ScanImages\\df2095af-845a-41a0-9dc6-f37f84e8a35dScreenshot 2024-11-17 225300.png"
+    },
+    {
+      "Identity": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\files\\TestImages\\12cb4c09-247f-4613-b2a4-cab21fab41aeScreenshot 2024-11-17 222341.png",
+      "SourceId": "Echomedproject.PL",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\",
+      "BasePath": "_content/Echomedproject.PL",
+      "RelativePath": "files/TestImages/12cb4c09-247f-4613-b2a4-cab21fab41aeScreenshot 2024-11-17 222341#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "lnnzbxtdn1",
+      "Integrity": "gYELhg36xfE2RujzC60QPgwgmTd3qGGGPq4zp9aWY6o=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\files\\TestImages\\12cb4c09-247f-4613-b2a4-cab21fab41aeScreenshot 2024-11-17 222341.png"
+    },
+    {
+      "Identity": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\files\\TestImages\\3d52cbb0-b550-4758-9013-6ac64c82dbd1Screenshot 2024-11-27 015140.png",
+      "SourceId": "Echomedproject.PL",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\",
+      "BasePath": "_content/Echomedproject.PL",
+      "RelativePath": "files/TestImages/3d52cbb0-b550-4758-9013-6ac64c82dbd1Screenshot 2024-11-27 015140#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "wqib8iv6mm",
+      "Integrity": "WMxUD0JM4satPMS4CS1e8YwSeAucbVF+VCt+vfSVedI=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\files\\TestImages\\3d52cbb0-b550-4758-9013-6ac64c82dbd1Screenshot 2024-11-27 015140.png"
+    },
+    {
+      "Identity": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\files\\TestImages\\614e7be3-b1a9-4db1-a91c-cd53396256a5Screenshot 2024-11-17 222341.png",
+      "SourceId": "Echomedproject.PL",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\",
+      "BasePath": "_content/Echomedproject.PL",
+      "RelativePath": "files/TestImages/614e7be3-b1a9-4db1-a91c-cd53396256a5Screenshot 2024-11-17 222341#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "lnnzbxtdn1",
+      "Integrity": "gYELhg36xfE2RujzC60QPgwgmTd3qGGGPq4zp9aWY6o=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\files\\TestImages\\614e7be3-b1a9-4db1-a91c-cd53396256a5Screenshot 2024-11-17 222341.png"
+    },
+    {
+      "Identity": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\files\\TestImages\\62c09273-3db0-45a0-9551-ab3a996341d6Screenshot 2024-11-17 222341.png",
+      "SourceId": "Echomedproject.PL",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\",
+      "BasePath": "_content/Echomedproject.PL",
+      "RelativePath": "files/TestImages/62c09273-3db0-45a0-9551-ab3a996341d6Screenshot 2024-11-17 222341#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "4ydjehy12g",
+      "Integrity": "XN/JVkIQ19c/3ZamLDHXVvU0sQ7oFqHRx/s6TpVocuQ=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\files\\TestImages\\62c09273-3db0-45a0-9551-ab3a996341d6Screenshot 2024-11-17 222341.png"
+    },
+    {
+      "Identity": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\files\\TestImages\\7ff9ee94-27ba-492d-84d3-73ca51f0dfd9Screenshot 2024-11-17 225705.png",
+      "SourceId": "Echomedproject.PL",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\",
+      "BasePath": "_content/Echomedproject.PL",
+      "RelativePath": "files/TestImages/7ff9ee94-27ba-492d-84d3-73ca51f0dfd9Screenshot 2024-11-17 225705#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "k54kg4xq2r",
+      "Integrity": "+H3brDfmB4aWXra739s63sSo/9dOWFzEXSHSYdsV38k=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\files\\TestImages\\7ff9ee94-27ba-492d-84d3-73ca51f0dfd9Screenshot 2024-11-17 225705.png"
+    },
+    {
+      "Identity": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\files\\TestImages\\962ba8ee-9a9b-4d2a-9353-9deba154ffa8Screenshot 2024-11-17 222231.png",
+      "SourceId": "Echomedproject.PL",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\",
+      "BasePath": "_content/Echomedproject.PL",
+      "RelativePath": "files/TestImages/962ba8ee-9a9b-4d2a-9353-9deba154ffa8Screenshot 2024-11-17 222231#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "zwwwkwkr4k",
+      "Integrity": "XX3hC7qcpbqCDg9hyb5VFmJhlinWEl3+LQ4JrYJRpDk=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\files\\TestImages\\962ba8ee-9a9b-4d2a-9353-9deba154ffa8Screenshot 2024-11-17 222231.png"
+    },
+    {
+      "Identity": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\files\\TestImages\\c2decc4e-fca0-444c-8471-468f10fdc107Screenshot 2024-11-17 225300.png",
+      "SourceId": "Echomedproject.PL",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\",
+      "BasePath": "_content/Echomedproject.PL",
+      "RelativePath": "files/TestImages/c2decc4e-fca0-444c-8471-468f10fdc107Screenshot 2024-11-17 225300#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "1bw1hzrcga",
+      "Integrity": "zSZD/Hvo5dNsB/ZhdgRUig1aPCgxif8Kkgw+zy2/NUQ=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\files\\TestImages\\c2decc4e-fca0-444c-8471-468f10fdc107Screenshot 2024-11-17 225300.png"
+    },
+    {
+      "Identity": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\files\\userImages\\12cf46be-d2a5-405e-92df-1f3eab53c934Screenshot 2024-11-17 224252.png",
+      "SourceId": "Echomedproject.PL",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\",
+      "BasePath": "_content/Echomedproject.PL",
+      "RelativePath": "files/userImages/12cf46be-d2a5-405e-92df-1f3eab53c934Screenshot 2024-11-17 224252#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "vxnbdgff3z",
+      "Integrity": "DZXprLpYXnqnXCOKnv8E9fUmPiLB/h00slqj4qMTFe0=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\files\\userImages\\12cf46be-d2a5-405e-92df-1f3eab53c934Screenshot 2024-11-17 224252.png"
+    },
+    {
       "Identity": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\files\\userImages\\3bce0256-a767-49e7-abcb-636da15dd746default.png",
       "SourceId": "Echomedproject.PL",
       "SourceType": "Discovered",
@@ -813,6 +1254,48 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\files\\userImages\\3bce0256-a767-49e7-abcb-636da15dd746default.png"
+    },
+    {
+      "Identity": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\files\\userImages\\46c91b6c-dcc8-4eab-baef-e835f82131a4Screenshot 2024-11-17 224252.png",
+      "SourceId": "Echomedproject.PL",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\",
+      "BasePath": "_content/Echomedproject.PL",
+      "RelativePath": "files/userImages/46c91b6c-dcc8-4eab-baef-e835f82131a4Screenshot 2024-11-17 224252#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "vxnbdgff3z",
+      "Integrity": "DZXprLpYXnqnXCOKnv8E9fUmPiLB/h00slqj4qMTFe0=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\files\\userImages\\46c91b6c-dcc8-4eab-baef-e835f82131a4Screenshot 2024-11-17 224252.png"
+    },
+    {
+      "Identity": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\files\\userImages\\82578357-c892-4d02-8155-3d0ec6972492codm-call-of-duty-mobile-lofi-4k-uhdpaper.com-379.1_c-thumbnail.jpg",
+      "SourceId": "Echomedproject.PL",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\",
+      "BasePath": "_content/Echomedproject.PL",
+      "RelativePath": "files/userImages/82578357-c892-4d02-8155-3d0ec6972492codm-call-of-duty-mobile-lofi-4k-uhdpaper.com-379.1_c-thumbnail#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "dwtdbtkkdg",
+      "Integrity": "Y2jwMPYsQw+RpPxn6ws87QHx75tMQzEhKdKwdBnYCJI=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\files\\userImages\\82578357-c892-4d02-8155-3d0ec6972492codm-call-of-duty-mobile-lofi-4k-uhdpaper.com-379.1_c-thumbnail.jpg"
     },
     {
       "Identity": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\files\\userImages\\9916e56a-f01f-4c00-816a-8f8429aa5b08cover.png",
@@ -3331,8 +3814,8 @@
       ]
     },
     {
-      "Route": "files/advertisementImages/hospital1.jii8rinlr3.png",
-      "AssetFile": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\files\\advertisementImages\\hospital1.png",
+      "Route": "files/advertisementImages/hospital1.jii8rinlr3.jpg",
+      "AssetFile": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\files\\advertisementImages\\hospital1.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3345,7 +3828,7 @@
         },
         {
           "Name": "Content-Type",
-          "Value": "image/png"
+          "Value": "image/jpeg"
         },
         {
           "Name": "ETag",
@@ -3367,7 +3850,7 @@
         },
         {
           "Name": "label",
-          "Value": "files/advertisementImages/hospital1.png"
+          "Value": "files/advertisementImages/hospital1.jpg"
         },
         {
           "Name": "integrity",
@@ -3376,8 +3859,8 @@
       ]
     },
     {
-      "Route": "files/advertisementImages/hospital1.png",
-      "AssetFile": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\files\\advertisementImages\\hospital1.png",
+      "Route": "files/advertisementImages/hospital1.jpg",
+      "AssetFile": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\files\\advertisementImages\\hospital1.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3390,7 +3873,7 @@
         },
         {
           "Name": "Content-Type",
-          "Value": "image/png"
+          "Value": "image/jpeg"
         },
         {
           "Name": "ETag",
@@ -3413,8 +3896,8 @@
       ]
     },
     {
-      "Route": "files/advertisementImages/hospital2.2cqd6kp376.png",
-      "AssetFile": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\files\\advertisementImages\\hospital2.png",
+      "Route": "files/advertisementImages/hospital2.2cqd6kp376.jpg",
+      "AssetFile": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\files\\advertisementImages\\hospital2.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3427,7 +3910,7 @@
         },
         {
           "Name": "Content-Type",
-          "Value": "image/png"
+          "Value": "image/jpeg"
         },
         {
           "Name": "ETag",
@@ -3449,7 +3932,7 @@
         },
         {
           "Name": "label",
-          "Value": "files/advertisementImages/hospital2.png"
+          "Value": "files/advertisementImages/hospital2.jpg"
         },
         {
           "Name": "integrity",
@@ -3458,8 +3941,8 @@
       ]
     },
     {
-      "Route": "files/advertisementImages/hospital2.png",
-      "AssetFile": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\files\\advertisementImages\\hospital2.png",
+      "Route": "files/advertisementImages/hospital2.jpg",
+      "AssetFile": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\files\\advertisementImages\\hospital2.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3472,7 +3955,7 @@
         },
         {
           "Name": "Content-Type",
-          "Value": "image/png"
+          "Value": "image/jpeg"
         },
         {
           "Name": "ETag",
@@ -3741,8 +4224,8 @@
       ]
     },
     {
-      "Route": "files/advertisementImages/hospital6.51yqiu13c7.png",
-      "AssetFile": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\files\\advertisementImages\\hospital6.png",
+      "Route": "files/advertisementImages/hospital6.51yqiu13c7.jpg",
+      "AssetFile": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\files\\advertisementImages\\hospital6.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3755,7 +4238,7 @@
         },
         {
           "Name": "Content-Type",
-          "Value": "image/png"
+          "Value": "image/jpeg"
         },
         {
           "Name": "ETag",
@@ -3777,7 +4260,7 @@
         },
         {
           "Name": "label",
-          "Value": "files/advertisementImages/hospital6.png"
+          "Value": "files/advertisementImages/hospital6.jpg"
         },
         {
           "Name": "integrity",
@@ -3786,8 +4269,8 @@
       ]
     },
     {
-      "Route": "files/advertisementImages/hospital6.png",
-      "AssetFile": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\files\\advertisementImages\\hospital6.png",
+      "Route": "files/advertisementImages/hospital6.jpg",
+      "AssetFile": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\files\\advertisementImages\\hospital6.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3800,7 +4283,7 @@
         },
         {
           "Name": "Content-Type",
-          "Value": "image/png"
+          "Value": "image/jpeg"
         },
         {
           "Name": "ETag",
@@ -3819,6 +4302,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-yYiBbQYu3N5S+MpQZXfgYKH+Qe+lU0JhEkz7iE2CP0g="
+        }
+      ]
+    },
+    {
+      "Route": "files/ScanImages/0c484b75-edda-4a87-806c-fed332007bd6Screenshot 2024-11-17 225349.png",
+      "AssetFile": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\files\\ScanImages\\0c484b75-edda-4a87-806c-fed332007bd6Screenshot 2024-11-17 225349.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "119637"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ygdhSbTXx96Eg9hzJzBysZRvmY0dbMl1b8JtnWDW3oE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 01 Jul 2025 19:01:49 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-ygdhSbTXx96Eg9hzJzBysZRvmY0dbMl1b8JtnWDW3oE="
+        }
+      ]
+    },
+    {
+      "Route": "files/ScanImages/0c484b75-edda-4a87-806c-fed332007bd6Screenshot 2024-11-17 225349.u2hbp174xm.png",
+      "AssetFile": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\files\\ScanImages\\0c484b75-edda-4a87-806c-fed332007bd6Screenshot 2024-11-17 225349.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "119637"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ygdhSbTXx96Eg9hzJzBysZRvmY0dbMl1b8JtnWDW3oE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 01 Jul 2025 19:01:49 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "u2hbp174xm"
+        },
+        {
+          "Name": "label",
+          "Value": "files/ScanImages/0c484b75-edda-4a87-806c-fed332007bd6Screenshot 2024-11-17 225349.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-ygdhSbTXx96Eg9hzJzBysZRvmY0dbMl1b8JtnWDW3oE="
         }
       ]
     },
@@ -3901,6 +4466,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-k7MYfEkbR1I3ux90mpKAU9AeG7o0qmzz8VXyRC96Qmw="
+        }
+      ]
+    },
+    {
+      "Route": "files/ScanImages/0def7bd5-8d9c-40e9-9a99-49bc1c1166b2Screenshot 2024-11-17 222231.png",
+      "AssetFile": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\files\\ScanImages\\0def7bd5-8d9c-40e9-9a99-49bc1c1166b2Screenshot 2024-11-17 222231.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "138820"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"XX3hC7qcpbqCDg9hyb5VFmJhlinWEl3+LQ4JrYJRpDk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 30 Jun 2025 16:20:24 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-XX3hC7qcpbqCDg9hyb5VFmJhlinWEl3+LQ4JrYJRpDk="
+        }
+      ]
+    },
+    {
+      "Route": "files/ScanImages/0def7bd5-8d9c-40e9-9a99-49bc1c1166b2Screenshot 2024-11-17 222231.zwwwkwkr4k.png",
+      "AssetFile": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\files\\ScanImages\\0def7bd5-8d9c-40e9-9a99-49bc1c1166b2Screenshot 2024-11-17 222231.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "138820"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"XX3hC7qcpbqCDg9hyb5VFmJhlinWEl3+LQ4JrYJRpDk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 30 Jun 2025 16:20:24 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "zwwwkwkr4k"
+        },
+        {
+          "Name": "label",
+          "Value": "files/ScanImages/0def7bd5-8d9c-40e9-9a99-49bc1c1166b2Screenshot 2024-11-17 222231.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-XX3hC7qcpbqCDg9hyb5VFmJhlinWEl3+LQ4JrYJRpDk="
         }
       ]
     },
@@ -4069,6 +4716,170 @@
       ]
     },
     {
+      "Route": "files/ScanImages/6208b847-398b-4549-9c77-c31ea5725c66Screenshot 2024-11-17 224252.png",
+      "AssetFile": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\files\\ScanImages\\6208b847-398b-4549-9c77-c31ea5725c66Screenshot 2024-11-17 224252.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "104729"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"DZXprLpYXnqnXCOKnv8E9fUmPiLB/h00slqj4qMTFe0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 30 Jun 2025 16:17:29 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-DZXprLpYXnqnXCOKnv8E9fUmPiLB/h00slqj4qMTFe0="
+        }
+      ]
+    },
+    {
+      "Route": "files/ScanImages/6208b847-398b-4549-9c77-c31ea5725c66Screenshot 2024-11-17 224252.vxnbdgff3z.png",
+      "AssetFile": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\files\\ScanImages\\6208b847-398b-4549-9c77-c31ea5725c66Screenshot 2024-11-17 224252.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "104729"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"DZXprLpYXnqnXCOKnv8E9fUmPiLB/h00slqj4qMTFe0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 30 Jun 2025 16:17:29 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "vxnbdgff3z"
+        },
+        {
+          "Name": "label",
+          "Value": "files/ScanImages/6208b847-398b-4549-9c77-c31ea5725c66Screenshot 2024-11-17 224252.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-DZXprLpYXnqnXCOKnv8E9fUmPiLB/h00slqj4qMTFe0="
+        }
+      ]
+    },
+    {
+      "Route": "files/ScanImages/6a2cb212-53d7-4c21-93a4-4093050ece2dScreenshot 2024-11-17 224252.png",
+      "AssetFile": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\files\\ScanImages\\6a2cb212-53d7-4c21-93a4-4093050ece2dScreenshot 2024-11-17 224252.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "104729"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"DZXprLpYXnqnXCOKnv8E9fUmPiLB/h00slqj4qMTFe0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 30 Jun 2025 16:17:40 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-DZXprLpYXnqnXCOKnv8E9fUmPiLB/h00slqj4qMTFe0="
+        }
+      ]
+    },
+    {
+      "Route": "files/ScanImages/6a2cb212-53d7-4c21-93a4-4093050ece2dScreenshot 2024-11-17 224252.vxnbdgff3z.png",
+      "AssetFile": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\files\\ScanImages\\6a2cb212-53d7-4c21-93a4-4093050ece2dScreenshot 2024-11-17 224252.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "104729"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"DZXprLpYXnqnXCOKnv8E9fUmPiLB/h00slqj4qMTFe0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 30 Jun 2025 16:17:40 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "vxnbdgff3z"
+        },
+        {
+          "Name": "label",
+          "Value": "files/ScanImages/6a2cb212-53d7-4c21-93a4-4093050ece2dScreenshot 2024-11-17 224252.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-DZXprLpYXnqnXCOKnv8E9fUmPiLB/h00slqj4qMTFe0="
+        }
+      ]
+    },
+    {
       "Route": "files/ScanImages/74fe4893-7b2d-4ce7-af64-dec8a5960935default.png",
       "AssetFile": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\files\\ScanImages\\74fe4893-7b2d-4ce7-af64-dec8a5960935default.png",
       "Selectors": [],
@@ -4147,6 +4958,252 @@
         {
           "Name": "integrity",
           "Value": "sha256-k7MYfEkbR1I3ux90mpKAU9AeG7o0qmzz8VXyRC96Qmw="
+        }
+      ]
+    },
+    {
+      "Route": "files/ScanImages/7efc938a-2d56-4d94-a16a-e8fc20c23a6fScreenshot 2024-11-17 225349.png",
+      "AssetFile": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\files\\ScanImages\\7efc938a-2d56-4d94-a16a-e8fc20c23a6fScreenshot 2024-11-17 225349.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "119637"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ygdhSbTXx96Eg9hzJzBysZRvmY0dbMl1b8JtnWDW3oE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 01 Jul 2025 19:01:19 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-ygdhSbTXx96Eg9hzJzBysZRvmY0dbMl1b8JtnWDW3oE="
+        }
+      ]
+    },
+    {
+      "Route": "files/ScanImages/7efc938a-2d56-4d94-a16a-e8fc20c23a6fScreenshot 2024-11-17 225349.u2hbp174xm.png",
+      "AssetFile": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\files\\ScanImages\\7efc938a-2d56-4d94-a16a-e8fc20c23a6fScreenshot 2024-11-17 225349.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "119637"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ygdhSbTXx96Eg9hzJzBysZRvmY0dbMl1b8JtnWDW3oE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 01 Jul 2025 19:01:19 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "u2hbp174xm"
+        },
+        {
+          "Name": "label",
+          "Value": "files/ScanImages/7efc938a-2d56-4d94-a16a-e8fc20c23a6fScreenshot 2024-11-17 225349.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-ygdhSbTXx96Eg9hzJzBysZRvmY0dbMl1b8JtnWDW3oE="
+        }
+      ]
+    },
+    {
+      "Route": "files/ScanImages/84775b5e-59ee-47c7-96a9-823b7bf644e7Screenshot 2024-11-23 233002.2wymocnhvw.png",
+      "AssetFile": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\files\\ScanImages\\84775b5e-59ee-47c7-96a9-823b7bf644e7Screenshot 2024-11-23 233002.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "16040"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"3i0N3WJ7mMmmlfjwbaGoxxJe61NjupdzqcBGBEulySs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 03 Jul 2025 11:54:15 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "2wymocnhvw"
+        },
+        {
+          "Name": "label",
+          "Value": "files/ScanImages/84775b5e-59ee-47c7-96a9-823b7bf644e7Screenshot 2024-11-23 233002.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-3i0N3WJ7mMmmlfjwbaGoxxJe61NjupdzqcBGBEulySs="
+        }
+      ]
+    },
+    {
+      "Route": "files/ScanImages/84775b5e-59ee-47c7-96a9-823b7bf644e7Screenshot 2024-11-23 233002.png",
+      "AssetFile": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\files\\ScanImages\\84775b5e-59ee-47c7-96a9-823b7bf644e7Screenshot 2024-11-23 233002.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "16040"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"3i0N3WJ7mMmmlfjwbaGoxxJe61NjupdzqcBGBEulySs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 03 Jul 2025 11:54:15 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-3i0N3WJ7mMmmlfjwbaGoxxJe61NjupdzqcBGBEulySs="
+        }
+      ]
+    },
+    {
+      "Route": "files/ScanImages/8b84ed4d-23b6-40b4-8a5d-3a877681e5d7Screenshot 2024-11-28 030637.i7ajnr9jjj.png",
+      "AssetFile": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\files\\ScanImages\\8b84ed4d-23b6-40b4-8a5d-3a877681e5d7Screenshot 2024-11-28 030637.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "88114"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"kjKQ9hu7t/n4f4BOAgG+10hULJjTy/cqVFvaEwmH0zc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 02 Jul 2025 17:52:04 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "i7ajnr9jjj"
+        },
+        {
+          "Name": "label",
+          "Value": "files/ScanImages/8b84ed4d-23b6-40b4-8a5d-3a877681e5d7Screenshot 2024-11-28 030637.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-kjKQ9hu7t/n4f4BOAgG+10hULJjTy/cqVFvaEwmH0zc="
+        }
+      ]
+    },
+    {
+      "Route": "files/ScanImages/8b84ed4d-23b6-40b4-8a5d-3a877681e5d7Screenshot 2024-11-28 030637.png",
+      "AssetFile": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\files\\ScanImages\\8b84ed4d-23b6-40b4-8a5d-3a877681e5d7Screenshot 2024-11-28 030637.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "88114"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"kjKQ9hu7t/n4f4BOAgG+10hULJjTy/cqVFvaEwmH0zc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 02 Jul 2025 17:52:04 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-kjKQ9hu7t/n4f4BOAgG+10hULJjTy/cqVFvaEwmH0zc="
         }
       ]
     },
@@ -4397,6 +5454,1154 @@
       ]
     },
     {
+      "Route": "files/ScanImages/b1c23780-bf97-4c9d-a62c-2fe96e7d634cScreenshot 2024-11-17 224341.j59dw26clb.png",
+      "AssetFile": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\files\\ScanImages\\b1c23780-bf97-4c9d-a62c-2fe96e7d634cScreenshot 2024-11-17 224341.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "128181"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"lzeZYM8zrMMKoUuyASQp/iEwTATu98zJZskNIpaD1ws=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 01 Jul 2025 22:46:15 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "j59dw26clb"
+        },
+        {
+          "Name": "label",
+          "Value": "files/ScanImages/b1c23780-bf97-4c9d-a62c-2fe96e7d634cScreenshot 2024-11-17 224341.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-lzeZYM8zrMMKoUuyASQp/iEwTATu98zJZskNIpaD1ws="
+        }
+      ]
+    },
+    {
+      "Route": "files/ScanImages/b1c23780-bf97-4c9d-a62c-2fe96e7d634cScreenshot 2024-11-17 224341.png",
+      "AssetFile": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\files\\ScanImages\\b1c23780-bf97-4c9d-a62c-2fe96e7d634cScreenshot 2024-11-17 224341.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "128181"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"lzeZYM8zrMMKoUuyASQp/iEwTATu98zJZskNIpaD1ws=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 01 Jul 2025 22:46:15 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-lzeZYM8zrMMKoUuyASQp/iEwTATu98zJZskNIpaD1ws="
+        }
+      ]
+    },
+    {
+      "Route": "files/ScanImages/b5ae770d-18e5-481e-8e00-7937a20a6ff0Screenshot 2024-11-23 231828.p395qndnpn.png",
+      "AssetFile": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\files\\ScanImages\\b5ae770d-18e5-481e-8e00-7937a20a6ff0Screenshot 2024-11-23 231828.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "855488"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"VWMTxNKhhRoFLy2f9HaZes6T7kDZpu/qilAQk00VaK4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 03 Jul 2025 12:40:19 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "p395qndnpn"
+        },
+        {
+          "Name": "label",
+          "Value": "files/ScanImages/b5ae770d-18e5-481e-8e00-7937a20a6ff0Screenshot 2024-11-23 231828.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-VWMTxNKhhRoFLy2f9HaZes6T7kDZpu/qilAQk00VaK4="
+        }
+      ]
+    },
+    {
+      "Route": "files/ScanImages/b5ae770d-18e5-481e-8e00-7937a20a6ff0Screenshot 2024-11-23 231828.png",
+      "AssetFile": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\files\\ScanImages\\b5ae770d-18e5-481e-8e00-7937a20a6ff0Screenshot 2024-11-23 231828.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "855488"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"VWMTxNKhhRoFLy2f9HaZes6T7kDZpu/qilAQk00VaK4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 03 Jul 2025 12:40:19 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-VWMTxNKhhRoFLy2f9HaZes6T7kDZpu/qilAQk00VaK4="
+        }
+      ]
+    },
+    {
+      "Route": "files/ScanImages/b67dbfe2-d2a8-4c5b-a75e-656476fcaa38Screenshot 2024-11-23 233002.2wymocnhvw.png",
+      "AssetFile": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\files\\ScanImages\\b67dbfe2-d2a8-4c5b-a75e-656476fcaa38Screenshot 2024-11-23 233002.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "16040"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"3i0N3WJ7mMmmlfjwbaGoxxJe61NjupdzqcBGBEulySs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 03 Jul 2025 12:41:21 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "2wymocnhvw"
+        },
+        {
+          "Name": "label",
+          "Value": "files/ScanImages/b67dbfe2-d2a8-4c5b-a75e-656476fcaa38Screenshot 2024-11-23 233002.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-3i0N3WJ7mMmmlfjwbaGoxxJe61NjupdzqcBGBEulySs="
+        }
+      ]
+    },
+    {
+      "Route": "files/ScanImages/b67dbfe2-d2a8-4c5b-a75e-656476fcaa38Screenshot 2024-11-23 233002.png",
+      "AssetFile": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\files\\ScanImages\\b67dbfe2-d2a8-4c5b-a75e-656476fcaa38Screenshot 2024-11-23 233002.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "16040"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"3i0N3WJ7mMmmlfjwbaGoxxJe61NjupdzqcBGBEulySs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 03 Jul 2025 12:41:21 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-3i0N3WJ7mMmmlfjwbaGoxxJe61NjupdzqcBGBEulySs="
+        }
+      ]
+    },
+    {
+      "Route": "files/ScanImages/b77da050-6dc7-4eba-a811-68cd9866222bScreenshot 2024-11-17 225300.7r9m82jaas.png",
+      "AssetFile": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\files\\ScanImages\\b77da050-6dc7-4eba-a811-68cd9866222bScreenshot 2024-11-17 225300.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "131072"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"HSVHkm9C233wbAOoPjmeAw4kGWp4YpyUc6JNOC2T6TE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 02 Jul 2025 17:28:32 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "7r9m82jaas"
+        },
+        {
+          "Name": "label",
+          "Value": "files/ScanImages/b77da050-6dc7-4eba-a811-68cd9866222bScreenshot 2024-11-17 225300.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-HSVHkm9C233wbAOoPjmeAw4kGWp4YpyUc6JNOC2T6TE="
+        }
+      ]
+    },
+    {
+      "Route": "files/ScanImages/b77da050-6dc7-4eba-a811-68cd9866222bScreenshot 2024-11-17 225300.png",
+      "AssetFile": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\files\\ScanImages\\b77da050-6dc7-4eba-a811-68cd9866222bScreenshot 2024-11-17 225300.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "131072"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"HSVHkm9C233wbAOoPjmeAw4kGWp4YpyUc6JNOC2T6TE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 02 Jul 2025 17:28:32 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-HSVHkm9C233wbAOoPjmeAw4kGWp4YpyUc6JNOC2T6TE="
+        }
+      ]
+    },
+    {
+      "Route": "files/ScanImages/be3c061c-cf7c-4cd2-8e47-c642e58f71a8Screenshot 2024-11-17 224341.j59dw26clb.png",
+      "AssetFile": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\files\\ScanImages\\be3c061c-cf7c-4cd2-8e47-c642e58f71a8Screenshot 2024-11-17 224341.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "128181"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"lzeZYM8zrMMKoUuyASQp/iEwTATu98zJZskNIpaD1ws=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 02 Jul 2025 17:46:36 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "j59dw26clb"
+        },
+        {
+          "Name": "label",
+          "Value": "files/ScanImages/be3c061c-cf7c-4cd2-8e47-c642e58f71a8Screenshot 2024-11-17 224341.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-lzeZYM8zrMMKoUuyASQp/iEwTATu98zJZskNIpaD1ws="
+        }
+      ]
+    },
+    {
+      "Route": "files/ScanImages/be3c061c-cf7c-4cd2-8e47-c642e58f71a8Screenshot 2024-11-17 224341.png",
+      "AssetFile": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\files\\ScanImages\\be3c061c-cf7c-4cd2-8e47-c642e58f71a8Screenshot 2024-11-17 224341.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "128181"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"lzeZYM8zrMMKoUuyASQp/iEwTATu98zJZskNIpaD1ws=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 02 Jul 2025 17:46:36 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-lzeZYM8zrMMKoUuyASQp/iEwTATu98zJZskNIpaD1ws="
+        }
+      ]
+    },
+    {
+      "Route": "files/ScanImages/df2095af-845a-41a0-9dc6-f37f84e8a35dScreenshot 2024-11-17 225300.7r9m82jaas.png",
+      "AssetFile": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\files\\ScanImages\\df2095af-845a-41a0-9dc6-f37f84e8a35dScreenshot 2024-11-17 225300.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "131072"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"HSVHkm9C233wbAOoPjmeAw4kGWp4YpyUc6JNOC2T6TE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 02 Jul 2025 17:54:29 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "7r9m82jaas"
+        },
+        {
+          "Name": "label",
+          "Value": "files/ScanImages/df2095af-845a-41a0-9dc6-f37f84e8a35dScreenshot 2024-11-17 225300.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-HSVHkm9C233wbAOoPjmeAw4kGWp4YpyUc6JNOC2T6TE="
+        }
+      ]
+    },
+    {
+      "Route": "files/ScanImages/df2095af-845a-41a0-9dc6-f37f84e8a35dScreenshot 2024-11-17 225300.png",
+      "AssetFile": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\files\\ScanImages\\df2095af-845a-41a0-9dc6-f37f84e8a35dScreenshot 2024-11-17 225300.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "131072"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"HSVHkm9C233wbAOoPjmeAw4kGWp4YpyUc6JNOC2T6TE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 02 Jul 2025 17:54:29 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-HSVHkm9C233wbAOoPjmeAw4kGWp4YpyUc6JNOC2T6TE="
+        }
+      ]
+    },
+    {
+      "Route": "files/TestImages/12cb4c09-247f-4613-b2a4-cab21fab41aeScreenshot 2024-11-17 222341.lnnzbxtdn1.png",
+      "AssetFile": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\files\\TestImages\\12cb4c09-247f-4613-b2a4-cab21fab41aeScreenshot 2024-11-17 222341.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "131106"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"gYELhg36xfE2RujzC60QPgwgmTd3qGGGPq4zp9aWY6o=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 02 Jul 2025 17:28:02 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "lnnzbxtdn1"
+        },
+        {
+          "Name": "label",
+          "Value": "files/TestImages/12cb4c09-247f-4613-b2a4-cab21fab41aeScreenshot 2024-11-17 222341.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-gYELhg36xfE2RujzC60QPgwgmTd3qGGGPq4zp9aWY6o="
+        }
+      ]
+    },
+    {
+      "Route": "files/TestImages/12cb4c09-247f-4613-b2a4-cab21fab41aeScreenshot 2024-11-17 222341.png",
+      "AssetFile": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\files\\TestImages\\12cb4c09-247f-4613-b2a4-cab21fab41aeScreenshot 2024-11-17 222341.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "131106"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"gYELhg36xfE2RujzC60QPgwgmTd3qGGGPq4zp9aWY6o=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 02 Jul 2025 17:28:02 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-gYELhg36xfE2RujzC60QPgwgmTd3qGGGPq4zp9aWY6o="
+        }
+      ]
+    },
+    {
+      "Route": "files/TestImages/3d52cbb0-b550-4758-9013-6ac64c82dbd1Screenshot 2024-11-27 015140.png",
+      "AssetFile": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\files\\TestImages\\3d52cbb0-b550-4758-9013-6ac64c82dbd1Screenshot 2024-11-27 015140.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "24487"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"WMxUD0JM4satPMS4CS1e8YwSeAucbVF+VCt+vfSVedI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 03 Jul 2025 11:52:33 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-WMxUD0JM4satPMS4CS1e8YwSeAucbVF+VCt+vfSVedI="
+        }
+      ]
+    },
+    {
+      "Route": "files/TestImages/3d52cbb0-b550-4758-9013-6ac64c82dbd1Screenshot 2024-11-27 015140.wqib8iv6mm.png",
+      "AssetFile": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\files\\TestImages\\3d52cbb0-b550-4758-9013-6ac64c82dbd1Screenshot 2024-11-27 015140.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "24487"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"WMxUD0JM4satPMS4CS1e8YwSeAucbVF+VCt+vfSVedI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 03 Jul 2025 11:52:33 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "wqib8iv6mm"
+        },
+        {
+          "Name": "label",
+          "Value": "files/TestImages/3d52cbb0-b550-4758-9013-6ac64c82dbd1Screenshot 2024-11-27 015140.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-WMxUD0JM4satPMS4CS1e8YwSeAucbVF+VCt+vfSVedI="
+        }
+      ]
+    },
+    {
+      "Route": "files/TestImages/614e7be3-b1a9-4db1-a91c-cd53396256a5Screenshot 2024-11-17 222341.lnnzbxtdn1.png",
+      "AssetFile": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\files\\TestImages\\614e7be3-b1a9-4db1-a91c-cd53396256a5Screenshot 2024-11-17 222341.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "131106"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"gYELhg36xfE2RujzC60QPgwgmTd3qGGGPq4zp9aWY6o=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 02 Jul 2025 17:28:02 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "lnnzbxtdn1"
+        },
+        {
+          "Name": "label",
+          "Value": "files/TestImages/614e7be3-b1a9-4db1-a91c-cd53396256a5Screenshot 2024-11-17 222341.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-gYELhg36xfE2RujzC60QPgwgmTd3qGGGPq4zp9aWY6o="
+        }
+      ]
+    },
+    {
+      "Route": "files/TestImages/614e7be3-b1a9-4db1-a91c-cd53396256a5Screenshot 2024-11-17 222341.png",
+      "AssetFile": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\files\\TestImages\\614e7be3-b1a9-4db1-a91c-cd53396256a5Screenshot 2024-11-17 222341.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "131106"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"gYELhg36xfE2RujzC60QPgwgmTd3qGGGPq4zp9aWY6o=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 02 Jul 2025 17:28:02 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-gYELhg36xfE2RujzC60QPgwgmTd3qGGGPq4zp9aWY6o="
+        }
+      ]
+    },
+    {
+      "Route": "files/TestImages/62c09273-3db0-45a0-9551-ab3a996341d6Screenshot 2024-11-17 222341.4ydjehy12g.png",
+      "AssetFile": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\files\\TestImages\\62c09273-3db0-45a0-9551-ab3a996341d6Screenshot 2024-11-17 222341.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "131072"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"XN/JVkIQ19c/3ZamLDHXVvU0sQ7oFqHRx/s6TpVocuQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 02 Jul 2025 17:56:40 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "4ydjehy12g"
+        },
+        {
+          "Name": "label",
+          "Value": "files/TestImages/62c09273-3db0-45a0-9551-ab3a996341d6Screenshot 2024-11-17 222341.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-XN/JVkIQ19c/3ZamLDHXVvU0sQ7oFqHRx/s6TpVocuQ="
+        }
+      ]
+    },
+    {
+      "Route": "files/TestImages/62c09273-3db0-45a0-9551-ab3a996341d6Screenshot 2024-11-17 222341.png",
+      "AssetFile": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\files\\TestImages\\62c09273-3db0-45a0-9551-ab3a996341d6Screenshot 2024-11-17 222341.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "131072"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"XN/JVkIQ19c/3ZamLDHXVvU0sQ7oFqHRx/s6TpVocuQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 02 Jul 2025 17:56:40 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-XN/JVkIQ19c/3ZamLDHXVvU0sQ7oFqHRx/s6TpVocuQ="
+        }
+      ]
+    },
+    {
+      "Route": "files/TestImages/7ff9ee94-27ba-492d-84d3-73ca51f0dfd9Screenshot 2024-11-17 225705.k54kg4xq2r.png",
+      "AssetFile": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\files\\TestImages\\7ff9ee94-27ba-492d-84d3-73ca51f0dfd9Screenshot 2024-11-17 225705.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "117826"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"+H3brDfmB4aWXra739s63sSo/9dOWFzEXSHSYdsV38k=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 03 Jul 2025 12:39:47 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "k54kg4xq2r"
+        },
+        {
+          "Name": "label",
+          "Value": "files/TestImages/7ff9ee94-27ba-492d-84d3-73ca51f0dfd9Screenshot 2024-11-17 225705.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-+H3brDfmB4aWXra739s63sSo/9dOWFzEXSHSYdsV38k="
+        }
+      ]
+    },
+    {
+      "Route": "files/TestImages/7ff9ee94-27ba-492d-84d3-73ca51f0dfd9Screenshot 2024-11-17 225705.png",
+      "AssetFile": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\files\\TestImages\\7ff9ee94-27ba-492d-84d3-73ca51f0dfd9Screenshot 2024-11-17 225705.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "117826"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"+H3brDfmB4aWXra739s63sSo/9dOWFzEXSHSYdsV38k=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 03 Jul 2025 12:39:47 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-+H3brDfmB4aWXra739s63sSo/9dOWFzEXSHSYdsV38k="
+        }
+      ]
+    },
+    {
+      "Route": "files/TestImages/962ba8ee-9a9b-4d2a-9353-9deba154ffa8Screenshot 2024-11-17 222231.png",
+      "AssetFile": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\files\\TestImages\\962ba8ee-9a9b-4d2a-9353-9deba154ffa8Screenshot 2024-11-17 222231.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "138820"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"XX3hC7qcpbqCDg9hyb5VFmJhlinWEl3+LQ4JrYJRpDk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 30 Jun 2025 16:15:39 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-XX3hC7qcpbqCDg9hyb5VFmJhlinWEl3+LQ4JrYJRpDk="
+        }
+      ]
+    },
+    {
+      "Route": "files/TestImages/962ba8ee-9a9b-4d2a-9353-9deba154ffa8Screenshot 2024-11-17 222231.zwwwkwkr4k.png",
+      "AssetFile": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\files\\TestImages\\962ba8ee-9a9b-4d2a-9353-9deba154ffa8Screenshot 2024-11-17 222231.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "138820"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"XX3hC7qcpbqCDg9hyb5VFmJhlinWEl3+LQ4JrYJRpDk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 30 Jun 2025 16:15:39 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "zwwwkwkr4k"
+        },
+        {
+          "Name": "label",
+          "Value": "files/TestImages/962ba8ee-9a9b-4d2a-9353-9deba154ffa8Screenshot 2024-11-17 222231.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-XX3hC7qcpbqCDg9hyb5VFmJhlinWEl3+LQ4JrYJRpDk="
+        }
+      ]
+    },
+    {
+      "Route": "files/TestImages/c2decc4e-fca0-444c-8471-468f10fdc107Screenshot 2024-11-17 225300.1bw1hzrcga.png",
+      "AssetFile": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\files\\TestImages\\c2decc4e-fca0-444c-8471-468f10fdc107Screenshot 2024-11-17 225300.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "133557"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"zSZD/Hvo5dNsB/ZhdgRUig1aPCgxif8Kkgw+zy2/NUQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 01 Jul 2025 22:45:53 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "1bw1hzrcga"
+        },
+        {
+          "Name": "label",
+          "Value": "files/TestImages/c2decc4e-fca0-444c-8471-468f10fdc107Screenshot 2024-11-17 225300.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-zSZD/Hvo5dNsB/ZhdgRUig1aPCgxif8Kkgw+zy2/NUQ="
+        }
+      ]
+    },
+    {
+      "Route": "files/TestImages/c2decc4e-fca0-444c-8471-468f10fdc107Screenshot 2024-11-17 225300.png",
+      "AssetFile": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\files\\TestImages\\c2decc4e-fca0-444c-8471-468f10fdc107Screenshot 2024-11-17 225300.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "133557"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"zSZD/Hvo5dNsB/ZhdgRUig1aPCgxif8Kkgw+zy2/NUQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 01 Jul 2025 22:45:53 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-zSZD/Hvo5dNsB/ZhdgRUig1aPCgxif8Kkgw+zy2/NUQ="
+        }
+      ]
+    },
+    {
+      "Route": "files/userImages/12cf46be-d2a5-405e-92df-1f3eab53c934Screenshot 2024-11-17 224252.png",
+      "AssetFile": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\files\\userImages\\12cf46be-d2a5-405e-92df-1f3eab53c934Screenshot 2024-11-17 224252.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "104729"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"DZXprLpYXnqnXCOKnv8E9fUmPiLB/h00slqj4qMTFe0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 03 Jul 2025 13:54:21 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-DZXprLpYXnqnXCOKnv8E9fUmPiLB/h00slqj4qMTFe0="
+        }
+      ]
+    },
+    {
+      "Route": "files/userImages/12cf46be-d2a5-405e-92df-1f3eab53c934Screenshot 2024-11-17 224252.vxnbdgff3z.png",
+      "AssetFile": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\files\\userImages\\12cf46be-d2a5-405e-92df-1f3eab53c934Screenshot 2024-11-17 224252.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "104729"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"DZXprLpYXnqnXCOKnv8E9fUmPiLB/h00slqj4qMTFe0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 03 Jul 2025 13:54:21 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "vxnbdgff3z"
+        },
+        {
+          "Name": "label",
+          "Value": "files/userImages/12cf46be-d2a5-405e-92df-1f3eab53c934Screenshot 2024-11-17 224252.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-DZXprLpYXnqnXCOKnv8E9fUmPiLB/h00slqj4qMTFe0="
+        }
+      ]
+    },
+    {
       "Route": "files/userImages/3bce0256-a767-49e7-abcb-636da15dd746default.png",
       "AssetFile": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\files\\userImages\\3bce0256-a767-49e7-abcb-636da15dd746default.png",
       "Selectors": [],
@@ -4475,6 +6680,170 @@
         {
           "Name": "integrity",
           "Value": "sha256-k7MYfEkbR1I3ux90mpKAU9AeG7o0qmzz8VXyRC96Qmw="
+        }
+      ]
+    },
+    {
+      "Route": "files/userImages/46c91b6c-dcc8-4eab-baef-e835f82131a4Screenshot 2024-11-17 224252.png",
+      "AssetFile": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\files\\userImages\\46c91b6c-dcc8-4eab-baef-e835f82131a4Screenshot 2024-11-17 224252.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "104729"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"DZXprLpYXnqnXCOKnv8E9fUmPiLB/h00slqj4qMTFe0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 03 Jul 2025 13:53:08 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-DZXprLpYXnqnXCOKnv8E9fUmPiLB/h00slqj4qMTFe0="
+        }
+      ]
+    },
+    {
+      "Route": "files/userImages/46c91b6c-dcc8-4eab-baef-e835f82131a4Screenshot 2024-11-17 224252.vxnbdgff3z.png",
+      "AssetFile": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\files\\userImages\\46c91b6c-dcc8-4eab-baef-e835f82131a4Screenshot 2024-11-17 224252.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "104729"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"DZXprLpYXnqnXCOKnv8E9fUmPiLB/h00slqj4qMTFe0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 03 Jul 2025 13:53:08 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "vxnbdgff3z"
+        },
+        {
+          "Name": "label",
+          "Value": "files/userImages/46c91b6c-dcc8-4eab-baef-e835f82131a4Screenshot 2024-11-17 224252.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-DZXprLpYXnqnXCOKnv8E9fUmPiLB/h00slqj4qMTFe0="
+        }
+      ]
+    },
+    {
+      "Route": "files/userImages/82578357-c892-4d02-8155-3d0ec6972492codm-call-of-duty-mobile-lofi-4k-uhdpaper.com-379.1_c-thumbnail.dwtdbtkkdg.jpg",
+      "AssetFile": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\files\\userImages\\82578357-c892-4d02-8155-3d0ec6972492codm-call-of-duty-mobile-lofi-4k-uhdpaper.com-379.1_c-thumbnail.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "111863"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Y2jwMPYsQw+RpPxn6ws87QHx75tMQzEhKdKwdBnYCJI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 03 Jul 2025 14:40:12 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "dwtdbtkkdg"
+        },
+        {
+          "Name": "label",
+          "Value": "files/userImages/82578357-c892-4d02-8155-3d0ec6972492codm-call-of-duty-mobile-lofi-4k-uhdpaper.com-379.1_c-thumbnail.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Y2jwMPYsQw+RpPxn6ws87QHx75tMQzEhKdKwdBnYCJI="
+        }
+      ]
+    },
+    {
+      "Route": "files/userImages/82578357-c892-4d02-8155-3d0ec6972492codm-call-of-duty-mobile-lofi-4k-uhdpaper.com-379.1_c-thumbnail.jpg",
+      "AssetFile": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\files\\userImages\\82578357-c892-4d02-8155-3d0ec6972492codm-call-of-duty-mobile-lofi-4k-uhdpaper.com-379.1_c-thumbnail.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "111863"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Y2jwMPYsQw+RpPxn6ws87QHx75tMQzEhKdKwdBnYCJI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 03 Jul 2025 14:40:12 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Y2jwMPYsQw+RpPxn6ws87QHx75tMQzEhKdKwdBnYCJI="
         }
       ]
     },

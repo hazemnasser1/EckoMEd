@@ -3,124 +3,120 @@
   "WorkspaceRootPath": "C:\\WebProjects\\EckoMed\\Echomedproject\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3BCBEFED-2A65-464B-AC36-F52B4B4DA31C}|Echomedproject\\Echomedproject.PL.csproj|c:\\webprojects\\eckomed\\echomedproject\\echomedproject\\clientapp\\src\\app\\core\\services\\dataentry\\dataentry.service.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
-      "RelativeMoniker": "D:0:0:{3BCBEFED-2A65-464B-AC36-F52B4B4DA31C}|Echomedproject\\Echomedproject.PL.csproj|solutionrelative:echomedproject\\clientapp\\src\\app\\core\\services\\dataentry\\dataentry.service.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3BCBEFED-2A65-464B-AC36-F52B4B4DA31C}|Echomedproject\\Echomedproject.PL.csproj|c:\\webprojects\\eckomed\\echomedproject\\echomedproject\\clientapp\\src\\app\\core\\services\\auth\\auth.service.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
-      "RelativeMoniker": "D:0:0:{3BCBEFED-2A65-464B-AC36-F52B4B4DA31C}|Echomedproject\\Echomedproject.PL.csproj|solutionrelative:echomedproject\\clientapp\\src\\app\\core\\services\\auth\\auth.service.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3BCBEFED-2A65-464B-AC36-F52B4B4DA31C}|Echomedproject\\Echomedproject.PL.csproj|c:\\webprojects\\eckomed\\echomedproject\\echomedproject\\clientapp\\src\\app\\core\\environment\\environment.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
-      "RelativeMoniker": "D:0:0:{3BCBEFED-2A65-464B-AC36-F52B4B4DA31C}|Echomedproject\\Echomedproject.PL.csproj|solutionrelative:echomedproject\\clientapp\\src\\app\\core\\environment\\environment.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3BCBEFED-2A65-464B-AC36-F52B4B4DA31C}|Echomedproject\\Echomedproject.PL.csproj|c:\\webprojects\\eckomed\\echomedproject\\echomedproject\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{3BCBEFED-2A65-464B-AC36-F52B4B4DA31C}|Echomedproject\\Echomedproject.PL.csproj|solutionrelative:echomedproject\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3BCBEFED-2A65-464B-AC36-F52B4B4DA31C}|Echomedproject\\Echomedproject.PL.csproj|c:\\webprojects\\eckomed\\echomedproject\\echomedproject\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3BCBEFED-2A65-464B-AC36-F52B4B4DA31C}|Echomedproject\\Echomedproject.PL.csproj|solutionrelative:echomedproject\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3BCBEFED-2A65-464B-AC36-F52B4B4DA31C}|Echomedproject\\Echomedproject.PL.csproj|c:\\webprojects\\eckomed\\echomedproject\\echomedproject\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3BCBEFED-2A65-464B-AC36-F52B4B4DA31C}|Echomedproject\\Echomedproject.PL.csproj|solutionrelative:echomedproject\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3BCBEFED-2A65-464B-AC36-F52B4B4DA31C}|Echomedproject\\Echomedproject.PL.csproj|c:\\webprojects\\eckomed\\echomedproject\\echomedproject\\controllers\\dataentrycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3BCBEFED-2A65-464B-AC36-F52B4B4DA31C}|Echomedproject\\Echomedproject.PL.csproj|solutionrelative:echomedproject\\controllers\\dataentrycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3BCBEFED-2A65-464B-AC36-F52B4B4DA31C}|Echomedproject\\Echomedproject.PL.csproj|c:\\webprojects\\eckomed\\echomedproject\\echomedproject\\controllers\\pharmacycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3BCBEFED-2A65-464B-AC36-F52B4B4DA31C}|Echomedproject\\Echomedproject.PL.csproj|solutionrelative:echomedproject\\controllers\\pharmacycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{3BCBEFED-2A65-464B-AC36-F52B4B4DA31C}|Echomedproject\\Echomedproject.PL.csproj|c:\\webprojects\\eckomed\\echomedproject\\echomedproject\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3BCBEFED-2A65-464B-AC36-F52B4B4DA31C}|Echomedproject\\Echomedproject.PL.csproj|solutionrelative:echomedproject\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3BCBEFED-2A65-464B-AC36-F52B4B4DA31C}|Echomedproject\\Echomedproject.PL.csproj|c:\\webprojects\\eckomed\\echomedproject\\echomedproject\\viewmodels\\requestsdisplayviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3BCBEFED-2A65-464B-AC36-F52B4B4DA31C}|Echomedproject\\Echomedproject.PL.csproj|solutionrelative:echomedproject\\viewmodels\\requestsdisplayviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{943B2D98-F61D-482A-995B-19C433EFA2CB}|Echomedproject.DAL\\Echomedproject.DAL.csproj|c:\\webprojects\\eckomed\\echomedproject\\echomedproject.dal\\models\\labtest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{943B2D98-F61D-482A-995B-19C433EFA2CB}|Echomedproject.DAL\\Echomedproject.DAL.csproj|solutionrelative:echomedproject.dal\\models\\labtest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3BCBEFED-2A65-464B-AC36-F52B4B4DA31C}|Echomedproject\\Echomedproject.PL.csproj|c:\\webprojects\\eckomed\\echomedproject\\echomedproject\\viewmodels\\pharmacyresultviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3BCBEFED-2A65-464B-AC36-F52B4B4DA31C}|Echomedproject\\Echomedproject.PL.csproj|solutionrelative:echomedproject\\viewmodels\\pharmacyresultviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1D9E1BFD-362E-4044-ADBE-164FC5CE010D}|Echomedproject.BLL\\Echomedproject.BLL.csproj|c:\\webprojects\\eckomed\\echomedproject\\echomedproject.bll\\repositories\\pharmacyaccrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1D9E1BFD-362E-4044-ADBE-164FC5CE010D}|Echomedproject.BLL\\Echomedproject.BLL.csproj|solutionrelative:echomedproject.bll\\repositories\\pharmacyaccrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{943B2D98-F61D-482A-995B-19C433EFA2CB}|Echomedproject.DAL\\Echomedproject.DAL.csproj|c:\\webprojects\\eckomed\\echomedproject\\echomedproject.dal\\models\\pharmacyacc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{943B2D98-F61D-482A-995B-19C433EFA2CB}|Echomedproject.DAL\\Echomedproject.DAL.csproj|solutionrelative:echomedproject.dal\\models\\pharmacyacc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{943B2D98-F61D-482A-995B-19C433EFA2CB}|Echomedproject.DAL\\Echomedproject.DAL.csproj|c:\\webprojects\\eckomed\\echomedproject\\echomedproject.dal\\models\\pharmacy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{943B2D98-F61D-482A-995B-19C433EFA2CB}|Echomedproject.DAL\\Echomedproject.DAL.csproj|solutionrelative:echomedproject.dal\\models\\pharmacy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3BCBEFED-2A65-464B-AC36-F52B4B4DA31C}|Echomedproject\\Echomedproject.PL.csproj|c:\\webprojects\\eckomed\\echomedproject\\echomedproject\\helpers\\documentsetting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3BCBEFED-2A65-464B-AC36-F52B4B4DA31C}|Echomedproject\\Echomedproject.PL.csproj|solutionrelative:echomedproject\\helpers\\documentsetting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3BCBEFED-2A65-464B-AC36-F52B4B4DA31C}|Echomedproject\\Echomedproject.PL.csproj|c:\\webprojects\\eckomed\\echomedproject\\echomedproject\\controllers\\pharmacycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3BCBEFED-2A65-464B-AC36-F52B4B4DA31C}|Echomedproject\\Echomedproject.PL.csproj|solutionrelative:echomedproject\\controllers\\pharmacycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3BCBEFED-2A65-464B-AC36-F52B4B4DA31C}|Echomedproject\\Echomedproject.PL.csproj|c:\\webprojects\\eckomed\\echomedproject\\echomedproject\\viewmodels\\addpatientviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3BCBEFED-2A65-464B-AC36-F52B4B4DA31C}|Echomedproject\\Echomedproject.PL.csproj|solutionrelative:echomedproject\\viewmodels\\addpatientviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3BCBEFED-2A65-464B-AC36-F52B4B4DA31C}|Echomedproject\\Echomedproject.PL.csproj|c:\\webprojects\\eckomed\\echomedproject\\echomedproject\\viewmodels\\searchresultviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3BCBEFED-2A65-464B-AC36-F52B4B4DA31C}|Echomedproject\\Echomedproject.PL.csproj|solutionrelative:echomedproject\\viewmodels\\searchresultviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3BCBEFED-2A65-464B-AC36-F52B4B4DA31C}|Echomedproject\\Echomedproject.PL.csproj|c:\\webprojects\\eckomed\\echomedproject\\echomedproject\\viewmodels\\medicinerequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3BCBEFED-2A65-464B-AC36-F52B4B4DA31C}|Echomedproject\\Echomedproject.PL.csproj|solutionrelative:echomedproject\\viewmodels\\medicinerequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3BCBEFED-2A65-464B-AC36-F52B4B4DA31C}|Echomedproject\\Echomedproject.PL.csproj|c:\\webprojects\\eckomed\\echomedproject\\echomedproject\\viewmodels\\resetpasswordviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3BCBEFED-2A65-464B-AC36-F52B4B4DA31C}|Echomedproject\\Echomedproject.PL.csproj|solutionrelative:echomedproject\\viewmodels\\resetpasswordviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3BCBEFED-2A65-464B-AC36-F52B4B4DA31C}|Echomedproject\\Echomedproject.PL.csproj|c:\\webprojects\\eckomed\\echomedproject\\echomedproject\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3BCBEFED-2A65-464B-AC36-F52B4B4DA31C}|Echomedproject\\Echomedproject.PL.csproj|solutionrelative:echomedproject\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3BCBEFED-2A65-464B-AC36-F52B4B4DA31C}|Echomedproject\\Echomedproject.PL.csproj|c:\\webprojects\\eckomed\\echomedproject\\echomedproject\\viewmodels\\capacityviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3BCBEFED-2A65-464B-AC36-F52B4B4DA31C}|Echomedproject\\Echomedproject.PL.csproj|solutionrelative:echomedproject\\viewmodels\\capacityviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3BCBEFED-2A65-464B-AC36-F52B4B4DA31C}|Echomedproject\\Echomedproject.PL.csproj|c:\\webprojects\\eckomed\\echomedproject\\echomedproject\\viewmodels\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3BCBEFED-2A65-464B-AC36-F52B4B4DA31C}|Echomedproject\\Echomedproject.PL.csproj|solutionrelative:echomedproject\\viewmodels\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{943B2D98-F61D-482A-995B-19C433EFA2CB}|Echomedproject.DAL\\Echomedproject.DAL.csproj|c:\\webprojects\\eckomed\\echomedproject\\echomedproject.dal\\models\\departments.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{943B2D98-F61D-482A-995B-19C433EFA2CB}|Echomedproject.DAL\\Echomedproject.DAL.csproj|solutionrelative:echomedproject.dal\\models\\departments.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1D9E1BFD-362E-4044-ADBE-164FC5CE010D}|Echomedproject.BLL\\Echomedproject.BLL.csproj|c:\\webprojects\\eckomed\\echomedproject\\echomedproject.bll\\repositories\\emailsender.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1D9E1BFD-362E-4044-ADBE-164FC5CE010D}|Echomedproject.BLL\\Echomedproject.BLL.csproj|solutionrelative:echomedproject.bll\\repositories\\emailsender.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3BCBEFED-2A65-464B-AC36-F52B4B4DA31C}|Echomedproject\\Echomedproject.PL.csproj|c:\\webprojects\\eckomed\\echomedproject\\echomedproject\\viewmodels\\updatedataentryprofileviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3BCBEFED-2A65-464B-AC36-F52B4B4DA31C}|Echomedproject\\Echomedproject.PL.csproj|solutionrelative:echomedproject\\viewmodels\\updatedataentryprofileviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3BCBEFED-2A65-464B-AC36-F52B4B4DA31C}|Echomedproject\\Echomedproject.PL.csproj|c:\\webprojects\\eckomed\\echomedproject\\echomedproject\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{3BCBEFED-2A65-464B-AC36-F52B4B4DA31C}|Echomedproject\\Echomedproject.PL.csproj|solutionrelative:echomedproject\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{943B2D98-F61D-482A-995B-19C433EFA2CB}|Echomedproject.DAL\\Echomedproject.DAL.csproj|c:\\webprojects\\eckomed\\echomedproject\\echomedproject.dal\\models\\dataentry.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{943B2D98-F61D-482A-995B-19C433EFA2CB}|Echomedproject.DAL\\Echomedproject.DAL.csproj|solutionrelative:echomedproject.dal\\models\\dataentry.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3BCBEFED-2A65-464B-AC36-F52B4B4DA31C}|Echomedproject\\Echomedproject.PL.csproj|c:\\webprojects\\eckomed\\echomedproject\\echomedproject\\viewmodels\\registerviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3BCBEFED-2A65-464B-AC36-F52B4B4DA31C}|Echomedproject\\Echomedproject.PL.csproj|solutionrelative:echomedproject\\viewmodels\\registerviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3BCBEFED-2A65-464B-AC36-F52B4B4DA31C}|Echomedproject\\Echomedproject.PL.csproj|c:\\webprojects\\eckomed\\echomedproject\\echomedproject\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3BCBEFED-2A65-464B-AC36-F52B4B4DA31C}|Echomedproject\\Echomedproject.PL.csproj|solutionrelative:echomedproject\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3BCBEFED-2A65-464B-AC36-F52B4B4DA31C}|Echomedproject\\Echomedproject.PL.csproj|c:\\webprojects\\eckomed\\echomedproject\\echomedproject\\clientapp\\src\\app\\pages\\patient\\searchmedicine\\searchmedicine.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{3BCBEFED-2A65-464B-AC36-F52B4B4DA31C}|Echomedproject\\Echomedproject.PL.csproj|solutionrelative:echomedproject\\clientapp\\src\\app\\pages\\patient\\searchmedicine\\searchmedicine.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3BCBEFED-2A65-464B-AC36-F52B4B4DA31C}|Echomedproject\\Echomedproject.PL.csproj|c:\\webprojects\\eckomed\\echomedproject\\echomedproject\\clientapp\\src\\app\\pages\\patient\\search\\search.component.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3BCBEFED-2A65-464B-AC36-F52B4B4DA31C}|Echomedproject\\Echomedproject.PL.csproj|solutionrelative:echomedproject\\clientapp\\src\\app\\pages\\patient\\search\\search.component.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3BCBEFED-2A65-464B-AC36-F52B4B4DA31C}|Echomedproject\\Echomedproject.PL.csproj|c:\\webprojects\\eckomed\\echomedproject\\echomedproject\\clientapp\\src\\app\\pages\\patient\\search\\search.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{3BCBEFED-2A65-464B-AC36-F52B4B4DA31C}|Echomedproject\\Echomedproject.PL.csproj|solutionrelative:echomedproject\\clientapp\\src\\app\\pages\\patient\\search\\search.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3BCBEFED-2A65-464B-AC36-F52B4B4DA31C}|Echomedproject\\Echomedproject.PL.csproj|c:\\webprojects\\eckomed\\echomedproject\\echomedproject\\clientapp\\src\\app\\core\\environment\\environment.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{3BCBEFED-2A65-464B-AC36-F52B4B4DA31C}|Echomedproject\\Echomedproject.PL.csproj|solutionrelative:echomedproject\\clientapp\\src\\app\\core\\environment\\environment.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3BCBEFED-2A65-464B-AC36-F52B4B4DA31C}|Echomedproject\\Echomedproject.PL.csproj|c:\\webprojects\\eckomed\\echomedproject\\echomedproject\\clientapp\\src\\app\\pages\\pharmacy\\viewrequests\\view-requests.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{3BCBEFED-2A65-464B-AC36-F52B4B4DA31C}|Echomedproject\\Echomedproject.PL.csproj|solutionrelative:echomedproject\\clientapp\\src\\app\\pages\\pharmacy\\viewrequests\\view-requests.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3BCBEFED-2A65-464B-AC36-F52B4B4DA31C}|Echomedproject\\Echomedproject.PL.csproj|c:\\webprojects\\eckomed\\echomedproject\\echomedproject\\clientapp\\src\\app\\core\\services\\auth\\auth.service.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{3BCBEFED-2A65-464B-AC36-F52B4B4DA31C}|Echomedproject\\Echomedproject.PL.csproj|solutionrelative:echomedproject\\clientapp\\src\\app\\core\\services\\auth\\auth.service.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3BCBEFED-2A65-464B-AC36-F52B4B4DA31C}|Echomedproject\\Echomedproject.PL.csproj|c:\\webprojects\\eckomed\\echomedproject\\echomedproject\\clientapp\\src\\app\\pages\\patient\\dashboard\\pdashboard.component.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3BCBEFED-2A65-464B-AC36-F52B4B4DA31C}|Echomedproject\\Echomedproject.PL.csproj|solutionrelative:echomedproject\\clientapp\\src\\app\\pages\\patient\\dashboard\\pdashboard.component.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3BCBEFED-2A65-464B-AC36-F52B4B4DA31C}|Echomedproject\\Echomedproject.PL.csproj|c:\\webprojects\\eckomed\\echomedproject\\echomedproject\\clientapp\\src\\app\\pages\\patient\\dashboard\\pdashboard.component.scss||{181FE41B-5A5D-479F-9F8F-BF665F4EBC2A}",
+      "RelativeMoniker": "D:0:0:{3BCBEFED-2A65-464B-AC36-F52B4B4DA31C}|Echomedproject\\Echomedproject.PL.csproj|solutionrelative:echomedproject\\clientapp\\src\\app\\pages\\patient\\dashboard\\pdashboard.component.scss||{181FE41B-5A5D-479F-9F8F-BF665F4EBC2A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3BCBEFED-2A65-464B-AC36-F52B4B4DA31C}|Echomedproject\\Echomedproject.PL.csproj|c:\\webprojects\\eckomed\\echomedproject\\echomedproject\\wwwroot\\patientdashboard\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{3BCBEFED-2A65-464B-AC36-F52B4B4DA31C}|Echomedproject\\Echomedproject.PL.csproj|solutionrelative:echomedproject\\wwwroot\\patientdashboard\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3BCBEFED-2A65-464B-AC36-F52B4B4DA31C}|Echomedproject\\Echomedproject.PL.csproj|c:\\webprojects\\eckomed\\echomedproject\\echomedproject\\clientapp\\src\\server.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{3BCBEFED-2A65-464B-AC36-F52B4B4DA31C}|Echomedproject\\Echomedproject.PL.csproj|solutionrelative:echomedproject\\clientapp\\src\\server.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3BCBEFED-2A65-464B-AC36-F52B4B4DA31C}|Echomedproject\\Echomedproject.PL.csproj|c:\\webprojects\\eckomed\\echomedproject\\echomedproject\\clientapp\\src\\app\\core\\services\\notification.service.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{3BCBEFED-2A65-464B-AC36-F52B4B4DA31C}|Echomedproject\\Echomedproject.PL.csproj|solutionrelative:echomedproject\\clientapp\\src\\app\\core\\services\\notification.service.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3BCBEFED-2A65-464B-AC36-F52B4B4DA31C}|Echomedproject\\Echomedproject.PL.csproj|c:\\webprojects\\eckomed\\echomedproject\\echomedproject\\clientapp\\src\\app\\core\\services\\ad.service.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{3BCBEFED-2A65-464B-AC36-F52B4B4DA31C}|Echomedproject\\Echomedproject.PL.csproj|solutionrelative:echomedproject\\clientapp\\src\\app\\core\\services\\ad.service.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3BCBEFED-2A65-464B-AC36-F52B4B4DA31C}|Echomedproject\\Echomedproject.PL.csproj|c:\\webprojects\\eckomed\\echomedproject\\echomedproject\\clientapp\\src\\app\\layouts\\footer\\footer.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{3BCBEFED-2A65-464B-AC36-F52B4B4DA31C}|Echomedproject\\Echomedproject.PL.csproj|solutionrelative:echomedproject\\clientapp\\src\\app\\layouts\\footer\\footer.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3BCBEFED-2A65-464B-AC36-F52B4B4DA31C}|Echomedproject\\Echomedproject.PL.csproj|c:\\webprojects\\eckomed\\echomedproject\\echomedproject\\viewmodels\\notificationreadviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3BCBEFED-2A65-464B-AC36-F52B4B4DA31C}|Echomedproject\\Echomedproject.PL.csproj|solutionrelative:echomedproject\\viewmodels\\notificationreadviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3BCBEFED-2A65-464B-AC36-F52B4B4DA31C}|Echomedproject\\Echomedproject.PL.csproj|c:\\webprojects\\eckomed\\echomedproject\\echomedproject\\clientapp\\src\\app\\pages\\dataentry\\patientinteraction\\patientinteraction.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{3BCBEFED-2A65-464B-AC36-F52B4B4DA31C}|Echomedproject\\Echomedproject.PL.csproj|solutionrelative:echomedproject\\clientapp\\src\\app\\pages\\dataentry\\patientinteraction\\patientinteraction.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1D9E1BFD-362E-4044-ADBE-164FC5CE010D}|Echomedproject.BLL\\Echomedproject.BLL.csproj|c:\\webprojects\\eckomed\\echomedproject\\echomedproject.bll\\repositories\\patienthospitalrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1D9E1BFD-362E-4044-ADBE-164FC5CE010D}|Echomedproject.BLL\\Echomedproject.BLL.csproj|solutionrelative:echomedproject.bll\\repositories\\patienthospitalrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1D9E1BFD-362E-4044-ADBE-164FC5CE010D}|Echomedproject.BLL\\Echomedproject.BLL.csproj|c:\\webprojects\\eckomed\\echomedproject\\echomedproject.bll\\interfaces\\ipatienthospitalrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1D9E1BFD-362E-4044-ADBE-164FC5CE010D}|Echomedproject.BLL\\Echomedproject.BLL.csproj|solutionrelative:echomedproject.bll\\interfaces\\ipatienthospitalrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{1D9E1BFD-362E-4044-ADBE-164FC5CE010D}|Echomedproject.BLL\\Echomedproject.BLL.csproj|c:\\webprojects\\eckomed\\echomedproject\\echomedproject.bll\\repositories\\appusersrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1D9E1BFD-362E-4044-ADBE-164FC5CE010D}|Echomedproject.BLL\\Echomedproject.BLL.csproj|solutionrelative:echomedproject.bll\\repositories\\appusersrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1D9E1BFD-362E-4044-ADBE-164FC5CE010D}|Echomedproject.BLL\\Echomedproject.BLL.csproj|c:\\webprojects\\eckomed\\echomedproject\\echomedproject.bll\\interfaces\\ipharmacyaccrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1D9E1BFD-362E-4044-ADBE-164FC5CE010D}|Echomedproject.BLL\\Echomedproject.BLL.csproj|solutionrelative:echomedproject.bll\\interfaces\\ipharmacyaccrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{943B2D98-F61D-482A-995B-19C433EFA2CB}|Echomedproject.DAL\\Echomedproject.DAL.csproj|c:\\webprojects\\eckomed\\echomedproject\\echomedproject.dal\\models\\records.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{943B2D98-F61D-482A-995B-19C433EFA2CB}|Echomedproject.DAL\\Echomedproject.DAL.csproj|solutionrelative:echomedproject.dal\\models\\records.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{943B2D98-F61D-482A-995B-19C433EFA2CB}|Echomedproject.DAL\\Echomedproject.DAL.csproj|c:\\webprojects\\eckomed\\echomedproject\\echomedproject.dal\\models\\patienthospital.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{943B2D98-F61D-482A-995B-19C433EFA2CB}|Echomedproject.DAL\\Echomedproject.DAL.csproj|solutionrelative:echomedproject.dal\\models\\patienthospital.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3BCBEFED-2A65-464B-AC36-F52B4B4DA31C}|Echomedproject\\Echomedproject.PL.csproj|c:\\webprojects\\eckomed\\echomedproject\\echomedproject\\viewmodels\\addtestviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3BCBEFED-2A65-464B-AC36-F52B4B4DA31C}|Echomedproject\\Echomedproject.PL.csproj|solutionrelative:echomedproject\\viewmodels\\addtestviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3BCBEFED-2A65-464B-AC36-F52B4B4DA31C}|Echomedproject\\Echomedproject.PL.csproj|c:\\webprojects\\eckomed\\echomedproject\\echomedproject\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3BCBEFED-2A65-464B-AC36-F52B4B4DA31C}|Echomedproject\\Echomedproject.PL.csproj|solutionrelative:echomedproject\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{943B2D98-F61D-482A-995B-19C433EFA2CB}|Echomedproject.DAL\\Echomedproject.DAL.csproj|c:\\webprojects\\eckomed\\echomedproject\\echomedproject.dal\\models\\notification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{943B2D98-F61D-482A-995B-19C433EFA2CB}|Echomedproject.DAL\\Echomedproject.DAL.csproj|solutionrelative:echomedproject.dal\\models\\notification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{943B2D98-F61D-482A-995B-19C433EFA2CB}|Echomedproject.DAL\\Echomedproject.DAL.csproj|c:\\webprojects\\eckomed\\echomedproject\\echomedproject.dal\\models\\appusers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -131,6 +127,173 @@
       "RelativeMoniker": "D:0:0:{1D9E1BFD-362E-4044-ADBE-164FC5CE010D}|Echomedproject.BLL\\Echomedproject.BLL.csproj|solutionrelative:echomedproject.bll\\repositories\\dataentryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{943B2D98-F61D-482A-995B-19C433EFA2CB}|Echomedproject.DAL\\Echomedproject.DAL.csproj|c:\\webprojects\\eckomed\\echomedproject\\echomedproject.dal\\models\\departments.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{943B2D98-F61D-482A-995B-19C433EFA2CB}|Echomedproject.DAL\\Echomedproject.DAL.csproj|solutionrelative:echomedproject.dal\\models\\departments.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{943B2D98-F61D-482A-995B-19C433EFA2CB}|Echomedproject.DAL\\Echomedproject.DAL.csproj|c:\\webprojects\\eckomed\\echomedproject\\echomedproject.dal\\models\\hospitals.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{943B2D98-F61D-482A-995B-19C433EFA2CB}|Echomedproject.DAL\\Echomedproject.DAL.csproj|solutionrelative:echomedproject.dal\\models\\hospitals.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{943B2D98-F61D-482A-995B-19C433EFA2CB}|Echomedproject.DAL\\Echomedproject.DAL.csproj|c:\\webprojects\\eckomed\\echomedproject\\echomedproject.dal\\models\\dataentry.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{943B2D98-F61D-482A-995B-19C433EFA2CB}|Echomedproject.DAL\\Echomedproject.DAL.csproj|solutionrelative:echomedproject.dal\\models\\dataentry.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1D9E1BFD-362E-4044-ADBE-164FC5CE010D}|Echomedproject.BLL\\Echomedproject.BLL.csproj|c:\\webprojects\\eckomed\\echomedproject\\echomedproject.bll\\interfaces\\ipatienthospitalrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1D9E1BFD-362E-4044-ADBE-164FC5CE010D}|Echomedproject.BLL\\Echomedproject.BLL.csproj|solutionrelative:echomedproject.bll\\interfaces\\ipatienthospitalrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3BCBEFED-2A65-464B-AC36-F52B4B4DA31C}|Echomedproject\\Echomedproject.PL.csproj|c:\\webprojects\\eckomed\\echomedproject\\echomedproject\\viewmodels\\addscanviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3BCBEFED-2A65-464B-AC36-F52B4B4DA31C}|Echomedproject\\Echomedproject.PL.csproj|solutionrelative:echomedproject\\viewmodels\\addscanviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3BCBEFED-2A65-464B-AC36-F52B4B4DA31C}|Echomedproject\\Echomedproject.PL.csproj|c:\\webprojects\\eckomed\\echomedproject\\echomedproject\\viewmodels\\addtestviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3BCBEFED-2A65-464B-AC36-F52B4B4DA31C}|Echomedproject\\Echomedproject.PL.csproj|solutionrelative:echomedproject\\viewmodels\\addtestviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3BCBEFED-2A65-464B-AC36-F52B4B4DA31C}|Echomedproject\\Echomedproject.PL.csproj|c:\\webprojects\\eckomed\\echomedproject\\echomedproject\\viewmodels\\addmedicineviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3BCBEFED-2A65-464B-AC36-F52B4B4DA31C}|Echomedproject\\Echomedproject.PL.csproj|solutionrelative:echomedproject\\viewmodels\\addmedicineviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3BCBEFED-2A65-464B-AC36-F52B4B4DA31C}|Echomedproject\\Echomedproject.PL.csproj|c:\\webprojects\\eckomed\\echomedproject\\echomedproject\\viewmodels\\addnoteviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3BCBEFED-2A65-464B-AC36-F52B4B4DA31C}|Echomedproject\\Echomedproject.PL.csproj|solutionrelative:echomedproject\\viewmodels\\addnoteviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files\\dotnet\\sdk\\9.0.100\\Sdks\\Microsoft.NET.Sdk.StaticWebAssets\\targets\\Microsoft.NET.Sdk.StaticWebAssets.targets||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3BCBEFED-2A65-464B-AC36-F52B4B4DA31C}|Echomedproject\\Echomedproject.PL.csproj|c:\\webprojects\\eckomed\\echomedproject\\echomedproject\\helpers\\documentsetting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3BCBEFED-2A65-464B-AC36-F52B4B4DA31C}|Echomedproject\\Echomedproject.PL.csproj|solutionrelative:echomedproject\\helpers\\documentsetting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1D9E1BFD-362E-4044-ADBE-164FC5CE010D}|Echomedproject.BLL\\Echomedproject.BLL.csproj|c:\\webprojects\\eckomed\\echomedproject\\echomedproject.bll\\interfaces\\iappusersrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1D9E1BFD-362E-4044-ADBE-164FC5CE010D}|Echomedproject.BLL\\Echomedproject.BLL.csproj|solutionrelative:echomedproject.bll\\interfaces\\iappusersrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3BCBEFED-2A65-464B-AC36-F52B4B4DA31C}|Echomedproject\\Echomedproject.PL.csproj|c:\\webprojects\\eckomed\\echomedproject\\echomedproject\\clientapp\\src\\app\\app.routes.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{3BCBEFED-2A65-464B-AC36-F52B4B4DA31C}|Echomedproject\\Echomedproject.PL.csproj|solutionrelative:echomedproject\\clientapp\\src\\app\\app.routes.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3BCBEFED-2A65-464B-AC36-F52B4B4DA31C}|Echomedproject\\Echomedproject.PL.csproj|c:\\webprojects\\eckomed\\echomedproject\\echomedproject\\clientapp\\src\\app\\pages\\patient\\labtests\\labtests.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{3BCBEFED-2A65-464B-AC36-F52B4B4DA31C}|Echomedproject\\Echomedproject.PL.csproj|solutionrelative:echomedproject\\clientapp\\src\\app\\pages\\patient\\labtests\\labtests.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3BCBEFED-2A65-464B-AC36-F52B4B4DA31C}|Echomedproject\\Echomedproject.PL.csproj|c:\\webprojects\\eckomed\\echomedproject\\echomedproject\\clientapp\\src\\app\\pages\\patient\\scans\\scans.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{3BCBEFED-2A65-464B-AC36-F52B4B4DA31C}|Echomedproject\\Echomedproject.PL.csproj|solutionrelative:echomedproject\\clientapp\\src\\app\\pages\\patient\\scans\\scans.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1D9E1BFD-362E-4044-ADBE-164FC5CE010D}|Echomedproject.BLL\\Echomedproject.BLL.csproj|c:\\webprojects\\eckomed\\echomedproject\\echomedproject.bll\\repositories\\hospitalsrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1D9E1BFD-362E-4044-ADBE-164FC5CE010D}|Echomedproject.BLL\\Echomedproject.BLL.csproj|solutionrelative:echomedproject.bll\\repositories\\hospitalsrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{943B2D98-F61D-482A-995B-19C433EFA2CB}|Echomedproject.DAL\\Echomedproject.DAL.csproj|c:\\webprojects\\eckomed\\echomedproject\\echomedproject.dal\\contexts\\eckomeddbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{943B2D98-F61D-482A-995B-19C433EFA2CB}|Echomedproject.DAL\\Echomedproject.DAL.csproj|solutionrelative:echomedproject.dal\\contexts\\eckomeddbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3BCBEFED-2A65-464B-AC36-F52B4B4DA31C}|Echomedproject\\Echomedproject.PL.csproj|c:\\webprojects\\eckomed\\echomedproject\\echomedproject\\clientapp\\src\\app\\core\\interceptors\\errors\\errors.interceptor.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{3BCBEFED-2A65-464B-AC36-F52B4B4DA31C}|Echomedproject\\Echomedproject.PL.csproj|solutionrelative:echomedproject\\clientapp\\src\\app\\core\\interceptors\\errors\\errors.interceptor.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3BCBEFED-2A65-464B-AC36-F52B4B4DA31C}|Echomedproject\\Echomedproject.PL.csproj|c:\\webprojects\\eckomed\\echomedproject\\echomedproject\\clientapp\\src\\app\\core\\interceptors\\loading.interceptor.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{3BCBEFED-2A65-464B-AC36-F52B4B4DA31C}|Echomedproject\\Echomedproject.PL.csproj|solutionrelative:echomedproject\\clientapp\\src\\app\\core\\interceptors\\loading.interceptor.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3BCBEFED-2A65-464B-AC36-F52B4B4DA31C}|Echomedproject\\Echomedproject.PL.csproj|c:\\webprojects\\eckomed\\echomedproject\\echomedproject\\clientapp\\src\\app\\pages\\login\\login.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{3BCBEFED-2A65-464B-AC36-F52B4B4DA31C}|Echomedproject\\Echomedproject.PL.csproj|solutionrelative:echomedproject\\clientapp\\src\\app\\pages\\login\\login.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3BCBEFED-2A65-464B-AC36-F52B4B4DA31C}|Echomedproject\\Echomedproject.PL.csproj|c:\\webprojects\\eckomed\\echomedproject\\echomedproject\\clientapp\\src\\app\\core\\guards\\pharmacy.guard.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{3BCBEFED-2A65-464B-AC36-F52B4B4DA31C}|Echomedproject\\Echomedproject.PL.csproj|solutionrelative:echomedproject\\clientapp\\src\\app\\core\\guards\\pharmacy.guard.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3BCBEFED-2A65-464B-AC36-F52B4B4DA31C}|Echomedproject\\Echomedproject.PL.csproj|c:\\webprojects\\eckomed\\echomedproject\\echomedproject\\clientapp\\src\\app\\pages\\pharmacy\\login\\login.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{3BCBEFED-2A65-464B-AC36-F52B4B4DA31C}|Echomedproject\\Echomedproject.PL.csproj|solutionrelative:echomedproject\\clientapp\\src\\app\\pages\\pharmacy\\login\\login.component.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3BCBEFED-2A65-464B-AC36-F52B4B4DA31C}|Echomedproject\\Echomedproject.PL.csproj|c:\\webprojects\\eckomed\\echomedproject\\echomedproject\\clientapp\\src\\app\\core\\guards\\data-entry.guard.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{3BCBEFED-2A65-464B-AC36-F52B4B4DA31C}|Echomedproject\\Echomedproject.PL.csproj|solutionrelative:echomedproject\\clientapp\\src\\app\\core\\guards\\data-entry.guard.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3BCBEFED-2A65-464B-AC36-F52B4B4DA31C}|Echomedproject\\Echomedproject.PL.csproj|c:\\webprojects\\eckomed\\echomedproject\\echomedproject\\clientapp\\src\\app\\core\\guards\\patient.guard.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}",
+      "RelativeMoniker": "D:0:0:{3BCBEFED-2A65-464B-AC36-F52B4B4DA31C}|Echomedproject\\Echomedproject.PL.csproj|solutionrelative:echomedproject\\clientapp\\src\\app\\core\\guards\\patient.guard.ts||{0F2454B1-A556-402D-A7D0-1FDE7F99DEE0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1D9E1BFD-362E-4044-ADBE-164FC5CE010D}|Echomedproject.BLL\\Echomedproject.BLL.csproj|c:\\webprojects\\eckomed\\echomedproject\\echomedproject.bll\\repositories\\pharmacyaccrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1D9E1BFD-362E-4044-ADBE-164FC5CE010D}|Echomedproject.BLL\\Echomedproject.BLL.csproj|solutionrelative:echomedproject.bll\\repositories\\pharmacyaccrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3BCBEFED-2A65-464B-AC36-F52B4B4DA31C}|Echomedproject\\Echomedproject.PL.csproj|c:\\webprojects\\eckomed\\echomedproject\\echomedproject\\viewmodels\\togglerequestnoteviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3BCBEFED-2A65-464B-AC36-F52B4B4DA31C}|Echomedproject\\Echomedproject.PL.csproj|solutionrelative:echomedproject\\viewmodels\\togglerequestnoteviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{943B2D98-F61D-482A-995B-19C433EFA2CB}|Echomedproject.DAL\\Echomedproject.DAL.csproj|c:\\webprojects\\eckomed\\echomedproject\\echomedproject.dal\\models\\labtest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{943B2D98-F61D-482A-995B-19C433EFA2CB}|Echomedproject.DAL\\Echomedproject.DAL.csproj|solutionrelative:echomedproject.dal\\models\\labtest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{943B2D98-F61D-482A-995B-19C433EFA2CB}|Echomedproject.DAL\\Echomedproject.DAL.csproj|c:\\webprojects\\eckomed\\echomedproject\\echomedproject.dal\\models\\note.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{943B2D98-F61D-482A-995B-19C433EFA2CB}|Echomedproject.DAL\\Echomedproject.DAL.csproj|solutionrelative:echomedproject.dal\\models\\note.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{943B2D98-F61D-482A-995B-19C433EFA2CB}|Echomedproject.DAL\\Echomedproject.DAL.csproj|c:\\webprojects\\eckomed\\echomedproject\\echomedproject.dal\\models\\scans.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{943B2D98-F61D-482A-995B-19C433EFA2CB}|Echomedproject.DAL\\Echomedproject.DAL.csproj|solutionrelative:echomedproject.dal\\models\\scans.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3BCBEFED-2A65-464B-AC36-F52B4B4DA31C}|Echomedproject\\Echomedproject.PL.csproj|c:\\webprojects\\eckomed\\echomedproject\\echomedproject\\viewmodels\\searchresultviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3BCBEFED-2A65-464B-AC36-F52B4B4DA31C}|Echomedproject\\Echomedproject.PL.csproj|solutionrelative:echomedproject\\viewmodels\\searchresultviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{943B2D98-F61D-482A-995B-19C433EFA2CB}|Echomedproject.DAL\\Echomedproject.DAL.csproj|c:\\webprojects\\eckomed\\echomedproject\\echomedproject.dal\\models\\pharmacyacc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{943B2D98-F61D-482A-995B-19C433EFA2CB}|Echomedproject.DAL\\Echomedproject.DAL.csproj|solutionrelative:echomedproject.dal\\models\\pharmacyacc.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1D9E1BFD-362E-4044-ADBE-164FC5CE010D}|Echomedproject.BLL\\Echomedproject.BLL.csproj|c:\\webprojects\\eckomed\\echomedproject\\echomedproject.bll\\interfaces\\ipharmacyaccrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1D9E1BFD-362E-4044-ADBE-164FC5CE010D}|Echomedproject.BLL\\Echomedproject.BLL.csproj|solutionrelative:echomedproject.bll\\interfaces\\ipharmacyaccrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{943B2D98-F61D-482A-995B-19C433EFA2CB}|Echomedproject.DAL\\Echomedproject.DAL.csproj|c:\\webprojects\\eckomed\\echomedproject\\echomedproject.dal\\models\\request.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{943B2D98-F61D-482A-995B-19C433EFA2CB}|Echomedproject.DAL\\Echomedproject.DAL.csproj|solutionrelative:echomedproject.dal\\models\\request.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3BCBEFED-2A65-464B-AC36-F52B4B4DA31C}|Echomedproject\\Echomedproject.PL.csproj|c:\\webprojects\\eckomed\\echomedproject\\echomedproject\\viewmodels\\pharmacyresultviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3BCBEFED-2A65-464B-AC36-F52B4B4DA31C}|Echomedproject\\Echomedproject.PL.csproj|solutionrelative:echomedproject\\viewmodels\\pharmacyresultviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{943B2D98-F61D-482A-995B-19C433EFA2CB}|Echomedproject.DAL\\Echomedproject.DAL.csproj|c:\\webprojects\\eckomed\\echomedproject\\echomedproject.dal\\models\\pharmacy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{943B2D98-F61D-482A-995B-19C433EFA2CB}|Echomedproject.DAL\\Echomedproject.DAL.csproj|solutionrelative:echomedproject.dal\\models\\pharmacy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{943B2D98-F61D-482A-995B-19C433EFA2CB}|Echomedproject.DAL\\Echomedproject.DAL.csproj|c:\\webprojects\\eckomed\\echomedproject\\echomedproject.dal\\models\\patienthospital.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{943B2D98-F61D-482A-995B-19C433EFA2CB}|Echomedproject.DAL\\Echomedproject.DAL.csproj|solutionrelative:echomedproject.dal\\models\\patienthospital.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{943B2D98-F61D-482A-995B-19C433EFA2CB}|Echomedproject.DAL\\Echomedproject.DAL.csproj|c:\\webprojects\\eckomed\\echomedproject\\echomedproject.dal\\models\\records.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{943B2D98-F61D-482A-995B-19C433EFA2CB}|Echomedproject.DAL\\Echomedproject.DAL.csproj|solutionrelative:echomedproject.dal\\models\\records.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{943B2D98-F61D-482A-995B-19C433EFA2CB}|Echomedproject.DAL\\Echomedproject.DAL.csproj|c:\\webprojects\\eckomed\\echomedproject\\echomedproject.dal\\models\\patients.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{943B2D98-F61D-482A-995B-19C433EFA2CB}|Echomedproject.DAL\\Echomedproject.DAL.csproj|solutionrelative:echomedproject.dal\\models\\patients.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3BCBEFED-2A65-464B-AC36-F52B4B4DA31C}|Echomedproject\\Echomedproject.PL.csproj|c:\\webprojects\\eckomed\\echomedproject\\echomedproject\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3BCBEFED-2A65-464B-AC36-F52B4B4DA31C}|Echomedproject\\Echomedproject.PL.csproj|solutionrelative:echomedproject\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3BCBEFED-2A65-464B-AC36-F52B4B4DA31C}|Echomedproject\\Echomedproject.PL.csproj|c:\\webprojects\\eckomed\\echomedproject\\echomedproject\\viewmodels\\requestsdisplayviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3BCBEFED-2A65-464B-AC36-F52B4B4DA31C}|Echomedproject\\Echomedproject.PL.csproj|solutionrelative:echomedproject\\viewmodels\\requestsdisplayviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3BCBEFED-2A65-464B-AC36-F52B4B4DA31C}|Echomedproject\\Echomedproject.PL.csproj|c:\\webprojects\\eckomed\\echomedproject\\echomedproject\\viewmodels\\resetpasswordviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3BCBEFED-2A65-464B-AC36-F52B4B4DA31C}|Echomedproject\\Echomedproject.PL.csproj|solutionrelative:echomedproject\\viewmodels\\resetpasswordviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3BCBEFED-2A65-464B-AC36-F52B4B4DA31C}|Echomedproject\\Echomedproject.PL.csproj|c:\\webprojects\\eckomed\\echomedproject\\echomedproject\\viewmodels\\capacityviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3BCBEFED-2A65-464B-AC36-F52B4B4DA31C}|Echomedproject\\Echomedproject.PL.csproj|solutionrelative:echomedproject\\viewmodels\\capacityviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3BCBEFED-2A65-464B-AC36-F52B4B4DA31C}|Echomedproject\\Echomedproject.PL.csproj|c:\\webprojects\\eckomed\\echomedproject\\echomedproject\\viewmodels\\updatedataentryprofileviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3BCBEFED-2A65-464B-AC36-F52B4B4DA31C}|Echomedproject\\Echomedproject.PL.csproj|solutionrelative:echomedproject\\viewmodels\\updatedataentryprofileviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{1D9E1BFD-362E-4044-ADBE-164FC5CE010D}|Echomedproject.BLL\\Echomedproject.BLL.csproj|c:\\webprojects\\eckomed\\echomedproject\\echomedproject.bll\\interfaces\\idataentryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1D9E1BFD-362E-4044-ADBE-164FC5CE010D}|Echomedproject.BLL\\Echomedproject.BLL.csproj|solutionrelative:echomedproject.bll\\interfaces\\idataentryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -139,52 +302,16 @@
       "RelativeMoniker": "D:0:0:{943B2D98-F61D-482A-995B-19C433EFA2CB}|Echomedproject.DAL\\Echomedproject.DAL.csproj|solutionrelative:echomedproject.dal\\models\\users.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{943B2D98-F61D-482A-995B-19C433EFA2CB}|Echomedproject.DAL\\Echomedproject.DAL.csproj|c:\\webprojects\\eckomed\\echomedproject\\echomedproject.dal\\models\\scans.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{943B2D98-F61D-482A-995B-19C433EFA2CB}|Echomedproject.DAL\\Echomedproject.DAL.csproj|solutionrelative:echomedproject.dal\\models\\scans.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{943B2D98-F61D-482A-995B-19C433EFA2CB}|Echomedproject.DAL\\Echomedproject.DAL.csproj|c:\\webprojects\\eckomed\\echomedproject\\echomedproject.dal\\models\\prescription.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{943B2D98-F61D-482A-995B-19C433EFA2CB}|Echomedproject.DAL\\Echomedproject.DAL.csproj|solutionrelative:echomedproject.dal\\models\\prescription.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{943B2D98-F61D-482A-995B-19C433EFA2CB}|Echomedproject.DAL\\Echomedproject.DAL.csproj|c:\\webprojects\\eckomed\\echomedproject\\echomedproject.dal\\models\\patients.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{943B2D98-F61D-482A-995B-19C433EFA2CB}|Echomedproject.DAL\\Echomedproject.DAL.csproj|solutionrelative:echomedproject.dal\\models\\patients.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{943B2D98-F61D-482A-995B-19C433EFA2CB}|Echomedproject.DAL\\Echomedproject.DAL.csproj|c:\\webprojects\\eckomed\\echomedproject\\echomedproject.dal\\models\\notification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{943B2D98-F61D-482A-995B-19C433EFA2CB}|Echomedproject.DAL\\Echomedproject.DAL.csproj|solutionrelative:echomedproject.dal\\models\\notification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{943B2D98-F61D-482A-995B-19C433EFA2CB}|Echomedproject.DAL\\Echomedproject.DAL.csproj|c:\\webprojects\\eckomed\\echomedproject\\echomedproject.dal\\models\\medicine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{943B2D98-F61D-482A-995B-19C433EFA2CB}|Echomedproject.DAL\\Echomedproject.DAL.csproj|solutionrelative:echomedproject.dal\\models\\medicine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{943B2D98-F61D-482A-995B-19C433EFA2CB}|Echomedproject.DAL\\Echomedproject.DAL.csproj|c:\\webprojects\\eckomed\\echomedproject\\echomedproject.dal\\models\\note.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{943B2D98-F61D-482A-995B-19C433EFA2CB}|Echomedproject.DAL\\Echomedproject.DAL.csproj|solutionrelative:echomedproject.dal\\models\\note.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3BCBEFED-2A65-464B-AC36-F52B4B4DA31C}|Echomedproject\\Echomedproject.PL.csproj|c:\\webprojects\\eckomed\\echomedproject\\echomedproject\\viewmodels\\addscanviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3BCBEFED-2A65-464B-AC36-F52B4B4DA31C}|Echomedproject\\Echomedproject.PL.csproj|solutionrelative:echomedproject\\viewmodels\\addscanviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3BCBEFED-2A65-464B-AC36-F52B4B4DA31C}|Echomedproject\\Echomedproject.PL.csproj|c:\\webprojects\\eckomed\\echomedproject\\echomedproject\\viewmodels\\addnoteviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3BCBEFED-2A65-464B-AC36-F52B4B4DA31C}|Echomedproject\\Echomedproject.PL.csproj|solutionrelative:echomedproject\\viewmodels\\addnoteviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3BCBEFED-2A65-464B-AC36-F52B4B4DA31C}|Echomedproject\\Echomedproject.PL.csproj|c:\\webprojects\\eckomed\\echomedproject\\echomedproject\\viewmodels\\registerviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3BCBEFED-2A65-464B-AC36-F52B4B4DA31C}|Echomedproject\\Echomedproject.PL.csproj|solutionrelative:echomedproject\\viewmodels\\registerviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3BCBEFED-2A65-464B-AC36-F52B4B4DA31C}|Echomedproject\\Echomedproject.PL.csproj|c:\\webprojects\\eckomed\\echomedproject\\echomedproject\\viewmodels\\addmedicineviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3BCBEFED-2A65-464B-AC36-F52B4B4DA31C}|Echomedproject\\Echomedproject.PL.csproj|solutionrelative:echomedproject\\viewmodels\\addmedicineviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{3BCBEFED-2A65-464B-AC36-F52B4B4DA31C}|Echomedproject\\Echomedproject.PL.csproj|c:\\webprojects\\eckomed\\echomedproject\\echomedproject\\viewmodels\\notificationresponseviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3BCBEFED-2A65-464B-AC36-F52B4B4DA31C}|Echomedproject\\Echomedproject.PL.csproj|solutionrelative:echomedproject\\viewmodels\\notificationresponseviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{943B2D98-F61D-482A-995B-19C433EFA2CB}|Echomedproject.DAL\\Echomedproject.DAL.csproj|c:\\webprojects\\eckomed\\echomedproject\\echomedproject.dal\\contexts\\eckomeddbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{943B2D98-F61D-482A-995B-19C433EFA2CB}|Echomedproject.DAL\\Echomedproject.DAL.csproj|solutionrelative:echomedproject.dal\\contexts\\eckomeddbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{943B2D98-F61D-482A-995B-19C433EFA2CB}|Echomedproject.DAL\\Echomedproject.DAL.csproj|c:\\webprojects\\eckomed\\echomedproject\\echomedproject.dal\\models\\advertisement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -195,24 +322,8 @@
       "RelativeMoniker": "D:0:0:{943B2D98-F61D-482A-995B-19C433EFA2CB}|Echomedproject.DAL\\Echomedproject.DAL.csproj|solutionrelative:echomedproject.dal\\migrations\\20250623231144_updateeee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{943B2D98-F61D-482A-995B-19C433EFA2CB}|Echomedproject.DAL\\Echomedproject.DAL.csproj|c:\\webprojects\\eckomed\\echomedproject\\echomedproject.dal\\models\\hospitals.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{943B2D98-F61D-482A-995B-19C433EFA2CB}|Echomedproject.DAL\\Echomedproject.DAL.csproj|solutionrelative:echomedproject.dal\\models\\hospitals.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1D9E1BFD-362E-4044-ADBE-164FC5CE010D}|Echomedproject.BLL\\Echomedproject.BLL.csproj|c:\\webprojects\\eckomed\\echomedproject\\echomedproject.bll\\interfaces\\iappusersrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1D9E1BFD-362E-4044-ADBE-164FC5CE010D}|Echomedproject.BLL\\Echomedproject.BLL.csproj|solutionrelative:echomedproject.bll\\interfaces\\iappusersrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1D9E1BFD-362E-4044-ADBE-164FC5CE010D}|Echomedproject.BLL\\Echomedproject.BLL.csproj|c:\\webprojects\\eckomed\\echomedproject\\echomedproject.bll\\repositories\\appusersrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1D9E1BFD-362E-4044-ADBE-164FC5CE010D}|Echomedproject.BLL\\Echomedproject.BLL.csproj|solutionrelative:echomedproject.bll\\repositories\\appusersrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{1D9E1BFD-362E-4044-ADBE-164FC5CE010D}|Echomedproject.BLL\\Echomedproject.BLL.csproj|c:\\webprojects\\eckomed\\echomedproject\\echomedproject.bll\\repositories\\pharmacyrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1D9E1BFD-362E-4044-ADBE-164FC5CE010D}|Echomedproject.BLL\\Echomedproject.BLL.csproj|solutionrelative:echomedproject.bll\\repositories\\pharmacyrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{943B2D98-F61D-482A-995B-19C433EFA2CB}|Echomedproject.DAL\\Echomedproject.DAL.csproj|c:\\webprojects\\eckomed\\echomedproject\\echomedproject.dal\\models\\request.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{943B2D98-F61D-482A-995B-19C433EFA2CB}|Echomedproject.DAL\\Echomedproject.DAL.csproj|solutionrelative:echomedproject.dal\\models\\request.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{1D9E1BFD-362E-4044-ADBE-164FC5CE010D}|Echomedproject.BLL\\Echomedproject.BLL.csproj|c:\\webprojects\\eckomed\\echomedproject\\echomedproject.bll\\repositories\\prescriptionrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -229,10 +340,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{3BCBEFED-2A65-464B-AC36-F52B4B4DA31C}|Echomedproject\\Echomedproject.PL.csproj|c:\\webprojects\\eckomed\\echomedproject\\echomedproject\\viewmodels\\recordviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3BCBEFED-2A65-464B-AC36-F52B4B4DA31C}|Echomedproject\\Echomedproject.PL.csproj|solutionrelative:echomedproject\\viewmodels\\recordviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3BCBEFED-2A65-464B-AC36-F52B4B4DA31C}|Echomedproject\\Echomedproject.PL.csproj|c:\\webprojects\\eckomed\\echomedproject\\echomedproject\\viewmodels\\medicinerequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3BCBEFED-2A65-464B-AC36-F52B4B4DA31C}|Echomedproject\\Echomedproject.PL.csproj|solutionrelative:echomedproject\\viewmodels\\medicinerequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{943B2D98-F61D-482A-995B-19C433EFA2CB}|Echomedproject.DAL\\Echomedproject.DAL.csproj|c:\\webprojects\\eckomed\\echomedproject\\echomedproject.dal\\migrations\\20250622125146_requests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -274,37 +381,135 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "auth.service.ts",
-              "DocumentMoniker": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\ClientApp\\src\\app\\core\\services\\auth\\auth.service.ts",
-              "RelativeDocumentMoniker": "Echomedproject\\ClientApp\\src\\app\\core\\services\\auth\\auth.service.ts",
-              "ToolTip": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\ClientApp\\src\\app\\core\\services\\auth\\auth.service.ts",
-              "RelativeToolTip": "Echomedproject\\ClientApp\\src\\app\\core\\services\\auth\\auth.service.ts",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
-              "WhenOpened": "2025-06-30T12:43:54.392Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "environment.ts",
-              "DocumentMoniker": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\ClientApp\\src\\app\\core\\environment\\environment.ts",
-              "RelativeDocumentMoniker": "Echomedproject\\ClientApp\\src\\app\\core\\environment\\environment.ts",
-              "ToolTip": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\ClientApp\\src\\app\\core\\environment\\environment.ts*",
-              "RelativeToolTip": "Echomedproject\\ClientApp\\src\\app\\core\\environment\\environment.ts*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAGAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
-              "WhenOpened": "2025-06-30T12:41:57.931Z",
+              "DocumentIndex": 0,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "Echomedproject\\Controllers\\AccountController.cs",
+              "ToolTip": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "Echomedproject\\Controllers\\AccountController.cs",
+              "ViewState": "AgIAAP8AAAAAAAAAAAAkwPkAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-20T12:53:20.614Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
+              "Title": "PharmacyController.cs",
+              "DocumentMoniker": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\Controllers\\PharmacyController.cs",
+              "RelativeDocumentMoniker": "Echomedproject\\Controllers\\PharmacyController.cs",
+              "ToolTip": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\Controllers\\PharmacyController.cs",
+              "RelativeToolTip": "Echomedproject\\Controllers\\PharmacyController.cs",
+              "ViewState": "AgIAAM8AAAAAAAAAAAAQwN4AAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-20T12:53:16.679Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "Echomedproject\\Controllers\\UserController.cs",
+              "ToolTip": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\Controllers\\UserController.cs",
+              "RelativeToolTip": "Echomedproject\\Controllers\\UserController.cs",
+              "ViewState": "AgIAADMDAAAAAAAAAAA9wGwDAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-20T12:51:46.303Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "DataEntryController.cs",
+              "DocumentMoniker": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\Controllers\\DataEntryController.cs",
+              "RelativeDocumentMoniker": "Echomedproject\\Controllers\\DataEntryController.cs",
+              "ToolTip": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\Controllers\\DataEntryController.cs",
+              "RelativeToolTip": "Echomedproject\\Controllers\\DataEntryController.cs",
+              "ViewState": "AgIAAFEEAAAAAAAAAAAqwHgEAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-20T12:54:58.421Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "MedicineRequestDto.cs",
+              "DocumentMoniker": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\ViewModels\\MedicineRequestDto.cs",
+              "RelativeDocumentMoniker": "Echomedproject\\ViewModels\\MedicineRequestDto.cs",
+              "ToolTip": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\ViewModels\\MedicineRequestDto.cs",
+              "RelativeToolTip": "Echomedproject\\ViewModels\\MedicineRequestDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-22T12:38:55.796Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AddPatientViewModel.cs",
+              "DocumentMoniker": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\ViewModels\\AddPatientViewModel.cs",
+              "RelativeDocumentMoniker": "Echomedproject\\ViewModels\\AddPatientViewModel.cs",
+              "ToolTip": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\ViewModels\\AddPatientViewModel.cs",
+              "RelativeToolTip": "Echomedproject\\ViewModels\\AddPatientViewModel.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAxwAcAAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-23T22:55:05.44Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\Program.cs",
+              "RelativeDocumentMoniker": "Echomedproject\\Program.cs",
+              "ToolTip": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\Program.cs",
+              "RelativeToolTip": "Echomedproject\\Program.cs",
+              "ViewState": "AgIAAGEAAAAAAAAAAAAvwHgAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-20T13:00:54.169Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "LoginViewModel.cs",
+              "DocumentMoniker": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\ViewModels\\LoginViewModel.cs",
+              "RelativeDocumentMoniker": "Echomedproject\\ViewModels\\LoginViewModel.cs",
+              "ToolTip": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\ViewModels\\LoginViewModel.cs",
+              "RelativeToolTip": "Echomedproject\\ViewModels\\LoginViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-30T13:14:17.363Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "RegisterViewModel.cs",
+              "DocumentMoniker": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\ViewModels\\RegisterViewModel.cs",
+              "RelativeDocumentMoniker": "Echomedproject\\ViewModels\\RegisterViewModel.cs",
+              "ToolTip": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\ViewModels\\RegisterViewModel.cs",
+              "RelativeToolTip": "Echomedproject\\ViewModels\\RegisterViewModel.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAwDYAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-21T20:26:01.452Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "EmailSender.cs",
+              "DocumentMoniker": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject.BLL\\Repositories\\EmailSender.cs",
+              "RelativeDocumentMoniker": "Echomedproject.BLL\\Repositories\\EmailSender.cs",
+              "ToolTip": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject.BLL\\Repositories\\EmailSender.cs",
+              "RelativeToolTip": "Echomedproject.BLL\\Repositories\\EmailSender.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAABLAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-03T21:59:46.078Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\appsettings.json",
               "RelativeDocumentMoniker": "Echomedproject\\appsettings.json",
@@ -312,135 +517,647 @@
               "RelativeToolTip": "Echomedproject\\appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-06-30T12:41:26.171Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-30T12:41:26.171Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "DataEntry.service.ts",
-              "DocumentMoniker": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\ClientApp\\src\\app\\core\\services\\DataEntry\\DataEntry.service.ts",
-              "RelativeDocumentMoniker": "Echomedproject\\ClientApp\\src\\app\\core\\services\\DataEntry\\DataEntry.service.ts",
-              "ToolTip": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\ClientApp\\src\\app\\core\\services\\DataEntry\\DataEntry.service.ts*",
-              "RelativeToolTip": "Echomedproject\\ClientApp\\src\\app\\core\\services\\DataEntry\\DataEntry.service.ts*",
-              "ViewState": "AgIAAGgAAAAAAAAAAAAewGoAAAAyAAAAAAAAAA==",
+              "DocumentIndex": 14,
+              "Title": "environment.ts",
+              "DocumentMoniker": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\ClientApp\\src\\app\\core\\environment\\environment.ts",
+              "RelativeDocumentMoniker": "Echomedproject\\ClientApp\\src\\app\\core\\environment\\environment.ts",
+              "ToolTip": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\ClientApp\\src\\app\\core\\environment\\environment.ts",
+              "RelativeToolTip": "Echomedproject\\ClientApp\\src\\app\\core\\environment\\environment.ts",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
-              "WhenOpened": "2025-06-30T12:40:21.828Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-07-02T14:26:39.447Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "search.component.html",
+              "DocumentMoniker": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\ClientApp\\src\\app\\pages\\Patient\\search\\search.component.html",
+              "RelativeDocumentMoniker": "Echomedproject\\ClientApp\\src\\app\\pages\\Patient\\search\\search.component.html",
+              "ToolTip": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\ClientApp\\src\\app\\pages\\Patient\\search\\search.component.html",
+              "RelativeToolTip": "Echomedproject\\ClientApp\\src\\app\\pages\\Patient\\search\\search.component.html",
+              "ViewState": "AgIAAGcAAAAAAAAAAAAiwIEAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-07-02T16:36:33.639Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 11,
+              "Title": "searchmedicine.component.ts",
+              "DocumentMoniker": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\ClientApp\\src\\app\\pages\\Patient\\searchmedicine\\searchmedicine.component.ts",
+              "RelativeDocumentMoniker": "Echomedproject\\ClientApp\\src\\app\\pages\\Patient\\searchmedicine\\searchmedicine.component.ts",
+              "ToolTip": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\ClientApp\\src\\app\\pages\\Patient\\searchmedicine\\searchmedicine.component.ts",
+              "RelativeToolTip": "Echomedproject\\ClientApp\\src\\app\\pages\\Patient\\searchmedicine\\searchmedicine.component.ts",
+              "ViewState": "AgIAABcAAAAAAAAAAAAQwC8AAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2025-07-03T16:49:20.935Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "auth.service.ts",
+              "DocumentMoniker": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\ClientApp\\src\\app\\core\\services\\auth\\auth.service.ts",
+              "RelativeDocumentMoniker": "Echomedproject\\ClientApp\\src\\app\\core\\services\\auth\\auth.service.ts",
+              "ToolTip": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\ClientApp\\src\\app\\core\\services\\auth\\auth.service.ts",
+              "RelativeToolTip": "Echomedproject\\ClientApp\\src\\app\\core\\services\\auth\\auth.service.ts",
+              "ViewState": "AgIAAB0AAAAAAAAAAAA9wDoAAABEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2025-07-02T15:39:14.817Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "search.component.ts",
+              "DocumentMoniker": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\ClientApp\\src\\app\\pages\\Patient\\search\\search.component.ts",
+              "RelativeDocumentMoniker": "Echomedproject\\ClientApp\\src\\app\\pages\\Patient\\search\\search.component.ts",
+              "ToolTip": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\ClientApp\\src\\app\\pages\\Patient\\search\\search.component.ts",
+              "RelativeToolTip": "Echomedproject\\ClientApp\\src\\app\\pages\\Patient\\search\\search.component.ts",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAACgAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2025-07-02T16:26:36.327Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "pdashboard.component.html",
+              "DocumentMoniker": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\ClientApp\\src\\app\\pages\\Patient\\Dashboard\\pdashboard.component.html",
+              "RelativeDocumentMoniker": "Echomedproject\\ClientApp\\src\\app\\pages\\Patient\\Dashboard\\pdashboard.component.html",
+              "ToolTip": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\ClientApp\\src\\app\\pages\\Patient\\Dashboard\\pdashboard.component.html",
+              "RelativeToolTip": "Echomedproject\\ClientApp\\src\\app\\pages\\Patient\\Dashboard\\pdashboard.component.html",
+              "ViewState": "AgIAACgAAAAAAAAAAAAiwDsAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-07-03T14:30:47.026Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "view-requests.component.ts",
+              "DocumentMoniker": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\ClientApp\\src\\app\\pages\\Pharmacy\\viewRequests\\view-requests.component.ts",
+              "RelativeDocumentMoniker": "Echomedproject\\ClientApp\\src\\app\\pages\\Pharmacy\\viewRequests\\view-requests.component.ts",
+              "ToolTip": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\ClientApp\\src\\app\\pages\\Pharmacy\\viewRequests\\view-requests.component.ts",
+              "RelativeToolTip": "Echomedproject\\ClientApp\\src\\app\\pages\\Pharmacy\\viewRequests\\view-requests.component.ts",
+              "ViewState": "AgIAANcAAAAAAAAAAAAuwDwBAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2025-07-03T15:20:51.118Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "pdashboard.component.scss",
+              "DocumentMoniker": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\ClientApp\\src\\app\\pages\\Patient\\Dashboard\\pdashboard.component.scss",
+              "RelativeDocumentMoniker": "Echomedproject\\ClientApp\\src\\app\\pages\\Patient\\Dashboard\\pdashboard.component.scss",
+              "ToolTip": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\ClientApp\\src\\app\\pages\\Patient\\Dashboard\\pdashboard.component.scss",
+              "RelativeToolTip": "Echomedproject\\ClientApp\\src\\app\\pages\\Patient\\Dashboard\\pdashboard.component.scss",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002663|",
+              "WhenOpened": "2025-07-03T14:47:29.905Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "notification.service.ts",
+              "DocumentMoniker": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\ClientApp\\src\\app\\core\\services\\notification.service.ts",
+              "RelativeDocumentMoniker": "Echomedproject\\ClientApp\\src\\app\\core\\services\\notification.service.ts",
+              "ToolTip": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\ClientApp\\src\\app\\core\\services\\notification.service.ts",
+              "RelativeToolTip": "Echomedproject\\ClientApp\\src\\app\\core\\services\\notification.service.ts",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABAAAABLAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2025-07-03T13:20:25.694Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Ad.service.ts",
+              "DocumentMoniker": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\ClientApp\\src\\app\\core\\services\\Ad.service.ts",
+              "RelativeDocumentMoniker": "Echomedproject\\ClientApp\\src\\app\\core\\services\\Ad.service.ts",
+              "ToolTip": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\ClientApp\\src\\app\\core\\services\\Ad.service.ts",
+              "RelativeToolTip": "Echomedproject\\ClientApp\\src\\app\\core\\services\\Ad.service.ts",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2025-07-03T14:03:15.245Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "server.ts",
+              "DocumentMoniker": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\ClientApp\\src\\server.ts",
+              "RelativeDocumentMoniker": "Echomedproject\\ClientApp\\src\\server.ts",
+              "ToolTip": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\ClientApp\\src\\server.ts",
+              "RelativeToolTip": "Echomedproject\\ClientApp\\src\\server.ts",
+              "ViewState": "AgIAABsAAAAAAAAAAAAAADMAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2025-07-03T14:15:35.441Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "index.html",
+              "DocumentMoniker": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\patientdashboard\\index.html",
+              "RelativeDocumentMoniker": "Echomedproject\\wwwroot\\patientdashboard\\index.html",
+              "ToolTip": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\patientdashboard\\index.html",
+              "RelativeToolTip": "Echomedproject\\wwwroot\\patientdashboard\\index.html",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-07-03T14:30:27.761Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "Notification.cs",
+              "DocumentMoniker": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject.DAL\\Models\\Notification.cs",
+              "RelativeDocumentMoniker": "Echomedproject.DAL\\Models\\Notification.cs",
+              "ToolTip": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject.DAL\\Models\\Notification.cs",
+              "RelativeToolTip": "Echomedproject.DAL\\Models\\Notification.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAAABQAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-20T13:26:36.481Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "NotificationReadViewModel.cs",
+              "DocumentMoniker": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\ViewModels\\NotificationReadViewModel.cs",
+              "RelativeDocumentMoniker": "Echomedproject\\ViewModels\\NotificationReadViewModel.cs",
+              "ToolTip": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\ViewModels\\NotificationReadViewModel.cs",
+              "RelativeToolTip": "Echomedproject\\ViewModels\\NotificationReadViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-03T13:26:15.24Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "footer.component.ts",
+              "DocumentMoniker": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\ClientApp\\src\\app\\layouts\\footer\\footer.component.ts",
+              "RelativeDocumentMoniker": "Echomedproject\\ClientApp\\src\\app\\layouts\\footer\\footer.component.ts",
+              "ToolTip": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\ClientApp\\src\\app\\layouts\\footer\\footer.component.ts",
+              "RelativeToolTip": "Echomedproject\\ClientApp\\src\\app\\layouts\\footer\\footer.component.ts",
+              "ViewState": "AgIAAEoAAAAAAAAAAAAQwA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2025-07-03T13:30:34.623Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "PatientInteraction.component.ts",
+              "DocumentMoniker": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\ClientApp\\src\\app\\pages\\dataEntry\\PatientInteraction\\PatientInteraction.component.ts",
+              "RelativeDocumentMoniker": "Echomedproject\\ClientApp\\src\\app\\pages\\dataEntry\\PatientInteraction\\PatientInteraction.component.ts",
+              "ToolTip": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\ClientApp\\src\\app\\pages\\dataEntry\\PatientInteraction\\PatientInteraction.component.ts",
+              "RelativeToolTip": "Echomedproject\\ClientApp\\src\\app\\pages\\dataEntry\\PatientInteraction\\PatientInteraction.component.ts",
+              "ViewState": "AgIAAFQBAAAAAAAAAAAgwG8BAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2025-07-03T12:24:37.918Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "AppUsers.cs",
+              "DocumentMoniker": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject.DAL\\Models\\AppUsers.cs",
+              "RelativeDocumentMoniker": "Echomedproject.DAL\\Models\\AppUsers.cs",
+              "ToolTip": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject.DAL\\Models\\AppUsers.cs",
+              "RelativeToolTip": "Echomedproject.DAL\\Models\\AppUsers.cs",
+              "ViewState": "AgIAACgAAAAAAAAAAAAAADkAAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-23T21:46:56.436Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "AppUsersRepository.cs",
+              "DocumentMoniker": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject.BLL\\Repositories\\AppUsersRepository.cs",
+              "RelativeDocumentMoniker": "Echomedproject.BLL\\Repositories\\AppUsersRepository.cs",
+              "ToolTip": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject.BLL\\Repositories\\AppUsersRepository.cs",
+              "RelativeToolTip": "Echomedproject.BLL\\Repositories\\AppUsersRepository.cs",
+              "ViewState": "AgIAABwAAAAAAAAAAAAAADwAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-23T22:39:14.125Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "Departments.cs",
+              "DocumentMoniker": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject.DAL\\Models\\Departments.cs",
+              "RelativeDocumentMoniker": "Echomedproject.DAL\\Models\\Departments.cs",
+              "ToolTip": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject.DAL\\Models\\Departments.cs",
+              "RelativeToolTip": "Echomedproject.DAL\\Models\\Departments.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAAAB8AAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-23T22:08:42.36Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "DataEntryRepository.cs",
+              "DocumentMoniker": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject.BLL\\Repositories\\DataEntryRepository.cs",
+              "RelativeDocumentMoniker": "Echomedproject.BLL\\Repositories\\DataEntryRepository.cs",
+              "ToolTip": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject.BLL\\Repositories\\DataEntryRepository.cs",
+              "RelativeToolTip": "Echomedproject.BLL\\Repositories\\DataEntryRepository.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAAB4AAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-23T22:28:34.732Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "PatientHospitalRepository.cs",
+              "DocumentMoniker": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject.BLL\\Repositories\\PatientHospitalRepository.cs",
+              "RelativeDocumentMoniker": "Echomedproject.BLL\\Repositories\\PatientHospitalRepository.cs",
+              "ToolTip": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject.BLL\\Repositories\\PatientHospitalRepository.cs",
+              "RelativeToolTip": "Echomedproject.BLL\\Repositories\\PatientHospitalRepository.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAiwDAAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-24T19:48:57.357Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "Hospitals.cs",
+              "DocumentMoniker": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject.DAL\\Models\\Hospitals.cs",
+              "RelativeDocumentMoniker": "Echomedproject.DAL\\Models\\Hospitals.cs",
+              "ToolTip": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject.DAL\\Models\\Hospitals.cs",
+              "RelativeToolTip": "Echomedproject.DAL\\Models\\Hospitals.cs",
+              "ViewState": "AgIAADAAAAAAAAAAAAAAAEkAAAA+AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-23T21:44:43.716Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "DataEntry.cs",
+              "DocumentMoniker": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject.DAL\\Models\\DataEntry.cs",
+              "RelativeDocumentMoniker": "Echomedproject.DAL\\Models\\DataEntry.cs",
+              "ToolTip": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject.DAL\\Models\\DataEntry.cs",
+              "RelativeToolTip": "Echomedproject.DAL\\Models\\DataEntry.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAqwCQAAABEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-23T21:52:49.58Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "IPatientHospitalRepository.cs",
+              "DocumentMoniker": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject.BLL\\Interfaces\\IPatientHospitalRepository.cs",
+              "RelativeDocumentMoniker": "Echomedproject.BLL\\Interfaces\\IPatientHospitalRepository.cs",
+              "ToolTip": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject.BLL\\Interfaces\\IPatientHospitalRepository.cs",
+              "RelativeToolTip": "Echomedproject.BLL\\Interfaces\\IPatientHospitalRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-24T21:21:40.958Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "AddScanViewModel.cs",
+              "DocumentMoniker": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\ViewModels\\AddScanViewModel.cs",
+              "RelativeDocumentMoniker": "Echomedproject\\ViewModels\\AddScanViewModel.cs",
+              "ToolTip": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\ViewModels\\AddScanViewModel.cs",
+              "RelativeToolTip": "Echomedproject\\ViewModels\\AddScanViewModel.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAowAkAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-24T22:06:47.512Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "AddTestViewModel.cs",
+              "DocumentMoniker": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\ViewModels\\AddTestViewModel.cs",
+              "RelativeDocumentMoniker": "Echomedproject\\ViewModels\\AddTestViewModel.cs",
+              "ToolTip": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\ViewModels\\AddTestViewModel.cs",
+              "RelativeToolTip": "Echomedproject\\ViewModels\\AddTestViewModel.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABsAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-24T22:20:12.67Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "AddMedicineViewModel.cs",
+              "DocumentMoniker": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\ViewModels\\AddMedicineViewModel.cs",
+              "RelativeDocumentMoniker": "Echomedproject\\ViewModels\\AddMedicineViewModel.cs",
+              "ToolTip": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\ViewModels\\AddMedicineViewModel.cs",
+              "RelativeToolTip": "Echomedproject\\ViewModels\\AddMedicineViewModel.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAAB4AAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-24T21:47:31.693Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "AddNoteViewModel.cs",
+              "DocumentMoniker": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\ViewModels\\AddNoteViewModel.cs",
+              "RelativeDocumentMoniker": "Echomedproject\\ViewModels\\AddNoteViewModel.cs",
+              "ToolTip": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\ViewModels\\AddNoteViewModel.cs",
+              "RelativeToolTip": "Echomedproject\\ViewModels\\AddNoteViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-24T21:59:55.261Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "Microsoft.NET.Sdk.StaticWebAssets.targets",
+              "DocumentMoniker": "C:\\Program Files\\dotnet\\sdk\\9.0.100\\Sdks\\Microsoft.NET.Sdk.StaticWebAssets\\targets\\Microsoft.NET.Sdk.StaticWebAssets.targets",
+              "RelativeDocumentMoniker": "..\\..\\..\\Program Files\\dotnet\\sdk\\9.0.100\\Sdks\\Microsoft.NET.Sdk.StaticWebAssets\\targets\\Microsoft.NET.Sdk.StaticWebAssets.targets",
+              "ToolTip": "C:\\Program Files\\dotnet\\sdk\\9.0.100\\Sdks\\Microsoft.NET.Sdk.StaticWebAssets\\targets\\Microsoft.NET.Sdk.StaticWebAssets.targets",
+              "RelativeToolTip": "..\\..\\..\\Program Files\\dotnet\\sdk\\9.0.100\\Sdks\\Microsoft.NET.Sdk.StaticWebAssets\\targets\\Microsoft.NET.Sdk.StaticWebAssets.targets",
+              "ViewState": "AgIAAIICAAAAAAAAAAAowJUCAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
+              "WhenOpened": "2025-07-02T18:00:29.078Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "DocumentSetting.cs",
+              "DocumentMoniker": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\Helpers\\DocumentSetting.cs",
+              "RelativeDocumentMoniker": "Echomedproject\\Helpers\\DocumentSetting.cs",
+              "ToolTip": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\Helpers\\DocumentSetting.cs",
+              "RelativeToolTip": "Echomedproject\\Helpers\\DocumentSetting.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAUwCMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-23T20:44:01.364Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "IAppUsersRepository.cs",
+              "DocumentMoniker": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject.BLL\\Interfaces\\IAppUsersRepository.cs",
+              "RelativeDocumentMoniker": "Echomedproject.BLL\\Interfaces\\IAppUsersRepository.cs",
+              "ToolTip": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject.BLL\\Interfaces\\IAppUsersRepository.cs",
+              "RelativeToolTip": "Echomedproject.BLL\\Interfaces\\IAppUsersRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-23T22:40:06.518Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "labtests.component.ts",
+              "DocumentMoniker": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\ClientApp\\src\\app\\pages\\Patient\\labtests\\labtests.component.ts",
+              "RelativeDocumentMoniker": "Echomedproject\\ClientApp\\src\\app\\pages\\Patient\\labtests\\labtests.component.ts",
+              "ToolTip": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\ClientApp\\src\\app\\pages\\Patient\\labtests\\labtests.component.ts",
+              "RelativeToolTip": "Echomedproject\\ClientApp\\src\\app\\pages\\Patient\\labtests\\labtests.component.ts",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2025-07-02T17:15:00.035Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "app.routes.ts",
+              "DocumentMoniker": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\ClientApp\\src\\app\\app.routes.ts",
+              "RelativeDocumentMoniker": "Echomedproject\\ClientApp\\src\\app\\app.routes.ts",
+              "ToolTip": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\ClientApp\\src\\app\\app.routes.ts",
+              "RelativeToolTip": "Echomedproject\\ClientApp\\src\\app\\app.routes.ts",
+              "ViewState": "AgIAAFoAAAAAAAAAAAAAAHIAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2025-07-02T17:19:24.479Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "scans.component.ts",
+              "DocumentMoniker": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\ClientApp\\src\\app\\pages\\Patient\\scans\\scans.component.ts",
+              "RelativeDocumentMoniker": "Echomedproject\\ClientApp\\src\\app\\pages\\Patient\\scans\\scans.component.ts",
+              "ToolTip": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\ClientApp\\src\\app\\pages\\Patient\\scans\\scans.component.ts",
+              "RelativeToolTip": "Echomedproject\\ClientApp\\src\\app\\pages\\Patient\\scans\\scans.component.ts",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2025-07-02T17:09:55.271Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 55,
+              "Title": "ToggleRequestNoteViewModel.cs",
+              "DocumentMoniker": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\ViewModels\\ToggleRequestNoteViewModel.cs",
+              "RelativeDocumentMoniker": "Echomedproject\\ViewModels\\ToggleRequestNoteViewModel.cs",
+              "ToolTip": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\ViewModels\\ToggleRequestNoteViewModel.cs",
+              "RelativeToolTip": "Echomedproject\\ViewModels\\ToggleRequestNoteViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-01T22:19:18.262Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 58,
+              "Title": "Scans.cs",
+              "DocumentMoniker": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject.DAL\\Models\\Scans.cs",
+              "RelativeDocumentMoniker": "Echomedproject.DAL\\Models\\Scans.cs",
+              "ToolTip": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject.DAL\\Models\\Scans.cs",
+              "RelativeToolTip": "Echomedproject.DAL\\Models\\Scans.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-24T20:20:30.842Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "EckomedDbContext.cs",
+              "DocumentMoniker": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject.DAL\\Contexts\\EckomedDbContext.cs",
+              "RelativeDocumentMoniker": "Echomedproject.DAL\\Contexts\\EckomedDbContext.cs",
+              "ToolTip": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject.DAL\\Contexts\\EckomedDbContext.cs",
+              "RelativeToolTip": "Echomedproject.DAL\\Contexts\\EckomedDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-23T21:34:27.733Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "HospitalsRepository.cs",
+              "DocumentMoniker": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject.BLL\\Repositories\\HospitalsRepository.cs",
+              "RelativeDocumentMoniker": "Echomedproject.BLL\\Repositories\\HospitalsRepository.cs",
+              "ToolTip": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject.BLL\\Repositories\\HospitalsRepository.cs",
+              "RelativeToolTip": "Echomedproject.BLL\\Repositories\\HospitalsRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-02T16:41:35.843Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 51,
+              "Title": "login.component.ts",
+              "DocumentMoniker": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\ClientApp\\src\\app\\pages\\Pharmacy\\login\\login.component.ts",
+              "RelativeDocumentMoniker": "Echomedproject\\ClientApp\\src\\app\\pages\\Pharmacy\\login\\login.component.ts",
+              "ToolTip": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\ClientApp\\src\\app\\pages\\Pharmacy\\login\\login.component.ts",
+              "RelativeToolTip": "Echomedproject\\ClientApp\\src\\app\\pages\\Pharmacy\\login\\login.component.ts",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAACYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2025-07-02T15:15:11.231Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 48,
+              "Title": "loading.interceptor.ts",
+              "DocumentMoniker": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\ClientApp\\src\\app\\core\\interceptors\\loading.interceptor.ts",
+              "RelativeDocumentMoniker": "Echomedproject\\ClientApp\\src\\app\\core\\interceptors\\loading.interceptor.ts",
+              "ToolTip": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\ClientApp\\src\\app\\core\\interceptors\\loading.interceptor.ts",
+              "RelativeToolTip": "Echomedproject\\ClientApp\\src\\app\\core\\interceptors\\loading.interceptor.ts",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2025-07-02T15:52:36.798Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "errors.interceptor.ts",
+              "DocumentMoniker": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\ClientApp\\src\\app\\core\\interceptors\\errors\\errors.interceptor.ts",
+              "RelativeDocumentMoniker": "Echomedproject\\ClientApp\\src\\app\\core\\interceptors\\errors\\errors.interceptor.ts",
+              "ToolTip": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\ClientApp\\src\\app\\core\\interceptors\\errors\\errors.interceptor.ts",
+              "RelativeToolTip": "Echomedproject\\ClientApp\\src\\app\\core\\interceptors\\errors\\errors.interceptor.ts",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAkAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2025-07-02T15:52:38.871Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 53,
+              "Title": "patient.guard.ts",
+              "DocumentMoniker": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\ClientApp\\src\\app\\core\\guards\\patient.guard.ts",
+              "RelativeDocumentMoniker": "Echomedproject\\ClientApp\\src\\app\\core\\guards\\patient.guard.ts",
+              "ToolTip": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\ClientApp\\src\\app\\core\\guards\\patient.guard.ts",
+              "RelativeToolTip": "Echomedproject\\ClientApp\\src\\app\\core\\guards\\patient.guard.ts",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2025-07-02T15:10:10.79Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 50,
+              "Title": "pharmacy.guard.ts",
+              "DocumentMoniker": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\ClientApp\\src\\app\\core\\guards\\pharmacy.guard.ts",
+              "RelativeDocumentMoniker": "Echomedproject\\ClientApp\\src\\app\\core\\guards\\pharmacy.guard.ts",
+              "ToolTip": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\ClientApp\\src\\app\\core\\guards\\pharmacy.guard.ts",
+              "RelativeToolTip": "Echomedproject\\ClientApp\\src\\app\\core\\guards\\pharmacy.guard.ts",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2025-07-02T14:49:06.493Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 49,
+              "Title": "login.component.ts",
+              "DocumentMoniker": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\ClientApp\\src\\app\\pages\\login\\login.component.ts",
+              "RelativeDocumentMoniker": "Echomedproject\\ClientApp\\src\\app\\pages\\login\\login.component.ts",
+              "ToolTip": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\ClientApp\\src\\app\\pages\\login\\login.component.ts",
+              "RelativeToolTip": "Echomedproject\\ClientApp\\src\\app\\pages\\login\\login.component.ts",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAACUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2025-07-02T15:11:55.045Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 52,
+              "Title": "data-entry.guard.ts",
+              "DocumentMoniker": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\ClientApp\\src\\app\\core\\guards\\data-entry.guard.ts",
+              "RelativeDocumentMoniker": "Echomedproject\\ClientApp\\src\\app\\core\\guards\\data-entry.guard.ts",
+              "ToolTip": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\ClientApp\\src\\app\\core\\guards\\data-entry.guard.ts",
+              "RelativeToolTip": "Echomedproject\\ClientApp\\src\\app\\core\\guards\\data-entry.guard.ts",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003213|",
+              "WhenOpened": "2025-07-02T15:10:19.51Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 54,
               "Title": "PharmacyAccRepository.cs",
               "DocumentMoniker": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject.BLL\\Repositories\\PharmacyAccRepository.cs",
               "RelativeDocumentMoniker": "Echomedproject.BLL\\Repositories\\PharmacyAccRepository.cs",
               "ToolTip": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject.BLL\\Repositories\\PharmacyAccRepository.cs",
               "RelativeToolTip": "Echomedproject.BLL\\Repositories\\PharmacyAccRepository.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAjwBwAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-20T12:54:43.413Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "PharmacyResultViewModel.cs",
-              "DocumentMoniker": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\ViewModels\\PharmacyResultViewModel.cs",
-              "RelativeDocumentMoniker": "Echomedproject\\ViewModels\\PharmacyResultViewModel.cs",
-              "ToolTip": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\ViewModels\\PharmacyResultViewModel.cs",
-              "RelativeToolTip": "Echomedproject\\ViewModels\\PharmacyResultViewModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-21T20:26:02.603Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 56,
               "Title": "LabTest.cs",
               "DocumentMoniker": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject.DAL\\Models\\LabTest.cs",
               "RelativeDocumentMoniker": "Echomedproject.DAL\\Models\\LabTest.cs",
               "ToolTip": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject.DAL\\Models\\LabTest.cs",
               "RelativeToolTip": "Echomedproject.DAL\\Models\\LabTest.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-24T21:33:03.614Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "RequestsdisplayViewModel.cs",
-              "DocumentMoniker": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\ViewModels\\RequestsdisplayViewModel.cs",
-              "RelativeDocumentMoniker": "Echomedproject\\ViewModels\\RequestsdisplayViewModel.cs",
-              "ToolTip": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\ViewModels\\RequestsdisplayViewModel.cs",
-              "RelativeToolTip": "Echomedproject\\ViewModels\\RequestsdisplayViewModel.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAQwCEAAAAYAAAAAAAAAA==",
+              "DocumentIndex": 57,
+              "Title": "Note.cs",
+              "DocumentMoniker": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject.DAL\\Models\\Note.cs",
+              "RelativeDocumentMoniker": "Echomedproject.DAL\\Models\\Note.cs",
+              "ToolTip": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject.DAL\\Models\\Note.cs",
+              "RelativeToolTip": "Echomedproject.DAL\\Models\\Note.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-23T17:27:16.313Z"
+              "WhenOpened": "2025-06-24T18:36:33.204Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\Program.cs",
-              "RelativeDocumentMoniker": "Echomedproject\\Program.cs",
-              "ToolTip": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\Program.cs",
-              "RelativeToolTip": "Echomedproject\\Program.cs",
-              "ViewState": "AgIAAEkAAAAAAAAAAAAQwIEAAAAMAAAAAAAAAA==",
+              "DocumentIndex": 59,
+              "Title": "SearchResultViewModel.cs",
+              "DocumentMoniker": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\ViewModels\\SearchResultViewModel.cs",
+              "RelativeDocumentMoniker": "Echomedproject\\ViewModels\\SearchResultViewModel.cs",
+              "ToolTip": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\ViewModels\\SearchResultViewModel.cs",
+              "RelativeToolTip": "Echomedproject\\ViewModels\\SearchResultViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwB0AAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-20T13:00:54.169Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-20T14:21:43.058Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "DataEntryController.cs",
-              "DocumentMoniker": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\Controllers\\DataEntryController.cs",
-              "RelativeDocumentMoniker": "Echomedproject\\Controllers\\DataEntryController.cs",
-              "ToolTip": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\Controllers\\DataEntryController.cs",
-              "RelativeToolTip": "Echomedproject\\Controllers\\DataEntryController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAHMEAAAAAAAAAAAAAA==",
+              "DocumentIndex": 61,
+              "Title": "IPharmacyAccRepository.cs",
+              "DocumentMoniker": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject.BLL\\Interfaces\\IPharmacyAccRepository.cs",
+              "RelativeDocumentMoniker": "Echomedproject.BLL\\Interfaces\\IPharmacyAccRepository.cs",
+              "ToolTip": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject.BLL\\Interfaces\\IPharmacyAccRepository.cs",
+              "RelativeToolTip": "Echomedproject.BLL\\Interfaces\\IPharmacyAccRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-20T12:54:58.421Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-28T19:58:08.848Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 60,
               "Title": "PharmacyAcc.cs",
               "DocumentMoniker": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject.DAL\\Models\\PharmacyAcc.cs",
               "RelativeDocumentMoniker": "Echomedproject.DAL\\Models\\PharmacyAcc.cs",
               "ToolTip": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject.DAL\\Models\\PharmacyAcc.cs",
               "RelativeToolTip": "Echomedproject.DAL\\Models\\PharmacyAcc.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAuwBcAAAAvAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-20T12:54:34.901Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "PharmacyController.cs",
-              "DocumentMoniker": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\Controllers\\PharmacyController.cs",
-              "RelativeDocumentMoniker": "Echomedproject\\Controllers\\PharmacyController.cs",
-              "ToolTip": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\Controllers\\PharmacyController.cs",
-              "RelativeToolTip": "Echomedproject\\Controllers\\PharmacyController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAIUAAAApAAAAAAAAAA==",
+              "DocumentIndex": 62,
+              "Title": "Request.cs",
+              "DocumentMoniker": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject.DAL\\Models\\Request.cs",
+              "RelativeDocumentMoniker": "Echomedproject.DAL\\Models\\Request.cs",
+              "ToolTip": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject.DAL\\Models\\Request.cs",
+              "RelativeToolTip": "Echomedproject.DAL\\Models\\Request.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-20T12:53:16.679Z"
+              "WhenOpened": "2025-06-22T12:11:58.168Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "UserController.cs",
-              "DocumentMoniker": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\Controllers\\UserController.cs",
-              "RelativeDocumentMoniker": "Echomedproject\\Controllers\\UserController.cs",
-              "ToolTip": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\Controllers\\UserController.cs",
-              "RelativeToolTip": "Echomedproject\\Controllers\\UserController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAHoDAAANAAAAAAAAAA==",
+              "DocumentIndex": 63,
+              "Title": "PharmacyResultViewModel.cs",
+              "DocumentMoniker": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\ViewModels\\PharmacyResultViewModel.cs",
+              "RelativeDocumentMoniker": "Echomedproject\\ViewModels\\PharmacyResultViewModel.cs",
+              "ToolTip": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\ViewModels\\PharmacyResultViewModel.cs",
+              "RelativeToolTip": "Echomedproject\\ViewModels\\PharmacyResultViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwBMAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-20T12:51:46.303Z"
+              "WhenOpened": "2025-06-21T20:26:02.603Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 64,
               "Title": "Pharmacy.cs",
               "DocumentMoniker": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject.DAL\\Models\\Pharmacy.cs",
               "RelativeDocumentMoniker": "Echomedproject.DAL\\Models\\Pharmacy.cs",
@@ -452,295 +1169,31 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "DocumentSetting.cs",
-              "DocumentMoniker": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\Helpers\\DocumentSetting.cs",
-              "RelativeDocumentMoniker": "Echomedproject\\Helpers\\DocumentSetting.cs",
-              "ToolTip": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\Helpers\\DocumentSetting.cs",
-              "RelativeToolTip": "Echomedproject\\Helpers\\DocumentSetting.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-23T20:44:01.364Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "AddPatientViewModel.cs",
-              "DocumentMoniker": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\ViewModels\\AddPatientViewModel.cs",
-              "RelativeDocumentMoniker": "Echomedproject\\ViewModels\\AddPatientViewModel.cs",
-              "ToolTip": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\ViewModels\\AddPatientViewModel.cs",
-              "RelativeToolTip": "Echomedproject\\ViewModels\\AddPatientViewModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAuAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-23T22:55:05.44Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "SearchResultViewModel.cs",
-              "DocumentMoniker": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\ViewModels\\SearchResultViewModel.cs",
-              "RelativeDocumentMoniker": "Echomedproject\\ViewModels\\SearchResultViewModel.cs",
-              "ToolTip": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\ViewModels\\SearchResultViewModel.cs",
-              "RelativeToolTip": "Echomedproject\\ViewModels\\SearchResultViewModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-20T14:21:43.058Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "ResetPasswordViewModel.cs",
-              "DocumentMoniker": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\ViewModels\\ResetPasswordViewModel.cs",
-              "RelativeDocumentMoniker": "Echomedproject\\ViewModels\\ResetPasswordViewModel.cs",
-              "ToolTip": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\ViewModels\\ResetPasswordViewModel.cs",
-              "RelativeToolTip": "Echomedproject\\ViewModels\\ResetPasswordViewModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-29T21:54:44.486Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "CapacityViewModel.cs",
-              "DocumentMoniker": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\ViewModels\\CapacityViewModel.cs",
-              "RelativeDocumentMoniker": "Echomedproject\\ViewModels\\CapacityViewModel.cs",
-              "ToolTip": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\ViewModels\\CapacityViewModel.cs",
-              "RelativeToolTip": "Echomedproject\\ViewModels\\CapacityViewModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAyAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-29T21:35:34.73Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 65,
-              "Title": "20250629213033_Capacty.cs",
-              "DocumentMoniker": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject.DAL\\Migrations\\20250629213033_Capacty.cs",
-              "RelativeDocumentMoniker": "Echomedproject.DAL\\Migrations\\20250629213033_Capacty.cs",
-              "ToolTip": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject.DAL\\Migrations\\20250629213033_Capacty.cs",
-              "RelativeToolTip": "Echomedproject.DAL\\Migrations\\20250629213033_Capacty.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAhAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-29T21:30:34.15Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "UpdateDataEntryProfileViewModel.cs",
-              "DocumentMoniker": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\ViewModels\\UpdateDataEntryProfileViewModel.cs",
-              "RelativeDocumentMoniker": "Echomedproject\\ViewModels\\UpdateDataEntryProfileViewModel.cs",
-              "ToolTip": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\ViewModels\\UpdateDataEntryProfileViewModel.cs",
-              "RelativeToolTip": "Echomedproject\\ViewModels\\UpdateDataEntryProfileViewModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAWAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-28T20:55:16.208Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 27,
               "Title": "PatientHospital.cs",
               "DocumentMoniker": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject.DAL\\Models\\PatientHospital.cs",
               "RelativeDocumentMoniker": "Echomedproject.DAL\\Models\\PatientHospital.cs",
               "ToolTip": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject.DAL\\Models\\PatientHospital.cs",
               "RelativeToolTip": "Echomedproject.DAL\\Models\\PatientHospital.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAaAAAAAAAAAA==",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAwwB0AAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-23T21:40:19.087Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "IPharmacyAccRepository.cs",
-              "DocumentMoniker": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject.BLL\\Interfaces\\IPharmacyAccRepository.cs",
-              "RelativeDocumentMoniker": "Echomedproject.BLL\\Interfaces\\IPharmacyAccRepository.cs",
-              "ToolTip": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject.BLL\\Interfaces\\IPharmacyAccRepository.cs",
-              "RelativeToolTip": "Echomedproject.BLL\\Interfaces\\IPharmacyAccRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-28T19:58:08.848Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 64,
-              "Title": "20250628201257_dashboard.cs",
-              "DocumentMoniker": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject.DAL\\Migrations\\20250628201257_dashboard.cs",
-              "RelativeDocumentMoniker": "Echomedproject.DAL\\Migrations\\20250628201257_dashboard.cs",
-              "ToolTip": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject.DAL\\Migrations\\20250628201257_dashboard.cs",
-              "RelativeToolTip": "Echomedproject.DAL\\Migrations\\20250628201257_dashboard.cs",
-              "ViewState": "AgIAABkAAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-28T20:12:57.38Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "AccountController.cs",
-              "DocumentMoniker": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\Controllers\\AccountController.cs",
-              "RelativeDocumentMoniker": "Echomedproject\\Controllers\\AccountController.cs",
-              "ToolTip": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\Controllers\\AccountController.cs",
-              "RelativeToolTip": "Echomedproject\\Controllers\\AccountController.cs",
-              "ViewState": "AgIAAPoAAAAAAAAAAADwv08BAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-20T12:53:20.614Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "Departments.cs",
-              "DocumentMoniker": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject.DAL\\Models\\Departments.cs",
-              "RelativeDocumentMoniker": "Echomedproject.DAL\\Models\\Departments.cs",
-              "ToolTip": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject.DAL\\Models\\Departments.cs",
-              "RelativeToolTip": "Echomedproject.DAL\\Models\\Departments.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAAB0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-23T22:08:42.36Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "PatientHospitalRepository.cs",
-              "DocumentMoniker": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject.BLL\\Repositories\\PatientHospitalRepository.cs",
-              "RelativeDocumentMoniker": "Echomedproject.BLL\\Repositories\\PatientHospitalRepository.cs",
-              "ToolTip": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject.BLL\\Repositories\\PatientHospitalRepository.cs",
-              "RelativeToolTip": "Echomedproject.BLL\\Repositories\\PatientHospitalRepository.cs",
-              "ViewState": "AgIAANgAAAAAAAAAAAAkwJgBAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-24T19:48:57.357Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "DataEntry.cs",
-              "DocumentMoniker": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject.DAL\\Models\\DataEntry.cs",
-              "RelativeDocumentMoniker": "Echomedproject.DAL\\Models\\DataEntry.cs",
-              "ToolTip": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject.DAL\\Models\\DataEntry.cs",
-              "RelativeToolTip": "Echomedproject.DAL\\Models\\DataEntry.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAiwBIAAAAgAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-23T21:52:49.58Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "IPatientHospitalRepository.cs",
-              "DocumentMoniker": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject.BLL\\Interfaces\\IPatientHospitalRepository.cs",
-              "RelativeDocumentMoniker": "Echomedproject.BLL\\Interfaces\\IPatientHospitalRepository.cs",
-              "ToolTip": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject.BLL\\Interfaces\\IPatientHospitalRepository.cs",
-              "RelativeToolTip": "Echomedproject.BLL\\Interfaces\\IPatientHospitalRepository.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAA9wB8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-24T21:21:40.958Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 66,
               "Title": "Records.cs",
               "DocumentMoniker": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject.DAL\\Models\\Records.cs",
               "RelativeDocumentMoniker": "Echomedproject.DAL\\Models\\Records.cs",
               "ToolTip": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject.DAL\\Models\\Records.cs",
               "RelativeToolTip": "Echomedproject.DAL\\Models\\Records.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAkwBMAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-24T18:35:15.72Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
-              "Title": "AddTestViewModel.cs",
-              "DocumentMoniker": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\ViewModels\\AddTestViewModel.cs",
-              "RelativeDocumentMoniker": "Echomedproject\\ViewModels\\AddTestViewModel.cs",
-              "ToolTip": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\ViewModels\\AddTestViewModel.cs",
-              "RelativeToolTip": "Echomedproject\\ViewModels\\AddTestViewModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAtAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-24T22:20:12.67Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 29,
-              "Title": "HomeController.cs",
-              "DocumentMoniker": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\Controllers\\HomeController.cs",
-              "RelativeDocumentMoniker": "Echomedproject\\Controllers\\HomeController.cs",
-              "ToolTip": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\Controllers\\HomeController.cs",
-              "RelativeToolTip": "Echomedproject\\Controllers\\HomeController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-20T14:36:30.598Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 30,
-              "Title": "AppUsers.cs",
-              "DocumentMoniker": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject.DAL\\Models\\AppUsers.cs",
-              "RelativeDocumentMoniker": "Echomedproject.DAL\\Models\\AppUsers.cs",
-              "ToolTip": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject.DAL\\Models\\AppUsers.cs",
-              "RelativeToolTip": "Echomedproject.DAL\\Models\\AppUsers.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAAowA0AAAAjAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-23T21:46:56.436Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 31,
-              "Title": "DataEntryRepository.cs",
-              "DocumentMoniker": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject.BLL\\Repositories\\DataEntryRepository.cs",
-              "RelativeDocumentMoniker": "Echomedproject.BLL\\Repositories\\DataEntryRepository.cs",
-              "ToolTip": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject.BLL\\Repositories\\DataEntryRepository.cs",
-              "RelativeToolTip": "Echomedproject.BLL\\Repositories\\DataEntryRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-23T22:28:34.732Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 32,
-              "Title": "IDataEntryRepository.cs",
-              "DocumentMoniker": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject.BLL\\Interfaces\\IDataEntryRepository.cs",
-              "RelativeDocumentMoniker": "Echomedproject.BLL\\Interfaces\\IDataEntryRepository.cs",
-              "ToolTip": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject.BLL\\Interfaces\\IDataEntryRepository.cs",
-              "RelativeToolTip": "Echomedproject.BLL\\Interfaces\\IDataEntryRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-23T22:32:32.708Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 33,
-              "Title": "Users.cs",
-              "DocumentMoniker": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject.DAL\\Models\\Users.cs",
-              "RelativeDocumentMoniker": "Echomedproject.DAL\\Models\\Users.cs",
-              "ToolTip": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject.DAL\\Models\\Users.cs",
-              "RelativeToolTip": "Echomedproject.DAL\\Models\\Users.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-22T12:26:27.593Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 34,
-              "Title": "Scans.cs",
-              "DocumentMoniker": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject.DAL\\Models\\Scans.cs",
-              "RelativeDocumentMoniker": "Echomedproject.DAL\\Models\\Scans.cs",
-              "ToolTip": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject.DAL\\Models\\Scans.cs",
-              "RelativeToolTip": "Echomedproject.DAL\\Models\\Scans.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-24T20:20:30.842Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 35,
-              "Title": "prescription.cs",
-              "DocumentMoniker": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject.DAL\\Models\\prescription.cs",
-              "RelativeDocumentMoniker": "Echomedproject.DAL\\Models\\prescription.cs",
-              "ToolTip": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject.DAL\\Models\\prescription.cs",
-              "RelativeToolTip": "Echomedproject.DAL\\Models\\prescription.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-23T21:24:50.714Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 67,
               "Title": "Patients.cs",
               "DocumentMoniker": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject.DAL\\Models\\Patients.cs",
               "RelativeDocumentMoniker": "Echomedproject.DAL\\Models\\Patients.cs",
@@ -752,7 +1205,127 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 62,
+              "DocumentIndex": 68,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Echomedproject\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Echomedproject\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-20T14:36:30.598Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 69,
+              "Title": "RequestsdisplayViewModel.cs",
+              "DocumentMoniker": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\ViewModels\\RequestsdisplayViewModel.cs",
+              "RelativeDocumentMoniker": "Echomedproject\\ViewModels\\RequestsdisplayViewModel.cs",
+              "ToolTip": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\ViewModels\\RequestsdisplayViewModel.cs",
+              "RelativeToolTip": "Echomedproject\\ViewModels\\RequestsdisplayViewModel.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAQwCEAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-23T17:27:16.313Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 70,
+              "Title": "ResetPasswordViewModel.cs",
+              "DocumentMoniker": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\ViewModels\\ResetPasswordViewModel.cs",
+              "RelativeDocumentMoniker": "Echomedproject\\ViewModels\\ResetPasswordViewModel.cs",
+              "ToolTip": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\ViewModels\\ResetPasswordViewModel.cs",
+              "RelativeToolTip": "Echomedproject\\ViewModels\\ResetPasswordViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-29T21:54:44.486Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 71,
+              "Title": "CapacityViewModel.cs",
+              "DocumentMoniker": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\ViewModels\\CapacityViewModel.cs",
+              "RelativeDocumentMoniker": "Echomedproject\\ViewModels\\CapacityViewModel.cs",
+              "ToolTip": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\ViewModels\\CapacityViewModel.cs",
+              "RelativeToolTip": "Echomedproject\\ViewModels\\CapacityViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-29T21:35:34.73Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 92,
+              "Title": "20250629213033_Capacty.cs",
+              "DocumentMoniker": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject.DAL\\Migrations\\20250629213033_Capacty.cs",
+              "RelativeDocumentMoniker": "Echomedproject.DAL\\Migrations\\20250629213033_Capacty.cs",
+              "ToolTip": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject.DAL\\Migrations\\20250629213033_Capacty.cs",
+              "RelativeToolTip": "Echomedproject.DAL\\Migrations\\20250629213033_Capacty.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-29T21:30:34.15Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 72,
+              "Title": "UpdateDataEntryProfileViewModel.cs",
+              "DocumentMoniker": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\ViewModels\\UpdateDataEntryProfileViewModel.cs",
+              "RelativeDocumentMoniker": "Echomedproject\\ViewModels\\UpdateDataEntryProfileViewModel.cs",
+              "ToolTip": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\ViewModels\\UpdateDataEntryProfileViewModel.cs",
+              "RelativeToolTip": "Echomedproject\\ViewModels\\UpdateDataEntryProfileViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-28T20:55:16.208Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 91,
+              "Title": "20250628201257_dashboard.cs",
+              "DocumentMoniker": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject.DAL\\Migrations\\20250628201257_dashboard.cs",
+              "RelativeDocumentMoniker": "Echomedproject.DAL\\Migrations\\20250628201257_dashboard.cs",
+              "ToolTip": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject.DAL\\Migrations\\20250628201257_dashboard.cs",
+              "RelativeToolTip": "Echomedproject.DAL\\Migrations\\20250628201257_dashboard.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-28T20:12:57.38Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 73,
+              "Title": "IDataEntryRepository.cs",
+              "DocumentMoniker": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject.BLL\\Interfaces\\IDataEntryRepository.cs",
+              "RelativeDocumentMoniker": "Echomedproject.BLL\\Interfaces\\IDataEntryRepository.cs",
+              "ToolTip": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject.BLL\\Interfaces\\IDataEntryRepository.cs",
+              "RelativeToolTip": "Echomedproject.BLL\\Interfaces\\IDataEntryRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-23T22:32:32.708Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 74,
+              "Title": "Users.cs",
+              "DocumentMoniker": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject.DAL\\Models\\Users.cs",
+              "RelativeDocumentMoniker": "Echomedproject.DAL\\Models\\Users.cs",
+              "ToolTip": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject.DAL\\Models\\Users.cs",
+              "RelativeToolTip": "Echomedproject.DAL\\Models\\Users.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-22T12:26:27.593Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 75,
+              "Title": "prescription.cs",
+              "DocumentMoniker": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject.DAL\\Models\\prescription.cs",
+              "RelativeDocumentMoniker": "Echomedproject.DAL\\Models\\prescription.cs",
+              "ToolTip": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject.DAL\\Models\\prescription.cs",
+              "RelativeToolTip": "Echomedproject.DAL\\Models\\prescription.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-23T21:24:50.714Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 89,
               "Title": "20250624223156_recorddone.cs",
               "DocumentMoniker": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject.DAL\\Migrations\\20250624223156_recorddone.cs",
               "RelativeDocumentMoniker": "Echomedproject.DAL\\Migrations\\20250624223156_recorddone.cs",
@@ -764,19 +1337,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
-              "Title": "Notification.cs",
-              "DocumentMoniker": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject.DAL\\Models\\Notification.cs",
-              "RelativeDocumentMoniker": "Echomedproject.DAL\\Models\\Notification.cs",
-              "ToolTip": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject.DAL\\Models\\Notification.cs",
-              "RelativeToolTip": "Echomedproject.DAL\\Models\\Notification.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAIwA4AAAAwAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-20T13:26:36.481Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 76,
               "Title": "Medicine.cs",
               "DocumentMoniker": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject.DAL\\Models\\Medicine.cs",
               "RelativeDocumentMoniker": "Echomedproject.DAL\\Models\\Medicine.cs",
@@ -788,67 +1349,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
-              "Title": "Note.cs",
-              "DocumentMoniker": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject.DAL\\Models\\Note.cs",
-              "RelativeDocumentMoniker": "Echomedproject.DAL\\Models\\Note.cs",
-              "ToolTip": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject.DAL\\Models\\Note.cs",
-              "RelativeToolTip": "Echomedproject.DAL\\Models\\Note.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAYAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-24T18:36:33.204Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 40,
-              "Title": "AddScanViewModel.cs",
-              "DocumentMoniker": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\ViewModels\\AddScanViewModel.cs",
-              "RelativeDocumentMoniker": "Echomedproject\\ViewModels\\AddScanViewModel.cs",
-              "ToolTip": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\ViewModels\\AddScanViewModel.cs",
-              "RelativeToolTip": "Echomedproject\\ViewModels\\AddScanViewModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-24T22:06:47.512Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 41,
-              "Title": "AddNoteViewModel.cs",
-              "DocumentMoniker": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\ViewModels\\AddNoteViewModel.cs",
-              "RelativeDocumentMoniker": "Echomedproject\\ViewModels\\AddNoteViewModel.cs",
-              "ToolTip": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\ViewModels\\AddNoteViewModel.cs",
-              "RelativeToolTip": "Echomedproject\\ViewModels\\AddNoteViewModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAvAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-24T21:59:55.261Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 42,
-              "Title": "RegisterViewModel.cs",
-              "DocumentMoniker": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\ViewModels\\RegisterViewModel.cs",
-              "RelativeDocumentMoniker": "Echomedproject\\ViewModels\\RegisterViewModel.cs",
-              "ToolTip": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\ViewModels\\RegisterViewModel.cs",
-              "RelativeToolTip": "Echomedproject\\ViewModels\\RegisterViewModel.cs",
-              "ViewState": "AgIAABoAAAAAAAAAAAAIwDMAAAAYAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-21T20:26:01.452Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 43,
-              "Title": "AddMedicineViewModel.cs",
-              "DocumentMoniker": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\ViewModels\\AddMedicineViewModel.cs",
-              "RelativeDocumentMoniker": "Echomedproject\\ViewModels\\AddMedicineViewModel.cs",
-              "ToolTip": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\ViewModels\\AddMedicineViewModel.cs",
-              "RelativeToolTip": "Echomedproject\\ViewModels\\AddMedicineViewModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAtAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-24T21:47:31.693Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 63,
+              "DocumentIndex": 90,
               "Title": "20250624185236_recordupdated2.cs",
               "DocumentMoniker": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject.DAL\\Migrations\\20250624185236_recordupdated2.cs",
               "RelativeDocumentMoniker": "Echomedproject.DAL\\Migrations\\20250624185236_recordupdated2.cs",
@@ -860,7 +1361,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 46,
+              "DocumentIndex": 78,
               "Title": "Advertisement.cs",
               "DocumentMoniker": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject.DAL\\Models\\Advertisement.cs",
               "RelativeDocumentMoniker": "Echomedproject.DAL\\Models\\Advertisement.cs",
@@ -872,7 +1373,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 44,
+              "DocumentIndex": 77,
               "Title": "NotificationResponseViewModel.cs",
               "DocumentMoniker": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\ViewModels\\NotificationResponseViewModel.cs",
               "RelativeDocumentMoniker": "Echomedproject\\ViewModels\\NotificationResponseViewModel.cs",
@@ -884,7 +1385,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 47,
+              "DocumentIndex": 79,
               "Title": "20250623231144_updateeee.cs",
               "DocumentMoniker": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject.DAL\\Migrations\\20250623231144_updateeee.cs",
               "RelativeDocumentMoniker": "Echomedproject.DAL\\Migrations\\20250623231144_updateeee.cs",
@@ -896,55 +1397,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 45,
-              "Title": "EckomedDbContext.cs",
-              "DocumentMoniker": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject.DAL\\Contexts\\EckomedDbContext.cs",
-              "RelativeDocumentMoniker": "Echomedproject.DAL\\Contexts\\EckomedDbContext.cs",
-              "ToolTip": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject.DAL\\Contexts\\EckomedDbContext.cs",
-              "RelativeToolTip": "Echomedproject.DAL\\Contexts\\EckomedDbContext.cs",
-              "ViewState": "AgIAAC0AAAAAAAAAAAAuwEMAAAAvAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-23T21:34:27.733Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 48,
-              "Title": "Hospitals.cs",
-              "DocumentMoniker": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject.DAL\\Models\\Hospitals.cs",
-              "RelativeDocumentMoniker": "Echomedproject.DAL\\Models\\Hospitals.cs",
-              "ToolTip": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject.DAL\\Models\\Hospitals.cs",
-              "RelativeToolTip": "Echomedproject.DAL\\Models\\Hospitals.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAEkAAABTAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-23T21:44:43.716Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 50,
-              "Title": "AppUsersRepository.cs",
-              "DocumentMoniker": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject.BLL\\Repositories\\AppUsersRepository.cs",
-              "RelativeDocumentMoniker": "Echomedproject.BLL\\Repositories\\AppUsersRepository.cs",
-              "ToolTip": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject.BLL\\Repositories\\AppUsersRepository.cs",
-              "RelativeToolTip": "Echomedproject.BLL\\Repositories\\AppUsersRepository.cs",
-              "ViewState": "AgIAABQAAAAAAAAAAAAIwCwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-23T22:39:14.125Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 49,
-              "Title": "IAppUsersRepository.cs",
-              "DocumentMoniker": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject.BLL\\Interfaces\\IAppUsersRepository.cs",
-              "RelativeDocumentMoniker": "Echomedproject.BLL\\Interfaces\\IAppUsersRepository.cs",
-              "ToolTip": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject.BLL\\Interfaces\\IAppUsersRepository.cs",
-              "RelativeToolTip": "Echomedproject.BLL\\Interfaces\\IAppUsersRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAABBAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-23T22:40:06.518Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 51,
+              "DocumentIndex": 80,
               "Title": "PharmacyRepository.cs",
               "DocumentMoniker": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject.BLL\\Repositories\\PharmacyRepository.cs",
               "RelativeDocumentMoniker": "Echomedproject.BLL\\Repositories\\PharmacyRepository.cs",
@@ -956,7 +1409,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 60,
+              "DocumentIndex": 87,
               "Title": "20250623214945_updated_patient.cs",
               "DocumentMoniker": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject.DAL\\Migrations\\20250623214945_updated_patient.cs",
               "RelativeDocumentMoniker": "Echomedproject.DAL\\Migrations\\20250623214945_updated_patient.cs",
@@ -968,7 +1421,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 61,
+              "DocumentIndex": 88,
               "Title": "20250623213759_requests2.cs",
               "DocumentMoniker": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject.DAL\\Migrations\\20250623213759_requests2.cs",
               "RelativeDocumentMoniker": "Echomedproject.DAL\\Migrations\\20250623213759_requests2.cs",
@@ -980,7 +1433,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 53,
+              "DocumentIndex": 81,
               "Title": "PrescriptionRepository.cs",
               "DocumentMoniker": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject.BLL\\Repositories\\PrescriptionRepository.cs",
               "RelativeDocumentMoniker": "Echomedproject.BLL\\Repositories\\PrescriptionRepository.cs",
@@ -992,7 +1445,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 54,
+              "DocumentIndex": 82,
               "Title": "NotificationRepository.cs",
               "DocumentMoniker": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject.BLL\\Repositories\\NotificationRepository.cs",
               "RelativeDocumentMoniker": "Echomedproject.BLL\\Repositories\\NotificationRepository.cs",
@@ -1004,7 +1457,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 55,
+              "DocumentIndex": 83,
               "Title": "20250623181403_notification.cs",
               "DocumentMoniker": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject.DAL\\Migrations\\20250623181403_notification.cs",
               "RelativeDocumentMoniker": "Echomedproject.DAL\\Migrations\\20250623181403_notification.cs",
@@ -1016,7 +1469,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 59,
+              "DocumentIndex": 86,
               "Title": "20250623175934_pharmacy2.cs",
               "DocumentMoniker": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject.DAL\\Migrations\\20250623175934_pharmacy2.cs",
               "RelativeDocumentMoniker": "Echomedproject.DAL\\Migrations\\20250623175934_pharmacy2.cs",
@@ -1028,7 +1481,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 56,
+              "DocumentIndex": 84,
               "Title": "RecordViewModel.cs",
               "DocumentMoniker": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\ViewModels\\RecordViewModel.cs",
               "RelativeDocumentMoniker": "Echomedproject\\ViewModels\\RecordViewModel.cs",
@@ -1040,7 +1493,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 58,
+              "DocumentIndex": 85,
               "Title": "20250622125146_requests.cs",
               "DocumentMoniker": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject.DAL\\Migrations\\20250622125146_requests.cs",
               "RelativeDocumentMoniker": "Echomedproject.DAL\\Migrations\\20250622125146_requests.cs",
@@ -1049,30 +1502,6 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-22T12:51:47.13Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 57,
-              "Title": "MedicineRequestDto.cs",
-              "DocumentMoniker": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\ViewModels\\MedicineRequestDto.cs",
-              "RelativeDocumentMoniker": "Echomedproject\\ViewModels\\MedicineRequestDto.cs",
-              "ToolTip": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\ViewModels\\MedicineRequestDto.cs",
-              "RelativeToolTip": "Echomedproject\\ViewModels\\MedicineRequestDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAkAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-22T12:38:55.796Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 52,
-              "Title": "Request.cs",
-              "DocumentMoniker": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject.DAL\\Models\\Request.cs",
-              "RelativeDocumentMoniker": "Echomedproject.DAL\\Models\\Request.cs",
-              "ToolTip": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject.DAL\\Models\\Request.cs",
-              "RelativeToolTip": "Echomedproject.DAL\\Models\\Request.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-22T12:11:58.168Z"
             }
           ]
         }

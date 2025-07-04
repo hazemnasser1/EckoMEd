@@ -22,10 +22,17 @@ namespace Echomedproject.PL.Helpers
             string filePath = Path.Combine(folderPath, fileName);
 
             if (!System.IO.File.Exists(filePath))
-                return null; // Or return a placeholder base64
+                return null;
 
-            byte[] imageBytes = System.IO.File.ReadAllBytes(filePath);
-            return Convert.ToBase64String(imageBytes);
+            using (var stream = new FileStream(filePath, FileMode.Open, FileAccess.Read, FileShare.ReadWrite))
+            {
+                using (var memoryStream = new MemoryStream())
+                {
+                    stream.CopyTo(memoryStream);
+                    return Convert.ToBase64String(memoryStream.ToArray());
+                }
+            }
         }
+
     }
 }

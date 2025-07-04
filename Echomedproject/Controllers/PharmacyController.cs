@@ -13,7 +13,6 @@ namespace Echomedproject.PL.Controllers
     [ApiController]
     [Route("api/[controller]")]
     [Authorize(Roles = "Pharmacy")]
-
     public class PharmacyController : ControllerBase
     {
         private readonly UserManager<Users> userManager;
@@ -23,8 +22,6 @@ namespace Echomedproject.PL.Controllers
         public static string CurrentMemberEmail;
         private static readonly HttpClient client = new HttpClient();
         private const string OverpassUrl = "https://overpass-api.de/api/interpreter";
-
-
 
         private readonly IHttpContextAccessor _httpContextAccessor;
 
@@ -40,6 +37,7 @@ namespace Echomedproject.PL.Controllers
             this.unitOfWork = unitOfWork;
             this._httpContextAccessor = httpContextAccessor;
         }
+
         [Authorize(Roles = "Pharmacy")]
         [HttpGet("Pending-requests")]
         public async Task<IActionResult> Pending_requests()
@@ -48,27 +46,25 @@ namespace Echomedproject.PL.Controllers
             var email = currentUser?.FindFirst(ClaimTypes.Email)?.Value;
 
             if (string.IsNullOrEmpty(email))
-                return Unauthorized("User email not found.");
+                return Unauthorized(new { success = false, message = "User email not found." });
 
             var userId = email.Split('@')[0];
             var user = unitOfWork.pharmacyAccRepository.getpharmacyaccWithDetails(userId);
 
             if (user == null)
-                return NotFound("Pharmacy account not found.");
+                return NotFound(new { success = false, message = "Pharmacy account not found." });
 
             var allRequests = user.Requests;
 
             if (allRequests == null || !allRequests.Any())
-                return Ok(new { message = "No requests found." });
+                return Ok(new { success = true, message = "No requests found." });
 
-            // Stats
             var totalRequests = allRequests.Count;
             var pendingRequests = allRequests.Count(r => string.IsNullOrEmpty(r.state) || r.state.ToLower() == "pending");
             var closedTodayRequests = allRequests.Count(r =>
                 r.state?.ToLower() == "closed" &&
                 r.ClosedAt?.Date == DateTime.Today);
 
-            // Pending items
             var pendingList = allRequests
                 .Where(r => string.IsNullOrEmpty(r.state) || r.state.ToLower() == "pending")
                 .Select(r => new RequestsdisplayViewModel
@@ -79,7 +75,8 @@ namespace Echomedproject.PL.Controllers
                     state = r.state ?? "pending",
                     UserName = r.AppUser?.UserName,
                     Email = r.AppUser?.Email,
-                    phoneNum = r.AppUser?.PhoneNum
+                    phoneNum = r.AppUser?.PhoneNum,
+                    DateTime = r.SentAt
                 }).ToList();
 
             return Ok(new
@@ -91,7 +88,6 @@ namespace Echomedproject.PL.Controllers
             });
         }
 
-
         [Authorize(Roles = "Pharmacy")]
         [HttpGet("Closed-requests")]
         public async Task<IActionResult> Closed_requests()
@@ -100,22 +96,20 @@ namespace Echomedproject.PL.Controllers
             var email = currentUser?.FindFirst(ClaimTypes.Email)?.Value;
 
             if (string.IsNullOrEmpty(email))
-                return Unauthorized("User email not found.");
+                return Unauthorized(new { success = false, message = "User email not found." });
 
             var userId = email.Split('@')[0];
             var user = unitOfWork.pharmacyAccRepository.getpharmacyaccWithDetails(userId);
 
             if (user == null)
-                return NotFound("Pharmacy account not found.");
+                return NotFound(new { success = false, message = "Pharmacy account not found." });
 
             var closedRequests = user.Requests?
                 .Where(r => r.state?.ToLower() == "closed")
                 .ToList();
 
             if (closedRequests == null || !closedRequests.Any())
-            {
-                return Ok(new { message = "No closed requests found." });
-            }
+                return Ok(new { success = true, message = "No closed requests found." });
 
             var approvedCount = closedRequests.Count(r => r.Response?.ToLower() == "approved");
             var rejectedCount = closedRequests.Count(r => r.Response?.ToLower() == "rejected");
@@ -124,16 +118,15 @@ namespace Echomedproject.PL.Controllers
             var closedList = closedRequests
                 .Select(r => new RequestsdisplayViewModel
                 {
-                    Id = r.Id,  // ← Include ID
+                    Id = r.Id,
                     MedicineName = r.MedicineName,
                     qty = r.qty,
-                    state = r.Response ?? "unknown",  // Show "approved"/"rejected"
+                    state = r.Response ?? "unknown",
                     UserName = r.AppUser?.UserName,
                     Email = r.AppUser?.Email,
                     phoneNum = r.AppUser?.PhoneNum,
-                    DateTime= r.ClosedAt,
-                })
-                .ToList();
+                    DateTime = r.ClosedAt,
+                }).ToList();
 
             return Ok(new
             {
@@ -146,25 +139,28 @@ namespace Echomedproject.PL.Controllers
 
         [Authorize(Roles = "Pharmacy")]
         [HttpPost("Approve-request")]
-        public async Task<IActionResult> ApproveRequest([FromBody]int id)
+        public async Task<IActionResult> ApproveRequest([FromBody] int id)
         {
+            if (id == 0)
+                return BadRequest(new { success = false, message = "ID is not set" });
+
             var currentUser = _httpContextAccessor?.HttpContext?.User;
             var email = currentUser?.FindFirst(ClaimTypes.Email)?.Value;
 
             if (string.IsNullOrEmpty(email))
-                return Unauthorized("User email not found.");
+                return Unauthorized(new { success = false, message = "User email not found." });
 
             var userId = email.Split('@')[0];
             var user = unitOfWork.pharmacyAccRepository.getpharmacyaccWithDetails(userId);
             if (user == null)
-                return NotFound("Pharmacy account not found.");
+                return NotFound(new { success = false, message = "Pharmacy account not found." });
 
             var request = user.Requests?.FirstOrDefault(r => r.Id == id);
             if (request == null)
-                return NotFound("Request not found or doesn't belong to this pharmacy.");
+                return NotFound(new { success = false, message = "Request not found or doesn't belong to this pharmacy." });
 
             if (request.state?.ToLower() == "closed")
-                return BadRequest("This request is already closed.");
+                return BadRequest(new { success = false, message = "This request is already closed." });
 
             request.state = "closed";
             request.Response = "approved";
@@ -181,32 +177,30 @@ namespace Echomedproject.PL.Controllers
                     IsRead = false,
                     Type = "RequestStatus",
                     PharmacyName = user.Pharmacy.Name
-
                 });
             }
 
             unitOfWork.Complete();
-            return Ok(new { message = "Request approved successfully." });
+            return Ok(new { success = true, message = "Request approved successfully." });
         }
-
 
         [Authorize(Roles = "Pharmacy")]
         [HttpPost("Approve-requests")]
         public async Task<IActionResult> ApproveRequests([FromBody] List<int> ids)
         {
             if (ids == null || !ids.Any())
-                return BadRequest("No request IDs provided.");
+                return BadRequest(new { success = false, message = "No request IDs provided." });
 
             var currentUser = _httpContextAccessor?.HttpContext?.User;
             var email = currentUser?.FindFirst(ClaimTypes.Email)?.Value;
 
             if (string.IsNullOrEmpty(email))
-                return Unauthorized("User email not found.");
+                return Unauthorized(new { success = false, message = "User email not found." });
 
             var userId = email.Split('@')[0];
             var user = unitOfWork.pharmacyAccRepository.getpharmacyaccWithDetails(userId);
             if (user == null)
-                return NotFound("Pharmacy account not found.");
+                return NotFound(new { success = false, message = "Pharmacy account not found." });
 
             var results = new List<object>();
 
@@ -247,32 +241,33 @@ namespace Echomedproject.PL.Controllers
             }
 
             unitOfWork.Complete();
-
             return Ok(results);
         }
-
 
         [Authorize(Roles = "Pharmacy")]
         [HttpPost("Reject-request")]
         public async Task<IActionResult> RejectRequest([FromBody] int id)
         {
+            if (id == 0)
+                return BadRequest(new { success = false, message = "ID is not set" });
+
             var currentUser = _httpContextAccessor?.HttpContext?.User;
             var email = currentUser?.FindFirst(ClaimTypes.Email)?.Value;
 
             if (string.IsNullOrEmpty(email))
-                return Unauthorized("User email not found.");
+                return Unauthorized(new { success = false, message = "User email not found." });
 
             var userId = email.Split('@')[0];
             var user = unitOfWork.pharmacyAccRepository.getpharmacyaccWithDetails(userId);
             if (user == null)
-                return NotFound("Pharmacy account not found.");
+                return NotFound(new { success = false, message = "Pharmacy account not found." });
 
             var request = user.Requests?.FirstOrDefault(r => r.Id == id);
             if (request == null)
-                return NotFound("Request not found or doesn't belong to this pharmacy.");
+                return NotFound(new { success = false, message = "Request not found or doesn't belong to this pharmacy." });
 
             if (request.state?.ToLower() == "closed")
-                return BadRequest("This request is already closed.");
+                return BadRequest(new { success = false, message = "This request is already closed." });
 
             request.state = "closed";
             request.Response = "rejected";
@@ -293,7 +288,7 @@ namespace Echomedproject.PL.Controllers
             }
 
             unitOfWork.Complete();
-            return Ok(new { message = "Request rejected successfully." });
+            return Ok(new { success = true, message = "Request rejected successfully." });
         }
 
         [Authorize(Roles = "Pharmacy")]
@@ -301,18 +296,18 @@ namespace Echomedproject.PL.Controllers
         public async Task<IActionResult> RejectRequests([FromBody] List<int> ids)
         {
             if (ids == null || !ids.Any())
-                return BadRequest("No request IDs provided.");
+                return BadRequest(new { success = false, message = "No request IDs provided." });
 
             var currentUser = _httpContextAccessor?.HttpContext?.User;
             var email = currentUser?.FindFirst(ClaimTypes.Email)?.Value;
 
             if (string.IsNullOrEmpty(email))
-                return Unauthorized("User email not found.");
+                return Unauthorized(new { success = false, message = "User email not found." });
 
             var userId = email.Split('@')[0];
             var user = unitOfWork.pharmacyAccRepository.getpharmacyaccWithDetails(userId);
             if (user == null)
-                return NotFound("Pharmacy account not found.");
+                return NotFound(new { success = false, message = "Pharmacy account not found." });
 
             var results = new List<object>();
 
@@ -353,34 +348,34 @@ namespace Echomedproject.PL.Controllers
             }
 
             unitOfWork.Complete();
-
             return Ok(results);
         }
 
-
         [Authorize(Roles = "Pharmacy")]
         [HttpPost("Toggle-response")]
-        public async Task<IActionResult> ToggleResponse([FromBody] int id)
+        public async Task<IActionResult> ToggleResponse([FromBody] ToggleRequestNoteViewModel model)
         {
+            if (!ModelState.IsValid)
+                return BadRequest(new { success = false, message = "Invalid data." });
+
             var currentUser = _httpContextAccessor?.HttpContext?.User;
             var email = currentUser?.FindFirst(ClaimTypes.Email)?.Value;
 
             if (string.IsNullOrEmpty(email))
-                return Unauthorized("User email not found.");
+                return Unauthorized(new { success = false, message = "User email not found." });
 
             var userId = email.Split('@')[0];
             var user = unitOfWork.pharmacyAccRepository.getpharmacyaccWithDetails(userId);
             if (user == null)
-                return NotFound("Pharmacy account not found.");
+                return NotFound(new { success = false, message = "Pharmacy account not found." });
 
-            var request = user.Requests?.FirstOrDefault(r => r.Id == id);
+            var request = user.Requests?.FirstOrDefault(r => r.Id == model.Id);
             if (request == null)
-                return NotFound("Request not found or doesn't belong to this pharmacy.");
+                return NotFound(new { success = false, message = "Request not found or doesn't belong to this pharmacy." });
 
             if (request.state?.ToLower() != "closed" || string.IsNullOrEmpty(request.Response))
-                return BadRequest("Request must already be closed with a response to toggle.");
+                return BadRequest(new { success = false, message = "Request must already be closed with a response to toggle." });
 
-            // Toggle
             string newResponse = request.Response.ToLower() == "approved" ? "rejected" : "approved";
             request.Response = newResponse;
             request.ClosedAt = DateTime.Now;
@@ -391,18 +386,16 @@ namespace Echomedproject.PL.Controllers
                 appUser.notifications ??= new List<Notification>();
                 appUser.notifications.Add(new Notification
                 {
-                    Text = $"Your request for '{request.MedicineName}' has been changed to {newResponse}.",
+                    Text = $"Your request for '{request.MedicineName}' has been changed to '{newResponse}'. Note: {model.Note}",
                     CreatedAt = DateTime.Now,
                     IsRead = false,
                     Type = "RequestStatus",
-                    PharmacyName = user.Pharmacy.Name
+                    PharmacyName = user.Pharmacy?.Name ?? "Unknown Pharmacy"
                 });
             }
 
             unitOfWork.Complete();
-            return Ok(new { message = $"Request response toggled to '{newResponse}'." });
+            return Ok(new { success = true, message = $"Request response toggled to '{newResponse}' and note added." });
         }
-
-
     }
 }

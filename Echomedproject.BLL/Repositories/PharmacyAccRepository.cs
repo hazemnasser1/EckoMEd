@@ -19,13 +19,15 @@ namespace Echomedproject.BLL.Repositories
 
         public PharmacyAcc? getpharmacyaccWithDetails(string pharmacyID)
         {
-
             var user = dbContext.pharmacyAccs
-                .Include(u => u.Requests)
-                .FirstOrDefault(u => u.Username == pharmacyID);
-
+                .Include(p => p.Pharmacy) // Include the related Pharmacy
+                .Include(p => p.Requests) // Include the related Requests
+                    .ThenInclude(r => r.AppUser) // Include AppUser inside each Request
+                .FirstOrDefault(p => p.Username == pharmacyID);
 
             return user;
         }
+
+
     }
 }

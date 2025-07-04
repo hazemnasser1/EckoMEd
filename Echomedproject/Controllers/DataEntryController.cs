@@ -1,5 +1,7 @@
-﻿using System.Security.Claims;
+﻿using System.Collections.Generic;
+using System.Security.Claims;
 using Echomedproject.BLL.Interfaces;
+using Echomedproject.DAL.Migrations;
 using Echomedproject.DAL.Models;
 using Echomedproject.PL.Helpers;
 using Echomedproject.PL.ViewModels;
@@ -134,15 +136,15 @@ namespace Echomedproject.PL.Controllers
             var email = currentUser?.FindFirst(ClaimTypes.Email)?.Value;
 
             if (string.IsNullOrEmpty(email))
-                return Unauthorized("User email not found.");
+                return Unauthorized(new { success = false, message = "User email not found." });
 
             var user = unitOfWork.entryRepository.getDataEntryWithDetails(email);
 
             if (user == null)
-                return NotFound("DataEntry account not found.");
+                return NotFound(new { success = false, message = "DataEntry account not found." });
 
             if (user.Departments == null || !user.Departments.Any())
-                return Ok("No departments found for this user.");
+                return Ok(new { message = "No departments found for this user." });
 
             var departmentData = user.Departments.Select(dept => new
             {
@@ -154,19 +156,15 @@ namespace Echomedproject.PL.Controllers
         }
 
         [HttpGet("FetchData")]
-        public async Task<IActionResult> FetchData([FromQuery]string Id)
+        public async Task<IActionResult> FetchData([FromQuery] string Id)
         {
-            // Validate input
             if (string.IsNullOrWhiteSpace(Id))
-                return BadRequest("User ID is required.");
+                return BadRequest(new { success = false, message = "User ID is required." });
 
-            // Get user with related data
             var user = unitOfWork.appUsersRepository.getUserWithRecordDetailsbyId(Id);
 
             if (user == null)
-                return NotFound("User not found.");
-
-            // Build user data object
+                return NotFound(new { success = false, message = "User not found." });
 
             int? age = null;
             if (user.DateOfBirth != null)
@@ -176,13 +174,14 @@ namespace Echomedproject.PL.Controllers
                 age = today.Year - birthDate.Year;
                 if (birthDate > today.AddYears(-age.Value)) age--;
             }
+
             var userData = new
             {
                 FirstName = user.FirstName,
                 LastName = user.LastName,
                 DateOfBirth = user.DateOfBirth,
                 Gender = user.Gender,
-                Age= age,
+                Age = age,
                 PhoneNumber = user.PhoneNum,
                 Email = user.Email,
                 Address = user.street,
@@ -192,34 +191,42 @@ namespace Echomedproject.PL.Controllers
             return Ok(userData);
         }
 
+
         [HttpPost("AddPatient")]
         public async Task<IActionResult> AddPatient([FromBody] AddPatientViewModel addPatientViewModel)
         {
+            if (!ModelState.IsValid)
+                return BadRequest(ModelState);
+
             var currentUser = _httpContextAccessor?.HttpContext?.User;
             var email = currentUser?.FindFirst(ClaimTypes.Email)?.Value;
 
             if (string.IsNullOrEmpty(email))
-                return Unauthorized("User email not found.");
+                return Unauthorized(new { success = false, message = "User email not found." });
 
             var user = unitOfWork.entryRepository.getDataEntryWithDetails(email);
-
             if (user == null)
-                return NotFound("DataEntry account not found.");
+                return NotFound(new { success = false, message = "DataEntry account not found." });
 
-            // Make sure departments are loaded
-            if (user.Departments == null || !user.Departments.Any())
-                return NotFound("No departments found for the current user.");
+            if (user.Hospital.Departments == null || !user.Hospital.Departments.Any())
+                return NotFound(new { success = false, message = "No departments found for the current user." });
 
-            // Find department by name (case-insensitive match)
-            var targetDepartment = user.Departments
+            var targetDepartment = user.Hospital.Departments
                 .FirstOrDefault(d => d.Name.Equals(addPatientViewModel.DepartmentName, StringComparison.OrdinalIgnoreCase));
 
             if (targetDepartment == null)
-                return NotFound($"Department '{addPatientViewModel.DepartmentName}' not found.");
+                return NotFound(new { success = false, message = $"Department '{addPatientViewModel.DepartmentName}' not found." });
+
             var appuser = unitOfWork.appUsersRepository.getUserWithRecordDetailsbyId(addPatientViewModel.UserId);
-            if (user == null)
-                return NotFound("User not found.");
-            // Access the TotalPatients parameter
+            if (appuser == null)
+                return NotFound(new { success = false, message = "User not found." });
+
+            PatientHospital patient = unitOfWork.patienthospitalRepository
+                .GetPatientHospitalwithIDs(user.HospitalID, addPatientViewModel.UserId);
+
+            if (patient != null && patient.LeaveDate == null)
+                return Conflict(new { success = false, message = "User is already admitted in the hospital." });
+
             PatientHospital patientHospital = new PatientHospital()
             {
                 PatientId = addPatientViewModel.UserId,
@@ -228,127 +235,125 @@ namespace Echomedproject.PL.Controllers
                 HospitalId = user.HospitalID,
                 DateOfbirth = appuser.DateOfBirth,
                 Gender = appuser.Gender,
-                patientName= appuser.FirstName +" "+appuser.LastName,
-
-
+                patientName = appuser.FirstName + " " + appuser.LastName,
+                State = "Pending"
             };
+
             Records record = new Records()
             {
                 Department = addPatientViewModel.DepartmentName,
-                DoctorName = addPatientViewModel.DoctorName
-
+                DoctorName = addPatientViewModel.DoctorName,
+                HospitalName = user.Hospital?.Name ?? "Unknown Hospital",
+                visitDate = DateTime.Now,
+                prescription = new prescription(),
+                LabTests = new List<LabTest>(),
+                Scans = new List<Scans>(),
             };
 
-
-            patientHospital.record =record;
+            record.prescription.medicines = new List<Medicine>();
+            patientHospital.record = record;
 
             user.TotalPatients += 1;
             targetDepartment.TotalPatients += 1;
 
-
             unitOfWork.patienthospitalRepository.add(patientHospital);
             unitOfWork.Complete();
-            return Ok(new
-            {
-                Message = "Patient added successfully.",
-            });
+
+            return Ok(new { success = true, message = "Patient added successfully." });
         }
 
         [HttpGet("Medicines")]
         public async Task<IActionResult> Medicinces([FromQuery] string Id)
         {
-            // Validate input
             if (string.IsNullOrWhiteSpace(Id))
-                return BadRequest("User ID is required.");
+                return BadRequest(new { success = false, message = "User ID is required." });
 
-            // Get user with related data
             var user = unitOfWork.appUsersRepository.getUserWithRecordDetailsbyId(Id);
-
             if (user == null)
-                return NotFound("User not found.");
+                return NotFound(new { success = false, message = "User not found." });
 
             var currentUser = _httpContextAccessor?.HttpContext?.User;
             var email = currentUser?.FindFirst(ClaimTypes.Email)?.Value;
 
             if (string.IsNullOrEmpty(email))
-                return Unauthorized("User email not found.");
+                return Unauthorized(new { success = false, message = "User email not found." });
 
             var datauser = unitOfWork.entryRepository.getDataEntryWithDetails(email);
-
             if (datauser == null)
-                return NotFound("DataEntry account not found.");
+                return NotFound(new { success = false, message = "DataEntry account not found." });
 
-            PatientHospital patientHospital = unitOfWork.patienthospitalRepository.GetPatientHospitalwithIDs(datauser.HospitalID, user.UserName);
+            PatientHospital patientHospital = unitOfWork.patienthospitalRepository
+                .GetPatientHospitalwithIDs(datauser.HospitalID, user.UserName);
+
             if (patientHospital == null)
-                return NotFound("Patient not found in the hospital.");
-
-
+                return NotFound(new { success = false, message = "Patient not found in the hospital." });
 
             return Ok(patientHospital.record.prescription.medicines.ToList());
         }
 
+
         [HttpGet("Scans")]
         public async Task<IActionResult> Scans([FromQuery] string Id)
         {
-            // Validate input
             if (string.IsNullOrWhiteSpace(Id))
-                return BadRequest("User ID is required.");
+                return BadRequest(new { success = false, message = "User ID is required." });
 
-            // Get user with related data
             var user = unitOfWork.appUsersRepository.getUserWithRecordDetailsbyId(Id);
-
             if (user == null)
-                return NotFound("User not found.");
+                return NotFound(new { success = false, message = "User not found." });
 
             var currentUser = _httpContextAccessor?.HttpContext?.User;
             var email = currentUser?.FindFirst(ClaimTypes.Email)?.Value;
-
             if (string.IsNullOrEmpty(email))
-                return Unauthorized("User email not found.");
+                return Unauthorized(new { success = false, message = "User email not found." });
 
             var datauser = unitOfWork.entryRepository.getDataEntryWithDetails(email);
-
             if (datauser == null)
-                return NotFound("DataEntry account not found.");
+                return NotFound(new { success = false, message = "DataEntry account not found." });
 
-            PatientHospital patientHospital = unitOfWork.patienthospitalRepository.GetPatientHospitalwithIDs(datauser.HospitalID, user.UserName);
+            var patientHospital = unitOfWork.patienthospitalRepository.GetPatientHospitalwithIDs(datauser.HospitalID, user.UserName);
             if (patientHospital == null)
-                return NotFound("Patient not found in the hospital.");
+                return NotFound(new { success = false, message = "Patient not found in the hospital." });
 
+            var baseUrl = $"{Request.Scheme}://{Request.Host}";
 
+            var scans = patientHospital.record.Scans;
 
-            return Ok(patientHospital.record.Scans.ToList());
+            var scanResponses = scans.Select(scan => new
+            {
+                scan.Id,
+                scan.Type,
+                scan.bodypart,
+                scan.Description,
+                scan.Date,
+                ImageBase64 = $"{baseUrl}/files/ScanImages/{scan.ImagePath}"
+            }).ToList();
+
+            return Ok(scanResponses);
         }
 
         [HttpGet("Notes")]
         public async Task<IActionResult> Notes([FromQuery] string Id)
         {
-            // Validate input
             if (string.IsNullOrWhiteSpace(Id))
-                return BadRequest("User ID is required.");
+                return BadRequest(new { success = false, message = "User ID is required." });
 
-            // Get user with related data
             var user = unitOfWork.appUsersRepository.getUserWithRecordDetailsbyId(Id);
-
             if (user == null)
-                return NotFound("User not found.");
+                return NotFound(new { success = false, message = "User not found." });
 
             var currentUser = _httpContextAccessor?.HttpContext?.User;
             var email = currentUser?.FindFirst(ClaimTypes.Email)?.Value;
-
             if (string.IsNullOrEmpty(email))
-                return Unauthorized("User email not found.");
+                return Unauthorized(new { success = false, message = "User email not found." });
 
             var datauser = unitOfWork.entryRepository.getDataEntryWithDetails(email);
-
             if (datauser == null)
-                return NotFound("DataEntry account not found.");
+                return NotFound(new { success = false, message = "DataEntry account not found." });
 
-            PatientHospital patientHospital = unitOfWork.patienthospitalRepository.GetPatientHospitalwithIDs(datauser.HospitalID, user.UserName);
+            var patientHospital = unitOfWork.patienthospitalRepository.GetPatientHospitalwithIDs(datauser.HospitalID, user.UserName);
             if (patientHospital == null)
-                return NotFound("Patient not found in the hospital.");
-
-
+                return NotFound(new { success = false, message = "Patient not found in the hospital." });
 
             return Ok(patientHospital.record.notes.ToList());
         }
@@ -356,71 +361,77 @@ namespace Echomedproject.PL.Controllers
         [HttpGet("LabTests")]
         public async Task<IActionResult> LabTests([FromQuery] string Id)
         {
-            // Validate input
             if (string.IsNullOrWhiteSpace(Id))
-                return BadRequest("User ID is required.");
+                return BadRequest(new { success = false, message = "User ID is required." });
 
-            // Get user with related data
             var user = unitOfWork.appUsersRepository.getUserWithRecordDetailsbyId(Id);
-
             if (user == null)
-                return NotFound("User not found.");
+                return NotFound(new { success = false, message = "User not found." });
 
             var currentUser = _httpContextAccessor?.HttpContext?.User;
             var email = currentUser?.FindFirst(ClaimTypes.Email)?.Value;
-
             if (string.IsNullOrEmpty(email))
-                return Unauthorized("User email not found.");
+                return Unauthorized(new { success = false, message = "User email not found." });
 
             var datauser = unitOfWork.entryRepository.getDataEntryWithDetails(email);
-
             if (datauser == null)
-                return NotFound("DataEntry account not found.");
+                return NotFound(new { success = false, message = "DataEntry account not found." });
 
-            PatientHospital patientHospital = unitOfWork.patienthospitalRepository.GetPatientHospitalwithIDs(datauser.HospitalID, user.UserName);
+            var patientHospital = unitOfWork.patienthospitalRepository.GetPatientHospitalwithIDs(datauser.HospitalID, user.UserName);
             if (patientHospital == null)
-                return NotFound("Patient not found in the hospital.");
+                return NotFound(new { success = false, message = "Patient not found in the hospital." });
 
+            var labTests = patientHospital.record.LabTests;
+            var baseUrl = $"{Request.Scheme}://{Request.Host}";
 
-            return Ok(patientHospital.record.LabTests.ToList());
+            var labTestResponses = labTests.Select(test => new
+            {
+                test.Id,
+                test.Name,
+                test.Type,
+                test.Notes,
+                test.Date,
+                ImageBase64 = $"{baseUrl}/files/TestImages/{test.ImagePath}"
+            }).ToList();
+
+            return Ok(labTestResponses);
         }
+
+
 
 
 
         [HttpGet("PatientData")]
         public async Task<IActionResult> PatientData([FromQuery] string Id)
         {
-            // Validate input
             if (string.IsNullOrWhiteSpace(Id))
-                return BadRequest("User ID is required.");
+                return BadRequest(new { success = false, message = "User ID is required." });
 
             var user = unitOfWork.appUsersRepository.getUserWithRecordDetailsbyId(Id);
             if (user == null)
-                return NotFound("User not found.");
+                return NotFound(new { success = false, message = "User not found." });
 
             var currentUser = _httpContextAccessor?.HttpContext?.User;
             var email = currentUser?.FindFirst(ClaimTypes.Email)?.Value;
 
             if (string.IsNullOrEmpty(email))
-                return Unauthorized("User email not found.");
+                return Unauthorized(new { success = false, message = "User email not found." });
 
             var datauser = unitOfWork.entryRepository.getDataEntryWithDetails(email);
             if (datauser == null)
-                return NotFound("DataEntry account not found.");
+                return NotFound(new { success = false, message = "DataEntry account not found." });
 
             var patientHospital = unitOfWork.patienthospitalRepository
                 .GetPatientHospitalwithIDs(datauser.HospitalID, user.UserName);
 
             if (patientHospital == null)
-                return NotFound("Patient not found in the hospital.");
+                return NotFound(new { success = false, message = "Patient not found in the hospital." });
 
-            // Get counts safely
             int labTestsCount = patientHospital?.record?.LabTests?.Count() ?? 0;
             int medicineCount = patientHospital?.record?.prescription?.medicines?.Count() ?? 0;
             int notesCount = patientHospital?.record?.notes?.Count() ?? 0;
             int scansCount = patientHospital?.record?.Scans?.Count() ?? 0;
 
-            // Calculate age
             int? age = null;
             if (user.DateOfBirth != null)
             {
@@ -442,7 +453,6 @@ namespace Echomedproject.PL.Controllers
                 Address = user.street,
                 City = user.City,
 
-                // Counts
                 LabTestsCount = labTestsCount,
                 MedicineCount = medicineCount,
                 NotesCount = notesCount,
@@ -452,37 +462,32 @@ namespace Echomedproject.PL.Controllers
             return Ok(userData);
         }
 
-
-
         [HttpPost("Add-medicine")]
         public async Task<IActionResult> AddMedicine([FromBody] AddMedicineViewModel addMedicineViewModel)
         {
-            // Validate ViewModel
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);
 
-            // Get user with related data
             var user = unitOfWork.appUsersRepository.getUserWithRecordDetailsbyId(addMedicineViewModel.PatientID);
             if (user == null)
-                return NotFound("User not found.");
+                return NotFound(new { success = false, message = "User not found." });
 
             var currentUser = _httpContextAccessor?.HttpContext?.User;
             var email = currentUser?.FindFirst(ClaimTypes.Email)?.Value;
             if (string.IsNullOrEmpty(email))
-                return Unauthorized("User email not found.");
+                return Unauthorized(new { success = false, message = "User email not found." });
 
             var datauser = unitOfWork.entryRepository.getDataEntryWithDetails(email);
             if (datauser == null)
-                return NotFound("DataEntry account not found.");
+                return NotFound(new { success = false, message = "DataEntry account not found." });
 
             var patientHospital = unitOfWork.patienthospitalRepository
                 .GetPatientHospitalwithIDs(datauser.HospitalID, user.UserName);
             if (patientHospital == null)
-                return NotFound("Patient not found in the hospital.");
+                return NotFound(new { success = false, message = "Patient not found in the hospital." });
 
-            // Ensure prescription and medicines list are initialized
             if (patientHospital.record == null)
-                return BadRequest("Patient record not found.");
+                return BadRequest(new { success = false, message = "Patient record not found." });
 
             if (patientHospital.record.prescription == null)
                 patientHospital.record.prescription = new prescription();
@@ -490,7 +495,6 @@ namespace Echomedproject.PL.Controllers
             if (patientHospital.record.prescription.medicines == null)
                 patientHospital.record.prescription.medicines = new List<Medicine>();
 
-            // Create and add medicine
             var medicine = new Medicine
             {
                 Name = addMedicineViewModel.MedicineName,
@@ -505,86 +509,79 @@ namespace Echomedproject.PL.Controllers
             patientHospital.record.prescription.medicines.Add(medicine);
             unitOfWork.Complete();
 
-            return Ok("Medicine added successfully.");
+            return Ok(new { success = true, message = "Medicine added successfully" });
         }
-        
+
         [HttpPost("Add-Note")]
         public async Task<IActionResult> addnote([FromBody] AddNoteViewModel addNoteViewModel)
         {
-            // Validate ViewModel
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);
 
-            // Get user with related data
             var user = unitOfWork.appUsersRepository.getUserWithRecordDetailsbyId(addNoteViewModel.PatientID);
             if (user == null)
-                return NotFound("User not found.");
+                return NotFound(new { success = false, message = "User not found." });
 
             var currentUser = _httpContextAccessor?.HttpContext?.User;
             var email = currentUser?.FindFirst(ClaimTypes.Email)?.Value;
             if (string.IsNullOrEmpty(email))
-                return Unauthorized("User email not found.");
+                return Unauthorized(new { success = false, message = "User email not found." });
 
             var datauser = unitOfWork.entryRepository.getDataEntryWithDetails(email);
             if (datauser == null)
-                return NotFound("DataEntry account not found.");
+                return NotFound(new { success = false, message = "DataEntry account not found." });
 
             var patientHospital = unitOfWork.patienthospitalRepository
                 .GetPatientHospitalwithIDs(datauser.HospitalID, user.UserName);
             if (patientHospital == null)
-                return NotFound("Patient not found in the hospital.");
+                return NotFound(new { success = false, message = "Patient not found in the hospital." });
 
             if (patientHospital.record == null)
-                return BadRequest("Patient record not found.");
+                return BadRequest(new { success = false, message = "Patient record not found." });
 
-            if (patientHospital.record.prescription == null)
-                patientHospital.record.prescription = new prescription();
-
-            if (patientHospital.record.prescription.medicines == null)
-                patientHospital.record.prescription.medicines = new List<Medicine>();
+            if (patientHospital.record.notes == null)
+                patientHospital.record.notes = new List<Note>();
 
             Note note = new Note()
             {
                 Text = addNoteViewModel.NoteContent,
                 type = addNoteViewModel.NoteType,
                 dateTime = DateTime.Now
-
             };
 
             patientHospital.record.notes.Add(note);
             unitOfWork.Complete();
 
-            return Ok("Note added successfully.");
+            return Ok(new { success = true, message = "Note added successfully" });
         }
+
 
         [HttpPost("Add-Scan")]
         public async Task<IActionResult> addscan([FromForm] AddScanViewModel addScanViewModel)
         {
-            // Validate ViewModel
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);
 
-            // Get user with related data
             var user = unitOfWork.appUsersRepository.getUserWithRecordDetailsbyId(addScanViewModel.PatientID);
             if (user == null)
-                return NotFound("User not found.");
+                return NotFound(new { success = false, message = "User not found." });
 
             var currentUser = _httpContextAccessor?.HttpContext?.User;
             var email = currentUser?.FindFirst(ClaimTypes.Email)?.Value;
             if (string.IsNullOrEmpty(email))
-                return Unauthorized("User email not found.");
+                return Unauthorized(new { success = false, message = "User email not found." });
 
             var datauser = unitOfWork.entryRepository.getDataEntryWithDetails(email);
             if (datauser == null)
-                return NotFound("DataEntry account not found.");
+                return NotFound(new { success = false, message = "DataEntry account not found." });
 
             var patientHospital = unitOfWork.patienthospitalRepository
                 .GetPatientHospitalwithIDs(datauser.HospitalID, user.UserName);
             if (patientHospital == null)
-                return NotFound("Patient not found in the hospital.");
+                return NotFound(new { success = false, message = "Patient not found in the hospital." });
 
             if (patientHospital.record == null)
-                return BadRequest("Patient record not found.");
+                return BadRequest(new { success = false, message = "Patient record not found." });
 
             if (patientHospital.record.prescription == null)
                 patientHospital.record.prescription = new prescription();
@@ -592,7 +589,7 @@ namespace Echomedproject.PL.Controllers
             if (patientHospital.record.prescription.medicines == null)
                 patientHospital.record.prescription.medicines = new List<Medicine>();
 
-            string imagepath = DocumentSetting.UploadImage(addScanViewModel.Image, "scanImages");
+            string imagepath = DocumentSetting.UploadImage(addScanViewModel.Image, "ScanImages");
 
             Scans scans = new Scans()
             {
@@ -601,43 +598,40 @@ namespace Echomedproject.PL.Controllers
                 Date = DateTime.Now,
                 ImagePath = imagepath,
                 Description = addScanViewModel.Note
-
             };
 
             patientHospital.record.Scans.Add(scans);
             unitOfWork.Complete();
 
-            return Ok("Scan added successfully.");
+            return Ok(new { success = true, message = "Scan added successfully" });
         }
 
         [HttpPost("Add-Test")]
         public async Task<IActionResult> addTest([FromForm] AddTestViewModel addTestViewModel)
         {
-            // Validate ViewModel
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);
 
-            // Get user with related data
             var user = unitOfWork.appUsersRepository.getUserWithRecordDetailsbyId(addTestViewModel.PatientID);
             if (user == null)
-                return NotFound("User not found.");
+                return NotFound(new { success = false, message = "User not found." });
 
             var currentUser = _httpContextAccessor?.HttpContext?.User;
             var email = currentUser?.FindFirst(ClaimTypes.Email)?.Value;
             if (string.IsNullOrEmpty(email))
-                return Unauthorized("User email not found.");
+                return Unauthorized(new { success = false, message = "User email not found." });
 
             var datauser = unitOfWork.entryRepository.getDataEntryWithDetails(email);
             if (datauser == null)
-                return NotFound("DataEntry account not found.");
+                return NotFound(new { success = false, message = "DataEntry account not found." });
 
             var patientHospital = unitOfWork.patienthospitalRepository
                 .GetPatientHospitalwithIDs(datauser.HospitalID, user.UserName);
             if (patientHospital == null)
-                return NotFound("Patient not found in the hospital.");
+                return NotFound(new { success = false, message = "Patient not found in the hospital." });
 
             if (patientHospital.record == null)
-                return BadRequest("Patient record not found.");
+                return BadRequest(new { success = false, message = "Patient record not found." });
 
             if (patientHospital.record.prescription == null)
                 patientHospital.record.prescription = new prescription();
@@ -654,58 +648,59 @@ namespace Echomedproject.PL.Controllers
                 ImagePath = imagepath,
                 Date = DateTime.Now,
                 Notes = addTestViewModel.Note,
-
             };
 
             datauser.LabTestCount += 1;
 
             patientHospital.record.LabTests.Add(labTest);
-            
-
             unitOfWork.Complete();
 
-            return Ok("Scan added successfully.");
+            return Ok(new { success = true, message = "TestLab added successfully" });
         }
-
 
         [HttpPost("CheckOut")]
         public async Task<IActionResult> CheckOut([FromForm] string Id)
         {
             if (string.IsNullOrWhiteSpace(Id))
-                return BadRequest("User ID is required.");
+                return BadRequest(new { success = false, message = "User ID is required." });
+
             var user = unitOfWork.appUsersRepository.getUserWithRecordDetailsbyId(Id);
             if (user == null)
-                return NotFound("User not found.");
+                return NotFound(new { success = false, message = "User not found." });
 
             var currentUser = _httpContextAccessor?.HttpContext?.User;
             var email = currentUser?.FindFirst(ClaimTypes.Email)?.Value;
             if (string.IsNullOrEmpty(email))
-                return Unauthorized("User email not found.");
+                return Unauthorized(new { success = false, message = "User email not found." });
 
             var datauser = unitOfWork.entryRepository.getDataEntryWithDetails(email);
             if (datauser == null)
-                return NotFound("DataEntry account not found.");
+                return NotFound(new { success = false, message = "DataEntry account not found." });
 
             var patientHospital = unitOfWork.patienthospitalRepository
                 .GetPatientHospitalwithIDs(datauser.HospitalID, user.UserName);
             if (patientHospital == null)
-                return NotFound("Patient not found in the hospital.");
+                return NotFound(new { success = false, message = "Patient not found in the hospital." });
 
             patientHospital.LeaveDate = DateTime.Now;
             string departmentName = patientHospital.Department;
             var department = datauser.Hospital.Departments
-        .FirstOrDefault(d => d.Name.Equals(departmentName, StringComparison.OrdinalIgnoreCase));
+                .FirstOrDefault(d => d.Name.Equals(departmentName, StringComparison.OrdinalIgnoreCase));
 
             if (department != null)
             {
                 datauser.TotalPatients -= 1;
                 department.TotalPatients -= 1;
             }
+
+            AppUsers appuser = unitOfWork.appUsersRepository.getUserWithRecordDetailsbyId(Id);
+            appuser.Records.Add(patientHospital.record);
             unitOfWork.patienthospitalRepository.update(patientHospital);
             unitOfWork.Complete();
 
-            return Ok("Patient CheckedOut Succefully");
+            return Ok(new { success = true, message = "Patient checkedout successfully" });
         }
+
 
         [HttpGet("Departments")]
         public async Task<IActionResult> Departments()
@@ -714,69 +709,91 @@ namespace Echomedproject.PL.Controllers
             var email = currentUser?.FindFirst(ClaimTypes.Email)?.Value;
 
             if (string.IsNullOrEmpty(email))
-                return Unauthorized("User email not found.");
+                return Unauthorized(new { success = false, message = "User email not found." });
 
             var datauser = unitOfWork.entryRepository.getDataEntryWithDetails(email);
 
             if (datauser == null)
-                return NotFound("DataEntry account not found.");
+                return NotFound(new { success = false, message = "DataEntry account not found." });
 
             if (datauser.Hospital == null || datauser.Hospital.Departments == null)
-                return NotFound("No departments found for this user's hospital.");
+                return NotFound(new { success = false, message = "No departments found for this user's hospital." });
 
             var departments = datauser.Hospital.Departments
                 .Select(dep => new
                 {
                     Name = dep.Name,
                     Description = dep.Description,
-                    capacity= dep.Capacity,
-                    numOfDoctors= dep.NomOfDoctors
-                    
+                    capacity = dep.Capacity,
+                    numOfDoctors = dep.NomOfDoctors
                 })
                 .ToList();
 
             return Ok(departments);
         }
 
+        [HttpGet("departmentnames")]
+        public async Task<IActionResult> Departmentnames()
+        {
+            var currentUser = _httpContextAccessor?.HttpContext?.User;
+            var email = currentUser?.FindFirst(ClaimTypes.Email)?.Value;
+
+            if (string.IsNullOrEmpty(email))
+                return Unauthorized(new { success = false, message = "User email not found." });
+
+            var datauser = unitOfWork.entryRepository.getDataEntryWithDetails(email);
+
+            if (datauser == null)
+                return NotFound(new { success = false, message = "DataEntry account not found." });
+
+            if (datauser.Hospital == null || datauser.Hospital.Departments == null)
+                return NotFound(new { success = false, message = "No departments found for this user's hospital." });
+
+            var departments = datauser.Hospital.Departments
+                .Select(dep => new
+                {
+                    Name = dep.Name,
+                })
+                .ToList();
+
+            return Ok(departments);
+        }
 
         [HttpGet("DepartmentPatients")]
         public async Task<IActionResult> DepartmentPatients([FromQuery] string Department)
         {
             if (string.IsNullOrWhiteSpace(Department))
-                return BadRequest("User ID is required.");
+                return BadRequest(new { success = false, message = "Department name is required." });
+
             var currentUser = _httpContextAccessor?.HttpContext?.User;
             var email = currentUser?.FindFirst(ClaimTypes.Email)?.Value;
 
             if (string.IsNullOrEmpty(email))
-                return Unauthorized("User email not found.");
+                return Unauthorized(new { success = false, message = "User email not found." });
 
             var datauser = unitOfWork.entryRepository.getDataEntryWithDetails(email);
             if (datauser == null)
-                return NotFound("DataEntry account not found.");
+                return NotFound(new { success = false, message = "DataEntry account not found." });
 
             var patientHospitals = unitOfWork.patienthospitalRepository
                 .GetPatientsByDepartmentAndHospital(Department, datauser.HospitalID);
 
-            if (patientHospitals == null || !patientHospitals.Any())
-                return NotFound($"No patients found in the '{Department}' department.");
-
             var patientList = patientHospitals.Select(ph =>
             {
-                var user = ph; // Assuming 'Patient' navigation property is included
-
                 int? age = null;
-                if (user?.DateOfbirth != null)
+                if (ph?.DateOfbirth != null)
                 {
                     var today = DateTime.Today;
-                    var birthDate = user.DateOfbirth.Value;
+                    var birthDate = ph.DateOfbirth.Value;
                     age = today.Year - birthDate.Year;
                     if (birthDate > today.AddYears(-age.Value)) age--;
                 }
 
                 return new
                 {
-                    Name =user.patientName,
-                    Gender = user?.Gender,
+                    UserName = ph.PatientId,
+                    Name = ph.patientName,
+                    Gender = ph?.Gender,
                     Age = age,
                     Waiting = 0
                 };
@@ -786,6 +803,7 @@ namespace Echomedproject.PL.Controllers
         }
 
 
+
         [HttpGet("DashboardWeakly")]
         public async Task<IActionResult> DashboardWeakly()
         {
@@ -793,58 +811,48 @@ namespace Echomedproject.PL.Controllers
             var email = currentUser?.FindFirst(ClaimTypes.Email)?.Value;
 
             if (string.IsNullOrEmpty(email))
-                return Unauthorized("User email not found.");
+                return Unauthorized(new { success = false, message = "User email not found." });
 
             var datauser = unitOfWork.entryRepository.getDataEntryWithDetails(email);
-
             if (datauser == null)
-                return NotFound("DataEntry account not found.");
+                return NotFound(new { success = false, message = "DataEntry account not found." });
 
             if (datauser.Hospital == null || datauser.Hospital.Departments == null)
-                return NotFound("No departments found for this user's hospital.");
+                return NotFound(new { success = false, message = "No departments found for this user's hospital." });
 
             var hospitalId = datauser.HospitalID;
 
-            // Get current and previous week data
+            // Weekly data
             var totalPatientsData = unitOfWork.patienthospitalRepository.GetWeeklyPatientCounts(hospitalId);
             var maleData = unitOfWork.patienthospitalRepository.GetWeeklyMalePatientCounts(hospitalId);
             var femaleData = unitOfWork.patienthospitalRepository.GetWeeklyFemalePatientCounts(hospitalId);
             var labTestsData = unitOfWork.patienthospitalRepository.GetLabTestCountsByWeek(hospitalId);
 
-            // Parse totals
             int currentPatients = (int)totalPatientsData.GetType().GetProperty("CurrentWeekPatients").GetValue(totalPatientsData);
             int lastPatients = (int)totalPatientsData.GetType().GetProperty("LastWeekPatients").GetValue(totalPatientsData);
-
             int currentMales = (int)maleData.GetType().GetProperty("CurrentWeekMales").GetValue(maleData);
             int lastMales = (int)maleData.GetType().GetProperty("LastWeekMales").GetValue(maleData);
-
             int currentFemales = (int)femaleData.GetType().GetProperty("CurrentWeekFemales").GetValue(femaleData);
             int lastFemales = (int)femaleData.GetType().GetProperty("LastWeekFemales").GetValue(femaleData);
-
             int currentLabTests = (int)labTestsData.GetType().GetProperty("CurrentWeekLabTests").GetValue(labTestsData);
             int lastLabTests = (int)labTestsData.GetType().GetProperty("LastWeekLabTests").GetValue(labTestsData);
 
-            // Percent calculation
             string CalcPercentLabel(int last, int current)
             {
                 if (last == 0)
                     return current > 0 ? "+100%" : "0%";
-
                 double ratio = ((double)current - last) / last;
-                double percent = Math.Abs(ratio * 100);
-                string sign = ratio > 0 ? "+" : "-";
-
-                return $"{sign}{Math.Round(percent)}%";
+                double percent = Math.Round(Math.Abs(ratio * 100));
+                if (percent == 0) return "0%";
+                return $"{(ratio > 0 ? "+" : "-")}{percent}%";
             }
 
-
-            // Daily breakdowns
             var currentDaily = unitOfWork.patienthospitalRepository.GetDailyPatientCountsForWeek(hospitalId);
             var lastDaily = unitOfWork.patienthospitalRepository.GetDailyPatientCountsForLastWeek(hospitalId);
 
             return Ok(new
             {
-                DataEntryName= datauser.Hospital.Name,
+                DataEntryName = datauser.Hospital.Name,
                 CurrentWeek = new
                 {
                     TotalPatients = currentPatients,
@@ -874,52 +882,42 @@ namespace Echomedproject.PL.Controllers
             var email = currentUser?.FindFirst(ClaimTypes.Email)?.Value;
 
             if (string.IsNullOrEmpty(email))
-                return Unauthorized("User email not found.");
+                return Unauthorized(new { success = false, message = "User email not found." });
 
             var datauser = unitOfWork.entryRepository.getDataEntryWithDetails(email);
-
             if (datauser == null)
-                return NotFound("DataEntry account not found.");
+                return NotFound(new { success = false, message = "DataEntry account not found." });
 
             if (datauser.Hospital == null || datauser.Hospital.Departments == null)
-                return NotFound("No departments found for this user's hospital.");
+                return NotFound(new { success = false, message = "No departments found for this user's hospital." });
 
             var hospitalId = datauser.HospitalID;
 
-            // Fetch monthly data
+            // Monthly data
             var totalPatientsData = unitOfWork.patienthospitalRepository.GetMonthlyPatientCounts(hospitalId);
             var maleData = unitOfWork.patienthospitalRepository.GetMonthlyMalePatientCounts(hospitalId);
             var femaleData = unitOfWork.patienthospitalRepository.GetMonthlyFemalePatientCounts(hospitalId);
             var labTestsData = unitOfWork.patienthospitalRepository.GetLabTestCountsByMonth(hospitalId);
 
-            // Extract counts
             int currentPatients = (int)totalPatientsData.GetType().GetProperty("CurrentMonthPatients").GetValue(totalPatientsData);
             int lastPatients = (int)totalPatientsData.GetType().GetProperty("LastMonthPatients").GetValue(totalPatientsData);
-
             int currentMales = (int)maleData.GetType().GetProperty("CurrentMonthMales").GetValue(maleData);
             int lastMales = (int)maleData.GetType().GetProperty("LastMonthMales").GetValue(maleData);
-
             int currentFemales = (int)femaleData.GetType().GetProperty("CurrentMonthFemales").GetValue(femaleData);
             int lastFemales = (int)femaleData.GetType().GetProperty("LastMonthFemales").GetValue(femaleData);
-
             int currentLabTests = (int)labTestsData.GetType().GetProperty("CurrentMonthLabTests").GetValue(labTestsData);
             int lastLabTests = (int)labTestsData.GetType().GetProperty("LastMonthLabTests").GetValue(labTestsData);
 
-            // Calculate percentage changes
             string CalcPercentLabel(int last, int current)
             {
                 if (last == 0)
                     return current > 0 ? "+100%" : "0%";
-
                 double ratio = ((double)current - last) / last;
-                double percent = Math.Abs(ratio * 100);
-                string sign = ratio > 0 ? "+" : "-";
-
-                return $"{sign}{Math.Round(percent)}%";
+                double percent = Math.Round(Math.Abs(ratio * 100));
+                if (percent == 0) return "0%";
+                return $"{(ratio > 0 ? "+" : "-")}{percent}%";
             }
 
-
-            // Get daily breakdowns for current and previous month
             var currentDaily = unitOfWork.patienthospitalRepository.GetDailyPatientCountsForCurrentMonth(hospitalId);
             var lastDaily = unitOfWork.patienthospitalRepository.GetDailyPatientCountsForLastMonth(hospitalId);
 
@@ -947,6 +945,7 @@ namespace Echomedproject.PL.Controllers
                 }
             });
         }
+
         [HttpGet("DashboardWeeklyGender")]
         public async Task<IActionResult> DashboardWeeklyGender()
         {
@@ -1049,32 +1048,29 @@ namespace Echomedproject.PL.Controllers
             });
         }
 
-
+        [HttpGet("DataEntryprofile")]
         public async Task<IActionResult> DataEntryprofile()
         {
             var currentUser = _httpContextAccessor?.HttpContext?.User;
             var email = currentUser?.FindFirst(ClaimTypes.Email)?.Value;
 
             if (string.IsNullOrEmpty(email))
-                return Unauthorized("User email not found.");
+                return Unauthorized(new { success = false, message = "User email not found." });
 
-            // 1. Get Identity user (AppUser)
             var identityUser = await userManager.FindByEmailAsync(email);
             if (identityUser == null)
-                return NotFound("Identity user not found.");
+                return NotFound(new { success = false, message = "Identity user not found." });
 
-            // 2. Get DataEntry user with hospital info
             var datauser = unitOfWork.entryRepository.getDataEntryWithDetails(email);
             if (datauser == null)
-                return NotFound("DataEntry account not found.");
+                return NotFound(new { success = false, message = "DataEntry account not found." });
 
-            // 3. Construct profile info
             var profileData = new
             {
                 FirstName = identityUser.FirstName,
                 LastName = identityUser.LastName,
                 PhoneNumber = identityUser.PhoneNumber,
-                EmailAddress = identityUser.Email,
+                email = identityUser.Email,
                 HospitalName = datauser.Hospital?.Name,
                 City = datauser.Hospital?.City
             };
@@ -1091,32 +1087,32 @@ namespace Echomedproject.PL.Controllers
 
             var currentUser = _httpContextAccessor?.HttpContext?.User;
             var email = currentUser?.FindFirst(ClaimTypes.Email)?.Value;
+
             if (string.IsNullOrEmpty(email))
-                return Unauthorized("User email not found.");
+                return Unauthorized(new { success = false, message = "User email not found." });
 
             var identityUser = await userManager.FindByEmailAsync(email);
             if (identityUser == null)
-                return NotFound("Identity user not found.");
+                return NotFound(new { success = false, message = "Identity user not found." });
 
             var datauser = unitOfWork.entryRepository.getDataEntryWithDetails(email);
             if (datauser == null)
-                return NotFound("DataEntry account not found.");
+                return NotFound(new { success = false, message = "DataEntry account not found." });
 
-            // ✅ Update Identity user
             identityUser.FirstName = model.FirstName;
             identityUser.LastName = model.LastName;
             identityUser.PhoneNumber = model.PhoneNumber;
+
             var identityResult = await userManager.UpdateAsync(identityUser);
             if (!identityResult.Succeeded)
-                return BadRequest("Failed to update identity user.");
+                return BadRequest(new { success = false, message = "Failed to update identity user." });
 
             datauser.PhoneNumber = model.PhoneNumber;
-
-
             unitOfWork.Complete();
 
-            return Ok("Profile updated successfully.");
+            return Ok(new { success = true, message = "Profile updated successfully." });
         }
+
 
         [HttpPost("UpdateCapacity")]
         public async Task<IActionResult> UpdateCapacity([FromBody] CapacityViewModel model)
@@ -1128,33 +1124,29 @@ namespace Echomedproject.PL.Controllers
             var email = currentUser?.FindFirst(ClaimTypes.Email)?.Value;
 
             if (string.IsNullOrEmpty(email))
-                return Unauthorized("User email not found.");
+                return Unauthorized(new { success = false, message = "User email not found." });
 
             var datauser = unitOfWork.entryRepository.getDataEntryWithDetails(email);
-
             if (datauser == null)
-                return NotFound("DataEntry account not found.");
+                return NotFound(new { success = false, message = "DataEntry account not found." });
 
             if (datauser.Hospital == null || datauser.Hospital.Departments == null)
-                return NotFound("No departments found for this user's hospital.");
-
+                return NotFound(new { success = false, message = "No departments found for this user's hospital." });
 
             var department = datauser.Hospital.Departments
-         .FirstOrDefault(d => d.Name.Equals(model.DepartmentName, StringComparison.OrdinalIgnoreCase));
+                .FirstOrDefault(d => d.Name.Equals(model.DepartmentName, StringComparison.OrdinalIgnoreCase));
 
             if (department == null)
-                return NotFound($"Department '{model.DepartmentName}' not found.");
+                return NotFound(new { success = false, message = $"Department '{model.DepartmentName}' not found." });
 
-            // ✅ Update the department fields
+            // ✅ Update department fields
             department.Capacity = model.Capacity;
-
             department.NomOfDoctors = model.NumOfDoctors;
-            
-            // ✅ Save changes
+
             unitOfWork.Complete();
 
-            return Ok("Department capacity updated successfully.");
-
+            return Ok(new { success = true, message = "Department capacity updated successfully." });
         }
+
     }
 }

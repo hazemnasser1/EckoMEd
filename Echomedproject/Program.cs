@@ -4,6 +4,7 @@ using Echomedproject.DAL.Contexts;
 using Echomedproject.DAL.Models;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Server.Kestrel.Core;
 using Microsoft.EntityFrameworkCore;
 
 public class Program
@@ -21,8 +22,14 @@ public class Program
         // Register DbContext
         builder.Services.AddDbContext<EckomedDbContext>(options =>
         {
-            options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
+            options.UseSqlServer(
+                builder.Configuration.GetConnectionString("DefaultConnection"),
+                sqlOptions =>
+                {
+                    sqlOptions.CommandTimeout(120); // Timeout in seconds (e.g., 2 minutes)
+                });
         });
+
 
         // Register services
         builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
@@ -40,6 +47,11 @@ public class Program
                           .AllowAnyMethod()
                           .AllowCredentials(); // Allow credentials (cookies)
                 });
+        });
+
+        builder.Services.Configure<KestrelServerOptions>(options =>
+        {
+            options.Limits.MaxRequestBodySize = 5242880000;
         });
 
         // Identity configuration
@@ -109,7 +121,7 @@ public class Program
         // Initialize roles
         var scope = app.Services.CreateScope();
         var roleManager = scope.ServiceProvider.GetRequiredService<RoleManager<IdentityRole>>();
-        var roles = new[] { "User", "DataEntry","Pharmacy" };
+        var roles = new[] { "User", "DataEntry", "Pharmacy" };
         foreach (var role in roles)
         {
             if (!await roleManager.RoleExistsAsync(role))

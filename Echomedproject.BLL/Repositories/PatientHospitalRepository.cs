@@ -10,32 +10,29 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Echomedproject.BLL.Repositories
 {
-    public class PatientHospitalRepository :GenericRepository<PatientHospital>, IPatientHospitalRepository
+    public class PatientHospitalRepository : GenericRepository<PatientHospital>, IPatientHospitalRepository
     {
         EckomedDbContext dbContext;
-        public PatientHospitalRepository(EckomedDbContext dbcontext) : base(dbcontext) {
-        
-        dbContext = dbcontext;
+        public PatientHospitalRepository(EckomedDbContext dbcontext) : base(dbcontext)
+        {
+            dbContext = dbcontext;
         }
+
         private (DateTime Start, DateTime End) GetWeekRange(int weeksAgo = 0)
         {
             var today = DateTime.Today;
-
-            // DayOfWeek.Saturday = 6
             int diff = (7 + (today.DayOfWeek - DayOfWeek.Saturday)) % 7;
             var startOfWeek = today.AddDays(-diff).Date.AddDays(-7 * weeksAgo);
             var endOfWeek = startOfWeek.AddDays(6);
-
             return (startOfWeek, endOfWeek);
         }
-
 
         public PatientHospital GetPatientHospitalwithIDs(int hospitalID, string userID)
         {
             return dbContext.patientHospital
-                .Where(ph => ph.HospitalId == hospitalID
-                          && ph.PatientId == userID
-                          && ph.LeaveDate == null)
+                .Where(ph => ph.HospitalId == hospitalID &&
+                             ph.PatientId == userID &&
+                             ph.LeaveDate == null)
                 .Include(ph => ph.record)
                     .ThenInclude(r => r.LabTests)
                 .Include(ph => ph.record)
@@ -44,7 +41,7 @@ namespace Echomedproject.BLL.Repositories
                     .ThenInclude(r => r.Scans)
                 .Include(ph => ph.record)
                     .ThenInclude(r => r.prescription)
-                        .ThenInclude(p => p.medicines) // assuming prescription has a Medicines list
+                        .ThenInclude(p => p.medicines)
                 .Include(ph => ph.record)
                     .ThenInclude(r => r.Invoice)
                 .OrderByDescending(ph => ph.EntryDate)
@@ -54,9 +51,9 @@ namespace Echomedproject.BLL.Repositories
         public List<PatientHospital> GetPatientsByDepartmentAndHospital(string departmentName, int hospitalID)
         {
             return dbContext.patientHospital
-                .Where(ph => ph.HospitalId == hospitalID
-                          && ph.Department == departmentName
-                          && ph.LeaveDate == null)
+                .Where(ph => ph.HospitalId == hospitalID &&
+                             ph.Department == departmentName &&
+                             ph.LeaveDate == null)
                 .Include(ph => ph.record)
                     .ThenInclude(r => r.LabTests)
                 .Include(ph => ph.record)
@@ -79,8 +76,8 @@ namespace Echomedproject.BLL.Repositories
                 .Select(ph => ph.Gender)
                 .ToList();
 
-            int maleCount = genderList.Count(g => g != null && g.Equals("Male", StringComparison.OrdinalIgnoreCase));
-            int femaleCount = genderList.Count(g => g != null && g.Equals("Female", StringComparison.OrdinalIgnoreCase));
+            int maleCount = genderList.Count(g => g != null && g.ToLower() == "male");
+            int femaleCount = genderList.Count(g => g != null && g.ToLower() == "female");
 
             return new
             {
@@ -96,13 +93,10 @@ namespace Echomedproject.BLL.Repositories
             var firstDayOfLastMonth = firstDayOfThisMonth.AddMonths(-1);
             var lastDayOfLastMonth = firstDayOfThisMonth.AddDays(-1);
 
-            var count = dbContext.patientHospital
-                .Where(ph => ph.HospitalId == hospitalID &&
+            return dbContext.patientHospital
+                .Count(ph => ph.HospitalId == hospitalID &&
                              ph.EntryDate >= firstDayOfLastMonth &&
-                             ph.EntryDate <= lastDayOfLastMonth)
-                .Count();
-
-            return count;
+                             ph.EntryDate <= lastDayOfLastMonth);
         }
 
         public object GetLabTestCountsByMonth(int hospitalID)
@@ -110,7 +104,6 @@ namespace Echomedproject.BLL.Repositories
             var today = DateTime.Today;
             var firstDayOfCurrentMonth = new DateTime(today.Year, today.Month, 1);
             var firstDayOfLastMonth = firstDayOfCurrentMonth.AddMonths(-1);
-            var lastDayOfLastMonth = firstDayOfCurrentMonth.AddDays(-1);
 
             var labTests = dbContext.patientHospital
                 .Where(ph => ph.HospitalId == hospitalID && ph.record != null)
@@ -120,14 +113,12 @@ namespace Echomedproject.BLL.Repositories
                 .ToList();
 
             int currentMonthCount = labTests.Count(l =>
-                l.Date.Month == firstDayOfCurrentMonth.Month &&
-                l.Date.Year == firstDayOfCurrentMonth.Year
-            );
+                l.Date >= firstDayOfCurrentMonth &&
+                l.Date < firstDayOfCurrentMonth.AddMonths(1)); // [Start, Start+1Month)
 
             int lastMonthCount = labTests.Count(l =>
                 l.Date >= firstDayOfLastMonth &&
-                l.Date <= lastDayOfLastMonth
-            );
+                l.Date < firstDayOfCurrentMonth); // [LastMonthStart, ThisMonthStart)
 
             return new
             {
@@ -136,24 +127,22 @@ namespace Echomedproject.BLL.Repositories
             };
         }
 
+
         public object GetMonthlyPatientCounts(int hospitalID)
         {
             var today = DateTime.Today;
-
             var firstDayOfCurrentMonth = new DateTime(today.Year, today.Month, 1);
             var firstDayOfLastMonth = firstDayOfCurrentMonth.AddMonths(-1);
-            var lastDayOfLastMonth = firstDayOfCurrentMonth.AddDays(-1);
+            var firstDayOfNextMonth = firstDayOfCurrentMonth; // beginning of current month
 
             var currentMonthCount = dbContext.patientHospital
-                .Where(ph => ph.HospitalId == hospitalID &&
-                             ph.EntryDate >= firstDayOfCurrentMonth)
-                .Count();
+                .Count(ph => ph.HospitalId == hospitalID &&
+                             ph.EntryDate >= firstDayOfCurrentMonth);
 
             var lastMonthCount = dbContext.patientHospital
-                .Where(ph => ph.HospitalId == hospitalID &&
+                .Count(ph => ph.HospitalId == hospitalID &&
                              ph.EntryDate >= firstDayOfLastMonth &&
-                             ph.EntryDate <= lastDayOfLastMonth)
-                .Count();
+                             ph.EntryDate < firstDayOfNextMonth); // FIX: exclusive upper bound
 
             return new
             {
@@ -162,28 +151,25 @@ namespace Echomedproject.BLL.Repositories
             };
         }
 
+
         public object GetMonthlyMalePatientCounts(int hospitalID)
         {
             var today = DateTime.Today;
-
             var firstDayOfCurrentMonth = new DateTime(today.Year, today.Month, 1);
             var firstDayOfLastMonth = firstDayOfCurrentMonth.AddMonths(-1);
-            var lastDayOfLastMonth = firstDayOfCurrentMonth.AddDays(-1);
 
-            var currentMonthMales = dbContext.patientHospital
-                .Where(ph => ph.HospitalId == hospitalID &&
+            int currentMonthMales = dbContext.patientHospital
+                .Count(ph => ph.HospitalId == hospitalID &&
                              ph.Gender != null &&
-                             ph.Gender.Equals("Male", StringComparison.OrdinalIgnoreCase) &&
-                             ph.EntryDate >= firstDayOfCurrentMonth)
-                .Count();
+                             ph.Gender.ToLower() == "male" &&
+                             ph.EntryDate >= firstDayOfCurrentMonth);
 
-            var lastMonthMales = dbContext.patientHospital
-                .Where(ph => ph.HospitalId == hospitalID &&
+            int lastMonthMales = dbContext.patientHospital
+                .Count(ph => ph.HospitalId == hospitalID &&
                              ph.Gender != null &&
-                             ph.Gender.Equals("Male", StringComparison.OrdinalIgnoreCase) &&
+                             ph.Gender.ToLower() == "male" &&
                              ph.EntryDate >= firstDayOfLastMonth &&
-                             ph.EntryDate <= lastDayOfLastMonth)
-                .Count();
+                             ph.EntryDate < firstDayOfCurrentMonth); // FIXED range
 
             return new
             {
@@ -192,28 +178,25 @@ namespace Echomedproject.BLL.Repositories
             };
         }
 
+
         public object GetMonthlyFemalePatientCounts(int hospitalID)
         {
             var today = DateTime.Today;
-
             var firstDayOfCurrentMonth = new DateTime(today.Year, today.Month, 1);
             var firstDayOfLastMonth = firstDayOfCurrentMonth.AddMonths(-1);
-            var lastDayOfLastMonth = firstDayOfCurrentMonth.AddDays(-1);
 
-            var currentMonthFemales = dbContext.patientHospital
-                .Where(ph => ph.HospitalId == hospitalID &&
+            int currentMonthFemales = dbContext.patientHospital
+                .Count(ph => ph.HospitalId == hospitalID &&
                              ph.Gender != null &&
-                             ph.Gender.Equals("Female", StringComparison.OrdinalIgnoreCase) &&
-                             ph.EntryDate >= firstDayOfCurrentMonth)
-                .Count();
+                             ph.Gender.ToLower() == "female" &&
+                             ph.EntryDate >= firstDayOfCurrentMonth);
 
-            var lastMonthFemales = dbContext.patientHospital
-                .Where(ph => ph.HospitalId == hospitalID &&
+            int lastMonthFemales = dbContext.patientHospital
+                .Count(ph => ph.HospitalId == hospitalID &&
                              ph.Gender != null &&
-                             ph.Gender.Equals("Female", StringComparison.OrdinalIgnoreCase) &&
+                             ph.Gender.ToLower() == "female" &&
                              ph.EntryDate >= firstDayOfLastMonth &&
-                             ph.EntryDate <= lastDayOfLastMonth)
-                .Count();
+                             ph.EntryDate < firstDayOfCurrentMonth); // FIXED range
 
             return new
             {
@@ -222,38 +205,18 @@ namespace Echomedproject.BLL.Repositories
             };
         }
 
-        public object GetLabTestCountsByWeek(int hospitalID)
-        {
-            var thisWeek = GetWeekRange(0);
-            var lastWeek = GetWeekRange(1);
-
-            var labTests = dbContext.patientHospital
-                .Where(ph => ph.HospitalId == hospitalID && ph.record != null)
-                .Include(ph => ph.record)
-                    .ThenInclude(r => r.LabTests)
-                .SelectMany(ph => ph.record.LabTests)
-                .ToList();
-
-            int currentWeekCount = labTests.Count(l => l.Date >= thisWeek.Start && l.Date <= thisWeek.End);
-            int lastWeekCount = labTests.Count(l => l.Date >= lastWeek.Start && l.Date <= lastWeek.End);
-
-            return new
-            {
-                CurrentWeekLabTests = currentWeekCount,
-                LastWeekLabTests = lastWeekCount
-            };
-        }
-
         public object GetWeeklyPatientCounts(int hospitalID)
         {
             var thisWeek = GetWeekRange(0);
             var lastWeek = GetWeekRange(1);
 
-            var currentWeekCount = dbContext.patientHospital
-                .Count(ph => ph.HospitalId == hospitalID && ph.EntryDate >= thisWeek.Start && ph.EntryDate <= thisWeek.End);
+            int currentWeekCount = dbContext.patientHospital
+                .Count(ph => ph.HospitalId == hospitalID &&
+                             ph.EntryDate >= thisWeek.Start && ph.EntryDate <= thisWeek.End);
 
-            var lastWeekCount = dbContext.patientHospital
-                .Count(ph => ph.HospitalId == hospitalID && ph.EntryDate >= lastWeek.Start && ph.EntryDate <= lastWeek.End);
+            int lastWeekCount = dbContext.patientHospital
+                .Count(ph => ph.HospitalId == hospitalID &&
+                             ph.EntryDate >= lastWeek.Start && ph.EntryDate <= lastWeek.End);
 
             return new
             {
@@ -270,14 +233,16 @@ namespace Echomedproject.BLL.Repositories
             int currentWeekMales = dbContext.patientHospital
                 .Count(ph => ph.HospitalId == hospitalID &&
                              ph.Gender != null &&
-                             ph.Gender.Equals("Male", StringComparison.OrdinalIgnoreCase) &&
-                             ph.EntryDate >= thisWeek.Start && ph.EntryDate <= thisWeek.End);
+                             ph.Gender.ToLower() == "male" &&
+                             ph.EntryDate >= thisWeek.Start &&
+                             ph.EntryDate <= thisWeek.End);
 
             int lastWeekMales = dbContext.patientHospital
                 .Count(ph => ph.HospitalId == hospitalID &&
                              ph.Gender != null &&
-                             ph.Gender.Equals("Male", StringComparison.OrdinalIgnoreCase) &&
-                             ph.EntryDate >= lastWeek.Start && ph.EntryDate <= lastWeek.End);
+                             ph.Gender.ToLower() == "male" &&
+                             ph.EntryDate >= lastWeek.Start &&
+                             ph.EntryDate <= lastWeek.End);
 
             return new
             {
@@ -294,14 +259,16 @@ namespace Echomedproject.BLL.Repositories
             int currentWeekFemales = dbContext.patientHospital
                 .Count(ph => ph.HospitalId == hospitalID &&
                              ph.Gender != null &&
-                             ph.Gender.Equals("Female", StringComparison.OrdinalIgnoreCase) &&
-                             ph.EntryDate >= thisWeek.Start && ph.EntryDate <= thisWeek.End);
+                             ph.Gender.ToLower() == "female" &&
+                             ph.EntryDate >= thisWeek.Start &&
+                             ph.EntryDate <= thisWeek.End);
 
             int lastWeekFemales = dbContext.patientHospital
                 .Count(ph => ph.HospitalId == hospitalID &&
                              ph.Gender != null &&
-                             ph.Gender.Equals("Female", StringComparison.OrdinalIgnoreCase) &&
-                             ph.EntryDate >= lastWeek.Start && ph.EntryDate <= lastWeek.End);
+                             ph.Gender.ToLower() == "female" &&
+                             ph.EntryDate >= lastWeek.Start &&
+                             ph.EntryDate <= lastWeek.End);
 
             return new
             {
@@ -312,68 +279,21 @@ namespace Echomedproject.BLL.Repositories
 
         public Dictionary<string, int> GetDailyPatientCountsForWeek(int hospitalID)
         {
-            // Get start and end of current week (Saturday to Friday)
             var (startOfWeek, endOfWeek) = GetWeekRange(0);
-
             var entries = dbContext.patientHospital
                 .Where(ph => ph.HospitalId == hospitalID &&
                              ph.EntryDate >= startOfWeek && ph.EntryDate <= endOfWeek)
                 .ToList();
 
-            // Initialize dictionary with all days of the week (starting Saturday)
-            var dayCounts = new Dictionary<DayOfWeek, int>
-    {
-        { DayOfWeek.Saturday, 0 },
-        { DayOfWeek.Sunday, 0 },
-        { DayOfWeek.Monday, 0 },
-        { DayOfWeek.Tuesday, 0 },
-        { DayOfWeek.Wednesday, 0 },
-        { DayOfWeek.Thursday, 0 },
-        { DayOfWeek.Friday, 0 }
-    };
+            var dayCounts = Enum.GetValues(typeof(DayOfWeek))
+                .Cast<DayOfWeek>()
+                .ToDictionary(d => d.ToString(), d => 0);
 
-            // Count patients per day
             foreach (var entry in entries)
             {
-                var day = entry.EntryDate.DayOfWeek;
+                var day = entry.EntryDate.DayOfWeek.ToString();
                 if (dayCounts.ContainsKey(day))
                     dayCounts[day]++;
-            }
-
-            // Convert keys to Arabic-style or custom labels if needed (optional)
-            var formatted = dayCounts
-                .OrderBy(d => ((int)d.Key + 1) % 7) // Start from Saturday
-                .ToDictionary(kvp => kvp.Key.ToString(), kvp => kvp.Value);
-
-            return formatted;
-        }
-
-
-        public Dictionary<string, int> GetDailyPatientCountsForCurrentMonth(int hospitalID)
-        {
-            var today = DateTime.Today;
-            var startOfMonth = new DateTime(today.Year, today.Month, 1);
-            var endOfMonth = startOfMonth.AddMonths(1).AddDays(-1); // Last day of current month
-
-            var entries = dbContext.patientHospital
-                .Where(ph => ph.HospitalId == hospitalID &&
-                             ph.EntryDate >= startOfMonth && ph.EntryDate <= endOfMonth)
-                .ToList();
-
-            // Initialize dictionary with all days of the current month
-            var dayCounts = new Dictionary<string, int>();
-            for (int day = 1; day <= endOfMonth.Day; day++)
-            {
-                var date = new DateTime(today.Year, today.Month, day);
-                dayCounts[date.ToString("yyyy-MM-dd")] = 0;
-            }
-
-            // Count patients per exact date
-            foreach (var entry in entries)
-            {
-                var dateKey = entry.EntryDate.Date.ToString("yyyy-MM-dd");
-                if (dayCounts.ContainsKey(dateKey))
-                    dayCounts[dateKey]++;
             }
 
             return dayCounts;
@@ -381,8 +301,7 @@ namespace Echomedproject.BLL.Repositories
 
         public Dictionary<string, int> GetDailyPatientCountsForLastWeek(int hospitalID)
         {
-            var (startOfWeek, endOfWeek) = GetWeekRange(1); // Last week
-
+            var (startOfWeek, endOfWeek) = GetWeekRange(1);
             var entries = dbContext.patientHospital
                 .Where(ph => ph.HospitalId == hospitalID &&
                              ph.EntryDate >= startOfWeek &&
@@ -406,18 +325,75 @@ namespace Echomedproject.BLL.Repositories
             return dayCounts;
         }
 
+        public Dictionary<string, int> GetDailyPatientCountsForCurrentMonth(int hospitalID)
+        {
+            var today = DateTime.Today;
+            var startOfMonth = new DateTime(today.Year, today.Month, 1);
+            var endOfMonth = startOfMonth.AddMonths(1).AddDays(-1);
+
+            // ✅ Fetch ALL entries for this hospital without date filtering
+            var allEntries = dbContext.patientHospital
+                .Where(ph => ph.HospitalId == hospitalID)
+                .ToList();
+
+            Console.WriteLine($"Total raw entries for hospital {hospitalID}: {allEntries.Count}");
+
+            // ✅ Filter in memory using .Date
+            var entries = allEntries
+                .Where(ph => ph.EntryDate.Date >= startOfMonth.Date && ph.EntryDate.Date <= endOfMonth.Date)
+                .ToList();
+
+            Console.WriteLine($"Filtered entries in current month: {entries.Count}");
+
+            // Initialize dictionary
+            var dayCounts = new Dictionary<string, int>();
+            for (int day = 1; day <= endOfMonth.Day; day++)
+            {
+                var date = new DateTime(today.Year, today.Month, day);
+                dayCounts[date.ToString("yyyy-MM-dd")] = 0;
+            }
+
+            // Count patients per day
+            foreach (var entry in entries)
+            {
+                var dateKey = entry.EntryDate.Date.ToString("yyyy-MM-dd");
+                if (dayCounts.ContainsKey(dateKey))
+                {
+                    dayCounts[dateKey]++;
+                }
+            }
+
+            return dayCounts;
+        }
+
+
+
+
+
+
+
         public Dictionary<string, int> GetDailyPatientCountsForLastMonth(int hospitalID)
         {
             var today = DateTime.Today;
             var firstDayLastMonth = new DateTime(today.Year, today.Month, 1).AddMonths(-1);
             var lastDayLastMonth = new DateTime(today.Year, today.Month, 1).AddDays(-1);
 
-            var entries = dbContext.patientHospital
-                .Where(ph => ph.HospitalId == hospitalID &&
-                             ph.EntryDate >= firstDayLastMonth &&
-                             ph.EntryDate <= lastDayLastMonth)
+            // ✅ Fetch all entries for this hospital (no date filter yet)
+            var allEntries = dbContext.patientHospital
+                .Where(ph => ph.HospitalId == hospitalID)
                 .ToList();
 
+            Console.WriteLine($"Total raw entries for hospital {hospitalID}: {allEntries.Count}");
+
+            // ✅ Filter by last month's dates in memory using .Date
+            var entries = allEntries
+                .Where(ph => ph.EntryDate.Date >= firstDayLastMonth.Date &&
+                             ph.EntryDate.Date <= lastDayLastMonth.Date)
+                .ToList();
+
+            Console.WriteLine($"Filtered entries in last month: {entries.Count}");
+
+            // ✅ Initialize dictionary with all days in last month
             var dayCounts = new Dictionary<string, int>();
             for (int day = 1; day <= lastDayLastMonth.Day; day++)
             {
@@ -425,14 +401,39 @@ namespace Echomedproject.BLL.Repositories
                 dayCounts[date.ToString("yyyy-MM-dd")] = 0;
             }
 
+            // ✅ Count patients per day
             foreach (var entry in entries)
             {
                 var dateKey = entry.EntryDate.Date.ToString("yyyy-MM-dd");
                 if (dayCounts.ContainsKey(dateKey))
+                {
                     dayCounts[dateKey]++;
+                }
             }
 
             return dayCounts;
+        }
+
+        public object GetLabTestCountsByWeek(int hospitalID)
+        {
+            var thisWeek = GetWeekRange(0);
+            var lastWeek = GetWeekRange(1);
+
+            var labTests = dbContext.patientHospital
+                .Where(ph => ph.HospitalId == hospitalID && ph.record != null)
+                .Include(ph => ph.record)
+                    .ThenInclude(r => r.LabTests)
+                .SelectMany(ph => ph.record.LabTests)
+                .ToList();
+
+            int currentWeekCount = labTests.Count(l => l.Date >= thisWeek.Start && l.Date <= thisWeek.End);
+            int lastWeekCount = labTests.Count(l => l.Date >= lastWeek.Start && l.Date <= lastWeek.End);
+
+            return new
+            {
+                CurrentWeekLabTests = currentWeekCount,
+                LastWeekLabTests = lastWeekCount
+            };
         }
 
     }

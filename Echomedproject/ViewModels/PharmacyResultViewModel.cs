@@ -15,5 +15,10 @@ namespace Echomedproject.PL.ViewModels
 
         public string phonenumber {  get; set; }
 
+        public double? longitude { get; set; }
+
+        public double? latitude { get; set; }
+        
+
     }
 }

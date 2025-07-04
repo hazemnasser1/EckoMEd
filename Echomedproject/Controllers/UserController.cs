@@ -52,26 +52,22 @@ namespace Echomedproject.PL.Controllers
             var currentUser = _httpContextAccessor?.HttpContext?.User;
             var email = currentUser?.FindFirst(ClaimTypes.Email)?.Value;
 
-
             if (string.IsNullOrEmpty(email))
-                return Unauthorized();
+                return Unauthorized(new { success = false, message = "User email not found." });
 
             var appUser = await userManager.GetUserAsync(currentUser);
-
             if (appUser == null)
-                return NotFound("User not found.");
+                return NotFound(new { success = false, message = "User not found." });
 
             AppUsers user = unitOfWork.appUsersRepository.getUserbyEmail(email);
-
             if (user == null)
-                return NotFound("User not found.");
-
+                return NotFound(new { success = false, message = "User not found." });
 
             return Ok(new
             {
                 firstName = appUser.FirstName,
                 lastName = appUser.LastName,
-                image = DocumentSetting.GetBase64Image(appUser.imagePath,"userImage"),
+                image = DocumentSetting.GetBase64Image(appUser.imagePath, "userImages"),
                 insurance = user.Insurance
             });
         }
@@ -81,76 +77,74 @@ namespace Echomedproject.PL.Controllers
         public async Task<IActionResult> UpdateProfileImage([FromForm] IFormFile file)
         {
             if (file == null || file.Length == 0)
-                return BadRequest("Image file is required.");
+                return BadRequest(new { success = false, message = "Image file is required." });
 
             var currentUser = _httpContextAccessor?.HttpContext?.User;
             var email = currentUser?.FindFirst(ClaimTypes.Email)?.Value;
 
             if (string.IsNullOrEmpty(email))
-                return Unauthorized("User email not found.");
+                return Unauthorized(new { success = false, message = "User email not found." });
 
             var appUser = await userManager.FindByEmailAsync(email);
             if (appUser == null)
-                return NotFound("User not found.");
+                return NotFound(new { success = false, message = "User not found." });
 
-            // Upload image
-            var fileName = DocumentSetting.UploadImage(file, "userImage");
-
-            // Update user's image path
+            var fileName = DocumentSetting.UploadImage(file, "userImages");
             appUser.imagePath = fileName;
 
             var result = await userManager.UpdateAsync(appUser);
             if (!result.Succeeded)
-                return BadRequest("Failed to update profile image.");
+                return BadRequest(new { success = false, message = "Failed to update profile image." });
 
             return Ok(new
             {
+                success = true,
                 message = "Profile image updated successfully.",
-                base64Image = DocumentSetting.GetBase64Image(fileName, "userImage")
+                base64Image = DocumentSetting.GetBase64Image(fileName, "userImages")
             });
         }
-
 
         [Authorize]
         [HttpPost("Profile")]
         public async Task<IActionResult> EditProfile([FromBody] EditViewModel editViewModel)
         {
-            var currentUser = _httpContextAccessor?.HttpContext?.User;
+            if (!ModelState.IsValid)
+                return BadRequest(new { success = false, message = "Invalid profile data." });
 
+            var currentUser = _httpContextAccessor?.HttpContext?.User;
             if (currentUser == null)
-                return Unauthorized();
+                return Unauthorized(new { success = false, message = "User not authenticated." });
 
             var appUser = await userManager.GetUserAsync(currentUser);
-
             if (appUser == null)
-                return NotFound("User not found.");
+                return NotFound(new { success = false, message = "User not found." });
 
             appUser.FirstName = editViewModel.Firstname;
             appUser.LastName = editViewModel.Lastname;
 
             var result = await userManager.UpdateAsync(appUser);
+            if (!result.Succeeded)
+                return BadRequest(new { success = false, message = "Failed to update profile." });
 
-            if (result.Succeeded)
-                return Ok("Profile updated successfully.");
-
-            return BadRequest("Failed to update profile.");
+            return Ok(new { success = true, message = "Profile updated successfully." });
         }
-
 
         [Authorize]
         [HttpPost("CardData")]
         public async Task<IActionResult> CardDetails([FromBody] CardViewModel cardviewmodel)
         {
+            if (!ModelState.IsValid)
+                return BadRequest(new { success = false, message = "Invalid card data." });
+
             var currentUser = _httpContextAccessor?.HttpContext?.User;
             var email = currentUser?.FindFirst(ClaimTypes.Email)?.Value;
 
             if (string.IsNullOrEmpty(email))
-                return Unauthorized();
+                return Unauthorized(new { success = false, message = "User email not found." });
 
             AppUsers user = unitOfWork.appUsersRepository.getUserbyEmail(email);
-
             if (user == null)
-                return NotFound("User not found.");
+                return NotFound(new { success = false, message = "User not found." });
 
             user.CardNumber = cardviewmodel.CardNumber;
             user.CVC = cardviewmodel.CVC;
@@ -158,27 +152,31 @@ namespace Echomedproject.PL.Controllers
 
             unitOfWork.Complete();
 
-            return Ok("Card details updated successfully.");
+            return Ok(new { success = true, message = "Card details updated successfully." });
         }
+
 
         [HttpPost("GetInsurance")]
         [Authorize]
-
         public async Task<IActionResult> InsuranceDetails([FromBody] string Insurance)
         {
+            if (Insurance == null)
+                return BadRequest(new { success = false, message = "Insurance can't be null." });
+
             var currentUser = _httpContextAccessor?.HttpContext?.User;
             var email = currentUser?.FindFirst(ClaimTypes.Email)?.Value;
 
             if (string.IsNullOrEmpty(email))
-                return Unauthorized();
+                return Unauthorized(new { success = false, message = "User email not found." });
 
             AppUsers user = unitOfWork.appUsersRepository.getUserbyEmail(email);
             if (user == null)
-                return NotFound("User not found.");
+                return NotFound(new { success = false, message = "User not found." });
+
             user.Insurance = Insurance;
-            //unitOfWork.appUsersRepository.update(user);
             unitOfWork.Complete();
-            return Ok("Insurance updated successfully.");
+
+            return Ok(new { success = true, message = "Insurance updated successfully." });
         }
 
         [HttpPost("RemoveInsurance")]
@@ -189,17 +187,18 @@ namespace Echomedproject.PL.Controllers
             var email = currentUser?.FindFirst(ClaimTypes.Email)?.Value;
 
             if (string.IsNullOrEmpty(email))
-                return Unauthorized();
+                return Unauthorized(new { success = false, message = "User email not found." });
 
             AppUsers user = unitOfWork.appUsersRepository.getUserbyEmail(email);
             if (user == null)
-                return NotFound("User not found.");
+                return NotFound(new { success = false, message = "User not found." });
 
-            user.Insurance = null; // or use: string.Empty;
+            user.Insurance = null;
             unitOfWork.Complete();
 
-            return Ok("Insurance removed successfully.");
+            return Ok(new { success = true, message = "Insurance removed successfully." });
         }
+
 
         //[HttpGet("Get-Hospitals")]
         //public async Task<IActionResult> Hospital_filll()
@@ -413,7 +412,7 @@ namespace Echomedproject.PL.Controllers
         public async Task<IActionResult> HospitalSearch([FromQuery] HospitalSearchViewModel hospitalSearchViewModel)
         {
             if (!ModelState.IsValid)
-                return BadRequest(ModelState);
+                return BadRequest(new { success = false, message = "Invalid search input." });
 
             hospitalSearchViewModel.Lat ??= 0;
             hospitalSearchViewModel.Lang ??= 0;
@@ -458,18 +457,22 @@ namespace Echomedproject.PL.Controllers
                     if (distance > maxDistance.Value)
                         continue;
                 }
+
                 int WaitingPatients = matchingDept.TotalPatients - matchingDept.NomOfDoctors;
                 int lowerTimeRange = WaitingPatients * 20;
-                int upperTimeRange= WaitingPatients * 30;
+                int upperTimeRange = WaitingPatients * 30;
+
                 results.Add(new SearchResultViewModel
                 {
                     HospitalName = hospital.Name,
                     Distance = distance,
-                    TotalPatients=matchingDept.TotalPatients,
+                    TotalPatients = matchingDept.TotalPatients,
                     lowerRange = lowerTimeRange,
-                    upperRange=upperTimeRange,
+                    upperRange = upperTimeRange,
                     Budget = matchingDept?.budget ?? 0,
                     Department = matchingDept?.Name,
+                    longitude = hospital.Longitude,
+                    latitude = hospital.Latitude,
                     Insurance = !string.IsNullOrEmpty(insurance) &&
                                 hospital.AcceptedInsurances.Any(i => i.Name.ToLower().Contains(insurance))
                 });
@@ -478,25 +481,25 @@ namespace Echomedproject.PL.Controllers
             return Ok(results);
         }
 
-
         [Authorize]
         [HttpGet("Get-Ads")]
         public async Task<IActionResult> GetAds()
         {
-
             var advertisements = unitOfWork.adverismentRepository.GetAll().ToList();
 
-            var adsWithImages = advertisements.Select(ad => new
+            var baseUrl = $"{Request.Scheme}://{Request.Host}";
+
+            var adsWithImageUrls = advertisements.Select(ad => new
             {
                 ad.Id,
                 ad.Title,
                 ad.Description,
-                ImageBase64 = DocumentSetting.GetBase64Image(ad.ImagePath, "advertisementImages")  // Assuming folder name is "ads"
+                image = $"{baseUrl}/files/advertisementImages/{ad.ImagePath}"
             });
 
-            return Ok(adsWithImages);
-
+            return Ok(adsWithImageUrls);
         }
+
         [Authorize]
         [HttpGet("dashboardData")]
         public async Task<IActionResult> DashboardData()
@@ -504,12 +507,11 @@ namespace Echomedproject.PL.Controllers
             var currentUser = _httpContextAccessor?.HttpContext?.User;
 
             if (currentUser == null)
-                return Unauthorized();
+                return Unauthorized(new { success = false, message = "User not authenticated." });
 
             var appUser = await userManager.GetUserAsync(currentUser);
-
             if (appUser == null)
-                return NotFound("User not found.");
+                return NotFound(new { success = false, message = "User not found." });
 
             var result = new
             {
@@ -519,31 +521,6 @@ namespace Echomedproject.PL.Controllers
 
             return Ok(result);
         }
-        //[HttpGet("Get-pharmacy")]
-        //public async Task<IActionResult> pharmacy_filll()
-        //{
-        //    string query = @"
-        //[out:json][timeout:30];
-        //(
-        //  node[""amenity""=""pharmacy""](29.9,30.9,30.1,31.3);
-        //  way[""amenity""=""pharmacy""](29.9,30.9,30.1,31.3);
-        //  relation[""amenity""=""pharmacy""](29.9,30.9,30.1,31.3);
-        //);
-        //out center;
-        //";
-
-
-        //    var content = new StringContent(query, Encoding.UTF8, "application/x-www-form-urlencoded");
-        //    using var client = new HttpClient();
-        //    var response = await client.PostAsync("https://overpass-api.de/api/interpreter", content);
-
-        //    if (!response.IsSuccessStatusCode)
-        //        return StatusCode((int)response.StatusCode, "Failed to fetch data from Overpass API");
-
-        //    var jsonString = await response.Content.ReadAsStringAsync();
-        //    var result = JsonConvert.DeserializeObject<OverpassResponse>(jsonString);
-        //    return Ok(result);
-        //}
 
         [Authorize]
         [HttpGet("get-records")]
@@ -553,17 +530,19 @@ namespace Echomedproject.PL.Controllers
             var email = currentUser?.FindFirst(ClaimTypes.Email)?.Value;
 
             if (string.IsNullOrEmpty(email))
-                return Unauthorized("User email not found in token.");
+                return Unauthorized(new { success = false, message = "User email not found in token." });
 
             var appUser = await userManager.GetUserAsync(currentUser);
             if (appUser == null)
-                return NotFound("User not found.");
+                return NotFound(new { success = false, message = "User not found." });
 
             var user = unitOfWork.appUsersRepository.getUserWithRecordDetails(email);
             if (user == null)
-                return NotFound("User not found in repository.");
+                return NotFound(new { success = false, message = "User not found in repository." });
 
-            // Optional projection: customize what you want to return
+            if (user.Records == null || !user.Records.Any())
+                return Ok(new { success = true, message = "There is no record to view." });
+
             var recordsDto = user.Records.Select(record => new
             {
                 record.Id,
@@ -578,28 +557,34 @@ namespace Echomedproject.PL.Controllers
 
 
 
+
         [Authorize]
         [HttpGet("prescription")]
-        public async Task<IActionResult> GetPrescription(int Id)
+        public async Task<IActionResult> GetPrescription([FromQuery] int Id)
         {
+            if (Id <= 0)
+                return BadRequest(new { success = false, message = "Id is required" });
+
             var currentUser = _httpContextAccessor?.HttpContext?.User;
             var email = currentUser?.FindFirst(ClaimTypes.Email)?.Value;
-
             if (string.IsNullOrEmpty(email))
-                return Unauthorized("User email not found in token.");
+                return Unauthorized(new { success = false, message = "User email not found in token." });
 
             var appUser = await userManager.GetUserAsync(currentUser);
             if (appUser == null)
-                return NotFound("User not found.");
+                return NotFound(new { success = false, message = "User not found." });
 
             var user = unitOfWork.appUsersRepository.getUserWithRecordDetails(email);
             if (user == null)
-                return NotFound("User not found in repository.");
-
+                return NotFound(new { success = false, message = "User not found in repository." });
 
             var record = unitOfWork.appUsersRepository.GetRecord(Id);
+            if (record == null)
+                return Ok(new { success = true, message = "there is no Record to view" });
 
-            // Optional projection: customize what you want to return
+            if (record.prescription == null)
+                return Ok(new { success = true, message = "there is no medicines to view" });
+
             var medicines = record.prescription.medicines.Select(m => new
             {
                 m.Id,
@@ -613,61 +598,70 @@ namespace Echomedproject.PL.Controllers
             return Ok(medicines);
         }
 
+
         [Authorize]
         [HttpGet("scans")]
-        public async Task<IActionResult> get_scans(int Id)
+        public async Task<IActionResult> get_scans([FromQuery] int Id)
         {
+            if (Id <= 0)
+                return BadRequest(new { success = false, message = "Id is required" });
+
             var currentUser = _httpContextAccessor?.HttpContext?.User;
             var email = currentUser?.FindFirst(ClaimTypes.Email)?.Value;
-
             if (string.IsNullOrEmpty(email))
-                return Unauthorized("User email not found in token.");
+                return Unauthorized(new { success = false, message = "User email not found in token." });
 
             var appUser = await userManager.GetUserAsync(currentUser);
             if (appUser == null)
-                return NotFound("User not found.");
+                return NotFound(new { success = false, message = "User not found." });
 
             var user = unitOfWork.appUsersRepository.getUserWithRecordDetails(email);
             if (user == null)
-                return NotFound("User not found in repository.");
-
+                return NotFound(new { success = false, message = "User not found in repository." });
 
             var record = unitOfWork.appUsersRepository.GetRecord(Id);
+            if (record == null)
+                return Ok(new { success = true, message = "there is no Record to view" });
 
-            // Optional projection: customize what you want to return
+            var baseUrl = $"{Request.Scheme}://{Request.Host}";
+
             var scans = record.Scans.Select(s => new
             {
                 s.Type,
                 s.Date,
                 s.Description,
-                ImageBase64 = DocumentSetting.GetBase64Image(s.ImagePath, "scanImage")  // Assuming folder name is "ads"
-
+                image = $"{baseUrl}/files/ScanImages/{s.ImagePath}"
             });
 
             return Ok(scans);
         }
 
+
         [Authorize]
         [HttpGet("labtests")]
-        public async Task<IActionResult> get_labtests(int Id)
+        public async Task<IActionResult> get_labtests([FromQuery] int Id)
         {
+            if (Id <= 0)
+                return BadRequest(new { success = false, message = "Id is required" });
+
             var currentUser = _httpContextAccessor?.HttpContext?.User;
             var email = currentUser?.FindFirst(ClaimTypes.Email)?.Value;
-
             if (string.IsNullOrEmpty(email))
-                return Unauthorized("User email not found in token.");
+                return Unauthorized(new { success = false, message = "User email not found in token." });
 
             var appUser = await userManager.GetUserAsync(currentUser);
             if (appUser == null)
-                return NotFound("User not found.");
+                return NotFound(new { success = false, message = "User not found." });
 
             var user = unitOfWork.appUsersRepository.getUserWithRecordDetails(email);
             if (user == null)
-                return NotFound("User not found in repository.");
+                return NotFound(new { success = false, message = "User not found in repository." });
 
             var record = unitOfWork.appUsersRepository.GetRecord(Id);
             if (record == null)
-                return NotFound("Record not found.");
+                return NotFound(new { success = false, message = "Record not found." });
+
+            var baseUrl = $"{Request.Scheme}://{Request.Host}";
 
             var labTests = record.LabTests.Select(l => new
             {
@@ -675,11 +669,12 @@ namespace Echomedproject.PL.Controllers
                 l.Type,
                 l.Notes,
                 l.Date,
-                ImageBase64 = DocumentSetting.GetBase64Image(l.ImagePath, "TestImages") 
+                image = $"{baseUrl}/files/TestImages/{l.ImagePath}"
             });
 
             return Ok(labTests);
         }
+
 
 
         [Authorize]
@@ -687,24 +682,22 @@ namespace Echomedproject.PL.Controllers
         public async Task<IActionResult> PharmacySearch([FromQuery] PharmacySearchViewModel pharmacySearchViewModel)
         {
             if (!ModelState.IsValid)
-                return BadRequest(ModelState);
+                return BadRequest(new { success = false, message = "Invalid input parameters" });
 
             pharmacySearchViewModel.Lat ??= 0;
             pharmacySearchViewModel.Lang ??= 0;
 
             var userLat = pharmacySearchViewModel.Lat.Value;
             var userLng = pharmacySearchViewModel.Lang.Value;
-
             double? maxDistance = pharmacySearchViewModel.Distance ??= 9999;
 
             var pharmacies = unitOfWork.pharamacyRepository.GetAll();
-
             var results = new List<PharmacyResultViewModel>();
 
             foreach (var pharmacy in pharmacies)
             {
                 var pharmacyAcc = unitOfWork.pharmacyAccRepository.getpharmacyaccWithDetails(pharmacy.Identifier);
-                
+
                 double distance = 0;
                 if (userLat > 0 && userLng > 0)
                 {
@@ -722,9 +715,9 @@ namespace Echomedproject.PL.Controllers
                     Name = pharmacy.Name,
                     Distance = distance,
                     pharmacyID = pharmacy.Identifier,
-                    phonenumber = pharmacyAcc.PhoneNumber
-
-
+                    phonenumber = pharmacyAcc.PhoneNumber,
+                    longitude = pharmacy.Longitude,
+                    latitude = pharmacy.Latitude
                 });
             }
 
@@ -736,25 +729,25 @@ namespace Echomedproject.PL.Controllers
         public async Task<IActionResult> MedicineRequest([FromBody] MedicineRequestDto request)
         {
             if (request == null || string.IsNullOrWhiteSpace(request.MedicineName) || string.IsNullOrWhiteSpace(request.PharmacyId))
-                return BadRequest("Medicine name and pharmacy ID are required.");
+                return BadRequest(new { success = false, message = "Medicine name and pharmacy ID are required." });
 
             var currentUser = _httpContextAccessor?.HttpContext?.User;
             var email = currentUser?.FindFirst(ClaimTypes.Email)?.Value;
 
             if (string.IsNullOrEmpty(email))
-                return Unauthorized();
+                return Unauthorized(new { success = false, message = "User email not found in token." });
 
             var appUser = await userManager.GetUserAsync(currentUser);
             if (appUser == null)
-                return NotFound("Authenticated user not found.");
+                return NotFound(new { success = false, message = "Authenticated user not found." });
 
             var user = unitOfWork.appUsersRepository.getUserWithRecordDetails(email);
             if (user == null)
-                return NotFound("User not found in system.");
+                return NotFound(new { success = false, message = "User not found in system." });
 
             var pharmacyAcc = unitOfWork.pharmacyAccRepository.getpharmacyaccWithDetails(request.PharmacyId);
             if (pharmacyAcc == null)
-                return NotFound("Pharmacy not found.");
+                return NotFound(new { success = false, message = "Pharmacy not found." });
 
             var req = new Request
             {
@@ -763,19 +756,19 @@ namespace Echomedproject.PL.Controllers
                 SentAt = DateTime.UtcNow,
                 pharmacyAcc = pharmacyAcc,
                 qty = request.qty,
-                state="pending",
+                state = "pending",
                 ClosedAt = null,
+                Response = "Pending"
             };
 
             pharmacyAcc.Requests ??= new List<Request>();
-
             pharmacyAcc.Requests.Add(req);
-
             unitOfWork.Complete();
-            return Ok("Request sent successfully.");
+
+            return Ok(new { success = true, message = "Request Sent successfully" });
         }
 
-        [Authorize("User")]
+
         [HttpGet("Notifications")]
         public async Task<IActionResult> Notifications()
         {
@@ -783,11 +776,11 @@ namespace Echomedproject.PL.Controllers
             var email = currentUser?.FindFirst(ClaimTypes.Email)?.Value;
 
             if (string.IsNullOrEmpty(email))
-                return Unauthorized(new { message = "User email not found." });
+                return Unauthorized(new { success = false, message = "User email not found." });
 
             var user = unitOfWork.appUsersRepository.getUserWithRecordDetails(email);
             if (user == null)
-                return NotFound(new { message = "User account not found." });
+                return NotFound(new { success = false, message = "User account not found." });
 
             var notifications = user.notifications;
 
@@ -822,45 +815,36 @@ namespace Echomedproject.PL.Controllers
                 notifications = result
             });
         }
-        [Authorize("User")]
+
         [HttpPost("Mark-notification-as-read")]
-        public async Task<IActionResult> MarkNotificationAsRead([FromBody]int id)
+        public async Task<IActionResult> MarkNotificationAsRead([FromBody] NotificationReadViewModel model)
         {
+            if (!ModelState.IsValid)
+                return BadRequest(new { success = false, message = "Invalid data format." });
+
             var currentUser = _httpContextAccessor?.HttpContext?.User;
             var email = currentUser?.FindFirst(ClaimTypes.Email)?.Value;
 
             if (string.IsNullOrEmpty(email))
-                return Unauthorized(new { message = "User email not found." });
+                return Unauthorized(new { success = false, message = "User email not found." });
 
             var user = unitOfWork.appUsersRepository.getUserWithRecordDetails(email);
             if (user == null)
-                return NotFound(new { message = "User account not found." });
+                return NotFound(new { success = false, message = "User account not found." });
 
-            var notification = user.notifications?.FirstOrDefault(n => n.Id == id);
+            var notification = user.notifications?.FirstOrDefault(n => n.Id == model.Id);
             if (notification == null)
-                return NotFound(new { message = "Notification not found." });
+                return NotFound(new { success = false, message = "Notification not found." });
 
-            // Mark as read (if not already)
             if (!notification.IsRead)
             {
                 notification.IsRead = true;
                 unitOfWork.Complete(); // or await unitOfWork.CompleteAsync();
             }
 
-            // Return full notification details
-            return Ok(new
-            {
-                notification.Id,
-                notification.Text,
-                notification.CreatedAt,
-                notification.IsRead,
-                notification.Type,
-                notification.PharmacyName,
-                DisplayMessage = $"Notification from {notification.PharmacyName ?? "Hospital"} on {notification.CreatedAt:yyyy-MM-dd}"
-            });
+            return Ok(new { success = true, message = "Notification read successfully" });
         }
 
-        [Authorize("User")]
         [HttpPost("Mark-all-notifications-as-read")]
         public async Task<IActionResult> MarkAllNotificationsAsRead()
         {
@@ -868,11 +852,11 @@ namespace Echomedproject.PL.Controllers
             var email = currentUser?.FindFirst(ClaimTypes.Email)?.Value;
 
             if (string.IsNullOrEmpty(email))
-                return Unauthorized(new { message = "User email not found." });
+                return Unauthorized(new { success = false, message = "User email not found." });
 
             var user = unitOfWork.appUsersRepository.getUserWithRecordDetails(email);
             if (user == null)
-                return NotFound(new { message = "User account not found." });
+                return NotFound(new { success = false, message = "User account not found." });
 
             var unreadNotifications = user.notifications?.Where(n => !n.IsRead).ToList();
             if (unreadNotifications == null || !unreadNotifications.Any())
@@ -887,10 +871,7 @@ namespace Echomedproject.PL.Controllers
 
             unitOfWork.Complete(); // or await unitOfWork.CompleteAsync();
 
-            return Ok(new
-            {
-                message = $"Marked {unreadNotifications.Count} notification(s) as read."
-            });
+            return Ok(new { success = true, message = $"Marked {unreadNotifications.Count} notification(s) as read." });
         }
 
 

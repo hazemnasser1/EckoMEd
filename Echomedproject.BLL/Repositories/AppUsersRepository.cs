@@ -48,6 +48,7 @@ namespace Echomedproject.BLL.Repositories
             var user = dbContext.Users
                 .Include(u => u.Records)
                     .ThenInclude(r => r.prescription)
+                        .ThenInclude(m=> m.medicines)
                 .Include(u => u.Records)
                     .ThenInclude(r => r.Invoice)
                 .Include(u => u.Records)
@@ -62,7 +63,8 @@ namespace Echomedproject.BLL.Repositories
         public Records? GetRecord(int id)
         {
             return dbContext.Records
-                .Include(r => r.Scans) // Include related Scan entity
+                .Include(r => r.Scans)
+                .Include(l => l.LabTests)
                 .Include(r => r.prescription)
                     .ThenInclude(p => p.medicines) // Include medicines inside prescription
                 .FirstOrDefault(r => r.Id == id);

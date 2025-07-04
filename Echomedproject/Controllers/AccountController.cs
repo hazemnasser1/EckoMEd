@@ -9,6 +9,7 @@ using Echomedproject.BLL.Repositories;
 using Echomedproject.BLL.Interfaces;
 using Echomedproject.PL.Helpers;
 using Microsoft.AspNetCore.Authorization;
+using System.Security.Claims;
 
 namespace Echomedproject.PL.Controllers
 {
@@ -126,67 +127,68 @@ namespace Echomedproject.PL.Controllers
         }
 
 
-        //[HttpPost("DataEntry-register")]
-        //public async Task<IActionResult> Data_Register([FromForm] RegisterViewModel model)
-        //{
-        //    if (!ModelState.IsValid)
-        //        return BadRequest(ModelState);
+        [HttpPost("DataEntry-register")]
+        public async Task<IActionResult> Data_Register([FromForm] RegisterViewModel model)
+        {
+            if (!ModelState.IsValid)
+                return BadRequest(ModelState);
 
-        //    var user = new Users
-        //    {
-        //        FirstName = model.firstName,
-        //        LastName = model.lastName,
-        //        Gender = model.gender,
-        //        DateOBirth = model.dateOfBirth,
-        //        UserName = model.username,
-        //        PhoneNumber = model.phoneNumber,
-        //        Email = model.email,
-        //        city = model.city,
-        //        street = model.street,
-        //        country = model.country,
-        //    };
+            var user = new Users
+            {
+                FirstName = model.firstName,
+                LastName = model.lastName,
+                Gender = model.gender,
+                DateOBirth = model.dateOfBirth,
+                UserName = "Nile_hospital",
+                PhoneNumber = model.phoneNumber,
+                Email = model.email,
+                city = model.city,
+                street = model.street,
+                country = model.country,
+                EmailConfirmed = true // <--- this line confirms the email automatically
+            };
 
-        //    var result = await userManager.CreateAsync(user, model.password);
-        //    if (!result.Succeeded)
-        //        return BadRequest(result.Errors);
 
-        //    // Add to AppUsers table
-        //    var appuser = new DataEntry
-        //    {
-        //        Username = model.firstName + " " + model.lastName,
+            var result = await userManager.CreateAsync(user, model.password);
+            if (!result.Succeeded)
+                return BadRequest(result.Errors);
 
-        //        EntryDate = model.dateOfBirth,
-        //        PhoneNumber = model.phoneNumber,
-        //        Email = model.email,
-        //        HospitalID = 7,
-        //        Hospital = unitOfWork.hospitalsRepository.Get(7),
-        //        TotalPatients = 0,
-        //        Departments = new List<Departments>()
+            // Add to AppUsers table
+            var appuser = new DataEntry
+            {
+                Username = model.firstName + " " + model.lastName,
+                EntryDate = model.dateOfBirth,
+                PhoneNumber = model.phoneNumber,
+                Email = model.email,
+                HospitalID = 144,
+                Hospital = unitOfWork.hospitalsRepository.Get(144),
+                TotalPatients = 0,
+                Departments = new List<Departments>()
 
-        //    };
-        //    unitOfWork.entryRepository.add(appuser);
+            };
+            unitOfWork.entryRepository.add(appuser);
 
-        //    //Upload image
-        //    if (model.profilePicture != null)
-        //    {
-        //        string imagePath = DocumentSetting.UploadImage(model.profilePicture, "userImages");
-        //        user.imagePath = imagePath;
-        //        await userManager.UpdateAsync(user);
-        //        await userManager.AddToRoleAsync(user, "DataEntry");
-        //    }
+            //Upload image
+            if (model.profilePicture != null)
+            {
+                string imagePath = DocumentSetting.UploadImage(model.profilePicture, "userImages");
+                user.imagePath = imagePath;
+            }
+            await userManager.UpdateAsync(user);
+            await userManager.AddToRoleAsync(user, "DataEntry");
 
-        //    // Email confirmation
-        //    //var token = await userManager.GenerateEmailConfirmationTokenAsync(user);
-        //    //var tokenEncoded = WebEncoders.Base64UrlEncode(Encoding.UTF8.GetBytes(token));
-        //    //var confirmationLink = $"{Request.Scheme}://{Request.Host}/api/account/confirm-email?userId={user.Id}&token={tokenEncoded}";
+            // Email confirmation
+            //var token = await userManager.GenerateEmailConfirmationTokenAsync(user);
+            //var tokenEncoded = WebEncoders.Base64UrlEncode(Encoding.UTF8.GetBytes(token));
+            //var confirmationLink = $"{Request.Scheme}://{Request.Host}/api/account/confirm-email?userId={user.Id}&token={tokenEncoded}";
 
-        //    //var message = $"Please confirm your account by <a href='{HtmlEncoder.Default.Encode(confirmationLink)}'>clicking here</a>.";
-        //    //await emailSender.SendEmailAsync(user.Email, "Confirm Your Email", message);
+            //var message = $"Please confirm your account by <a href='{HtmlEncoder.Default.Encode(confirmationLink)}'>clicking here</a>.";
+            //await emailSender.SendEmailAsync(user.Email, "Confirm Your Email", message);
 
-        //    unitOfWork.Complete();
+            unitOfWork.Complete();
 
-        //    return Ok(new { message = "Registration successful. Please check your email to confirm your account." });
-        //}
+            return Ok(new { message = "Registration successful. Please check your email to confirm your account." });
+        }
 
         [HttpGet("confirm-email")]
         public async Task<IActionResult> ConfirmEmail(string userId, string token)
@@ -247,7 +249,7 @@ namespace Echomedproject.PL.Controllers
 
         [HttpPost("dataentrylogin")]
         public async Task<IActionResult> DataEntryLogin([FromBody] LoginViewModel model)
-        {
+           {
             return await RoleLogin(model, "DataEntry");
         }
 
@@ -277,13 +279,21 @@ namespace Echomedproject.PL.Controllers
         [HttpGet("is-authenticated")]
         public IActionResult IsAuthenticated()
         {
-            var cookie = Request.Cookies[".AspNetCore.Identity.Application"];
-            if (cookie != null)
+            var isAuthenticated = User?.Identity?.IsAuthenticated ?? false;
+
+            if (!isAuthenticated)
+                return Ok(new { isAuthenticated = false });
+
+            var roleClaim = User.Claims.FirstOrDefault(c => c.Type == ClaimTypes.Role);
+            var role = roleClaim?.Value ?? "Unknown";
+
+            return Ok(new
             {
-                return Ok(User.Identity.IsAuthenticated);
-            }
-            return Ok(User.Identity.IsAuthenticated);
+                isAuthenticated = true,
+                role = role
+            });
         }
+
 
         [HttpPost("forgot-password")]
         public async Task<IActionResult> ForgotPassword([FromBody] ForgotPasswordViewModel model)
@@ -298,7 +308,7 @@ namespace Echomedproject.PL.Controllers
             var token = await userManager.GeneratePasswordResetTokenAsync(user);
             var encodedToken = WebEncoders.Base64UrlEncode(Encoding.UTF8.GetBytes(token));
 
-            var resetLink = $"{Request.Scheme}://{Request.Host}/reset-password?email={user.Email}&token={encodedToken}";
+            var resetLink = $"http://localhost:4200/forgotpas?email={user.Email}&token={encodedToken}";
 
             var message = $"You can reset your password by <a href='{HtmlEncoder.Default.Encode(resetLink)}'>clicking here</a>.";
             await emailSender.SendEmailAsync(user.Email, "Reset Your Password", message);
