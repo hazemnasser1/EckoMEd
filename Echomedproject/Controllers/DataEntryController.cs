@@ -508,7 +508,6 @@ namespace Echomedproject.PL.Controllers
 
             patientHospital.record.prescription.medicines.Add(medicine);
             unitOfWork.Complete();
-
             return Ok(new { success = true, message = "Medicine added successfully" });
         }
 

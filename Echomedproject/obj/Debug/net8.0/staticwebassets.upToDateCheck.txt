@@ -45,6 +45,7 @@ wwwroot\files\ScanImages\b5ae770d-18e5-481e-8e00-7937a20a6ff0Screenshot 2024-11-
 wwwroot\files\ScanImages\b67dbfe2-d2a8-4c5b-a75e-656476fcaa38Screenshot 2024-11-23 233002.png
 wwwroot\files\ScanImages\b77da050-6dc7-4eba-a811-68cd9866222bScreenshot 2024-11-17 225300.png
 wwwroot\files\ScanImages\be3c061c-cf7c-4cd2-8e47-c642e58f71a8Screenshot 2024-11-17 224341.png
+wwwroot\files\ScanImages\default.jpg
 wwwroot\files\ScanImages\df2095af-845a-41a0-9dc6-f37f84e8a35dScreenshot 2024-11-17 225300.png
 wwwroot\files\TestImages\12cb4c09-247f-4613-b2a4-cab21fab41aeScreenshot 2024-11-17 222341.png
 wwwroot\files\TestImages\3d52cbb0-b550-4758-9013-6ac64c82dbd1Screenshot 2024-11-27 015140.png
@@ -53,6 +54,7 @@ wwwroot\files\TestImages\62c09273-3db0-45a0-9551-ab3a996341d6Screenshot 2024-11-
 wwwroot\files\TestImages\7ff9ee94-27ba-492d-84d3-73ca51f0dfd9Screenshot 2024-11-17 225705.png
 wwwroot\files\TestImages\962ba8ee-9a9b-4d2a-9353-9deba154ffa8Screenshot 2024-11-17 222231.png
 wwwroot\files\TestImages\c2decc4e-fca0-444c-8471-468f10fdc107Screenshot 2024-11-17 225300.png
+wwwroot\files\userImages\085d89d1-2111-4f65-8714-8b4f550415bfWhatsApp Image 2025-04-29 at 14.04.16_31c618ea.jpg
 wwwroot\files\userImages\12cf46be-d2a5-405e-92df-1f3eab53c934Screenshot 2024-11-17 224252.png
 wwwroot\files\userImages\3bce0256-a767-49e7-abcb-636da15dd746default.png
 wwwroot\files\userImages\46c91b6c-dcc8-4eab-baef-e835f82131a4Screenshot 2024-11-17 224252.png
@@ -60,6 +62,7 @@ wwwroot\files\userImages\82578357-c892-4d02-8155-3d0ec6972492codm-call-of-duty-m
 wwwroot\files\userImages\9916e56a-f01f-4c00-816a-8f8429aa5b08cover.png
 wwwroot\files\userImages\c07ea110-fb04-4c91-932b-fc2de6fce628OIP.jpg
 wwwroot\files\userImages\d99edda9-3337-4e08-b00a-ff520d9c35afdefault.png
+wwwroot\files\userImages\default.jpg
 wwwroot\forgotpass\index.html
 wwwroot\helpCenter\index.html
 wwwroot\images\clay-banks-cEzMOp5FtV4-unsplash.jpg

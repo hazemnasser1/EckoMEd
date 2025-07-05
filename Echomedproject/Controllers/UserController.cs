@@ -65,6 +65,7 @@ namespace Echomedproject.PL.Controllers
 
             return Ok(new
             {
+                Username = appUser.UserName,
                 firstName = appUser.FirstName,
                 lastName = appUser.LastName,
                 image = DocumentSetting.GetBase64Image(appUser.imagePath, "userImages"),
@@ -515,7 +516,7 @@ namespace Echomedproject.PL.Controllers
 
             var result = new
             {
-                Username = appUser.UserName,
+                Username = appUser.FirstName + " " + appUser.LastName,
                 ImageBase64 = DocumentSetting.GetBase64Image(appUser.imagePath, "userImages")
             };
 
@@ -630,7 +631,7 @@ namespace Echomedproject.PL.Controllers
                 s.Type,
                 s.Date,
                 s.Description,
-                image = $"{baseUrl}/files/ScanImages/{s.ImagePath}"
+                ImageBase64 = $"{baseUrl}/files/ScanImages/{s.ImagePath}"
             });
 
             return Ok(scans);
@@ -669,7 +670,7 @@ namespace Echomedproject.PL.Controllers
                 l.Type,
                 l.Notes,
                 l.Date,
-                image = $"{baseUrl}/files/TestImages/{l.ImagePath}"
+                imagePath = $"{baseUrl}/files/TestImages/{l.ImagePath}"
             });
 
             return Ok(labTests);
@@ -689,7 +690,7 @@ namespace Echomedproject.PL.Controllers
 
             var userLat = pharmacySearchViewModel.Lat.Value;
             var userLng = pharmacySearchViewModel.Lang.Value;
-            double? maxDistance = pharmacySearchViewModel.Distance ??= 9999;
+            double maxDistance = pharmacySearchViewModel.Distance ?? 9999;
 
             var pharmacies = unitOfWork.pharamacyRepository.GetAll();
             var results = new List<PharmacyResultViewModel>();
@@ -699,6 +700,7 @@ namespace Echomedproject.PL.Controllers
                 var pharmacyAcc = unitOfWork.pharmacyAccRepository.getpharmacyaccWithDetails(pharmacy.Identifier);
 
                 double distance = 0;
+
                 if (userLat > 0 && userLng > 0)
                 {
                     if (!pharmacy.Latitude.HasValue || !pharmacy.Longitude.HasValue)
@@ -706,7 +708,7 @@ namespace Echomedproject.PL.Controllers
 
                     distance = DistanceCalc.CalculateHaversineDistance(userLat, userLng, pharmacy.Latitude.Value, pharmacy.Longitude.Value);
 
-                    if (distance > maxDistance.Value)
+                    if (distance > maxDistance)
                         continue;
                 }
 
@@ -721,8 +723,17 @@ namespace Echomedproject.PL.Controllers
                 });
             }
 
-            return Ok(results);
+            var closestPharmacies = results
+                .OrderBy(p => p.Distance)
+                .Take(10)
+                .ToList();
+
+            return Ok(
+            
+                closestPharmacies
+            );
         }
+
 
         [Authorize]
         [HttpPost("medicine-request")]

@@ -864,6 +864,24 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\files\ScanImages\be3c061c-cf7c-4cd2-8e47-c642e58f71a8Screenshot 2024-11-17 224341.png'))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\files\ScanImages\default.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>Echomedproject.PL</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/Echomedproject.PL</BasePath>
+      <RelativePath>files/ScanImages/default.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>tzn1a5gz8h</Fingerprint>
+      <Integrity>uW12iTTOFW4hjOyZIiz+AZdrWnQDiM1YJoJe/IeXB9s=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\files\ScanImages\default.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\files\ScanImages\df2095af-845a-41a0-9dc6-f37f84e8a35dScreenshot 2024-11-17 225300.png'))">
       <SourceType>Package</SourceType>
       <SourceId>Echomedproject.PL</SourceId>
@@ -1008,6 +1026,24 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\files\TestImages\c2decc4e-fca0-444c-8471-468f10fdc107Screenshot 2024-11-17 225300.png'))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\files\userImages\085d89d1-2111-4f65-8714-8b4f550415bfWhatsApp Image 2025-04-29 at 14.04.16_31c618ea.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>Echomedproject.PL</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/Echomedproject.PL</BasePath>
+      <RelativePath>files/userImages/085d89d1-2111-4f65-8714-8b4f550415bfWhatsApp Image 2025-04-29 at 14.04.16_31c618ea.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>k9t3cdx8r2</Fingerprint>
+      <Integrity>GFkJ2EWa+yfh59vvaHzfk1YGNZkX+/wOMwKSjKHTYF8=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\files\userImages\085d89d1-2111-4f65-8714-8b4f550415bfWhatsApp Image 2025-04-29 at 14.04.16_31c618ea.jpg'))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\files\userImages\12cf46be-d2a5-405e-92df-1f3eab53c934Screenshot 2024-11-17 224252.png'))">
       <SourceType>Package</SourceType>
       <SourceId>Echomedproject.PL</SourceId>
@@ -1133,6 +1169,24 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\files\userImages\d99edda9-3337-4e08-b00a-ff520d9c35afdefault.png'))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\files\userImages\default.jpg'))">
+      <SourceType>Package</SourceType>
+      <SourceId>Echomedproject.PL</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/Echomedproject.PL</BasePath>
+      <RelativePath>files/userImages/default.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <Fingerprint>tzn1a5gz8h</Fingerprint>
+      <Integrity>uW12iTTOFW4hjOyZIiz+AZdrWnQDiM1YJoJe/IeXB9s=</Integrity>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\files\userImages\default.jpg'))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\forgotpass\index.html'))">
       <SourceType>Package</SourceType>

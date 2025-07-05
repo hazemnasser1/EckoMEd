@@ -19,6 +19,6 @@ namespace Echomedproject.PL.ViewModels
 
         public double? latitude { get; set; }
         
-
+        public string id { get; set; }
     }
 }

@@ -169,6 +169,10 @@
       "PackagePath": "staticwebassets\\files\\ScanImages\\be3c061c-cf7c-4cd2-8e47-c642e58f71a8Screenshot 2024-11-17 224341.png"
     },
     {
+      "Id": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\files\\ScanImages\\default.jpg",
+      "PackagePath": "staticwebassets\\files\\ScanImages\\default.jpg"
+    },
+    {
       "Id": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\files\\ScanImages\\df2095af-845a-41a0-9dc6-f37f84e8a35dScreenshot 2024-11-17 225300.png",
       "PackagePath": "staticwebassets\\files\\ScanImages\\df2095af-845a-41a0-9dc6-f37f84e8a35dScreenshot 2024-11-17 225300.png"
     },
@@ -225,6 +229,10 @@
       "PackagePath": "staticwebassets\\files\\advertisementImages\\hospital6.jpg"
     },
     {
+      "Id": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\files\\userImages\\085d89d1-2111-4f65-8714-8b4f550415bfWhatsApp Image 2025-04-29 at 14.04.16_31c618ea.jpg",
+      "PackagePath": "staticwebassets\\files\\userImages\\085d89d1-2111-4f65-8714-8b4f550415bfWhatsApp Image 2025-04-29 at 14.04.16_31c618ea.jpg"
+    },
+    {
       "Id": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\files\\userImages\\12cf46be-d2a5-405e-92df-1f3eab53c934Screenshot 2024-11-17 224252.png",
       "PackagePath": "staticwebassets\\files\\userImages\\12cf46be-d2a5-405e-92df-1f3eab53c934Screenshot 2024-11-17 224252.png"
     },
@@ -251,6 +259,10 @@
     {
       "Id": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\files\\userImages\\d99edda9-3337-4e08-b00a-ff520d9c35afdefault.png",
       "PackagePath": "staticwebassets\\files\\userImages\\d99edda9-3337-4e08-b00a-ff520d9c35afdefault.png"
+    },
+    {
+      "Id": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\files\\userImages\\default.jpg",
+      "PackagePath": "staticwebassets\\files\\userImages\\default.jpg"
     },
     {
       "Id": "C:\\WebProjects\\EckoMed\\Echomedproject\\Echomedproject\\wwwroot\\forgotpass\\index.html",

@@ -104,8 +104,13 @@ namespace Echomedproject.PL.Controllers
             {
                 string imagePath = DocumentSetting.UploadImage(model.profilePicture, "userImages");
                 user.imagePath = imagePath;
-                await userManager.UpdateAsync(user);
             }
+            else
+            {
+                user.imagePath = "default.jpg";
+            }
+            await userManager.UpdateAsync(user);
+
 
             await userManager.AddToRoleAsync(user, "User");
 
@@ -121,8 +126,7 @@ namespace Echomedproject.PL.Controllers
 
             return Ok(new
             {
-                message = "Registration successful. Please check your email to confirm your account.",
-                userName = generatedUserName
+                success = true, message = "Registration successful. Please check your email to confirm your account.",
             });
         }
 
@@ -187,7 +191,7 @@ namespace Echomedproject.PL.Controllers
 
             unitOfWork.Complete();
 
-            return Ok(new { message = "Registration successful. Please check your email to confirm your account." });
+            return Ok(new {success=true , message = "Registration successful. Please check your email to confirm your account." });
         }
 
         [HttpGet("confirm-email")]
